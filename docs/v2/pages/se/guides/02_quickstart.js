@@ -91,9 +91,9 @@ curl -X GET http://localhost:8080/greet/Jose
 
 </div>
 
-<h2 id="_health_and_metrics"><span class="merged" id="all.3JCOTH.1" title="原文 : Health and Metrics">ヘルスおよびメトリック</span></h2>
+<h2 id="_health_and_metrics"><span class="merged" id="all.3JCOTH.1" title="原文 : Health and Metrics">ヘルスおよびメトリクス</span></h2>
 <div class="section">
-<p><span class="merged" id="all.46ez5Q.1" title="原文 : Helidon provides built-in support for health and metrics endpoints.">Helidonには、ヘルス・エンドポイントおよびメトリック・エンドポイントの組込みサポートが用意されています。</span></p>
+<p><span class="merged" id="all.46ez5Q.1" title="原文 : Helidon provides built-in support for health and metrics endpoints.">Helidonには、ヘルス・エンドポイントおよびメトリクス・エンドポイントの組込みサポートが用意されています。</span></p>
 
 <markup
 lang="bash"
@@ -102,12 +102,12 @@ title="Health"
 
 <markup
 lang="bash"
-title="Prometheus形式のメトリック"
+title="Prometheus形式のメトリクス"
 >curl -s -X GET http://localhost:8080/metrics</markup>
 
 <markup
 lang="bash"
-title="JSON形式のメトリック"
+title="JSON形式のメトリクス"
 >curl -H 'Accept: application/json' -X GET http://localhost:8080/metrics</markup>
 
 </div>

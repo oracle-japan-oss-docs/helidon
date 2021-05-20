@@ -21,7 +21,7 @@
 
 <h2 id="_gradle_example"><span class="merged" id="all.1qe2nK" title="原文 : Gradle Example">Gradleの例</span></h2>
 <div class="section">
-<p><span class="merged" id="all.1ldVI0" title="原文 : The Helidon Quickstart Example contains a build.gradle file that you can use as an example for building your Helidon application using Gradle.">Helidon <a href="https://github.com/oracle/helidon/tree/2.2.1-SNAPSHOT/examples/quickstarts/helidon-quickstart-mp" id="" target="_blank" >「クイックスタートの例」</a>には、Gradleを使用してHelidonアプリケーションを構築するための例として使用できる<code>build.gradle</code>ファイルが含まれています。</span></p>
+<p><span class="merged" id="all.1ldVI0" title="原文 : The Helidon Quickstart Example contains a build.gradle file that you can use as an example for building your Helidon application using Gradle.">Helidon <a href="https://github.com/oracle/helidon/tree/2.2.1/examples//quickstarts/helidon-quickstart-mp" id="" target="_blank" >「クイックスタートの例」</a>には、Gradleを使用してHelidonアプリケーションを構築するための例として使用できる<code>build.gradle</code>ファイルが含まれています。</span></p>
 
 </div>
 

@@ -136,9 +136,9 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd><span class="merged" id="RetrySchema.31RZRo"  title="原文: This is a functional interface and can therefore be used as the assignment target for a lambda expression or method reference.">これは関数型インタフェースなので、ラムダ式またはメソッド参照の代入先として使用できます。</span></dd>
 </dl>
 <hr>
-<pre><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/FunctionalInterface.html?is-external=true" title="class or interface in java.lang" class="externalLink">@FunctionalInterface</a>
+<pre><a href="https://docs.oracle.com/javase/jp/11/docs/api/java.base/java/lang/FunctionalInterface.html?is-external=true" title="class or interface in java.lang" class="externalLink">@FunctionalInterface</a>
 public interface <span class="typeNameLabel">RetrySchema</span></pre>
-<div class="block"><span class="merged" id="RetrySchema.sxAwi" title="原文 : Defines delay for next read/poll operation in a polling publisher.">ポーリング<a class="externalLink" href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Flow.Publisher.html?is-external=true" ><code>publisher</code></a>での次の読取り/ポーリング操作の遅延を定義します。</span>
+<div class="block"><span class="merged" id="RetrySchema.sxAwi" title="原文 : Defines delay for next read/poll operation in a polling publisher.">ポーリング<a class="externalLink" href="https://docs.oracle.com/javase/jp/11/docs/api/java.base/java/util/concurrent/Flow.Publisher.html?is-external=true" ><code>publisher</code></a>での次の読取り/ポーリング操作の遅延を定義します。</span>
  <p>
  <span class="merged" id="RetrySchema.3uCWAw" title="原文 : Schema defines a delay before next poll if the last one did not get new data.">スキーマは、最後のポーリングが新しいデータを取得しなかった場合の次のポーリングまでの遅延を定義します。</span>
  <p>
@@ -231,7 +231,7 @@ public interface <span class="typeNameLabel">RetrySchema</span></pre>
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4><span class="merged" id="RetrySchema.FkNv9"  title="原文:: linear">linear</span></h4>
+<h4><span class="merged" id="RetrySchema.FkNv9"  title="原文:: linear">線形 </span></h4>
 <pre class="methodSignature">static&nbsp;<a href="RetrySchema.html" title="interface in io.helidon.common.reactive">RetrySchema</a>&nbsp;linear&#8203;(long&nbsp;firstDelay,
                           long&nbsp;delayIncrement,
                           long&nbsp;maxDelay)</pre>
@@ -267,7 +267,7 @@ public interface <span class="typeNameLabel">RetrySchema</span></pre>
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4><span class="merged" id="RetrySchema.FnjTk"  title="原文:: geometric">geometric</span></h4>
+<h4><span class="merged" id="RetrySchema.FnjTk"  title="原文:: geometric">ジオメトリ </span></h4>
 <pre class="methodSignature">static&nbsp;<a href="RetrySchema.html" title="interface in io.helidon.common.reactive">RetrySchema</a>&nbsp;geometric&#8203;(long&nbsp;firstDelay,
                              double&nbsp;ratio,
                              long&nbsp;maxDelay)</pre>

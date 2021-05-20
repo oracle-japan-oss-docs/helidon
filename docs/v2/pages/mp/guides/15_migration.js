@@ -249,9 +249,9 @@
 </ul>
 </div>
 
-<h2 id="_metrics"><span class="merged" id="all.4LL0ot.5"  title="原文:: Metrics">メトリック</span></h2>
+<h2 id="_metrics"><span class="merged" id="all.4LL0ot.5"  title="原文:: Metrics">メトリクス</span></h2>
 <div class="section">
-<p><span class="merged" id="all.35SMOV" title="原文 : Helidon now supports only MicroProfile Metrics 2.x. Support for Metrics 1.x has been removed, and modules for 2.x have been renamed from metrics2 to metrics.">Helidonでは、MicroProfile Metrics 2.xのみがサポートされるようになりました。メトリック1.xのサポートは削除され、2.xのモジュールの名前が<code>metrics2</code>から<code>metrics</code>に変更されました。</span></p>
+<p><span class="merged" id="all.35SMOV" title="原文 : Helidon now supports only MicroProfile Metrics 2.x. Support for Metrics 1.x has been removed, and modules for 2.x have been renamed from metrics2 to metrics.">Helidonでは、MicroProfile Metrics 2.xのみがサポートされるようになりました。メトリクス1.xのサポートは削除され、2.xのモジュールの名前が<code>metrics2</code>から<code>metrics</code>に変更されました。</span></p>
 
 </div>
 

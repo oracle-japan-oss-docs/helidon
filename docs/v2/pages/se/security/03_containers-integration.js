@@ -85,7 +85,7 @@ security.web-server:
 
 </li>
 <li>
-<p><span class="merged" id="all.YirxS.1" title="原文 : Metrics endpoint (/metrics)">メトリック・エンドポイント(<code>/metrics</code>)</span></p>
+<p><span class="merged" id="all.YirxS.1" title="原文 : Metrics endpoint (/metrics)">メトリクス・エンドポイント(<code>/metrics</code>)</span></p>
 
 </li>
 <li>

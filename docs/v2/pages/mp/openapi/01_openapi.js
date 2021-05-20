@@ -23,7 +23,7 @@
 <div class="section">
 <p><span class="merged" id="all.4bCDWr" title="原文 : Helidon MP conforms to the MicroProfile OpenAPI specification, which was inspired by the OpenAPI spec itself.">Helidon MPは、<a href="https://github.com/OAI/OpenAPI-Specification" id="" target="_blank" >「OpenAPI仕様」</a>自体によってインスピレーションされた<a href="https://github.com/eclipse/microprofile-open-api/blob/master/spec/src/main/asciidoc/microprofile-openapi-spec.adoc" id="" target="_blank" >「MicroProfile OpenAPI仕様」</a>に準拠しています。</span></p>
 
-<p><span class="merged" id="all.1MHLhk" title="原文 : Helidon MP includes a complete OpenAPI example based on the MP quick-start sample app.">Helidon MPには、MPクイックスタート・サンプル・アプリケーションに基づく<a href="https://github.com/oracle/helidon/tree/2.2.1-SNAPSHOT/examples/microprofile/openapi-basic" id="" target="_blank" >「完全なOpenAPIの例」</a>が含まれています。</span></p>
+<p><span class="merged" id="all.1MHLhk" title="原文 : Helidon MP includes a complete OpenAPI example based on the MP quick-start sample app.">Helidon MPには、MPクイックスタート・サンプル・アプリケーションに基づく<a href="https://github.com/oracle/helidon/tree/2.2.1/examples//microprofile/openapi-basic" id="" target="_blank" >「完全なOpenAPIの例」</a>が含まれています。</span></p>
 
 <p><span class="merged" id="all.ndBCy" title="原文 : To use OpenAPI from your Helidon MP app:">Helidon MPアプリケーションからOpenAPIを使用するには:</span></p>
 
@@ -135,7 +135,7 @@ public JsonObject getDefaultMessage() {...}</markup>
 </ul>
 <p><span class="merged" id="all.ClJ2Y" title="原文 : You can also define any request parameters the endpoint expects, although this endpoint uses none.">エンドポイントで想定されるリクエスト・パラメータを定義することもできますが、このエンドポイントでは何も使用しません。</span></p>
 
-<p><span class="merged" id="all.3HrRy4.spl1" title="原文 : This excerpt shows only a few annotations for illustration.">この抜粋は、例示のためにいくつかの注釈のみを示しています。</span> <span class="merged" id="all.3HrRy4.spl2" title="原文 : The Helidon MP OpenAPI example illustrates more, and the MicroProfile OpenAPI spec describes them all."><a href="https://github.com/oracle/helidon/tree/2.2.1-SNAPSHOT/examples/microprofile/openapi-basic" id="" target="_blank" >「Helidon MP OpenAPIの例」</a>ではさらに説明し、<a href="https://github.com/eclipse/microprofile-open-api/blob/master/spec/src/main/asciidoc/microprofile-openapi-spec.adoc" id="" target="_blank" >「MicroProfile OpenAPI仕様」</a>ではそれらすべてについて説明します。</span> </p>
+<p><span class="merged" id="all.3HrRy4.spl1" title="原文 : This excerpt shows only a few annotations for illustration.">この抜粋は、例示のためにいくつかの注釈のみを示しています。</span> <span class="merged" id="all.3HrRy4.spl2" title="原文 : The Helidon MP OpenAPI example illustrates more, and the MicroProfile OpenAPI spec describes them all."><a href="https://github.com/oracle/helidon/tree/2.2.1/examples//microprofile/openapi-basic" id="" target="_blank" >「Helidon MP OpenAPIの例」</a>ではさらに説明し、<a href="https://github.com/eclipse/microprofile-open-api/blob/master/spec/src/main/asciidoc/microprofile-openapi-spec.adoc" id="" target="_blank" >「MicroProfile OpenAPI仕様」</a>ではそれらすべてについて説明します。</span> </p>
 
 </div>
 

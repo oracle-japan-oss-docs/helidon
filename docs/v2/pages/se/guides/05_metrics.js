@@ -2,8 +2,8 @@
 <span title="免責事項: ここに記載されているドキュメントは、お客様の利便性のために翻訳ソフトウエアにより機械的に翻訳(機械翻訳)したものです。オリジナルの英語版もあわせてご確認ください。" style="width:150px;padding-left:5px;padding-right:5px;border:#ff0000 solid 1px;border-color: gray;font-size: small;color:gray;margin: 0 auto 0 auto;text-align:center;"><a href="https://docs.oracle.com/cd/E85181_01/mt_disclaimer.html" target="disclaimer">&nbsp;&nbsp;機械翻訳について&nbsp;&nbsp;</a></span>
  <v-layout row wrap> <v-flex xs12 sm10 lg10> <v-card class="section-def" v-bind:color="$store.state.currentColor"> <v-card-text class="pa-3"> <v-card class="section-def__card"> <v-card-text>
 <dl>
-<dt slot=title><span class="merged" id="all.3LjiKk" title="原文 : Helidon SE Metrics Guide">Helidon SEメトリック・ガイド</span></dt>
-<dd slot="desc"><p><span class="merged" id="all.1NBhHV" title="原文 : This guide describes how to create a sample Helidon SE project that can be used to run some basic examples using both built-in and custom metrics.">このガイドでは、組込みメトリックとカスタム・メトリックの両方を使用していくつかの基本的な例を実行するために使用できるサンプルHelidon SEプロジェクトの作成方法について説明します。</span></p>
+<dt slot=title><span class="merged" id="all.3LjiKk" title="原文 : Helidon SE Metrics Guide">Helidon SEメトリクス・ガイド</span></dt>
+<dd slot="desc"><p><span class="merged" id="all.1NBhHV" title="原文 : This guide describes how to create a sample Helidon SE project that can be used to run some basic examples using both built-in and custom metrics.">このガイドでは、組込みメトリクスとカスタム・メトリクスの両方を使用していくつかの基本的な例を実行するために使用できるサンプルHelidon SEプロジェクトの作成方法について説明します。</span></p>
 </dd>
 </dl>
 </v-card-text>
@@ -55,32 +55,32 @@ title="Maven原型の実行"
 
 </div>
 
-<h3 id="_using_the_built_in_metrics"><span class="merged" id="all.43ESSC.1" title="原文 : Using the built-in metrics">組込みメトリックの使用</span></h3>
+<h3 id="_using_the_built_in_metrics"><span class="merged" id="all.43ESSC.1" title="原文 : Using the built-in metrics">組込みメトリクスの使用</span></h3>
 <div class="section">
-<p><span class="merged" id="all.3Kl5Gc.spl1" title="原文 : Helidon provides three scopes of metrics: base, vendor, and application.">Helidonには、3つのメトリック・スコープが用意されています: ベース、ベンダーおよびアプリケーション。</span> <span class="merged" id="all.3Kl5Gc.spl2" title="原文 : Here are the metric endpoints:">メトリック・エンドポイントは次のとおりです:</span> </p>
+<p><span class="merged" id="all.3Kl5Gc.spl1" title="原文 : Helidon provides three scopes of metrics: base, vendor, and application.">Helidonには、3つのメトリクス・スコープが用意されています: ベース、ベンダーおよびアプリケーション。</span> <span class="merged" id="all.3Kl5Gc.spl2" title="原文 : Here are the metric endpoints:">メトリック・エンドポイントは次のとおりです:</span> </p>
 
 <ol style="margin-left: 15px;">
 <li>
-<span class="merged" id="all.4HMomk.1" title="原文 : /metrics/base - Base metrics data as specified by the MicroProfile Metrics specification."><code>/metrics/base</code> - MicroProfileメトリック仕様で指定されているベース・メトリック・データ。</span>
+<span class="merged" id="all.4HMomk.1" title="原文 : /metrics/base - Base metrics data as specified by the MicroProfile Metrics specification."><code>/metrics/base</code> - MicroProfileメトリクス仕様で指定されているベース・メトリクス・データ。</span>
 
 </li>
 <li>
-<span class="merged" id="all.3CsSgu.1" title="原文 : /metrics/vendor - Helidon-specific metrics data."><code>/metrics/vendor</code> - Helidon固有のメトリック・データ。</span>
+<span class="merged" id="all.3CsSgu.1" title="原文 : /metrics/vendor - Helidon-specific metrics data."><code>/metrics/vendor</code> - Helidon固有のメトリクス・データ。</span>
 
 </li>
 <li>
-<span class="merged" id="all.3A3wVX.1" title="原文 : /metrics/application - Application-specific metrics data."><code>/metrics/application</code> - アプリケーション固有のメトリック・データ。</span>
+<span class="merged" id="all.3A3wVX.1" title="原文 : /metrics/application - Application-specific metrics data."><code>/metrics/application</code> - アプリケーション固有のメトリクス・データ。</span>
 
 </li>
 </ol>
 <div class="admonition note">
 <p class="admonition-inline"><span class="merged" id="all.4WGU6S.1" title="原文 : The /metrics endpoint will return data for all scopes."><code>/metrics</code>エンドポイントは、すべてのスコープのデータを返します。</span></p>
 </div>
-<p><span class="merged" id="all.5kIvs.spl1" title="原文 : The following example will demonstrate how to use the built-in metrics.">次の例では、組込みメトリックの使用方法を示します。</span> <span class="merged" id="all.5kIvs.spl2" title="原文 : All examples are executed from the root directory of your project (helidon-quickstart-se).">すべての例は、プロジェクトのルート・ディレクトリ(helidon-quickstart-se)から実行されます。</span> <span class="merged" id="all.5kIvs.spl3" title="原文 : The generated source code is already configured for both metrics and health-checks, but the following example removes health-checks.">生成されたソース・コードはメトリックとヘルス・チェックの両方に対してすでに構成されていますが、次の例ではヘルス・チェックを削除します。</span> </p>
+<p><span class="merged" id="all.5kIvs.spl1" title="原文 : The following example will demonstrate how to use the built-in metrics.">次の例では、組込みメトリクスの使用方法を示します。</span> <span class="merged" id="all.5kIvs.spl2" title="原文 : All examples are executed from the root directory of your project (helidon-quickstart-se).">すべての例は、プロジェクトのルート・ディレクトリ(helidon-quickstart-se)から実行されます。</span> <span class="merged" id="all.5kIvs.spl3" title="原文 : The generated source code is already configured for both metrics and health-checks, but the following example removes health-checks.">生成されたソース・コードはメトリクスとヘルス・チェックの両方に対してすでに構成されていますが、次の例ではヘルス・チェックを削除します。</span> </p>
 
 <markup
 lang="xml"
-title="メトリックの依存性がプロジェクトのpom.xmlファイルにすでに存在することを確認します:"
+title="メトリクスの依存性がプロジェクトのpom.xmlファイルにすでに存在することを確認します:"
 >&lt;dependency&gt;
     &lt;groupId&gt;io.helidon.metrics&lt;/groupId&gt;
     &lt;artifactId&gt;helidon-metrics&lt;/artifactId&gt;
@@ -100,7 +100,7 @@ title="<code>Main.createRouting</code>メソッドを次のコードに置き換
     }</markup>
 
 <ul class="colist">
-<li data-value="1"><span class="merged" id="all.eiwOb" title="原文 : Register the built-in base and vendor metrics.">組込みのベース・メトリックおよびベンダー・メトリックを登録します。</span></li>
+<li data-value="1"><span class="merged" id="all.eiwOb" title="原文 : Register the built-in base and vendor metrics.">組込みのベース・メトリクスおよびベンダー・メトリクスを登録します。</span></li>
 </ul>
 <markup
 lang="bash"
@@ -109,11 +109,11 @@ title="ユニット・テストをスキップしてアプリケーションを�
 java -jar target/helidon-quickstart-se.jar</markup>
 
 <div class="admonition note">
-<p class="admonition-inline"><span class="merged" id="all.37bL9E.1.spl1" title="原文 : Metrics can be returned in either text format (the default), or JSON.">メトリックは、テキスト形式(デフォルト)またはJSONのいずれかで返すことができます。</span> <span class="merged" id="all.37bL9E.1.spl2" title="原文 : The text format uses Prometheus Text Format, see https://prometheus.io/docs/instrumenting/exposition_formats/#text-format-details.">テキスト形式ではPrometheus Text Formatが使用されます。<a href="https://prometheus.io/docs/instrumenting/exposition_formats/#text-format-details" id="" target="_blank" >https://prometheus.io/docs/instrumenting/exposition_formats/#text-format-details</a>を参照してください。</span> </p>
+<p class="admonition-inline"><span class="merged" id="all.37bL9E.1.spl1" title="原文 : Metrics can be returned in either text format (the default), or JSON.">メトリクスは、テキスト形式(デフォルト)またはJSONのいずれかで返すことができます。</span> <span class="merged" id="all.37bL9E.1.spl2" title="原文 : The text format uses Prometheus Text Format, see https://prometheus.io/docs/instrumenting/exposition_formats/#text-format-details.">テキスト形式ではPrometheus Text Formatが使用されます。<a href="https://prometheus.io/docs/instrumenting/exposition_formats/#text-format-details" id="" target="_blank" >https://prometheus.io/docs/instrumenting/exposition_formats/#text-format-details</a>を参照してください。</span> </p>
 </div>
 <markup
 lang="bash"
-title="新しいターミナル・ウィンドウでメトリック・エンドポイントを確認します:"
+title="新しいターミナル・ウィンドウでメトリクス・エンドポイントを確認します:"
 >curl http://localhost:8080/metrics</markup>
 
 <markup
@@ -131,7 +131,7 @@ base:classloader_total_loaded_class_count 7512
 
 <markup
 lang="bash"
-title="HTTP acceptヘッダーを使用してメトリック・エンドポイントを確認します:"
+title="HTTP acceptヘッダーを使用してメトリクス・エンドポイントを確認します:"
 >curl -H "Accept: application/json"  http://localhost:8080/metrics</markup>
 
 <markup
@@ -201,7 +201,7 @@ title="JSONレスポンス:"
 </div>
 </div>
 
-<h3 id="_metrics_metadata"><span class="merged" id="all.1eMrtK.1" title="原文 : Metrics metadata">メトリック・メタデータ</span></h3>
+<h3 id="_metrics_metadata"><span class="merged" id="all.1eMrtK.1" title="原文 : Metrics metadata">メトリクス・メタデータ</span></h3>
 <div class="section">
 <p><span class="merged" id="all.43pYCx.1" title="原文 : Each metric has associated metadata that describes:">各メトリックには、次の内容を記述するメタデータが関連付けられています:</span></p>
 
@@ -223,7 +223,7 @@ title="JSONレスポンス:"
 
 <markup
 lang="bash"
-title="HTTP OPTIONSメソッドを使用してメトリック・メタデータを取得します:"
+title="HTTP OPTIONSメソッドを使用してメトリクス・メタデータを取得します:"
 > curl -X OPTIONS -H "Accept: application/json"  http://localhost:8080/metrics/base</markup>
 
 <markup
@@ -254,9 +254,9 @@ title="JSONレスポンス(切捨て):"
 
 </div>
 
-<h3 id="_application_specific_metrics_data"><span class="merged" id="all.2BGaic.1" title="原文 : Application-specific metrics data">アプリケーション固有のメトリック・データ</span></h3>
+<h3 id="_application_specific_metrics_data"><span class="merged" id="all.2BGaic.1" title="原文 : Application-specific metrics data">アプリケーション固有のメトリクス・データ</span></h3>
 <div class="section">
-<p><span class="merged" id="all.40hr0V.spl1" title="原文 : This section demonstrates how to use application-specific metrics and integrate them with Helidon.">この項では、アプリケーション固有のメトリックを使用してHelidonと統合する方法について説明します。</span> <span class="merged" id="all.40hr0V.spl2" title="原文 : It is the application&rsquo;s responsibility to create and update the metrics at runtime.">実行時にメトリックを作成および更新するのは、アプリケーションの役割です。</span> <span class="merged" id="all.40hr0V.spl3" title="原文 : The application has complete control over when and how each metric is used.">アプリケーションは、各メトリックの使用時期と使用方法を完全に制御します。</span> <span class="merged" id="all.40hr0V.spl4" title="原文 : For example, an application may use the same counter for multiple methods, or one counter per method.">たとえば、アプリケーションで複数のメソッドに同じカウンタを使用したり、メソッドごとに1つのカウンタを使用できます。</span> <span class="merged" id="all.40hr0V.spl5" title="原文 : Helidon maintains an application MetricRegistry which is used to manage all of the application metrics.">Helidonは、すべてのアプリケーション・メトリックの管理に使用されるアプリケーション<code>MetricRegistry</code>を保持します。</span> <span class="merged" id="all.40hr0V.spl6" title="原文 : Helidon returns these metrics in response to a /metrics/application REST request.">Helidonは、<code>/metrics/application</code> RESTリクエストに応じてこれらのメトリックを返します。</span> </p>
+<p><span class="merged" id="all.40hr0V.spl1" title="原文 : This section demonstrates how to use application-specific metrics and integrate them with Helidon.">この項では、アプリケーション固有のメトリクスを使用してHelidonと統合する方法について説明します。</span> <span class="merged" id="all.40hr0V.spl2" title="原文 : It is the application&rsquo;s responsibility to create and update the metrics at runtime.">実行時にメトリクスを作成および更新するのは、アプリケーションの役割です。</span> <span class="merged" id="all.40hr0V.spl3" title="原文 : The application has complete control over when and how each metric is used.">アプリケーションは、各メトリックの使用時期と使用方法を完全に制御します。</span> <span class="merged" id="all.40hr0V.spl4" title="原文 : For example, an application may use the same counter for multiple methods, or one counter per method.">たとえば、アプリケーションで複数のメソッドに同じカウンタを使用したり、メソッドごとに1つのカウンタを使用できます。</span> <span class="merged" id="all.40hr0V.spl5" title="原文 : Helidon maintains an application MetricRegistry which is used to manage all of the application metrics.">Helidonは、すべてのアプリケーション・メトリクスの管理に使用されるアプリケーション<code>MetricRegistry</code>を保持します。</span> <span class="merged" id="all.40hr0V.spl6" title="原文 : Helidon returns these metrics in response to a /metrics/application REST request.">Helidonは、<code>/metrics/application</code> RESTリクエストに応じてこれらのメトリクスを返します。</span> </p>
 
 <p><span class="merged" id="all.3aWpy8.spl1" title="原文 : In all of these examples, the scope and lifetime of the metric is at the application-level.">これらすべての例で、メトリックの有効範囲と存続期間はアプリケーション・レベルです。</span> <span class="merged" id="all.3aWpy8.spl2" title="原文 : Each metric, except Gauge, is updated in response to a REST request and the contents of the metric is cumulative."><code>Gauge</code>を除く各メトリックは、RESTリクエストに応じて更新され、メトリックの内容は累積されます。</span> </p>
 
@@ -310,7 +310,7 @@ public class GreetingCards implements Service {
 }</markup>
 
 <ul class="colist">
-<li data-value="1"><span class="merged" id="all.3kHtgT" title="原文 : Import metrics classes.">メトリック・クラスをインポートします。</span></li>
+<li data-value="1"><span class="merged" id="all.3kHtgT" title="原文 : Import metrics classes.">メトリクス・クラスをインポートします。</span></li>
 <li data-value="2"><span class="merged" id="all.3nMhnq" title="原文 : Declare a Counter member variable."><code>Counter</code>メンバー変数を宣言します。</span></li>
 <li data-value="3"><span class="merged" id="all.4Fsdvx.spl1" title="原文 : Create and register the Counter metric in the MetricRegistry."><code>Counter</code>メトリックを作成し、<code>MetricRegistry</code>に登録します。</span> <span class="merged" id="all.4Fsdvx.spl2" title="原文 : This Counter will exist for the lifetime of the application.">この<code>Counter</code>は、アプリケーションの存続期間中存在します。</span> </li>
 <li data-value="4"><span class="merged" id="all.27NfC3" title="原文 : Increment the count.">カウントを増分します。</span></li>
@@ -403,7 +403,7 @@ public class GreetingCards implements Service {
 }</markup>
 
 <ul class="colist">
-<li data-value="1"><span class="merged" id="all.3kHtgT.1" title="原文 : Import metrics classes.">メトリック・クラスをインポートします。</span></li>
+<li data-value="1"><span class="merged" id="all.3kHtgT.1" title="原文 : Import metrics classes.">メトリクス・クラスをインポートします。</span></li>
 <li data-value="2"><span class="merged" id="all.kkkk5" title="原文 : Declare a Meter member variable."><code>Meter</code>メンバー変数を宣言します。</span></li>
 <li data-value="3"><span class="merged" id="all.2LVtVS" title="原文 : Create and register the Meter metric in the MetricRegistry."><code>Meter</code>メトリックを作成し、<code>MetricRegistry</code>に登録します。</span></li>
 <li data-value="4"><span class="merged" id="all.37qHOb" title="原文 : Mark the occurrence of an event.">イベントの発生をマークします。</span></li>
@@ -490,7 +490,7 @@ public class GreetingCards implements Service {
 }</markup>
 
 <ul class="colist">
-<li data-value="1"><span class="merged" id="all.3kHtgT.2" title="原文 : Import metrics classes.">メトリック・クラスをインポートします。</span></li>
+<li data-value="1"><span class="merged" id="all.3kHtgT.2" title="原文 : Import metrics classes.">メトリクス・クラスをインポートします。</span></li>
 <li data-value="2"><span class="merged" id="all.2qFvE0" title="原文 : Declare a Timer member variable."><code>Timer</code>メンバー変数を宣言します。</span></li>
 <li data-value="3"><span class="merged" id="all.2fe4jn" title="原文 : Create and register the Timer metric in the MetricRegistry."><code>Timer</code>メトリックを作成し、<code>MetricRegistry</code>に登録します。</span></li>
 <li data-value="4"><span class="merged" id="all.4DDsWO" title="原文 : Start the timer.">タイマーを開始します。</span></li>
@@ -585,7 +585,7 @@ public class GreetingCards implements Service {
 }</markup>
 
 <ul class="colist">
-<li data-value="1"><span class="merged" id="all.3kHtgT.3" title="原文 : Import metrics classes.">メトリック・クラスをインポートします。</span></li>
+<li data-value="1"><span class="merged" id="all.3kHtgT.3" title="原文 : Import metrics classes.">メトリクス・クラスをインポートします。</span></li>
 <li data-value="2"><span class="merged" id="all.3hX3i8" title="原文 : Declare a Histogram member variable."><code>Histogram</code>メンバー変数を宣言します。</span></li>
 <li data-value="3"><span class="merged" id="all.3IcwD4" title="原文 : Create and register the Histogram metric in the MetricRegistry."><code>Histogram</code>メトリックを作成し、<code>MetricRegistry</code>に登録します。</span></li>
 <li data-value="4"><span class="merged" id="all.1VHvmn" title="原文 : Update the Histogram metric with a random number."><code>Histogram</code>メトリックをランダムな数値で更新します。</span></li>
@@ -766,7 +766,7 @@ public class GreetingCards implements Service {
 }</markup>
 
 <ul class="colist">
-<li data-value="1"><span class="merged" id="all.4S4AFH" title="原文 : Import metrics classes, particularly the SimpleTimer interface for this example.">メトリック・クラス、特にこの例の<code>SimpleTimer</code>インタフェースをインポートします。</span></li>
+<li data-value="1"><span class="merged" id="all.4S4AFH" title="原文 : Import metrics classes, particularly the SimpleTimer interface for this example.">メトリクス・クラス、特にこの例の<code>SimpleTimer</code>インタフェースをインポートします。</span></li>
 <li data-value="2"><span class="merged" id="all.3irmfk" title="原文 : Declare a SimpleTimer member variable."><code>SimpleTimer</code>メンバー変数を宣言します。</span></li>
 <li data-value="3"><span class="merged" id="all.3RH8we" title="原文 : Create and register the SimpleTimer metric in the MetricRegistry."><code>SimpleTimer</code>メトリックを作成し、<code>MetricRegistry</code>に登録します。</span></li>
 <li data-value="4"><span class="merged" id="all.FwePW" title="原文 : Wrap the business logic in the simple timer&rsquo;s time method which updates the count and the total elapsed time.">カウントおよび合計経過時間を更新する単純なタイマーの<code>time</code>メソッドでビジネス・ロジックをラップします。</span></li>
@@ -869,7 +869,7 @@ helidon-metrics   NodePort   10.99.159.2   &lt;none&gt;        8080:31143/TCP   
 </ul>
 <markup
 lang="bash"
-title="ポート<code>31143</code>を使用してメトリック・エンドポイントを検証します。実際のポートは異なる可能性があります:"
+title="ポート<code>31143</code>を使用してメトリクス・エンドポイントを検証します。実際のポートは異なる可能性があります:"
 >curl http://localhost:31143/metrics</markup>
 
 <div class="admonition note">
@@ -878,7 +878,7 @@ title="ポート<code>31143</code>を使用してメトリック・エンドポ�
 
 <h4 id="_prometheus_integration"><span class="merged" id="all.3WUGFL.1" title="原文 : Prometheus integration">Prometheus統合</span></h4>
 <div class="section">
-<p><span class="merged" id="all.4Rq1WH.1.spl1" title="原文 : The metrics service that you just deployed into Kubernetes is already annotated with prometheus.io/scrape:.">Kubernetesにデプロイしたメトリック・サービスには、すでに<code>prometheus.io/scrape:</code>の注釈が付いています。</span> <span class="merged" id="all.4Rq1WH.1.spl2" title="原文 : This will allow Prometheus to discover the service and scrape the metrics.">これにより、Prometheusはサービスを検出し、メトリックをスクレイプできます。</span> <span class="merged" id="all.4Rq1WH.1.spl3" title="原文 : In this exercise, you will install Prometheus into Kubernetes, then verify that it discovered the Helidon metrics in your application.">この演習では、PrometheusをKubernetesにインストールし、アプリケーションでHelidonメトリックが検出されたことを確認します。</span> </p>
+<p><span class="merged" id="all.4Rq1WH.1.spl1" title="原文 : The metrics service that you just deployed into Kubernetes is already annotated with prometheus.io/scrape:.">Kubernetesにデプロイしたメトリクス・サービスには、すでに<code>prometheus.io/scrape:</code>の注釈が付いています。</span> <span class="merged" id="all.4Rq1WH.1.spl2" title="原文 : This will allow Prometheus to discover the service and scrape the metrics.">これにより、Prometheusはサービスを検出し、メトリクスをスクレイプできます。</span> <span class="merged" id="all.4Rq1WH.1.spl3" title="原文 : In this exercise, you will install Prometheus into Kubernetes, then verify that it discovered the Helidon metrics in your application.">この演習では、PrometheusをKubernetesにインストールし、アプリケーションでHelidonメトリクスが検出されたことを確認します。</span> </p>
 
 <markup
 lang="bash"
@@ -922,15 +922,15 @@ title="アプリケーションKubernetesリソースを削除します:"
 
 <h3 id="_summary"><span class="merged" id="all.1nTCR.7"  title="原文:: Summary">サマリー</span></h3>
 <div class="section">
-<p><span class="merged" id="all.AGq8p" title="原文 : This guide demonstrated how to use metrics in a Helidon SE application using various combinations of metrics and scopes.">このガイドでは、メトリックとスコープの様々な組合せを使用して、Helidon SEアプリケーションでメトリックを使用する方法について説明しました。</span></p>
+<p><span class="merged" id="all.AGq8p" title="原文 : This guide demonstrated how to use metrics in a Helidon SE application using various combinations of metrics and scopes.">このガイドでは、メトリクスとスコープの様々な組合せを使用して、Helidon SEアプリケーションでメトリクスを使用する方法について説明しました。</span></p>
 
 <ul class="ulist">
 <li>
-<p><span class="merged" id="all.3Mkxqz.1" title="原文 : Access metrics for all three scopes: base, vendor, and application">3つのスコープすべてのアクセス・メトリック: ベース、ベンダーおよびアプリケーション</span></p>
+<p><span class="merged" id="all.3Mkxqz.1" title="原文 : Access metrics for all three scopes: base, vendor, and application">3つのスコープすべてのアクセス・メトリクス: ベース、ベンダーおよびアプリケーション</span></p>
 
 </li>
 <li>
-<p><span class="merged" id="all.ZrEP5" title="原文 : Configure metrics that are updated by the application when an application REST endpoint is invoked">アプリケーションRESTエンドポイントの起動時にアプリケーションによって更新されるメトリックを構成</span></p>
+<p><span class="merged" id="all.ZrEP5" title="原文 : Configure metrics that are updated by the application when an application REST endpoint is invoked">アプリケーションRESTエンドポイントの起動時にアプリケーションによって更新されるメトリクスを構成</span></p>
 
 </li>
 <li>
@@ -938,7 +938,7 @@ title="アプリケーションKubernetesリソースを削除します:"
 
 </li>
 <li>
-<p><span class="merged" id="all.1cNgkv.1" title="原文 : Integrate Helidon metrics with Kubernetes and Prometheus">HelidonメトリックとKubernetesおよびPrometheusの統合</span></p>
+<p><span class="merged" id="all.1cNgkv.1" title="原文 : Integrate Helidon metrics with Kubernetes and Prometheus">HelidonメトリクスとKubernetesおよびPrometheusの統合</span></p>
 
 </li>
 </ul>
@@ -946,11 +946,11 @@ title="アプリケーションKubernetesリソースを削除します:"
 
 <ul class="ulist">
 <li>
-<p><span class="merged" id="all.22JpPF" title="原文 : MicroProfile Metrics specification at https://github.com/eclipse/microprofile-metrics/releases/tag/1.1"><a href="https://github.com/eclipse/microprofile-metrics/releases/tag/1.1" id="" target="_blank" >https://github.com/eclipse/microprofile-metrics/releases/tag/ 1.1</a>のMicroProfileメトリック仕様</span></p>
+<p><span class="merged" id="all.22JpPF" title="原文 : MicroProfile Metrics specification at https://github.com/eclipse/microprofile-metrics/releases/tag/1.1"><a href="https://github.com/eclipse/microprofile-metrics/releases/tag/1.1" id="" target="_blank" >https://github.com/eclipse/microprofile-metrics/releases/tag/ 1.1</a>のMicroProfileメトリクス仕様</span></p>
 
 </li>
 <li>
-<p><span class="merged" id="all.1zpGk5" title="原文 : MicroProfile Metrics Javadoc at https://javadoc.io/doc/org.eclipse.microprofile.metrics/microprofile-metrics-api/1.1.1"><a href="https://javadoc.io/doc/org.eclipse.microprofile.metrics/microprofile-metrics-api/1.1.1" id="" target="_blank" >https://javadoc.io/doc/org.eclipse.microprofile.metrics/microprofile-metrics-api/ 1.1.1</a>のMicroProfileメトリックJavadoc</span></p>
+<p><span class="merged" id="all.1zpGk5" title="原文 : MicroProfile Metrics Javadoc at https://javadoc.io/doc/org.eclipse.microprofile.metrics/microprofile-metrics-api/1.1.1"><a href="https://javadoc.io/doc/org.eclipse.microprofile.metrics/microprofile-metrics-api/1.1.1" id="" target="_blank" >https://javadoc.io/doc/org.eclipse.microprofile.metrics/microprofile-metrics-api/ 1.1.1</a>のMicroProfileメトリクスJavadoc</span></p>
 
 </li>
 <li>

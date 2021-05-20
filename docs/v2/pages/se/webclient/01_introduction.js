@@ -21,7 +21,7 @@
 
 </li>
 <li>
-<p><span class="merged" id="all.3uSpEN" title="原文 : Tracing, metrics and security propagation Automatically propagates the configured tracing, metrics and security settings of the Helidon WebServer to the WebClient and uses them during request and response."><strong>「トレース、メトリックおよびセキュリティ伝播」</strong><br>Helidon WebServerの構成済トレース、メトリックおよびセキュリティ設定をWebClientに自動的に伝播し、リクエストおよびレスポンス時に使用します。</span></p>
+<p><span class="merged" id="all.3uSpEN" title="原文 : Tracing, metrics and security propagation Automatically propagates the configured tracing, metrics and security settings of the Helidon WebServer to the WebClient and uses them during request and response."><strong>「トレース、メトリクスおよびセキュリティ伝播」</strong><br>Helidon WebServerの構成済トレース、メトリクスおよびセキュリティ設定をWebClientに自動的に伝播し、リクエストおよびレスポンス時に使用します。</span></p>
 
 </li>
 </ul></dd>

@@ -28,9 +28,9 @@
 <p></p>
 <p><span class="merged" id="all.4W684w" title="原文 : Learn how to use Helidon MP built-in and custom health checks.">Helidon MPの組込みヘルス・チェックとカスタム・ヘルス・チェックの使用方法について説明します。</span></p>
 </v-card-text> </v-card> </v-flex> <v-flex xs12 sm4 lg3> <v-card> <router-link to="/mp/guides/05_metrics"><div class="card__link-hover"/>
-</router-link> <v-card-title primary class="headline layout justify-center"><span style="text-align:center">MPメトリック・ガイド</span></v-card-title> <v-card-text class="caption">
+</router-link> <v-card-title primary class="headline layout justify-center"><span style="text-align:center">MPメトリクス・ガイド</span></v-card-title> <v-card-text class="caption">
 <p></p>
-<p><span class="merged" id="all.22vWCF" title="原文 : Learn how to use Helidon MP built-in and application metrics.">Helidon MPの組込みメトリックおよびアプリケーション・メトリックの使用方法について説明します。</span></p>
+<p><span class="merged" id="all.22vWCF" title="原文 : Learn how to use Helidon MP built-in and application metrics.">Helidon MPの組込みメトリクスおよびアプリケーション・メトリクスの使用方法について説明します。</span></p>
 </v-card-text> </v-card> </v-flex> <v-flex xs12 sm4 lg3> <v-card> <router-link to="/mp/guides/06_tracing"><div class="card__link-hover"/>
 </router-link> <v-card-title primary class="headline layout justify-center"><span style="text-align:center">MPトレース・ガイド</span></v-card-title> <v-card-text class="caption">
 <p></p>

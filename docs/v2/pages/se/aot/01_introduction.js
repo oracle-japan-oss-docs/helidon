@@ -114,7 +114,7 @@
 <tr>
 <td class=""><span class="merged" id="all.5W6W2.55" title="原文 : ✅">✅</span></td>
 <td class=""><strong>&#160;</strong></td>
-<td class=""><span class="merged" id="all.4LL0ot.6"  title="原文:: Metrics">メトリック</span></td>
+<td class=""><span class="merged" id="all.4LL0ot.6"  title="原文:: Metrics">メトリクス</span></td>
 <td class="">&#160;</td>
 </tr>
 <tr>
@@ -149,8 +149,8 @@
 </tr>
 <tr>
 <td class=""><span class="merged" id="all.5W6W2.61" title="原文 : ✅">✅</span></td>
-<td class=""><span class="merged" id="all.3H9ySM.2"  title="原文:: Metrics"><strong>メトリック</strong></span></td>
-<td class=""><span class="merged" id="all.4LL0ot.7"  title="原文:: Metrics">メトリック</span></td>
+<td class=""><span class="merged" id="all.3H9ySM.2"  title="原文:: Metrics"><strong>メトリクス</strong></span></td>
+<td class=""><span class="merged" id="all.4LL0ot.7"  title="原文:: Metrics">メトリクス</span></td>
 <td class="">&#160;</td>
 </tr>
 <tr>
@@ -324,7 +324,7 @@
 <tr>
 <td class=""><span class="merged" id="all.5W6W2.88" title="原文 : ✅">✅</span></td>
 <td class=""><strong>&#160;</strong></td>
-<td class=""><span class="merged" id="all.4LL0ot.8"  title="原文:: Metrics">メトリック</span></td>
+<td class=""><span class="merged" id="all.4LL0ot.8"  title="原文:: Metrics">メトリクス</span></td>
 <td class="">&#160;</td>
 </tr>
 <tr>
@@ -414,7 +414,7 @@
 <tr>
 <td class=""><span class="merged" id="all.5W6W2.102" title="原文 : ✅">✅</span></td>
 <td class=""><strong>&#160;</strong></td>
-<td class=""><span class="merged" id="all.4LL0ot.9"  title="原文:: Metrics">メトリック</span></td>
+<td class=""><span class="merged" id="all.4LL0ot.9"  title="原文:: Metrics">メトリクス</span></td>
 <td class="">&#160;</td>
 </tr>
 <tr>
@@ -426,7 +426,7 @@
 <tr>
 <td class=""><span class="merged" id="all.5W6W2.104" title="原文 : ✅">✅</span></td>
 <td class=""><strong>&#160;</strong></td>
-<td class=""><span class="merged" id="all.4LL0ot.10"  title="原文:: Metrics">メトリック</span></td>
+<td class=""><span class="merged" id="all.4LL0ot.10"  title="原文:: Metrics">メトリクス</span></td>
 <td class="">&#160;</td>
 </tr>
 </tbody>

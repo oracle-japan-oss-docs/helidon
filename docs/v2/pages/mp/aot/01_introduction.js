@@ -131,8 +131,8 @@
 </tr>
 <tr>
 <td class=""><span class="merged" id="all.5W6W2.10" title="原文 : ✅">✅</span></td>
-<td class=""><span class="merged" id="all.3H9ySM"  title="原文:: Metrics"><strong>メトリック</strong></span></td>
-<td class=""><span class="merged" id="all.4LL0ot"  title="原文:: Metrics">メトリック</span></td>
+<td class=""><span class="merged" id="all.3H9ySM"  title="原文:: Metrics"><strong>メトリクス</strong></span></td>
+<td class=""><span class="merged" id="all.4LL0ot"  title="原文:: Metrics">メトリクス</span></td>
 <td class="">&#160;</td>
 </tr>
 <tr>
@@ -312,7 +312,7 @@
 <tr>
 <td class=""><span class="merged" id="all.5W6W2.36" title="原文 : ✅">✅</span></td>
 <td class=""><strong>&#160;</strong></td>
-<td class=""><span class="merged" id="all.4LL0ot.1"  title="原文:: Metrics">メトリック</span></td>
+<td class=""><span class="merged" id="all.4LL0ot.1"  title="原文:: Metrics">メトリクス</span></td>
 <td class="">&#160;</td>
 </tr>
 <tr>
@@ -348,13 +348,13 @@
 <tr>
 <td class=""><span class="merged" id="all.5W6W2.39" title="原文 : ✅">✅</span></td>
 <td class=""><strong>&#160;</strong></td>
-<td class=""><span class="merged" id="all.4LL0ot.2"  title="原文:: Metrics">メトリック</span></td>
+<td class=""><span class="merged" id="all.4LL0ot.2"  title="原文:: Metrics">メトリクス</span></td>
 <td class="">&#160;</td>
 </tr>
 <tr>
 <td class=""><span class="merged" id="all.5W6W2.40" title="原文 : ✅">✅</span></td>
-<td class=""><span class="merged" id="all.3H9ySM.1"  title="原文:: Metrics"><strong>メトリック</strong></span></td>
-<td class=""><span class="merged" id="all.4LL0ot.3"  title="原文:: Metrics">メトリック</span></td>
+<td class=""><span class="merged" id="all.3H9ySM.1"  title="原文:: Metrics"><strong>メトリクス</strong></span></td>
+<td class=""><span class="merged" id="all.4LL0ot.3"  title="原文:: Metrics">メトリクス</span></td>
 <td class="">&#160;</td>
 </tr>
 </tbody>

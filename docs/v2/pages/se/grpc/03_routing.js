@@ -57,7 +57,7 @@ lang="java"
 <div class="section">
 <p><span class="merged" id="all.2krczF" title="原文 : GrpcRouting also allows you to specify custom interceptors that will be applied to all registered services."><code>GrpcRouting</code>では、すべての登録済サービスに適用される<router-link @click.native="this.scrollFix('#05_interceptors.adoc')" to="#05_interceptors.adoc">「カスタム・インターセプタ」</router-link>を指定することもできます。</span></p>
 
-<p><span class="merged" id="all.3fCvov" title="原文 : This is useful to configure features such as tracing, security and metrics collection, and we provide built-in interceptors for those purposes that you can simply register with the routing definition:">これは、トレース、セキュリティ、メトリック収集などの機能を構成する場合に役立ちます。また、ルーティング定義に登録するだけの目的で組込みインターセプタを提供します:</span></p>
+<p><span class="merged" id="all.3fCvov" title="原文 : This is useful to configure features such as tracing, security and metrics collection, and we provide built-in interceptors for those purposes that you can simply register with the routing definition:">これは、トレース、セキュリティ、メトリクス収集などの機能を構成する場合に役立ちます。また、ルーティング定義に登録するだけの目的で組込みインターセプタを提供します:</span></p>
 
 <markup
 lang="java"

@@ -133,19 +133,19 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt><span class="merged" id="DataChunk.2fBcX7"  title="原文:: All Superinterfaces:">すべてのスーパー・インタフェース:</span></dt>
-<dd><span class="merged" id="DataChunk.u2owG"  title="原文: Iterable&lt;ByteBuffer&gt;"><code><a class="externalLink" href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Iterable.html?is-external=true" >Iterable</a>&lt;<a class="externalLink" href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html?is-external=true" >ByteBuffer</a>></code></span></dd>
+<dd><span class="merged" id="DataChunk.u2owG"  title="原文: Iterable&lt;ByteBuffer&gt;"><code><a class="externalLink" href="https://docs.oracle.com/javase/jp/11/docs/api/java.base/java/lang/Iterable.html?is-external=true" >Iterable</a>&lt;<a class="externalLink" href="https://docs.oracle.com/javase/jp/11/docs/api/java.base/java/nio/ByteBuffer.html?is-external=true" >ByteBuffer</a>></code></span></dd>
 </dl>
 <dl>
 <dt><span class="merged" id="DataChunk.3nXlcG"  title="原文:: Functional Interface:">関数型インタフェース:</span></dt>
 <dd><span class="merged" id="DataChunk.31RZRo"  title="原文: This is a functional interface and can therefore be used as the assignment target for a lambda expression or method reference.">これは関数型インタフェースなので、ラムダ式またはメソッド参照の代入先として使用できます。</span></dd>
 </dl>
 <hr>
-<pre><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/FunctionalInterface.html?is-external=true" title="class or interface in java.lang" class="externalLink">@FunctionalInterface</a>
+<pre><a href="https://docs.oracle.com/javase/jp/11/docs/api/java.base/java/lang/FunctionalInterface.html?is-external=true" title="class or interface in java.lang" class="externalLink">@FunctionalInterface</a>
 public interface <span class="typeNameLabel">DataChunk</span>
-extends <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Iterable</a>&lt;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html?is-external=true" title="class or interface in java.nio" class="externalLink">ByteBuffer</a>&gt;</pre>
+extends <a href="https://docs.oracle.com/javase/jp/11/docs/api/java.base/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Iterable</a>&lt;<a href="https://docs.oracle.com/javase/jp/11/docs/api/java.base/java/nio/ByteBuffer.html?is-external=true" title="class or interface in java.nio" class="externalLink">ByteBuffer</a>&gt;</pre>
 <div class="block"><span class="merged" id="DataChunk.3ePrt0" title="原文 : The DataChunk represents a part of the HTTP body content.">DataChunkは、HTTP本文コンテンツの一部を表します。</span>
  <p>
- <span class="merged" id="DataChunk.bOvwL.spl1" title="原文 : The DataChunk and the content it carries stay immutable as long as method release() is not called.">DataChunkとそれが保持するコンテンツは、メソッド<a href="#release()"><code>release()</code></a>が呼び出されないかぎり不変のままです。</span> <span class="merged" id="DataChunk.bOvwL.spl2" title="原文 : After that, the given instance and the associated data structure instances (e.g., the ByteBuffer array obtained by data()) should not be used.">その後、指定されたインスタンスおよび関連付けられたデータ構造インスタンス(例: <a href="#data()"><code>data()</code></a>によって取得された<a class="externalLink" href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html?is-external=true" ><code>ByteBuffer</code></a>配列)は使用しないでください。</span> <span class="merged" id="DataChunk.bOvwL.spl3" title="原文 : The idea behind this class is to be able to minimize data copying; ideally, in order to achieve the best performance, to not copy them at all.">このクラスの背後には、データのコピーを最小限に抑えることができるという考え方が理想的です。最高のパフォーマンスを実現するには、データのコピーをまったく行わないことが理想的です。</span> <span class="merged" id="DataChunk.bOvwL.spl4" title="原文 : However, the implementations may choose otherwise.">ただし、それ以外の場合は実装で選択できます。</span> 
+ <span class="merged" id="DataChunk.bOvwL.spl1" title="原文 : The DataChunk and the content it carries stay immutable as long as method release() is not called.">DataChunkとそれが保持するコンテンツは、メソッド<a href="#release()"><code>release()</code></a>が呼び出されないかぎり不変のままです。</span> <span class="merged" id="DataChunk.bOvwL.spl2" title="原文 : After that, the given instance and the associated data structure instances (e.g., the ByteBuffer array obtained by data()) should not be used.">その後、指定されたインスタンスおよび関連付けられたデータ構造インスタンス(例: <a href="#data()"><code>data()</code></a>によって取得された<a class="externalLink" href="https://docs.oracle.com/javase/jp/11/docs/api/java.base/java/nio/ByteBuffer.html?is-external=true" ><code>ByteBuffer</code></a>配列)は使用しないでください。</span> <span class="merged" id="DataChunk.bOvwL.spl3" title="原文 : The idea behind this class is to be able to minimize data copying; ideally, in order to achieve the best performance, to not copy them at all.">このクラスの背後には、データのコピーを最小限に抑えることができるという考え方が理想的です。最高のパフォーマンスを実現するには、データのコピーをまったく行わないことが理想的です。</span> <span class="merged" id="DataChunk.bOvwL.spl4" title="原文 : However, the implementations may choose otherwise.">ただし、それ以外の場合は実装で選択できます。</span> 
  <p>
  <span class="merged" id="DataChunk.2AWnD0.spl1" title="原文 : The instances of this class are expected to be accessed by a single thread.">このクラスのインスタンスには、単一のスレッドからアクセスする必要があります。</span> <span class="merged" id="DataChunk.2AWnD0.spl2" title="原文 : Calling the methods of this class (such as data(), release() from different threads may result in a race condition unless an external synchronization is used.">このクラスのメソッド(<a href="#data()"><code>data()</code></a>、<a href="#release()"><code>release()</code></a>など)を別のスレッドから呼び出すと、外部同期が使用されないかぎり、競合状態が発生する可能性があります。</span> </div>
 </li>
@@ -177,28 +177,28 @@ extends <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/ja
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><span class="merged" id="DataChunk.2LIwTR"  title="原文: static DataChunk"><code>static <a href="DataChunk.html" >DataChunk</a></code></span></td>
-<th class="colSecond" scope="row"><span class="merged" id="DataChunk.V8UZv"  title="原文: create​(boolean&nbsp;flush, boolean&nbsp;readOnly, Runnable&nbsp;releaseCallback, ByteBuffer...&nbsp;byteBuffers)"><code><span class="memberNameLink"><a href="#create(boolean,boolean,java.lang.Runnable,java.nio.ByteBuffer...)">create</a></span>​(boolean&nbsp;flush, boolean&nbsp;readOnly, <a class="externalLink" href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runnable.html?is-external=true" >Runnable</a>&nbsp;releaseCallback, <a class="externalLink" href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html?is-external=true" >ByteBuffer</a>...&nbsp;byteBuffers)</code></span></th>
+<th class="colSecond" scope="row"><span class="merged" id="DataChunk.V8UZv"  title="原文: create​(boolean&nbsp;flush, boolean&nbsp;readOnly, Runnable&nbsp;releaseCallback, ByteBuffer...&nbsp;byteBuffers)"><code><span class="memberNameLink"><a href="#create(boolean,boolean,java.lang.Runnable,java.nio.ByteBuffer...)">create</a></span>​(boolean&nbsp;flush, boolean&nbsp;readOnly, <a class="externalLink" href="https://docs.oracle.com/javase/jp/11/docs/api/java.base/java/lang/Runnable.html?is-external=true" >Runnable</a>&nbsp;releaseCallback, <a class="externalLink" href="https://docs.oracle.com/javase/jp/11/docs/api/java.base/java/nio/ByteBuffer.html?is-external=true" >ByteBuffer</a>...&nbsp;byteBuffers)</code></span></th>
 <td class="colLast">
 <div class="block"><span class="merged" id="DataChunk.37jt6A" title="原文 : Creates a reusable byteBuffers chunk.">再利用可能なbyteBuffersチャンクを作成します。</span></div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><span class="merged" id="DataChunk.2LIwTR.1"  title="原文: static DataChunk"><code>static <a href="DataChunk.html" >DataChunk</a></code></span></td>
-<th class="colSecond" scope="row"><span class="merged" id="DataChunk.7RNcF"  title="原文: create​(boolean&nbsp;flush, boolean&nbsp;readOnly, ByteBuffer...&nbsp;byteBuffers)"><code><span class="memberNameLink"><a href="#create(boolean,boolean,java.nio.ByteBuffer...)">create</a></span>​(boolean&nbsp;flush, boolean&nbsp;readOnly, <a class="externalLink" href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html?is-external=true" >ByteBuffer</a>...&nbsp;byteBuffers)</code></span></th>
+<th class="colSecond" scope="row"><span class="merged" id="DataChunk.7RNcF"  title="原文: create​(boolean&nbsp;flush, boolean&nbsp;readOnly, ByteBuffer...&nbsp;byteBuffers)"><code><span class="memberNameLink"><a href="#create(boolean,boolean,java.nio.ByteBuffer...)">create</a></span>​(boolean&nbsp;flush, boolean&nbsp;readOnly, <a class="externalLink" href="https://docs.oracle.com/javase/jp/11/docs/api/java.base/java/nio/ByteBuffer.html?is-external=true" >ByteBuffer</a>...&nbsp;byteBuffers)</code></span></th>
 <td class="colLast">
 <div class="block"><span class="merged" id="DataChunk.1v8KGi" title="原文 : Creates a reusable data chunk.">再利用可能なデータ・チャンクを作成します。</span></div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><span class="merged" id="DataChunk.2LIwTR.2"  title="原文: static DataChunk"><code>static <a href="DataChunk.html" >DataChunk</a></code></span></td>
-<th class="colSecond" scope="row"><span class="merged" id="DataChunk.FWvyZ"  title="原文: create​(boolean&nbsp;flush, Runnable&nbsp;releaseCallback, ByteBuffer...&nbsp;byteBuffers)"><code><span class="memberNameLink"><a href="#create(boolean,java.lang.Runnable,java.nio.ByteBuffer...)">create</a></span>​(boolean&nbsp;flush, <a class="externalLink" href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runnable.html?is-external=true" >Runnable</a>&nbsp;releaseCallback, <a class="externalLink" href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html?is-external=true" >ByteBuffer</a>...&nbsp;byteBuffers)</code></span></th>
+<th class="colSecond" scope="row"><span class="merged" id="DataChunk.FWvyZ"  title="原文: create​(boolean&nbsp;flush, Runnable&nbsp;releaseCallback, ByteBuffer...&nbsp;byteBuffers)"><code><span class="memberNameLink"><a href="#create(boolean,java.lang.Runnable,java.nio.ByteBuffer...)">create</a></span>​(boolean&nbsp;flush, <a class="externalLink" href="https://docs.oracle.com/javase/jp/11/docs/api/java.base/java/lang/Runnable.html?is-external=true" >Runnable</a>&nbsp;releaseCallback, <a class="externalLink" href="https://docs.oracle.com/javase/jp/11/docs/api/java.base/java/nio/ByteBuffer.html?is-external=true" >ByteBuffer</a>...&nbsp;byteBuffers)</code></span></th>
 <td class="colLast">
 <div class="block"><span class="merged" id="DataChunk.37jt6A.1" title="原文 : Creates a reusable byteBuffers chunk.">再利用可能なbyteBuffersチャンクを作成します。</span></div>
 </td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><span class="merged" id="DataChunk.2LIwTR.3"  title="原文: static DataChunk"><code>static <a href="DataChunk.html" >DataChunk</a></code></span></td>
-<th class="colSecond" scope="row"><span class="merged" id="DataChunk.1Ontry"  title="原文: create​(boolean&nbsp;flush, ByteBuffer...&nbsp;byteBuffers)"><code><span class="memberNameLink"><a href="#create(boolean,java.nio.ByteBuffer...)">create</a></span>​(boolean&nbsp;flush, <a class="externalLink" href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html?is-external=true" >ByteBuffer</a>...&nbsp;byteBuffers)</code></span></th>
+<th class="colSecond" scope="row"><span class="merged" id="DataChunk.1Ontry"  title="原文: create​(boolean&nbsp;flush, ByteBuffer...&nbsp;byteBuffers)"><code><span class="memberNameLink"><a href="#create(boolean,java.nio.ByteBuffer...)">create</a></span>​(boolean&nbsp;flush, <a class="externalLink" href="https://docs.oracle.com/javase/jp/11/docs/api/java.base/java/nio/ByteBuffer.html?is-external=true" >ByteBuffer</a>...&nbsp;byteBuffers)</code></span></th>
 <td class="colLast">
 <div class="block"><span class="merged" id="DataChunk.1v8KGi.1" title="原文 : Creates a reusable data chunk.">再利用可能なデータ・チャンクを作成します。</span></div>
 </td>
@@ -212,20 +212,20 @@ extends <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/ja
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><span class="merged" id="DataChunk.2LIwTR.5"  title="原文: static DataChunk"><code>static <a href="DataChunk.html" >DataChunk</a></code></span></td>
-<th class="colSecond" scope="row"><span class="merged" id="DataChunk.2LfEgf"  title="原文: create​(ByteBuffer&nbsp;byteBuffer)"><code><span class="memberNameLink"><a href="#create(java.nio.ByteBuffer)">create</a></span>​(<a class="externalLink" href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html?is-external=true" >ByteBuffer</a>&nbsp;byteBuffer)</code></span></th>
+<th class="colSecond" scope="row"><span class="merged" id="DataChunk.2LfEgf"  title="原文: create​(ByteBuffer&nbsp;byteBuffer)"><code><span class="memberNameLink"><a href="#create(java.nio.ByteBuffer)">create</a></span>​(<a class="externalLink" href="https://docs.oracle.com/javase/jp/11/docs/api/java.base/java/nio/ByteBuffer.html?is-external=true" >ByteBuffer</a>&nbsp;byteBuffer)</code></span></th>
 <td class="colLast">
-<div class="block"><span class="merged" id="DataChunk.2wBGzB" title="原文 : Creates a simple ByteBuffer backed data chunk.">単純な<a class="externalLink" href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html?is-external=true" ><code>ByteBuffer</code></a>バック・データ・チャンクを作成します。</span></div>
+<div class="block"><span class="merged" id="DataChunk.2wBGzB" title="原文 : Creates a simple ByteBuffer backed data chunk.">単純な<a class="externalLink" href="https://docs.oracle.com/javase/jp/11/docs/api/java.base/java/nio/ByteBuffer.html?is-external=true" ><code>ByteBuffer</code></a>バック・データ・チャンクを作成します。</span></div>
 </td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><span class="merged" id="DataChunk.2LIwTR.6"  title="原文: static DataChunk"><code>static <a href="DataChunk.html" >DataChunk</a></code></span></td>
-<th class="colSecond" scope="row"><span class="merged" id="DataChunk.PPBLg"  title="原文: create​(ByteBuffer...&nbsp;byteBuffers)"><code><span class="memberNameLink"><a href="#create(java.nio.ByteBuffer...)">create</a></span>​(<a class="externalLink" href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html?is-external=true" >ByteBuffer</a>...&nbsp;byteBuffers)</code></span></th>
+<th class="colSecond" scope="row"><span class="merged" id="DataChunk.PPBLg"  title="原文: create​(ByteBuffer...&nbsp;byteBuffers)"><code><span class="memberNameLink"><a href="#create(java.nio.ByteBuffer...)">create</a></span>​(<a class="externalLink" href="https://docs.oracle.com/javase/jp/11/docs/api/java.base/java/nio/ByteBuffer.html?is-external=true" >ByteBuffer</a>...&nbsp;byteBuffers)</code></span></th>
 <td class="colLast">
 <div class="block"><span class="merged" id="DataChunk.4bQOsx" title="原文 : Creates a data chunk backed by one or more ByteBuffer.">1つ以上のByteBufferに連動するデータ・チャンクを作成します。</span></div>
 </td>
 </tr>
 <tr id="i8" class="altColor">
-<td class="colFirst"><span class="merged" id="DataChunk.4OCCnf"  title="原文: ByteBuffer[]"><code><a class="externalLink" href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html?is-external=true" >ByteBuffer</a>[]</code></span></td>
+<td class="colFirst"><span class="merged" id="DataChunk.4OCCnf"  title="原文: ByteBuffer[]"><code><a class="externalLink" href="https://docs.oracle.com/javase/jp/11/docs/api/java.base/java/nio/ByteBuffer.html?is-external=true" >ByteBuffer</a>[]</code></span></td>
 <th class="colSecond" scope="row"><span class="merged" id="DataChunk.FSwmF"  title="原文: data()"><code><span class="memberNameLink"><a href="#data()">data</a></span>()</code></span></th>
 <td class="colLast">
 <div class="block"><span class="merged" id="DataChunk.3sRAaw" title="原文 : Returns a representation of this chunk as an array of ByteBuffer.">このチャンクの表現をByteBufferの配列として返します。</span></div>
@@ -235,7 +235,7 @@ extends <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/ja
 <td class="colFirst"><span class="merged" id="DataChunk.1P01eb"  title="原文: default DataChunk"><code>default <a href="DataChunk.html" >DataChunk</a></code></span></td>
 <th class="colSecond" scope="row"><span class="merged" id="DataChunk.ivhVQ"  title="原文: duplicate()"><code><span class="memberNameLink"><a href="#duplicate()">duplicate</a></span>()</code></span></th>
 <td class="colLast">
-<div class="block"><span class="merged" id="DataChunk.4NNRs2" title="原文 : Makes a copy of this data chunk including its underlying ByteBuffer.">基礎となる<a class="externalLink" href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html?is-external=true" ><code>ByteBuffer</code></a>を含む、このデータ・チャンクのコピーを作成します。</span></div>
+<div class="block"><span class="merged" id="DataChunk.4NNRs2" title="原文 : Makes a copy of this data chunk including its underlying ByteBuffer.">基礎となる<a class="externalLink" href="https://docs.oracle.com/javase/jp/11/docs/api/java.base/java/nio/ByteBuffer.html?is-external=true" ><code>ByteBuffer</code></a>を含む、このデータ・チャンクのコピーを作成します。</span></div>
 </td>
 </tr>
 <tr id="i10" class="altColor">
@@ -274,7 +274,7 @@ extends <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/ja
 </td>
 </tr>
 <tr id="i15" class="rowColor">
-<td class="colFirst"><span class="merged" id="DataChunk.B3BEu"  title="原文: default Iterator&lt;ByteBuffer&gt;"><code>default <a class="externalLink" href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Iterator.html?is-external=true" >Iterator</a>&lt;<a class="externalLink" href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html?is-external=true" >ByteBuffer</a>></code></span></td>
+<td class="colFirst"><span class="merged" id="DataChunk.B3BEu"  title="原文: default Iterator&lt;ByteBuffer&gt;"><code>default <a class="externalLink" href="https://docs.oracle.com/javase/jp/11/docs/api/java.base/java/util/Iterator.html?is-external=true" >Iterator</a>&lt;<a class="externalLink" href="https://docs.oracle.com/javase/jp/11/docs/api/java.base/java/nio/ByteBuffer.html?is-external=true" >ByteBuffer</a>></code></span></td>
 <th class="colSecond" scope="row"><span class="merged" id="DataChunk.4ASJzi"  title="原文: iterator()"><code><span class="memberNameLink"><a href="#iterator()">iterator</a></span>()</code></span></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -293,7 +293,7 @@ extends <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/ja
 </td>
 </tr>
 <tr id="i18" class="altColor">
-<td class="colFirst"><span class="merged" id="DataChunk.3ZlG74"  title="原文: default Optional&lt;CompletableFuture&lt;DataChunk&gt;&gt;"><code>default <a class="externalLink" href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Optional.html?is-external=true" >Optional</a>&lt;<a class="externalLink" href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html?is-external=true" >CompletableFuture</a>&lt;<a href="DataChunk.html" >DataChunk</a>>></code></span></td>
+<td class="colFirst"><span class="merged" id="DataChunk.3ZlG74"  title="原文: default Optional&lt;CompletableFuture&lt;DataChunk&gt;&gt;"><code>default <a class="externalLink" href="https://docs.oracle.com/javase/jp/11/docs/api/java.base/java/util/Optional.html?is-external=true" >Optional</a>&lt;<a class="externalLink" href="https://docs.oracle.com/javase/jp/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html?is-external=true" >CompletableFuture</a>&lt;<a href="DataChunk.html" >DataChunk</a>>></code></span></td>
 <th class="colSecond" scope="row"><span class="merged" id="DataChunk.OrfCb"  title="原文: writeFuture()"><code><span class="memberNameLink"><a href="#writeFuture()">writeFuture</a></span>()</code></span></th>
 <td class="colLast">
 <div class="block"><span class="merged" id="DataChunk.3AT4jP" title="原文 : Returns a write future associated with this chunk.">このチャンクに関連付けられた将来の書込みを返します。</span></div>
@@ -301,7 +301,7 @@ extends <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/ja
 </tr>
 <tr id="i19" class="rowColor">
 <td class="colFirst"><span class="merged" id="DataChunk.izgdQ.1"  title="原文: default void"><code>default void</code></span></td>
-<th class="colSecond" scope="row"><span class="merged" id="DataChunk.33Yq1O"  title="原文: writeFuture​(CompletableFuture&lt;DataChunk&gt;&nbsp;writeFuture)"><code><span class="memberNameLink"><a href="#writeFuture(java.util.concurrent.CompletableFuture)">writeFuture</a></span>​(<a class="externalLink" href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html?is-external=true" >CompletableFuture</a>&lt;<a href="DataChunk.html" >DataChunk</a>>&nbsp;writeFuture)</code></span></th>
+<th class="colSecond" scope="row"><span class="merged" id="DataChunk.33Yq1O"  title="原文: writeFuture​(CompletableFuture&lt;DataChunk&gt;&nbsp;writeFuture)"><code><span class="memberNameLink"><a href="#writeFuture(java.util.concurrent.CompletableFuture)">writeFuture</a></span>​(<a class="externalLink" href="https://docs.oracle.com/javase/jp/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html?is-external=true" >CompletableFuture</a>&lt;<a href="DataChunk.html" >DataChunk</a>>&nbsp;writeFuture)</code></span></th>
 <td class="colLast">
 <div class="block"><span class="merged" id="DataChunk.3ggOUW" title="原文 : Set a write future that will complete when data chunk has been written to a connection.">データ・チャンクが接続に書き込まれたときに完了する書込み未来を設定します。</span></div>
 </td>
@@ -311,8 +311,8 @@ extends <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/ja
 <li class="blockList"><a id="methods.inherited.from.class.java.lang.Iterable">
 <!--   -->
 </a>
-<h3><span class="merged" id="DataChunk.3yXFmy"  title="原文: Methods inherited from interface&nbsp;java.lang.Iterable">インタフェース&nbsp;java.lang.<a class="externalLink" href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Iterable.html?is-external=true" >Iterable</a>から継承されたメソッド</span></h3>
-<span class="merged" id="DataChunk.3mEggA"  title="原文: forEach, spliterator"><code><a class="externalLink" href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Iterable.html?is-external=true#forEach(java.util.function.Consumer)" >forEach</a>, <a class="externalLink" href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Iterable.html?is-external=true#spliterator()" >spliterator</a></code></span></li>
+<h3><span class="merged" id="DataChunk.3yXFmy"  title="原文: Methods inherited from interface&nbsp;java.lang.Iterable">インタフェース&nbsp;java.lang.<a class="externalLink" href="https://docs.oracle.com/javase/jp/11/docs/api/java.base/java/lang/Iterable.html?is-external=true" >Iterable</a>から継承されたメソッド</span></h3>
+<span class="merged" id="DataChunk.3mEggA"  title="原文: forEach, spliterator"><code><a class="externalLink" href="https://docs.oracle.com/javase/jp/11/docs/api/java.base/java/lang/Iterable.html?is-external=true#forEach(java.util.function.Consumer)" >forEach</a>, <a class="externalLink" href="https://docs.oracle.com/javase/jp/11/docs/api/java.base/java/lang/Iterable.html?is-external=true#spliterator()" >spliterator</a></code></span></li>
 </ul>
 </li>
 </ul>
@@ -336,8 +336,8 @@ extends <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/ja
 <ul class="blockList">
 <li class="blockList">
 <h4><span class="merged" id="DataChunk.2dJdql"  title="原文:: create">create</span></h4>
-<pre class="methodSignature">static&nbsp;<a href="DataChunk.html" title="interface in io.helidon.common.http">DataChunk</a>&nbsp;create&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html?is-external=true" title="class or interface in java.nio" class="externalLink">ByteBuffer</a>&nbsp;byteBuffer)</pre>
-<div class="block"><span class="merged" id="DataChunk.1DCRk3.spl1" title="原文 : Creates a simple ByteBuffer backed data chunk.">単純な<a class="externalLink" href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html?is-external=true" ><code>ByteBuffer</code></a>バック・データ・チャンクを作成します。</span> <span class="merged" id="DataChunk.1DCRk3.spl2" title="原文 : The resulting instance doesn&apos;t have any kind of a lifecycle and as such, it doesn&apos;t need to be released.">結果のインスタンスにはライフサイクルがないため、インスタンスを解放する必要はありません。</span> </div>
+<pre class="methodSignature">static&nbsp;<a href="DataChunk.html" title="interface in io.helidon.common.http">DataChunk</a>&nbsp;create&#8203;(<a href="https://docs.oracle.com/javase/jp/11/docs/api/java.base/java/nio/ByteBuffer.html?is-external=true" title="class or interface in java.nio" class="externalLink">ByteBuffer</a>&nbsp;byteBuffer)</pre>
+<div class="block"><span class="merged" id="DataChunk.1DCRk3.spl1" title="原文 : Creates a simple ByteBuffer backed data chunk.">単純な<a class="externalLink" href="https://docs.oracle.com/javase/jp/11/docs/api/java.base/java/nio/ByteBuffer.html?is-external=true" ><code>ByteBuffer</code></a>バック・データ・チャンクを作成します。</span> <span class="merged" id="DataChunk.1DCRk3.spl2" title="原文 : The resulting instance doesn&apos;t have any kind of a lifecycle and as such, it doesn&apos;t need to be released.">結果のインスタンスにはライフサイクルがないため、インスタンスを解放する必要はありません。</span> </div>
 <dl>
 <dt><span class="merged" id="DataChunk.2p3GDA"  title="原文: Parameters:"><span class="paramLabel">パラメータ:</span></span></dt>
 <dd><span class="merged" id="DataChunk.cH57D" title="原文 : byteBuffer - a byte buffer to create the request chunk from"><code>byteBuffer</code> - リクエスト・チャンクの作成元となるbyteバッファ</span></dd>
@@ -368,7 +368,7 @@ extends <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/ja
 <ul class="blockList">
 <li class="blockList">
 <h4><span class="merged" id="DataChunk.2dJdql.2"  title="原文:: create">create</span></h4>
-<pre class="methodSignature">static&nbsp;<a href="DataChunk.html" title="interface in io.helidon.common.http">DataChunk</a>&nbsp;create&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html?is-external=true" title="class or interface in java.nio" class="externalLink">ByteBuffer</a>...&nbsp;byteBuffers)</pre>
+<pre class="methodSignature">static&nbsp;<a href="DataChunk.html" title="interface in io.helidon.common.http">DataChunk</a>&nbsp;create&#8203;(<a href="https://docs.oracle.com/javase/jp/11/docs/api/java.base/java/nio/ByteBuffer.html?is-external=true" title="class or interface in java.nio" class="externalLink">ByteBuffer</a>...&nbsp;byteBuffers)</pre>
 <div class="block"><span class="merged" id="DataChunk.2UIKX3.spl1" title="原文 : Creates a data chunk backed by one or more ByteBuffer.">1つ以上のByteBufferに連動するデータ・チャンクを作成します。</span> <span class="merged" id="DataChunk.2UIKX3.spl2" title="原文 : The resulting instance doesn&apos;t have any kind of a lifecycle and as such, it doesn&apos;t need to be released.">結果のインスタンスにはライフサイクルがないため、インスタンスを解放する必要はありません。</span> </div>
 <dl>
 <dt><span class="merged" id="DataChunk.2p3GDA.2"  title="原文: Parameters:"><span class="paramLabel">パラメータ:</span></span></dt>
@@ -385,7 +385,7 @@ extends <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/ja
 <li class="blockList">
 <h4><span class="merged" id="DataChunk.2dJdql.3"  title="原文:: create">create</span></h4>
 <pre class="methodSignature">static&nbsp;<a href="DataChunk.html" title="interface in io.helidon.common.http">DataChunk</a>&nbsp;create&#8203;(boolean&nbsp;flush,
-                        <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html?is-external=true" title="class or interface in java.nio" class="externalLink">ByteBuffer</a>...&nbsp;byteBuffers)</pre>
+                        <a href="https://docs.oracle.com/javase/jp/11/docs/api/java.base/java/nio/ByteBuffer.html?is-external=true" title="class or interface in java.nio" class="externalLink">ByteBuffer</a>...&nbsp;byteBuffers)</pre>
 <div class="block"><span class="merged" id="DataChunk.1v8KGi.2" title="原文 : Creates a reusable data chunk.">再利用可能なデータ・チャンクを作成します。</span></div>
 <dl>
 <dt><span class="merged" id="DataChunk.2p3GDA.3"  title="原文: Parameters:"><span class="paramLabel">パラメータ:</span></span></dt>
@@ -404,7 +404,7 @@ extends <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/ja
 <h4><span class="merged" id="DataChunk.2dJdql.4"  title="原文:: create">create</span></h4>
 <pre class="methodSignature">static&nbsp;<a href="DataChunk.html" title="interface in io.helidon.common.http">DataChunk</a>&nbsp;create&#8203;(boolean&nbsp;flush,
                         boolean&nbsp;readOnly,
-                        <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html?is-external=true" title="class or interface in java.nio" class="externalLink">ByteBuffer</a>...&nbsp;byteBuffers)</pre>
+                        <a href="https://docs.oracle.com/javase/jp/11/docs/api/java.base/java/nio/ByteBuffer.html?is-external=true" title="class or interface in java.nio" class="externalLink">ByteBuffer</a>...&nbsp;byteBuffers)</pre>
 <div class="block"><span class="merged" id="DataChunk.1v8KGi.3" title="原文 : Creates a reusable data chunk.">再利用可能なデータ・チャンクを作成します。</span></div>
 <dl>
 <dt><span class="merged" id="DataChunk.2p3GDA.4"  title="原文: Parameters:"><span class="paramLabel">パラメータ:</span></span></dt>
@@ -423,8 +423,8 @@ extends <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/ja
 <li class="blockList">
 <h4><span class="merged" id="DataChunk.2dJdql.5"  title="原文:: create">create</span></h4>
 <pre class="methodSignature">static&nbsp;<a href="DataChunk.html" title="interface in io.helidon.common.http">DataChunk</a>&nbsp;create&#8203;(boolean&nbsp;flush,
-                        <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runnable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Runnable</a>&nbsp;releaseCallback,
-                        <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html?is-external=true" title="class or interface in java.nio" class="externalLink">ByteBuffer</a>...&nbsp;byteBuffers)</pre>
+                        <a href="https://docs.oracle.com/javase/jp/11/docs/api/java.base/java/lang/Runnable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Runnable</a>&nbsp;releaseCallback,
+                        <a href="https://docs.oracle.com/javase/jp/11/docs/api/java.base/java/nio/ByteBuffer.html?is-external=true" title="class or interface in java.nio" class="externalLink">ByteBuffer</a>...&nbsp;byteBuffers)</pre>
 <div class="block"><span class="merged" id="DataChunk.37jt6A.2" title="原文 : Creates a reusable byteBuffers chunk.">再利用可能なbyteBuffersチャンクを作成します。</span></div>
 <dl>
 <dt><span class="merged" id="DataChunk.2p3GDA.5"  title="原文: Parameters:"><span class="paramLabel">パラメータ:</span></span></dt>
@@ -444,8 +444,8 @@ extends <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/ja
 <h4><span class="merged" id="DataChunk.2dJdql.6"  title="原文:: create">create</span></h4>
 <pre class="methodSignature">static&nbsp;<a href="DataChunk.html" title="interface in io.helidon.common.http">DataChunk</a>&nbsp;create&#8203;(boolean&nbsp;flush,
                         boolean&nbsp;readOnly,
-                        <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runnable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Runnable</a>&nbsp;releaseCallback,
-                        <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html?is-external=true" title="class or interface in java.nio" class="externalLink">ByteBuffer</a>...&nbsp;byteBuffers)</pre>
+                        <a href="https://docs.oracle.com/javase/jp/11/docs/api/java.base/java/lang/Runnable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Runnable</a>&nbsp;releaseCallback,
+                        <a href="https://docs.oracle.com/javase/jp/11/docs/api/java.base/java/nio/ByteBuffer.html?is-external=true" title="class or interface in java.nio" class="externalLink">ByteBuffer</a>...&nbsp;byteBuffers)</pre>
 <div class="block"><span class="merged" id="DataChunk.37jt6A.3" title="原文 : Creates a reusable byteBuffers chunk.">再利用可能なbyteBuffersチャンクを作成します。</span></div>
 <dl>
 <dt><span class="merged" id="DataChunk.2p3GDA.6"  title="原文: Parameters:"><span class="paramLabel">パラメータ:</span></span></dt>
@@ -464,7 +464,7 @@ extends <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/ja
 <ul class="blockList">
 <li class="blockList">
 <h4><span class="merged" id="DataChunk.3BVV6R"  title="原文:: data">data</span></h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html?is-external=true" title="class or interface in java.nio" class="externalLink">ByteBuffer</a>[]&nbsp;data()</pre>
+<pre class="methodSignature"><a href="https://docs.oracle.com/javase/jp/11/docs/api/java.base/java/nio/ByteBuffer.html?is-external=true" title="class or interface in java.nio" class="externalLink">ByteBuffer</a>[]&nbsp;data()</pre>
 <div class="block"><span class="merged" id="DataChunk.3sRAaw.1" title="原文 : Returns a representation of this chunk as an array of ByteBuffer.">このチャンクの表現をByteBufferの配列として返します。</span>
  <p>
  <span class="merged" id="DataChunk.1TxckX.spl1" title="原文 : It is expected the returned byte buffers hold references to data that will become stale upon calling method release().">返されるバイト・バッファには、メソッド<a href="#release()"><code>release()</code></a>の呼出し時に失効するデータへの参照が保持されることが期待されます。</span> <span class="merged" id="DataChunk.1TxckX.spl2" title="原文 : (For instance, the memory segment is pooled by the underlying TCP server and is reused for a subsequent request chunk.)">(たとえば、メモリー・セグメントは基礎となるTCPサーバーによってプールされ、後続のリクエスト・チャンクに再利用されます。)</span> <span class="merged" id="DataChunk.1TxckX.spl3" title="原文 : The idea behind this class is to be able to minimize data copying; ideally, in order to achieve the best performance, to not copy them at all.">このクラスの背後には、データのコピーを最小限に抑えることができるという考え方が理想的です。最高のパフォーマンスを実現するには、データのコピーをまったく行わないことが理想的です。</span> <span class="merged" id="DataChunk.1TxckX.spl4" title="原文 : However, the implementations may choose otherwise.">ただし、それ以外の場合は実装で選択できます。</span> 
@@ -496,10 +496,10 @@ extends <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/ja
 <ul class="blockList">
 <li class="blockList">
 <h4><span class="merged" id="DataChunk.4CbYtZ"  title="原文:: iterator">iterator</span></h4>
-<pre class="methodSignature">default&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Iterator.html?is-external=true" title="class or interface in java.util" class="externalLink">Iterator</a>&lt;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html?is-external=true" title="class or interface in java.nio" class="externalLink">ByteBuffer</a>&gt;&nbsp;iterator()</pre>
+<pre class="methodSignature">default&nbsp;<a href="https://docs.oracle.com/javase/jp/11/docs/api/java.base/java/util/Iterator.html?is-external=true" title="class or interface in java.util" class="externalLink">Iterator</a>&lt;<a href="https://docs.oracle.com/javase/jp/11/docs/api/java.base/java/nio/ByteBuffer.html?is-external=true" title="class or interface in java.nio" class="externalLink">ByteBuffer</a>&gt;&nbsp;iterator()</pre>
 <dl>
 <dt><span class="merged" id="DataChunk.1S34ub"  title="原文:: Specified by:"><span class="overrideSpecifyLabel">定義:</span></span></dt>
-<dd><span class="merged" id="DataChunk.nZ8p7" title="原文 : iterator&nbsp;in interface&nbsp;Iterable&lt;ByteBuffer&gt;">インタフェース<code><a class="externalLink" href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Iterable.html?is-external=true" >Iterable</a>&lt;<a class="externalLink" href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html?is-external=true" >ByteBuffer</a>></code>の<code><a class="externalLink" href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Iterable.html?is-external=true#iterator()" >iterator</a></code></span></dd>
+<dd><span class="merged" id="DataChunk.nZ8p7" title="原文 : iterator&nbsp;in interface&nbsp;Iterable&lt;ByteBuffer&gt;">インタフェース<code><a class="externalLink" href="https://docs.oracle.com/javase/jp/11/docs/api/java.base/java/lang/Iterable.html?is-external=true" >Iterable</a>&lt;<a class="externalLink" href="https://docs.oracle.com/javase/jp/11/docs/api/java.base/java/nio/ByteBuffer.html?is-external=true" >ByteBuffer</a>></code>の<code><a class="externalLink" href="https://docs.oracle.com/javase/jp/11/docs/api/java.base/java/lang/Iterable.html?is-external=true#iterator()" >iterator</a></code></span></dd>
 </dl>
 </li>
 </ul>
@@ -584,7 +584,7 @@ extends <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/ja
 <li class="blockList">
 <h4><span class="merged" id="DataChunk.KkmR1"  title="原文:: duplicate">duplicate</span></h4>
 <pre class="methodSignature">default&nbsp;<a href="DataChunk.html" title="interface in io.helidon.common.http">DataChunk</a>&nbsp;duplicate()</pre>
-<div class="block"><span class="merged" id="DataChunk.1zBJh5.spl1" title="原文 : Makes a copy of this data chunk including its underlying ByteBuffer.">基礎となる<a class="externalLink" href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html?is-external=true" ><code>ByteBuffer</code></a>を含む、このデータ・チャンクのコピーを作成します。</span> <span class="merged" id="DataChunk.1zBJh5.spl2" title="原文 : This may be necessary for caching in case ByteBuffer.rewind() is called to reuse a byte buffer.">これは、バイト・バッファを再利用するために<a class="externalLink" href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html?is-external=true#rewind()" ><code>ByteBuffer.rewind()</code></a>がコールされる場合に、キャッシュに必要になることがあります。</span> <span class="merged" id="DataChunk.1zBJh5.spl3" title="原文 : Note that only the actual bytes used in the data chunk are copied, the resulting data chunk&apos;s capacity may be less than the original.">データ・チャンクで使用される実際のバイトのみがコピーされ、結果のデータ・チャンク容量は元の容量より少なくなる可能性があることに注意してください。</span> </div>
+<div class="block"><span class="merged" id="DataChunk.1zBJh5.spl1" title="原文 : Makes a copy of this data chunk including its underlying ByteBuffer.">基礎となる<a class="externalLink" href="https://docs.oracle.com/javase/jp/11/docs/api/java.base/java/nio/ByteBuffer.html?is-external=true" ><code>ByteBuffer</code></a>を含む、このデータ・チャンクのコピーを作成します。</span> <span class="merged" id="DataChunk.1zBJh5.spl2" title="原文 : This may be necessary for caching in case ByteBuffer.rewind() is called to reuse a byte buffer.">これは、バイト・バッファを再利用するために<a class="externalLink" href="https://docs.oracle.com/javase/jp/11/docs/api/java.base/java/nio/ByteBuffer.html?is-external=true#rewind()" ><code>ByteBuffer.rewind()</code></a>がコールされる場合に、キャッシュに必要になることがあります。</span> <span class="merged" id="DataChunk.1zBJh5.spl3" title="原文 : Note that only the actual bytes used in the data chunk are copied, the resulting data chunk&apos;s capacity may be less than the original.">データ・チャンクで使用される実際のバイトのみがコピーされ、結果のデータ・チャンク容量は元の容量より少なくなる可能性があることに注意してください。</span> </div>
 <dl>
 <dt><span class="merged" id="DataChunk.3jgv1U.13"  title="原文: Returns:"><span class="returnLabel">戻り値:</span></span></dt>
 <dd><span class="merged" id="DataChunk.13Tuqf" title="原文 : A copy of this data chunk.">このデータ・チャンクのコピー。</span></dd>
@@ -625,7 +625,7 @@ extends <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/ja
 <ul class="blockList">
 <li class="blockList">
 <h4><span class="merged" id="DataChunk.uiTI3"  title="原文: writeFuture">writeFuture</span></h4>
-<pre class="methodSignature">default&nbsp;void&nbsp;writeFuture&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">CompletableFuture</a>&lt;<a href="DataChunk.html" title="interface in io.helidon.common.http">DataChunk</a>&gt;&nbsp;writeFuture)</pre>
+<pre class="methodSignature">default&nbsp;void&nbsp;writeFuture&#8203;(<a href="https://docs.oracle.com/javase/jp/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">CompletableFuture</a>&lt;<a href="DataChunk.html" title="interface in io.helidon.common.http">DataChunk</a>&gt;&nbsp;writeFuture)</pre>
 <div class="block"><span class="merged" id="DataChunk.3ggOUW.1" title="原文 : Set a write future that will complete when data chunk has been written to a connection.">データ・チャンクが接続に書き込まれたときに完了する書込み未来を設定します。</span></div>
 <dl>
 <dt><span class="merged" id="DataChunk.2p3GDA.7"  title="原文: Parameters:"><span class="paramLabel">パラメータ:</span></span></dt>
@@ -639,7 +639,7 @@ extends <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/ja
 <ul class="blockListLast">
 <li class="blockList">
 <h4><span class="merged" id="DataChunk.uiTI3.1"  title="原文: writeFuture">writeFuture</span></h4>
-<pre class="methodSignature">default&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">CompletableFuture</a>&lt;<a href="DataChunk.html" title="interface in io.helidon.common.http">DataChunk</a>&gt;&gt;&nbsp;writeFuture()</pre>
+<pre class="methodSignature">default&nbsp;<a href="https://docs.oracle.com/javase/jp/11/docs/api/java.base/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="https://docs.oracle.com/javase/jp/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">CompletableFuture</a>&lt;<a href="DataChunk.html" title="interface in io.helidon.common.http">DataChunk</a>&gt;&gt;&nbsp;writeFuture()</pre>
 <div class="block"><span class="merged" id="DataChunk.3AT4jP.1" title="原文 : Returns a write future associated with this chunk.">このチャンクに関連付けられた将来の書込みを返します。</span></div>
 <dl>
 <dt><span class="merged" id="DataChunk.3jgv1U.16"  title="原文: Returns:"><span class="returnLabel">戻り値:</span></span></dt>

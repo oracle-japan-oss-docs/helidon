@@ -184,8 +184,8 @@ function createRoutes(){
         {
             path: '/se/guides/05_metrics',
             meta: {
-                h1: 'Helidon SEメトリック・ガイド',
-                title: 'Helidon SEメトリック・ガイド',
+                h1: 'Helidon SEメトリクス・ガイド',
+                title: 'Helidon SEメトリクス・ガイド',
                 h1Prefix: 'SE',
                 description: 'Helidon metrics',
                 keywords: 'helidon, metrics, microprofile, guide',
@@ -535,8 +535,8 @@ function createRoutes(){
         {
             path: '/se/grpc/07_metrics',
             meta: {
-                h1: 'gRPCサービス・メトリック',
-                title: 'gRPCサービス・メトリック',
+                h1: 'gRPCサービス・メトリクス',
+                title: 'gRPCサービス・メトリクス',
                 h1Prefix: 'SE',
                 description: 'Helidon gRPC Service Metrics',
                 keywords: 'helidon, grpc, java',
@@ -639,8 +639,8 @@ function createRoutes(){
         {
             path: '/se/metrics/01_metrics',
             meta: {
-                h1: 'メトリックス',
-                title: 'メトリックス',
+                h1: 'メトリクス',
+                title: 'メトリクス',
                 h1Prefix: 'SE',
                 description: 'Helidon metrics',
                 keywords: 'helidon, metrics',
@@ -652,8 +652,8 @@ function createRoutes(){
         {
             path: '/se/metrics/02_prometheus',
             meta: {
-                h1: 'Prometheusメトリック',
-                title: 'Prometheusメトリック',
+                h1: 'Prometheusメトリクス',
+                title: 'Prometheusメトリクス',
                 h1Prefix: 'SE',
                 description: 'Helidon Prometheus metrics',
                 keywords: 'helidon, metrics, prometheus',
@@ -1198,8 +1198,8 @@ function createRoutes(){
         {
             path: '/mp/guides/05_metrics',
             meta: {
-                h1: 'Helidon MPメトリック・ガイド',
-                title: 'Helidon MPメトリック・ガイド',
+                h1: 'Helidon MPメトリクス・ガイド',
+                title: 'Helidon MPメトリクス・ガイド',
                 h1Prefix: 'MP',
                 description: 'Helidon metrics',
                 keywords: 'helidon, metrics, microprofile, guide',
@@ -1653,8 +1653,8 @@ function createRoutes(){
         {
             path: '/mp/metrics/01_introduction',
             meta: {
-                h1: 'メトリックス',
-                title: 'メトリックス',
+                h1: 'メトリクス',
+                title: 'メトリクス',
                 h1Prefix: 'MP',
                 description: 'MicroProfile Metrics support in Helidon MP',
                 keywords: 'helidon, mp, microprofile, metrics',
@@ -2028,7 +2028,7 @@ function createNav(){
                                 { href: '/se/guides/02_quickstart', title: 'Helidon SEクイックスタート' },
                                 { href: '/se/guides/03_config', title: 'Helidon SE構成ガイド' },
                                 { href: '/se/guides/04_health', title: 'Helidon SEヘルス・チェック・ガイド' },
-                                { href: '/se/guides/05_metrics', title: 'Helidon SEメトリック・ガイド' },
+                                { href: '/se/guides/05_metrics', title: 'Helidon SEメトリクス・ガイド' },
                                 { href: '/se/guides/05_security_oidc', title: 'Helidon SE OIDCセキュリティ・プロバイダ・ガイド' },
                                 { href: '/se/guides/06_tracing', title: 'Helidon SEトレース・ガイド' },
                                 { href: '/se/guides/15_migration', title: 'Helidon SEアップグレード・ガイド' },
@@ -2083,7 +2083,7 @@ function createNav(){
                                 { href: '/se/grpc/04_service_implementation', title: 'gRPCサービスの実装' },
                                 { href: '/se/grpc/05_interceptors', title: 'gRPCインターセプタ' },
                                 { href: '/se/grpc/06_health_checks', title: 'gRPCサービス・ヘルス・チェック' },
-                                { href: '/se/grpc/07_metrics', title: 'gRPCサービス・メトリック' },
+                                { href: '/se/grpc/07_metrics', title: 'gRPCサービス・メトリクス' },
                                 { href: '/se/grpc/08_security', title: 'gRPCサーバー・セキュリティ' },
                                 { href: '/se/grpc/21_client_introduction', title: 'gRPCクライアントの概要' },
                                 { href: '/se/grpc/22_client_configuration', title: 'gRPCクライアント構成' },
@@ -2108,12 +2108,12 @@ function createNav(){
                             ]
                         },
                         {
-                            title: 'メトリックス',
+                            title: 'メトリクス',
                             action: 'av_timer',
                             group: '/se/metrics',
                             items: [
-                                { href: '/se/metrics/01_metrics', title: 'メトリックス' },
-                                { href: '/se/metrics/02_prometheus', title: 'Prometheusメトリック' }
+                                { href: '/se/metrics/01_metrics', title: 'メトリクス' },
+                                { href: '/se/metrics/02_prometheus', title: 'Prometheusメトリクス' }
                             ]
                         },
                         {
@@ -2245,7 +2245,7 @@ function createNav(){
                                 { href: '/mp/guides/02_quickstart', title: 'Helidon MPクイックスタート' },
                                 { href: '/mp/guides/03_config', title: 'Helidon MP構成ガイド' },
                                 { href: '/mp/guides/04_health', title: 'Helidon MPヘルス・チェック・ガイド' },
-                                { href: '/mp/guides/05_metrics', title: 'Helidon MPメトリック・ガイド' },
+                                { href: '/mp/guides/05_metrics', title: 'Helidon MPメトリクス・ガイド' },
                                 { href: '/mp/guides/05_security-oidc', title: 'Helidon MP OIDCセキュリティ・プロバイダ' },
                                 { href: '/mp/guides/06_tracing', title: 'Helidon MPトレース・ガイド' },
                                 { href: '/mp/guides/07_datasource', title: 'Helidon MPデータ・ソース・ガイド' },
@@ -2353,11 +2353,11 @@ function createNav(){
                             ]
                         },
                         {
-                            title: 'メトリックス',
+                            title: 'メトリクス',
                             action: 'av_timer',
                             group: '/mp/metrics',
                             items: [
-                                { href: '/mp/metrics/01_introduction', title: 'メトリックス' }
+                                { href: '/mp/metrics/01_introduction', title: 'メトリクス' }
                             ]
                         },
                         {

@@ -129,7 +129,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </div>
 <div class="contentContainer">
 <ul class="inheritance">
-<li><span class="merged" id="MetricsSupport.20o0OC"  title="原文: java.lang.Object"><a class="externalLink" href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true" >java.lang.Object</a></span></li>
+<li><span class="merged" id="MetricsSupport.20o0OC"  title="原文: java.lang.Object"><a class="externalLink" href="https://docs.oracle.com/javase/jp/11/docs/api/java.base/java/lang/Object.html?is-external=true" >java.lang.Object</a></span></li>
 <li>
 <ul class="inheritance">
 <li><span class="merged" id="MetricsSupport.KoDLi"  title="原文: io.helidon.metrics.MetricsSupport">io.helidon.metrics.MetricsSupport</span></li>
@@ -145,9 +145,9 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dl>
 <hr>
 <pre>public final class <span class="typeNameLabel">MetricsSupport</span>
-extends <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>
+extends <a href="https://docs.oracle.com/javase/jp/11/docs/api/java.base/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>
 implements <a href="../../../../io.helidon.webserver/io/helidon/webserver/Service.html" title="interface in io.helidon.webserver">Service</a></pre>
-<div class="block"><span class="merged" id="MetricsSupport.2gwPJB" title="原文 : Support for metrics for Helidon Web Server.">Helidon Webサーバーのメトリックのサポート。</span>
+<div class="block"><span class="merged" id="MetricsSupport.2gwPJB" title="原文 : Support for metrics for Helidon Web Server.">Helidon Webサーバーのメトリクスのサポート。</span>
 
  <p>
  <span class="merged" id="MetricsSupport.22MPah" title="原文 : By defaults creates the /metrics endpoint with three sub-paths: application, vendor and base.">デフォルトでは、3つのサブパスを持つ /metricsエンドポイントが作成されます: アプリケーション、ベンダーおよびベース。</span>
@@ -163,10 +163,10 @@ implements <a href="../../../../io.helidon.webserver/io/helidon/webserver/Servic
  <caption><span class="merged" id="MetricsSupport.1vyzUP"  title="原文:: Configuration parameters">構成パラメータ</span></caption>
  <tr><th><span class="merged" id="MetricsSupport.2XKMH3"  title="原文:: key">key</span></th><th><span class="merged" id="MetricsSupport.G3u1e"  title="原文:: default value">デフォルト値</span></th><th><span class="merged" id="MetricsSupport.20ls8M"  title="原文:: description">description</span></th></tr>
  <tr><td><span class="merged" id="MetricsSupport.h9AsV" title="原文 : helidon.metrics.context">helidon.metrics.context</span></td><td><span class="merged" id="MetricsSupport.4aVFjW" title="原文 : /metrics">/metrics</span></td><td><span class="merged" id="MetricsSupport.2J9wBN" title="原文 : Context root under which the rest endpoints are available">残りのエンドポイントが使用可能なコンテキスト・ルート</span></td></tr>
- <tr><td><span class="merged" id="MetricsSupport.18dGCE"  title="原文: helidon.metrics.base.${metricName}.enabled">helidon.metrics.base.${metricName}.enabled</span></td><td><span class="merged" id="MetricsSupport.4eNR3V"  title="原文:: true">true</span></td><td><span class="merged" id="MetricsSupport.15i7uc" title="原文 : Can control which base metrics are exposed, set to false to disable a base metric">公開するベース・メトリックを制御できます。ベース・メトリックを無効にするにはfalseに設定</span></td></tr>
+ <tr><td><span class="merged" id="MetricsSupport.18dGCE"  title="原文: helidon.metrics.base.${metricName}.enabled">helidon.metrics.base.${metricName}.enabled</span></td><td><span class="merged" id="MetricsSupport.4eNR3V"  title="原文:: true">true</span></td><td><span class="merged" id="MetricsSupport.15i7uc" title="原文 : Can control which base metrics are exposed, set to false to disable a base metric">公開するベース・メトリクスを制御できます。ベース・メトリックを無効にするにはfalseに設定</span></td></tr>
  </table>
  <p>
- <span class="merged" id="MetricsSupport.2FL6by" title="原文 : The application metrics registry is then available as follows:">アプリケーション・メトリック・レジストリは、次のように使用可能になります:</span>
+ <span class="merged" id="MetricsSupport.2FL6by" title="原文 : The application metrics registry is then available as follows:">アプリケーション・メトリクス・レジストリは、次のように使用可能になります:</span>
  <pre><code>
   req.context().get(MetricRegistry.class).ifPresent(reg -&gt; reg.counter("myCounter").inc());
  </code></pre></div>
@@ -226,14 +226,14 @@ implements <a href="../../../../io.helidon.webserver/io/helidon/webserver/Servic
 <td class="colFirst"><span class="merged" id="MetricsSupport.11vdtu"  title="原文: void"><code>void</code></span></td>
 <th class="colSecond" scope="row"><span class="merged" id="MetricsSupport.Won9P"  title="原文: configureEndpoint​(Routing.Rules&nbsp;rules)"><code><span class="memberNameLink"><a href="#configureEndpoint(io.helidon.webserver.Routing.Rules)">configureEndpoint</a></span>​(<a href="../../../../io.helidon.webserver/io/helidon/webserver/Routing.Rules.html" >Routing.Rules</a>&nbsp;rules)</code></span></th>
 <td class="colLast">
-<div class="block"><span class="merged" id="MetricsSupport.4F1XsD" title="原文 : Configure metrics endpoint on the provided routing rules.">指定されたルーティング・ルールでメトリック・エンドポイントを構成します。</span></div>
+<div class="block"><span class="merged" id="MetricsSupport.4F1XsD" title="原文 : Configure metrics endpoint on the provided routing rules.">指定されたルーティング・ルールでメトリクス・エンドポイントを構成します。</span></div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><span class="merged" id="MetricsSupport.11vdtu.1"  title="原文: void"><code>void</code></span></td>
-<th class="colSecond" scope="row"><span class="merged" id="MetricsSupport.4CB9kp"  title="原文: configureVendorMetrics​(String&nbsp;routingName, Routing.Rules&nbsp;rules)"><code><span class="memberNameLink"><a href="#configureVendorMetrics(java.lang.String,io.helidon.webserver.Routing.Rules)">configureVendorMetrics</a></span>​(<a class="externalLink" href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" >String</a>&nbsp;routingName, <a href="../../../../io.helidon.webserver/io/helidon/webserver/Routing.Rules.html" >Routing.Rules</a>&nbsp;rules)</code></span></th>
+<th class="colSecond" scope="row"><span class="merged" id="MetricsSupport.4CB9kp"  title="原文: configureVendorMetrics​(String&nbsp;routingName, Routing.Rules&nbsp;rules)"><code><span class="memberNameLink"><a href="#configureVendorMetrics(java.lang.String,io.helidon.webserver.Routing.Rules)">configureVendorMetrics</a></span>​(<a class="externalLink" href="https://docs.oracle.com/javase/jp/11/docs/api/java.base/java/lang/String.html?is-external=true" >String</a>&nbsp;routingName, <a href="../../../../io.helidon.webserver/io/helidon/webserver/Routing.Rules.html" >Routing.Rules</a>&nbsp;rules)</code></span></th>
 <td class="colLast">
-<div class="block"><span class="merged" id="MetricsSupport.2zfSkN" title="原文 : Configure vendor metrics on the provided routing.">指定されたルーティングのベンダー・メトリックを構成します。</span></div>
+<div class="block"><span class="merged" id="MetricsSupport.2zfSkN" title="原文 : Configure vendor metrics on the provided routing.">指定されたルーティングのベンダー・メトリクスを構成します。</span></div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
@@ -251,14 +251,14 @@ implements <a href="../../../../io.helidon.webserver/io/helidon/webserver/Servic
 </td>
 </tr>
 <tr id="i5" class="rowColor">
-<td class="colFirst"><span class="merged" id="MetricsSupport.LY3oX"  title="原文: static String"><code>static <a class="externalLink" href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" >String</a></code></span></td>
-<th class="colSecond" scope="row"><span class="merged" id="MetricsSupport.vWEN1"  title="原文: toPrometheusData​(String&nbsp;name, org.eclipse.microprofile.metrics.Metric&nbsp;metric, boolean&nbsp;withHelpType)"><code><span class="memberNameLink"><a href="#toPrometheusData(java.lang.String,org.eclipse.microprofile.metrics.Metric,boolean)">toPrometheusData</a></span>​(<a class="externalLink" href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" >String</a>&nbsp;name, org.eclipse.microprofile.metrics.Metric&nbsp;metric, boolean&nbsp;withHelpType)</code></span></th>
+<td class="colFirst"><span class="merged" id="MetricsSupport.LY3oX"  title="原文: static String"><code>static <a class="externalLink" href="https://docs.oracle.com/javase/jp/11/docs/api/java.base/java/lang/String.html?is-external=true" >String</a></code></span></td>
+<th class="colSecond" scope="row"><span class="merged" id="MetricsSupport.vWEN1"  title="原文: toPrometheusData​(String&nbsp;name, org.eclipse.microprofile.metrics.Metric&nbsp;metric, boolean&nbsp;withHelpType)"><code><span class="memberNameLink"><a href="#toPrometheusData(java.lang.String,org.eclipse.microprofile.metrics.Metric,boolean)">toPrometheusData</a></span>​(<a class="externalLink" href="https://docs.oracle.com/javase/jp/11/docs/api/java.base/java/lang/String.html?is-external=true" >String</a>&nbsp;name, org.eclipse.microprofile.metrics.Metric&nbsp;metric, boolean&nbsp;withHelpType)</code></span></th>
 <td class="colLast">
 <div class="block"><span class="merged" id="MetricsSupport.3Wmqvk" title="原文 : Formats a metric in Prometheus format.">メトリックをPrometheus形式で書式設定します。</span></div>
 </td>
 </tr>
 <tr id="i6" class="altColor">
-<td class="colFirst"><span class="merged" id="MetricsSupport.LY3oX.1"  title="原文: static String"><code>static <a class="externalLink" href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" >String</a></code></span></td>
+<td class="colFirst"><span class="merged" id="MetricsSupport.LY3oX.1"  title="原文: static String"><code>static <a class="externalLink" href="https://docs.oracle.com/javase/jp/11/docs/api/java.base/java/lang/String.html?is-external=true" >String</a></code></span></td>
 <th class="colSecond" scope="row"><span class="merged" id="MetricsSupport.L1STk"  title="原文: toPrometheusData​(org.eclipse.microprofile.metrics.MetricID&nbsp;metricID, org.eclipse.microprofile.metrics.Metric&nbsp;metric, boolean&nbsp;withHelpType)"><code><span class="memberNameLink"><a href="#toPrometheusData(org.eclipse.microprofile.metrics.MetricID,org.eclipse.microprofile.metrics.Metric,boolean)">toPrometheusData</a></span>​(org.eclipse.microprofile.metrics.MetricID&nbsp;metricID, org.eclipse.microprofile.metrics.Metric&nbsp;metric, boolean&nbsp;withHelpType)</code></span></th>
 <td class="colLast">
 <div class="block"><span class="merged" id="MetricsSupport.3Wmqvk.1" title="原文 : Formats a metric in Prometheus format.">メトリックをPrometheus形式で書式設定します。</span></div>
@@ -276,8 +276,8 @@ implements <a href="../../../../io.helidon.webserver/io/helidon/webserver/Servic
 <li class="blockList"><a id="methods.inherited.from.class.java.lang.Object">
 <!--   -->
 </a>
-<h3><span class="merged" id="MetricsSupport.3eFAL9"  title="原文: Methods inherited from class&nbsp;java.lang.Object">クラス java.lang.<a class="externalLink" href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true" >Object</a>から継承されたメソッド</span></h3>
-<span class="merged" id="MetricsSupport.4gMJo7"  title="原文: clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait"><code><a class="externalLink" href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#clone()" >clone</a>, <a class="externalLink" href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#equals(java.lang.Object)" >equals</a>, <a class="externalLink" href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#finalize()" >finalize</a>, <a class="externalLink" href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#getClass()" >getClass</a>, <a class="externalLink" href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#hashCode()" >hashCode</a>, <a class="externalLink" href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#notify()" >notify</a>, <a class="externalLink" href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#notifyAll()" >notifyAll</a>, <a class="externalLink" href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#toString()" >toString</a>, <a class="externalLink" href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#wait()" >wait</a>, <a class="externalLink" href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#wait(long)" >wait</a>, <a class="externalLink" href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#wait(long,int)" >wait</a></code></span></li>
+<h3><span class="merged" id="MetricsSupport.3eFAL9"  title="原文: Methods inherited from class&nbsp;java.lang.Object">クラス java.lang.<a class="externalLink" href="https://docs.oracle.com/javase/jp/11/docs/api/java.base/java/lang/Object.html?is-external=true" >Object</a>から継承されたメソッド</span></h3>
+<span class="merged" id="MetricsSupport.4gMJo7"  title="原文: clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait"><code><a class="externalLink" href="https://docs.oracle.com/javase/jp/11/docs/api/java.base/java/lang/Object.html?is-external=true#clone()" >clone</a>, <a class="externalLink" href="https://docs.oracle.com/javase/jp/11/docs/api/java.base/java/lang/Object.html?is-external=true#equals(java.lang.Object)" >equals</a>, <a class="externalLink" href="https://docs.oracle.com/javase/jp/11/docs/api/java.base/java/lang/Object.html?is-external=true#finalize()" >finalize</a>, <a class="externalLink" href="https://docs.oracle.com/javase/jp/11/docs/api/java.base/java/lang/Object.html?is-external=true#getClass()" >getClass</a>, <a class="externalLink" href="https://docs.oracle.com/javase/jp/11/docs/api/java.base/java/lang/Object.html?is-external=true#hashCode()" >hashCode</a>, <a class="externalLink" href="https://docs.oracle.com/javase/jp/11/docs/api/java.base/java/lang/Object.html?is-external=true#notify()" >notify</a>, <a class="externalLink" href="https://docs.oracle.com/javase/jp/11/docs/api/java.base/java/lang/Object.html?is-external=true#notifyAll()" >notifyAll</a>, <a class="externalLink" href="https://docs.oracle.com/javase/jp/11/docs/api/java.base/java/lang/Object.html?is-external=true#toString()" >toString</a>, <a class="externalLink" href="https://docs.oracle.com/javase/jp/11/docs/api/java.base/java/lang/Object.html?is-external=true#wait()" >wait</a>, <a class="externalLink" href="https://docs.oracle.com/javase/jp/11/docs/api/java.base/java/lang/Object.html?is-external=true#wait(long)" >wait</a>, <a class="externalLink" href="https://docs.oracle.com/javase/jp/11/docs/api/java.base/java/lang/Object.html?is-external=true#wait(long,int)" >wait</a></code></span></li>
 </ul>
 </li>
 </ul>
@@ -305,7 +305,7 @@ implements <a href="../../../../io.helidon.webserver/io/helidon/webserver/Servic
 <div class="block"><span class="merged" id="MetricsSupport.3p5mHn.1" title="原文 : Create an instance to be registered with Web Server with all defaults.">すべてのデフォルトでWebサーバーに登録するインスタンスを作成します。</span></div>
 <dl>
 <dt><span class="merged" id="MetricsSupport.3jgv1U"  title="原文: Returns:"><span class="returnLabel">戻り値:</span></span></dt>
-<dd><span class="merged" id="MetricsSupport.23vu2x" title="原文 : a new instance built with default values (for context, base metrics enabled)">デフォルト値(コンテキスト、ベース・メトリック有効)を使用して構築された新しいインスタンス</span></dd>
+<dd><span class="merged" id="MetricsSupport.23vu2x" title="原文 : a new instance built with default values (for context, base metrics enabled)">デフォルト値(コンテキスト、ベース・メトリクス有効)を使用して構築された新しいインスタンス</span></dd>
 </dl>
 </li>
 </ul>
@@ -345,7 +345,7 @@ implements <a href="../../../../io.helidon.webserver/io/helidon/webserver/Servic
 <ul class="blockList">
 <li class="blockList">
 <h4><span class="merged" id="MetricsSupport.1Fexye"  title="原文: toPrometheusData">toPrometheusData</span></h4>
-<pre class="methodSignature">public static&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;toPrometheusData&#8203;(org.eclipse.microprofile.metrics.MetricID&nbsp;metricID,
+<pre class="methodSignature">public static&nbsp;<a href="https://docs.oracle.com/javase/jp/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;toPrometheusData&#8203;(org.eclipse.microprofile.metrics.MetricID&nbsp;metricID,
                                       org.eclipse.microprofile.metrics.Metric&nbsp;metric,
                                       boolean&nbsp;withHelpType)</pre>
 <div class="block"><span class="merged" id="MetricsSupport.3Wmqvk.2" title="原文 : Formats a metric in Prometheus format.">メトリックをPrometheus形式で書式設定します。</span></div>
@@ -365,7 +365,7 @@ implements <a href="../../../../io.helidon.webserver/io/helidon/webserver/Servic
 <ul class="blockList">
 <li class="blockList">
 <h4><span class="merged" id="MetricsSupport.1Fexye.1"  title="原文: toPrometheusData">toPrometheusData</span></h4>
-<pre class="methodSignature">public static&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;toPrometheusData&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name,
+<pre class="methodSignature">public static&nbsp;<a href="https://docs.oracle.com/javase/jp/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;toPrometheusData&#8203;(<a href="https://docs.oracle.com/javase/jp/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name,
                                       org.eclipse.microprofile.metrics.Metric&nbsp;metric,
                                       boolean&nbsp;withHelpType)</pre>
 <div class="block"><span class="merged" id="MetricsSupport.3Wmqvk.3" title="原文 : Formats a metric in Prometheus format.">メトリックをPrometheus形式で書式設定します。</span></div>
@@ -385,9 +385,9 @@ implements <a href="../../../../io.helidon.webserver/io/helidon/webserver/Servic
 <ul class="blockList">
 <li class="blockList">
 <h4><span class="merged" id="MetricsSupport.3BUPq9"  title="原文: configureVendorMetrics">configureVendorMetrics</span></h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;configureVendorMetrics&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;routingName,
+<pre class="methodSignature">public&nbsp;void&nbsp;configureVendorMetrics&#8203;(<a href="https://docs.oracle.com/javase/jp/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;routingName,
                                    <a href="../../../../io.helidon.webserver/io/helidon/webserver/Routing.Rules.html" title="interface in io.helidon.webserver">Routing.Rules</a>&nbsp;rules)</pre>
-<div class="block"><span class="merged" id="MetricsSupport.3Tr7pj.spl1" title="原文 : Configure vendor metrics on the provided routing.">指定されたルーティングのベンダー・メトリックを構成します。</span> <span class="merged" id="MetricsSupport.3Tr7pj.spl2" title="原文 : This method is exclusive to update(io.helidon.webserver.Routing.Rules) (e.g. you should not use both, as otherwise you would duplicate the metrics)">このメソッドは<a href="#update(io.helidon.webserver.Routing.Rules)"><code>update(io.helidon.webserver.Routing.Rules)</code></a> (たとえば、メトリックを複製する場合は、両方を使用しないでください)専用です</span> </div>
+<div class="block"><span class="merged" id="MetricsSupport.3Tr7pj.spl1" title="原文 : Configure vendor metrics on the provided routing.">指定されたルーティングのベンダー・メトリクスを構成します。</span> <span class="merged" id="MetricsSupport.3Tr7pj.spl2" title="原文 : This method is exclusive to update(io.helidon.webserver.Routing.Rules) (e.g. you should not use both, as otherwise you would duplicate the metrics)">このメソッドは<a href="#update(io.helidon.webserver.Routing.Rules)"><code>update(io.helidon.webserver.Routing.Rules)</code></a> (たとえば、メトリクスを複製する場合は、両方を使用しないでください)専用です</span> </div>
 <dl>
 <dt><span class="merged" id="MetricsSupport.2p3GDA.3"  title="原文: Parameters:"><span class="paramLabel">パラメータ:</span></span></dt>
 <dd><span class="merged" id="MetricsSupport.3Zuh1m" title="原文 : routingName - name of the routing (may be null)"><code>routingName</code> - ルーティング(nullも可)の名前</span></dd>
@@ -402,7 +402,7 @@ implements <a href="../../../../io.helidon.webserver/io/helidon/webserver/Servic
 <li class="blockList">
 <h4><span class="merged" id="MetricsSupport.1pSbY9"  title="原文: configureEndpoint">configureEndpoint</span></h4>
 <pre class="methodSignature">public&nbsp;void&nbsp;configureEndpoint&#8203;(<a href="../../../../io.helidon.webserver/io/helidon/webserver/Routing.Rules.html" title="interface in io.helidon.webserver">Routing.Rules</a>&nbsp;rules)</pre>
-<div class="block"><span class="merged" id="MetricsSupport.3swrZz.spl1" title="原文 : Configure metrics endpoint on the provided routing rules.">指定されたルーティング・ルールでメトリック・エンドポイントを構成します。</span> <span class="merged" id="MetricsSupport.3swrZz.spl2" title="原文 : This method just adds the endpoint /metrics (or appropriate one as configured).">このメソッドは、エンドポイント<code>/metrics</code> (または、構成されている適切なもの)を追加するだけです。</span> <span class="merged" id="MetricsSupport.3swrZz.spl3" title="原文 : For simple routings, just register MetricsSupport instance.">単純なルーティングの場合は、単に<code>MetricsSupport</code>インスタンスを登録します。</span> <span class="merged" id="MetricsSupport.3swrZz.spl4" title="原文 : This method is exclusive to update(io.helidon.webserver.Routing.Rules) (e.g. you should not use both, as otherwise you would register the endpoint twice)">このメソッドは<a href="#update(io.helidon.webserver.Routing.Rules)"><code>update(io.helidon.webserver.Routing.Rules)</code></a> (たとえば、エンドポイントを2回登録する場合は、両方を使用しないでください)専用です</span> </div>
+<div class="block"><span class="merged" id="MetricsSupport.3swrZz.spl1" title="原文 : Configure metrics endpoint on the provided routing rules.">指定されたルーティング・ルールでメトリクス・エンドポイントを構成します。</span> <span class="merged" id="MetricsSupport.3swrZz.spl2" title="原文 : This method just adds the endpoint /metrics (or appropriate one as configured).">このメソッドは、エンドポイント<code>/metrics</code> (または、構成されている適切なもの)を追加するだけです。</span> <span class="merged" id="MetricsSupport.3swrZz.spl3" title="原文 : For simple routings, just register MetricsSupport instance.">単純なルーティングの場合は、単に<code>MetricsSupport</code>インスタンスを登録します。</span> <span class="merged" id="MetricsSupport.3swrZz.spl4" title="原文 : This method is exclusive to update(io.helidon.webserver.Routing.Rules) (e.g. you should not use both, as otherwise you would register the endpoint twice)">このメソッドは<a href="#update(io.helidon.webserver.Routing.Rules)"><code>update(io.helidon.webserver.Routing.Rules)</code></a> (たとえば、エンドポイントを2回登録する場合は、両方を使用しないでください)専用です</span> </div>
 <dl>
 <dt><span class="merged" id="MetricsSupport.2p3GDA.4"  title="原文: Parameters:"><span class="paramLabel">パラメータ:</span></span></dt>
 <dd><span class="merged" id="MetricsSupport.1ltCVp" title="原文 : rules - routing rules (also accepts Routing.Builder"><code>rules</code> - ルーティング・ルール(<a href="../../../../io.helidon.webserver/io/helidon/webserver/Routing.Builder.html" ><code>Routing.Builder</code></a>も受け入れます</span></dd>

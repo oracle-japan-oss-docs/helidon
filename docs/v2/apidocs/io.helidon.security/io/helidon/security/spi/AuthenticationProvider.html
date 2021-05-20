@@ -144,7 +144,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd><span class="merged" id="AuthenticationProvider.31RZRo"  title="原文: This is a functional interface and can therefore be used as the assignment target for a lambda expression or method reference.">これは関数型インタフェースなので、ラムダ式またはメソッド参照の代入先として使用できます。</span></dd>
 </dl>
 <hr>
-<pre><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/FunctionalInterface.html?is-external=true" title="class or interface in java.lang" class="externalLink">@FunctionalInterface</a>
+<pre><a href="https://docs.oracle.com/javase/jp/11/docs/api/java.base/java/lang/FunctionalInterface.html?is-external=true" title="class or interface in java.lang" class="externalLink">@FunctionalInterface</a>
 public interface <span class="typeNameLabel">AuthenticationProvider</span>
 extends <a href="SecurityProvider.html" title="interface in io.helidon.security.spi">SecurityProvider</a></pre>
 <div class="block"><span class="merged" id="AuthenticationProvider.1YkogN.spl1" title="原文 : Authentication security provider.">認証セキュリティ・プロバイダ。</span> <span class="merged" id="AuthenticationProvider.1YkogN.spl2" title="原文 : Expected to authenticate the request and provide a Subject to the security component, that would be available through SecurityContext.">リクエストを認証し、<a href="../SecurityContext.html" ><code>SecurityContext</code></a>を介して使用可能なセキュリティ・コンポーネントのサブジェクトを提供する必要があります。</span> </div>
@@ -173,7 +173,7 @@ extends <a href="SecurityProvider.html" title="interface in io.helidon.security.
 <th class="colLast" scope="col"><span class="merged" id="AuthenticationProvider.4JM9z7"  title="原文:: Description">説明</span></th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><span class="merged" id="AuthenticationProvider.34L5fl"  title="原文: CompletionStage&lt;AuthenticationResponse&gt;"><code><a class="externalLink" href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionStage.html?is-external=true" >CompletionStage</a>&lt;<a href="../AuthenticationResponse.html" >AuthenticationResponse</a>></code></span></td>
+<td class="colFirst"><span class="merged" id="AuthenticationProvider.34L5fl"  title="原文: CompletionStage&lt;AuthenticationResponse&gt;"><code><a class="externalLink" href="https://docs.oracle.com/javase/jp/11/docs/api/java.base/java/util/concurrent/CompletionStage.html?is-external=true" >CompletionStage</a>&lt;<a href="../AuthenticationResponse.html" >AuthenticationResponse</a>></code></span></td>
 <th class="colSecond" scope="row"><span class="merged" id="AuthenticationProvider.lxxDN"  title="原文: authenticate​(ProviderRequest&nbsp;providerRequest)"><code><span class="memberNameLink"><a href="#authenticate(io.helidon.security.ProviderRequest)">authenticate</a></span>​(<a href="../ProviderRequest.html" >ProviderRequest</a>&nbsp;providerRequest)</code></span></th>
 <td class="colLast">
 <div class="block"><span class="merged" id="AuthenticationProvider.gAJ4s" title="原文 : Authenticate a request.">リクエストの認証。</span></div>
@@ -209,7 +209,7 @@ extends <a href="SecurityProvider.html" title="interface in io.helidon.security.
 <ul class="blockListLast">
 <li class="blockList">
 <h4><span class="merged" id="AuthenticationProvider.GFY6m"  title="原文:: authenticate">authenticate</span></h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionStage.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">CompletionStage</a>&lt;<a href="../AuthenticationResponse.html" title="class in io.helidon.security">AuthenticationResponse</a>&gt;&nbsp;authenticate&#8203;(<a href="../ProviderRequest.html" title="class in io.helidon.security">ProviderRequest</a>&nbsp;providerRequest)</pre>
+<pre class="methodSignature"><a href="https://docs.oracle.com/javase/jp/11/docs/api/java.base/java/util/concurrent/CompletionStage.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">CompletionStage</a>&lt;<a href="../AuthenticationResponse.html" title="class in io.helidon.security">AuthenticationResponse</a>&gt;&nbsp;authenticate&#8203;(<a href="../ProviderRequest.html" title="class in io.helidon.security">ProviderRequest</a>&nbsp;providerRequest)</pre>
 <div class="block"><span class="merged" id="AuthenticationProvider.2AVJd.spl1" title="原文 : Authenticate a request.">リクエストの認証。</span> <span class="merged" id="AuthenticationProvider.2AVJd.spl2" title="原文 : This may be just resolving headers (tokens) or full authentication (basic auth).">これは、ヘッダー(tokens)または完全認証(basic認証)を解決するだけの場合があります。</span> <span class="merged" id="AuthenticationProvider.2AVJd.spl3" title="原文 : Do not throw exception for normal processing (e.g. invalid credentials; you may throw an exception in case of misconfiguration).">通常の(例:無効な資格証明。構成に誤りがある場合、例外がスローされる可能性があります)処理では例外をスローしません。</span> <span class="merged" id="AuthenticationProvider.2AVJd.spl4" title="原文 : This method will be invoked for inbound requests ONLY.">このメソッドは、インバウンド・リクエストに対してのみ呼び出されます。</span> 
 
  <p>

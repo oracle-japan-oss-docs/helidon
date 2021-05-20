@@ -116,9 +116,9 @@
 <div class="px-3">
 <v-divider class="indigo lighten-4"/>
 </div>
-<v-card-title primary class="headline layout justify-center"><span style="text-align:center">メトリックス</span></v-card-title> <v-card-text class="caption">
+<v-card-title primary class="headline layout justify-center"><span style="text-align:center">メトリクス</span></v-card-title> <v-card-text class="caption">
 <p></p>
-<p><span class="merged" id="all.3VflD9" title="原文 : Instrumentation to expose metrics of your applications.">アプリケーションのメトリックを公開するインスツルメンテーション。</span></p>
+<p><span class="merged" id="all.3VflD9" title="原文 : Instrumentation to expose metrics of your applications.">アプリケーションのメトリクスを公開するインスツルメンテーション。</span></p>
 </v-card-text> </v-card> </v-flex> <v-flex xs12 sm4 lg3> <v-card> <router-link to="/mp/openapi/01_openapi"><div class="card__link-hover"/>
 <span class="merged" id="all.4b3Cei" title="原文 :  donut_large "></router-link> <v-layout align-center justify-center class=""> <v-avatar size="150px"> <v-icon class="xxx-large">donut_large</v-icon> </v-avatar> </v-layout></span>
 <div class="px-3">

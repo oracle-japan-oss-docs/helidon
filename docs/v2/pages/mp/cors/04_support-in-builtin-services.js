@@ -3,7 +3,7 @@
  <v-layout row wrap> <v-flex xs12 sm10 lg10> <v-card class="section-def" v-bind:color="$store.state.currentColor"> <v-card-text class="pa-3"> <v-card class="section-def__card"> <v-card-text>
 <dl>
 <dt slot=title><span class="merged" id="all.2ZteXR" title="原文 : Using CORS in Helidon MP Built-in Services">Helidon MP組込みサービスでのCORSの使用</span></dt>
-<dd slot="desc"><p><span class="merged" id="all.rRxEr.spl1" title="原文 : Several built-in Helidon services - health, metrics, and OpenAPI - have integrated CORS support.">いくつかの組込みHelidonサービス(ヘルス、メトリックおよびOpenAPI)には、CORSサポートが統合されています。</span> <span class="merged" id="all.rRxEr.spl2" title="原文 : You can include these services in your application and control their CORS behavior.">これらのサービスをアプリケーションに含め、CORSの動作を制御できます。</span> </p>
+<dd slot="desc"><p><span class="merged" id="all.rRxEr.spl1" title="原文 : Several built-in Helidon services - health, metrics, and OpenAPI - have integrated CORS support.">いくつかの組込みHelidonサービス(ヘルス、メトリクスおよびOpenAPI)には、CORSサポートが統合されています。</span> <span class="merged" id="all.rRxEr.spl2" title="原文 : You can include these services in your application and control their CORS behavior.">これらのサービスをアプリケーションに含め、CORSの動作を制御できます。</span> </p>
 </dd>
 </dl>
 </v-card-text>
@@ -31,7 +31,7 @@
 
 <ol style="margin-left: 15px;">
 <li>
-<span class="merged" id="all.1qC2bQ.spl1" title="原文 : Add the built-in service or services to your application.">組込みサービスをアプリケーションに追加します。</span> <span class="merged" id="all.1qC2bQ.spl2" title="原文 : The health, metrics, and OpenAPI services automatically include default CORS support.">ヘルス、メトリックおよびOpenAPIサービスには、デフォルトのCORSサポートが自動的に含まれます。</span> 
+<span class="merged" id="all.1qC2bQ.spl1" title="原文 : Add the built-in service or services to your application.">組込みサービスをアプリケーションに追加します。</span> <span class="merged" id="all.1qC2bQ.spl2" title="原文 : The health, metrics, and OpenAPI services automatically include default CORS support.">ヘルス、メトリクスおよびOpenAPIサービスには、デフォルトのCORSサポートが自動的に含まれます。</span> 
 
 </li>
 <li>
@@ -89,7 +89,7 @@ lang="xml"
 </tbody>
 </table>
 </div>
-<p><span class="merged" id="all.1BG4GC" title="原文 : The Helidon MP QuickStart example uses these services, so you can use that as a template for your own application, or use the example project itself to experiment with customizing the CORS behavior in the built-in services."><a href="https://github.com/oracle/helidon/tree/2.2.1-SNAPSHOT/examples/quickstarts/helidon-quickstart-mp" id="" target="_blank" >「Helidon MP QuickStartの例」</a>ではこれらのサービスが使用されるため、独自のアプリケーションのテンプレートとして使用することも、サンプル・プロジェクト自体を使用して組込みサービスのCORS動作のカスタマイズを試すこともできます。</span></p>
+<p><span class="merged" id="all.1BG4GC" title="原文 : The Helidon MP QuickStart example uses these services, so you can use that as a template for your own application, or use the example project itself to experiment with customizing the CORS behavior in the built-in services."><a href="https://github.com/oracle/helidon/tree/2.2.1/examples//quickstarts/helidon-quickstart-mp" id="" target="_blank" >「Helidon MP QuickStartの例」</a>ではこれらのサービスが使用されるため、独自のアプリケーションのテンプレートとして使用することも、サンプル・プロジェクト自体を使用して組込みサービスのCORS動作のカスタマイズを試すこともできます。</span></p>
 
 </div>
 
@@ -97,7 +97,7 @@ lang="xml"
 <div class="section">
 <p><span class="merged" id="all.16LBGQ" title="原文 : You can use configuration to control whether and how each of the built-in services works with CORS.">構成を使用して、各組込みサービスがCORSと連携するかどうか、およびどのように連携するかを制御できます。</span></p>
 
-<p><span class="merged" id="all.3ZXjv2" title="原文 : For the health, metrics, and OpenAPI services, your configuration can include a section for CORS.">ヘルス、メトリックおよびOpenAPIサービスの場合、構成にCORSのセクションを含めることができます。</span></p>
+<p><span class="merged" id="all.3ZXjv2" title="原文 : For the health, metrics, and OpenAPI services, your configuration can include a section for CORS.">ヘルス、メトリクスおよびOpenAPIサービスの場合、構成にCORSのセクションを含めることができます。</span></p>
 
 <p><span class="merged" id="all.2CPDDc.spl1" title="原文 : You have full control over the CORS configuration for a built-in Helidon service.">組込みHelidonサービスのCORS構成を完全に制御できます。</span> <span class="merged" id="all.2CPDDc.spl2" title="原文 : Use a basic CORS config section as described in Using Configuration with CORS in Helidon MP."><router-link to="/mp/cors/03_configuration-with-cors-mp">「Helidon MPでのCORSによる構成の使用」</router-link>で説明されているように、CORSの基本構成セクションを使用します。</span> </p>
 
@@ -109,7 +109,7 @@ lang="xml"
 
 </li>
 <li>
-<p><span class="merged" id="all.39GT3Y" title="原文 : the /metrics resource, provided by the metrics built-in service, to only the origin http://foo.com.">メトリック組込みサービスによって提供される、オリジン<code>http://foo.com</code>のみに対する<code>/metrics</code>リソース。</span></p>
+<p><span class="merged" id="all.39GT3Y" title="原文 : the /metrics resource, provided by the metrics built-in service, to only the origin http://foo.com.">メトリクス組込みサービスによって提供される、オリジン<code>http://foo.com</code>のみに対する<code>/metrics</code>リソース。</span></p>
 
 </li>
 </ul>
@@ -147,9 +147,9 @@ java -jar target/helidon-quickstart-mp.jar
 
 </div>
 
-<h3 id="_retrieve_metrics"><span class="merged" id="all.CwdJ9" title="原文 : Retrieve Metrics">メトリックの取得</span></h3>
+<h3 id="_retrieve_metrics"><span class="merged" id="all.CwdJ9" title="原文 : Retrieve Metrics">メトリクスの取得</span></h3>
 <div class="section">
-<p><span class="merged" id="all.4PWDDI" title="原文 : The metrics service rejects attempts to access metrics on behalf of a disallowed origin.">メトリック・サービスは、許可されていないオリジンにかわってメトリックへのアクセス試行を拒否します。</span></p>
+<p><span class="merged" id="all.4PWDDI" title="原文 : The metrics service rejects attempts to access metrics on behalf of a disallowed origin.">メトリクス・サービスは、許可されていないオリジンにかわってメトリクスへのアクセス試行を拒否します。</span></p>
 
 <markup
 lang="bash"

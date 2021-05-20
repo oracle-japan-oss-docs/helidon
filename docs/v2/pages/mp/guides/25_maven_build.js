@@ -47,7 +47,7 @@
 
 </li>
 </ol>
-<p><span class="merged" id="all.2E7gjU.spl1" title="原文 : If you want to use your own parent POM, then take a look at the standalone quickstart example.">独自の親POMを使用する場合は、<a href="https://github.com/oracle/helidon/tree/2.2.1-SNAPSHOT/examples/quickstarts/helidon-standalone-quickstart-mp" id="" target="_blank" >「スタンドアロン・クイックスタートの例」</a>を参照してください。</span> <span class="merged" id="all.2E7gjU.spl2" title="原文 : This example has a stand-alone POM that you can pattern your own application POM after.">この例には、独自のアプリケーションPOMを後からパターン化できるスタンドアロンPOMがあります。</span> </p>
+<p><span class="merged" id="all.2E7gjU.spl1" title="原文 : If you want to use your own parent POM, then take a look at the standalone quickstart example.">独自の親POMを使用する場合は、<a href="https://github.com/oracle/helidon/tree/2.2.1/examples//quickstarts/helidon-standalone-quickstart-mp" id="" target="_blank" >「スタンドアロン・クイックスタートの例」</a>を参照してください。</span> <span class="merged" id="all.2E7gjU.spl2" title="原文 : This example has a stand-alone POM that you can pattern your own application POM after.">この例には、独自のアプリケーションPOMを後からパターン化できるスタンドアロンPOMがあります。</span> </p>
 
 <p><span class="merged" id="all.2WpVep" title="原文 : For more details on Helidon application POMs see the Helidon&rsquo;s Application POMS">HelidonアプリケーションPOMの詳細は、<a href="https://github.com/oracle/helidon/blob/2.2.1-SNAPSHOT/docs-internal/application-pom.md" id="" target="_blank" >「HelidonアプリケーションPOMS」</a>を参照してください</span></p>
 

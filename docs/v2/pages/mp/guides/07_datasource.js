@@ -250,11 +250,11 @@ lang="bash"
 
 <ul class="ulist">
 <li>
-<p><span class="merged" id="all.1kGFzz" title="原文 : An example showing a Hikari connection pool data source connected to an H2 database"><a href="https://github.com/oracle/helidon/tree/2.2.1-SNAPSHOT/examples/integrations/cdi/datasource-hikaricp-h2" id="" target="_blank" >H2データベースに接続されたHikari接続プール・データ・ソースを示す例</a></span></p>
+<p><span class="merged" id="all.1kGFzz" title="原文 : An example showing a Hikari connection pool data source connected to an H2 database"><a href="https://github.com/oracle/helidon/tree/2.2.1/examples//integrations/cdi/datasource-hikaricp-h2" id="" target="_blank" >H2データベースに接続されたHikari接続プール・データ・ソースを示す例</a></span></p>
 
 </li>
 <li>
-<p><span class="merged" id="all.1vLMOg" title="原文 : An example showing a Hikari connection pool data source connected to a MySQL database"><a href="https://github.com/oracle/helidon/tree/2.2.1-SNAPSHOT/examples/integrations/cdi/datasource-hikaricp-mysql" id="" target="_blank" >MySQLデータベースに接続されたHikari接続プール・データ・ソースを示す例</a></span></p>
+<p><span class="merged" id="all.1vLMOg" title="原文 : An example showing a Hikari connection pool data source connected to a MySQL database"><a href="https://github.com/oracle/helidon/tree/2.2.1/examples//integrations/cdi/datasource-hikaricp-mysql" id="" target="_blank" >MySQLデータベースに接続されたHikari接続プール・データ・ソースを示す例</a></span></p>
 
 </li>
 </ul>

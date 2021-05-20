@@ -3,7 +3,7 @@
  <v-layout row wrap> <v-flex xs12 sm10 lg10> <v-card class="section-def" v-bind:color="$store.state.currentColor"> <v-card-text class="pa-3"> <v-card class="section-def__card"> <v-card-text>
 <dl>
 <dt slot=title><span class="merged" id="all.42W5dx" title="原文 : Using CORS in Built-in Services">組込みサービスでのCORSの使用</span></dt>
-<dd slot="desc"><p><span class="merged" id="all.rRxEr.1.spl1" title="原文 : Several built-in Helidon services - health, metrics, and OpenAPI - have integrated CORS support.">いくつかの組込みHelidonサービス(ヘルス、メトリックおよびOpenAPI)には、CORSサポートが統合されています。</span> <span class="merged" id="all.rRxEr.1.spl2" title="原文 : You can include these services in your application and control their CORS behavior.">これらのサービスをアプリケーションに含め、CORSの動作を制御できます。</span> </p>
+<dd slot="desc"><p><span class="merged" id="all.rRxEr.1.spl1" title="原文 : Several built-in Helidon services - health, metrics, and OpenAPI - have integrated CORS support.">いくつかの組込みHelidonサービス(ヘルス、メトリクスおよびOpenAPI)には、CORSサポートが統合されています。</span> <span class="merged" id="all.rRxEr.1.spl2" title="原文 : You can include these services in your application and control their CORS behavior.">これらのサービスをアプリケーションに含め、CORSの動作を制御できます。</span> </p>
 </dd>
 </dl>
 </v-card-text>
@@ -31,7 +31,7 @@
 
 <ol style="margin-left: 15px;">
 <li>
-<span class="merged" id="all.1qC2bQ.1.spl1" title="原文 : Add the built-in service or services to your application.">組込みサービスをアプリケーションに追加します。</span> <span class="merged" id="all.1qC2bQ.1.spl2" title="原文 : The health, metrics, and OpenAPI services automatically include default CORS support.">ヘルス、メトリックおよびOpenAPIサービスには、デフォルトのCORSサポートが自動的に含まれます。</span> 
+<span class="merged" id="all.1qC2bQ.1.spl1" title="原文 : Add the built-in service or services to your application.">組込みサービスをアプリケーションに追加します。</span> <span class="merged" id="all.1qC2bQ.1.spl2" title="原文 : The health, metrics, and OpenAPI services automatically include default CORS support.">ヘルス、メトリクスおよびOpenAPIサービスには、デフォルトのCORSサポートが自動的に含まれます。</span> 
 
 </li>
 <li>
@@ -89,13 +89,13 @@ lang="xml"
 </tbody>
 </table>
 </div>
-<p><span class="merged" id="all.2xQNN0" title="原文 : The Helidon SE QuickStart example uses these services, so you can use that as a template for your own application, or use the example project itself to experiment with customizing the CORS behavior in the built-in services."><a href="https://github.com/oracle/helidon/tree/2.2.1-SNAPSHOT/examples/quickstarts/helidon-quickstart-se" id="" target="_blank" >「Helidon SE QuickStartの例」</a>ではこれらのサービスが使用されるため、独自のアプリケーションのテンプレートとして使用することも、サンプル・プロジェクト自体を使用して組込みサービスのCORS動作のカスタマイズを試すこともできます。</span></p>
+<p><span class="merged" id="all.2xQNN0" title="原文 : The Helidon SE QuickStart example uses these services, so you can use that as a template for your own application, or use the example project itself to experiment with customizing the CORS behavior in the built-in services."><a href="https://github.com/oracle/helidon/tree/2.2.1/examples//quickstarts/helidon-quickstart-se" id="" target="_blank" >「Helidon SE QuickStartの例」</a>ではこれらのサービスが使用されるため、独自のアプリケーションのテンプレートとして使用することも、サンプル・プロジェクト自体を使用して組込みサービスのCORS動作のカスタマイズを試すこともできます。</span></p>
 
 </div>
 
 <h2 id="_controlling_cors_for_built_in_services_using_the_api"><span class="merged" id="all.B0xoM" title="原文 : Controlling CORS for Built-in Services Using the API">APIを使用した組込みサービスのCORSの制御</span></h2>
 <div class="section">
-<p><span class="merged" id="all.tMKmo" title="原文 : Although services such as health, metrics, and OpenAPI are built into Helidon, to use them your application must create instances of the services and then use those instances in building your application&rsquo;s routing rules.">ヘルス、メトリック、OpenAPIなどのサービスはHelidonに組み込まれていますが、これらを使用するには、アプリケーションでサービスのインスタンスを作成し、それらのインスタンスを使用してアプリケーションのルーティング・ルールをビルドする必要があります。</span></p>
+<p><span class="merged" id="all.tMKmo" title="原文 : Although services such as health, metrics, and OpenAPI are built into Helidon, to use them your application must create instances of the services and then use those instances in building your application&rsquo;s routing rules.">ヘルス、メトリクス、OpenAPIなどのサービスはHelidonに組み込まれていますが、これらを使用するには、アプリケーションでサービスのインスタンスを作成し、それらのインスタンスを使用してアプリケーションのルーティング・ルールをビルドする必要があります。</span></p>
 
 <p><span class="merged" id="all.Cm99q.spl1" title="原文 : Recall that each service type has a Builder class.">各サービス・タイプには<code>Builder</code>クラスがあることを思い出してください。</span> <span class="merged" id="all.Cm99q.spl2" title="原文 : To control the CORS behavior of a built-in service using the API, follow these steps:">APIを使用して組込みサービスのCORS動作を制御するには、次のステップに従います:</span> </p>
 
@@ -121,7 +121,7 @@ lang="xml"
 
 </li>
 </ol>
-<p><span class="merged" id="all.bM8Zz" title="原文 : The following excerpt shows changes to the Helidon SE QuickStart example which limit sharing of the /metrics endpoint to http://foo.com.">次の抜粋は、<code>http://foo.com</code>への<code>/metrics</code>エンドポイントの共有を制限する<a href="https://github.com/oracle/helidon/tree/2.2.1-SNAPSHOT/examples/quickstarts/helidon-quickstart-se" id="" target="_blank" >「Helidon SE QuickStartの例」</a>に対する変更を示しています。</span></p>
+<p><span class="merged" id="all.bM8Zz" title="原文 : The following excerpt shows changes to the Helidon SE QuickStart example which limit sharing of the /metrics endpoint to http://foo.com.">次の抜粋は、<code>http://foo.com</code>への<code>/metrics</code>エンドポイントの共有を制限する<a href="https://github.com/oracle/helidon/tree/2.2.1/examples//quickstarts/helidon-quickstart-se" id="" target="_blank" >「Helidon SE QuickStartの例」</a>に対する変更を示しています。</span></p>
 
 <markup
 lang="java"
@@ -147,7 +147,7 @@ lang="java"
     }</markup>
 
 <ul class="colist">
-<li data-value="1"><span class="merged" id="all.GF79S" title="原文 : Create the CrossOriginConfig for metrics, limiting sharing to http://foo.com.">メトリックの<code>CrossOriginConfig</code>を作成し、<code>http://foo.com</code>への共有を制限します。</span></li>
+<li data-value="1"><span class="merged" id="all.GF79S" title="原文 : Create the CrossOriginConfig for metrics, limiting sharing to http://foo.com.">メトリクスの<code>CrossOriginConfig</code>を作成し、<code>http://foo.com</code>への共有を制限します。</span></li>
 <li data-value="2"><span class="merged" id="all.ii7cQ" title="原文 : Use the CrossOriginConfig instance in constructing the MetricsSupport service."><code>CrossOriginConfig</code>インスタンスを使用して、<code>MetricsSupport</code>サービスを構築します。</span></li>
 <li data-value="3"><span class="merged" id="all.2zPAJT" title="原文 : Use the MetricsSupport object in creating the routing rules."><code>MetricsSupport</code>オブジェクトを使用してルーティング・ルールを作成します。</span></li>
 </ul>
@@ -157,7 +157,7 @@ lang="java"
 <div class="section">
 <p><span class="merged" id="all.4gbKsh" title="原文 : You can also use configuration to control whether and how each of the built-in services works with CORS.">構成を使用して、各組込みサービスがCORSと連携するかどうか、およびどのように連携するかを制御することもできます。</span></p>
 
-<p><span class="merged" id="all.Hnp4y.spl1" title="原文 : Your application can pass configuration to the builder for each built-in service.">アプリケーションは、組込みサービスごとに構成をビルダーに渡すことができます。</span> <span class="merged" id="all.Hnp4y.spl2" title="原文 : For the health, metrics, and OpenAPI services, your configuration can include a section for CORS.">ヘルス、メトリックおよびOpenAPIサービスの場合、構成にCORSのセクションを含めることができます。</span> </p>
+<p><span class="merged" id="all.Hnp4y.spl1" title="原文 : Your application can pass configuration to the builder for each built-in service.">アプリケーションは、組込みサービスごとに構成をビルダーに渡すことができます。</span> <span class="merged" id="all.Hnp4y.spl2" title="原文 : For the health, metrics, and OpenAPI services, your configuration can include a section for CORS.">ヘルス、メトリクスおよびOpenAPIサービスの場合、構成にCORSのセクションを含めることができます。</span> </p>
 
 <p><span class="merged" id="all.2i6xie" title="原文 : The following example restricts sharing of the /health resource, provided by the health built-in service, to only the origin http://there.com.">次の例では、ヘルス組込みサービスによって提供される<code>/health</code>リソースの共有をオリジン<code>http://there.com</code>のみに制限します。</span></p>
 
@@ -206,9 +206,9 @@ WEB server is up! http://localhost:8080/greet</markup>
 
 </div>
 
-<h3 id="_retrieve_metrics"><span class="merged" id="all.CwdJ9.1" title="原文 : Retrieve Metrics">メトリックの取得</span></h3>
+<h3 id="_retrieve_metrics"><span class="merged" id="all.CwdJ9.1" title="原文 : Retrieve Metrics">メトリクスの取得</span></h3>
 <div class="section">
-<p><span class="merged" id="all.4PWDDI.1" title="原文 : The metrics service rejects attempts to access metrics on behalf of a disallowed origin.">メトリック・サービスは、許可されていないオリジンにかわってメトリックへのアクセス試行を拒否します。</span></p>
+<p><span class="merged" id="all.4PWDDI.1" title="原文 : The metrics service rejects attempts to access metrics on behalf of a disallowed origin.">メトリクス・サービスは、許可されていないオリジンにかわってメトリクスへのアクセス試行を拒否します。</span></p>
 
 <markup
 lang="bash"

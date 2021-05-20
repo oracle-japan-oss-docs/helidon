@@ -23,7 +23,7 @@
 <div class="section">
 <p><span class="merged" id="all.4NFZWf.spl1" title="原文 : OpenAPI support in Helidon SE largely follows the MicroProfile OpenAPI spec.">Helidon SEでのOpenAPIのサポートは、主に<a href="https://github.com/eclipse/microprofile-open-api/blob/master/spec/src/main/asciidoc/microprofile-openapi-spec.adoc" id="" target="_blank" >「MicroProfile OpenAPI仕様」</a>に従います。</span> <span class="merged" id="all.4NFZWf.spl2" title="原文 : But Helidon SE does not process annotations, which is one way to convey OpenAPI information about the endpoints in your app.">ただし、Helidon SEでは注釈は処理されません。これは、アプリケーション内のエンドポイントに関するOpenAPI情報を伝達する方法の1つです。</span> <span class="merged" id="all.4NFZWf.spl3" title="原文 : You can still use OpenAPI with your Helidon SE app by providing OpenAPI information about the endpoints without using annotations.">注釈を使用せずにエンドポイントに関するOpenAPI情報を提供することで、Helidon SEアプリケーションでOpenAPIを引き続き使用できます。</span> </p>
 
-<p><span class="merged" id="all.1WF0FY" title="原文 : Helidon SE includes a complete OpenAPI example based on the SE quick-start sample app.">Helidon SEには、SEクイックスタート・サンプル・アプリケーションに基づく<a href="https://github.com/oracle/helidon/tree/2.2.1-SNAPSHOT/examples/openapi" id="" target="_blank" >「完全なOpenAPIの例」</a>が含まれています。</span></p>
+<p><span class="merged" id="all.1WF0FY" title="原文 : Helidon SE includes a complete OpenAPI example based on the SE quick-start sample app.">Helidon SEには、SEクイックスタート・サンプル・アプリケーションに基づく<a href="https://github.com/oracle/helidon/tree/2.2.1/examples//openapi" id="" target="_blank" >「完全なOpenAPIの例」</a>が含まれています。</span></p>
 
 <p><span class="merged" id="all.1S293b" title="原文 : To use OpenAPI from your Helidon SE app:">Helidon SEアプリからOpenAPIを使用するには:</span></p>
 

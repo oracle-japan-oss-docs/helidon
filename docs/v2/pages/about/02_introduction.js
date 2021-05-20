@@ -114,7 +114,7 @@
 
 </li>
 <li>
-<p><span class="merged" id="all.1jBW0m.spl1" title="原文 : DB Client for Helidon SE The new database client for Helidon SE will include support for the MongoDB reactive driver and brings Health Checks, Metrics, and Tracing support to every Helidon API."><strong>「Helidon SEのDBクライアント」</strong><br>Helidon SEの新しいデータベース・クライアントには、MongoDBリアクティブ・ドライバのサポートが含まれ、ヘルス・チェック、メトリックおよびトレースのサポートがすべてのHelidon APIに提供されます。</span> <span class="merged" id="all.1jBW0m.spl2" title="原文 : Learn more about the DB Client."><router-link to="/se/dbclient/01_introduction">「DBクライアントについて学習します」</router-link>。</span> </p>
+<p><span class="merged" id="all.1jBW0m.spl1" title="原文 : DB Client for Helidon SE The new database client for Helidon SE will include support for the MongoDB reactive driver and brings Health Checks, Metrics, and Tracing support to every Helidon API."><strong>「Helidon SEのDBクライアント」</strong><br>Helidon SEの新しいデータベース・クライアントには、MongoDBリアクティブ・ドライバのサポートが含まれ、ヘルス・チェック、メトリクスおよびトレースのサポートがすべてのHelidon APIに提供されます。</span> <span class="merged" id="all.1jBW0m.spl2" title="原文 : Learn more about the DB Client."><router-link to="/se/dbclient/01_introduction">「DBクライアントについて学習します」</router-link>。</span> </p>
 
 </li>
 <li>

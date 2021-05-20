@@ -42,7 +42,7 @@
 </li>
 <li>
 <p><span class="merged" id="all.2SHZr1"  title="原文:: Observability ">観測性<br></span></p>
-<p><span class="merged" id="all.tEQwv" title="原文 : The API offers support for health checks, metrics and tracing.">このAPIは、ヘルス・チェック、メトリックおよびトレースのサポートを提供します。</span></p>
+<p><span class="merged" id="all.tEQwv" title="原文 : The API offers support for health checks, metrics and tracing.">このAPIは、ヘルス・チェック、メトリクスおよびトレースのサポートを提供します。</span></p>
 
 </li>
 </ul>

@@ -207,7 +207,7 @@ lang="java"
 
 </li>
 <li>
-<p><span class="merged" id="all.1mwSCj.1" title="原文 : See the Helidon CORS support in action by building and running the CORS example."><a href="https://github.com/oracle/helidon/tree/2.2.1-SNAPSHOT/examples/cors" id="" target="_blank" >「CORSの例」</a>をビルドして実行し、動作中のHelidon CORSサポートを参照してください。</span></p>
+<p><span class="merged" id="all.1mwSCj.1" title="原文 : See the Helidon CORS support in action by building and running the CORS example."><a href="https://github.com/oracle/helidon/tree/2.2.1/examples//cors" id="" target="_blank" >「CORSの例」</a>をビルドして実行し、動作中のHelidon CORSサポートを参照してください。</span></p>
 
 </li>
 </ul>

@@ -129,7 +129,7 @@ title="application.yaml - サーバー構成"
 
 </li>
 <li>
-<p><span class="merged" id="all.1eVgIT" title="原文 : Other ports (in this example we configure one &quot;admin&quot; port) can be assigned endpoints that are exposed by Helidon components, currently supported by MP Health and MP Metrics">他のポート(この例では管理ポートを構成)には、MPヘルスおよびMPメトリックで現在サポートされているHelidonコンポーネントによって公開されているエンドポイントを割り当てることができます</span></p>
+<p><span class="merged" id="all.1eVgIT" title="原文 : Other ports (in this example we configure one &quot;admin&quot; port) can be assigned endpoints that are exposed by Helidon components, currently supported by MP Health and MP Metrics">他のポート(この例では管理ポートを構成)には、MPヘルスおよびMPメトリクスで現在サポートされているHelidonコンポーネントによって公開されているエンドポイントを割り当てることができます</span></p>
 
 </li>
 </ul>
@@ -145,7 +145,7 @@ title="application.yaml - サーバー構成"
 
 </li>
 <li>
-<p><span class="merged" id="all.3UFTi1" title="原文 : MP Metrics are configured to use the &quot;admin&quot; port through the routing configuration (reference is by name)">MPメトリックは、<code>routing</code>構成を介して管理ポートを使用するように構成されています(参照は名前で行われます)</span></p>
+<p><span class="merged" id="all.3UFTi1" title="原文 : MP Metrics are configured to use the &quot;admin&quot; port through the routing configuration (reference is by name)">MPメトリクスは、<code>routing</code>構成を介して管理ポートを使用するように構成されています(参照は名前で行われます)</span></p>
 
 </li>
 <li>

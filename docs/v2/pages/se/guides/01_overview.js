@@ -28,9 +28,9 @@
 <p></p>
 <p><span class="merged" id="all.3ERH8Z" title="原文 : Learn how to use Helidon SE built-in and custom health checks.">Helidon SEの組込みヘルス・チェックとカスタム・ヘルス・チェックの使用方法について説明します。</span></p>
 </v-card-text> </v-card> </v-flex> <v-flex xs12 sm4 lg3> <v-card> <router-link to="/se/guides/05_metrics"><div class="card__link-hover"/>
-</router-link> <v-card-title primary class="headline layout justify-center"><span style="text-align:center">メトリック・ガイド</span></v-card-title> <v-card-text class="caption">
+</router-link> <v-card-title primary class="headline layout justify-center"><span style="text-align:center">メトリクス・ガイド</span></v-card-title> <v-card-text class="caption">
 <p></p>
-<p><span class="merged" id="all.19cnCq" title="原文 : Learn how to use Helidon SE built-in and application metrics.">Helidon SEの組込みメトリックおよびアプリケーション・メトリックの使用方法について説明します。</span></p>
+<p><span class="merged" id="all.19cnCq" title="原文 : Learn how to use Helidon SE built-in and application metrics.">Helidon SEの組込みメトリクスおよびアプリケーション・メトリクスの使用方法について説明します。</span></p>
 </v-card-text> </v-card> </v-flex> <v-flex xs12 sm4 lg3> <v-card> <router-link to="/se/guides/06_tracing"><div class="card__link-hover"/>
 </router-link> <v-card-title primary class="headline layout justify-center"><span style="text-align:center">トレース・ガイド</span></v-card-title> <v-card-text class="caption">
 <p></p>

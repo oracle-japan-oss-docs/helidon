@@ -158,11 +158,11 @@ lang="xml"
 
 <h2 id="se-api-routing-example"><span class="merged" id="all.4RlqMi" title="原文 : Sample Routing Setup Using the CrossOriginConfig API"><code>CrossOriginConfig</code> APIを使用したルーティング設定の例</span></h2>
 <div class="section">
-<p><span class="merged" id="all.442Ckk" title="原文 : The Helidon SE Quickstart application lets you change the greeting by sending a PUT request to the /greet/greeting resource."><a href="https://github.com/oracle/helidon/tree/2.2.1-SNAPSHOT/examples/quickstarts/helidon-quickstart-se" id="" target="_blank" >「Helidon SE Quickstartアプリケーション」</a>では、<code>PUT</code>リクエストを<code>/greet/greeting</code>リソースに送信することで、応答メッセージを変更できます。</span></p>
+<p><span class="merged" id="all.442Ckk" title="原文 : The Helidon SE Quickstart application lets you change the greeting by sending a PUT request to the /greet/greeting resource."><a href="https://github.com/oracle/helidon/tree/2.2.1/examples//quickstarts/helidon-quickstart-se" id="" target="_blank" >「Helidon SE Quickstartアプリケーション」</a>では、<code>PUT</code>リクエストを<code>/greet/greeting</code>リソースに送信することで、応答メッセージを変更できます。</span></p>
 
 <p><span class="merged" id="all.4XTDRL.spl1" title="原文 : This example, based on the QuickStart greeting app, uses the low-level CrossOriginConfig API and the CorsSupport API to influence the routing, thereby determining how that resource is shared.">この例では、QuickStart応答メッセージ・アプリケーションに基づいて、低レベルの<code>CrossOriginConfig</code> APIおよび<code>CorsSupport</code> APIを使用して<router-link to="/se/webserver/03_routing">「ルーティング」</router-link>に影響を与え、そのリソースの共有方法を決定します。</span> <span class="merged" id="all.4XTDRL.spl2" title="原文 : (If desired, you can use configuration instead of the low-level API.">(必要に応じて、低レベルAPIのかわりに構成を使用できます。</span> <span class="merged" id="all.4XTDRL.spl3" title="原文 : Learn more.)"><router-link to="/se/cors/03_using-configuration">「さらに学習します。」</router-link> )</span> </p>
 
-<p><span class="merged" id="all.33qNx1" title="原文 : The following code shows how to prepare your application&rsquo;s routing to support metrics and health support, as well as CORS.">次のコードは、CORSと同様に、メトリックとヘルス・サポートをサポートするようにアプリケーションのルーティングを準備する方法を示しています。</span></p>
+<p><span class="merged" id="all.33qNx1" title="原文 : The following code shows how to prepare your application&rsquo;s routing to support metrics and health support, as well as CORS.">次のコードは、CORSと同様に、メトリクスとヘルス・サポートをサポートするようにアプリケーションのルーティングを準備する方法を示しています。</span></p>
 
 <markup
 lang="java"
@@ -215,7 +215,7 @@ lang="java"
 
 </li>
 <li>
-<p><span class="merged" id="all.1mwSCj" title="原文 : See the Helidon CORS support in action by building and running the CORS example."><a href="https://github.com/oracle/helidon/tree/2.2.1-SNAPSHOT/examples/cors" id="" target="_blank" >「CORSの例」</a>をビルドして実行し、動作中のHelidon CORSサポートを参照してください。</span></p>
+<p><span class="merged" id="all.1mwSCj" title="原文 : See the Helidon CORS support in action by building and running the CORS example."><a href="https://github.com/oracle/helidon/tree/2.2.1/examples//cors" id="" target="_blank" >「CORSの例」</a>をビルドして実行し、動作中のHelidon CORSサポートを参照してください。</span></p>
 
 </li>
 </ul>

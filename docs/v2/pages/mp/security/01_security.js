@@ -54,7 +54,7 @@ public String adminResource(@Context io.helidon.security.SecurityContext securit
 
 </li>
 <li>
-<p><span class="merged" id="all.YirxS" title="原文 : Metrics endpoint (/metrics)">メトリック・エンドポイント(<code>/metrics</code>)</span></p>
+<p><span class="merged" id="all.YirxS" title="原文 : Metrics endpoint (/metrics)">メトリクス・エンドポイント(<code>/metrics</code>)</span></p>
 
 </li>
 <li>

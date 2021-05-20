@@ -17,7 +17,7 @@
 
 <h2 id="_protecting_configuration_secrets"><span class="merged" id="all.1iY0Nh" title="原文 : Protecting Configuration Secrets">構成シークレットの保護</span></h2>
 <div class="section">
-<p><span class="merged" id="all.46jxy2.spl1" title="原文 : In Helidon MP, the config encryption filter is enabled by default.">Helidon MPでは、構成暗号化フィルタは<strong>「デフォルトで有効」</strong>です。</span> <span class="merged" id="all.46jxy2.spl2" title="原文 : However, if you don&rsquo;t configure it, the filter only supports a template for aliasing that checks that no clear text passwords are present (template ${CLEAR=…​}.">ただし、これを構成しない場合、フィルタでは、クリア・テキスト・パスワードが存在しないことをチェックする別名のテンプレートのみがサポートされます(テンプレート${CLEAR=…}。</span> </p>
+<p><span class="merged" id="all.46jxy2.spl1" title="原文 : In Helidon MP, the config encryption filter is enabled by default.">Helidon MPでは、構成暗号化フィルタは<strong>「デフォルトで有効」</strong>です。</span> <span class="merged" id="all.46jxy2.spl2" title="原文 : However, if you don&rsquo;t configure it, the filter only supports a template for aliasing that checks that no clear text passwords are present (template ${CLEAR=…​}.">ただし、これを構成しない場合、フィルタでは、クリア・テキスト・パスワードが存在しないことをチェックする別名のテンプレートのみがサポートされます(テンプレート${CLEAR=…​}。</span> </p>
 
 <p><span class="merged" id="all.4ZNcqu" title="原文 : In Helidon SE, you may add support for this filter with dependency (loaded through a java service mechanism):">Helidon SEでは、依存性のあるこのフィルタのサポートを追加できます(javaサービス・メカニズムを介してロードされます):</span></p>
 

@@ -3,7 +3,7 @@
  <v-layout row wrap> <v-flex xs12 sm10 lg10> <v-card class="section-def" v-bind:color="$store.state.currentColor"> <v-card-text class="pa-3"> <v-card class="section-def__card"> <v-card-text>
 <dl>
 <dt slot=title><span class="merged" id="all.XUA2h" title="原文 : Helidon MP Tutorial">Helidon MPチュートリアル</span></dt>
-<dd slot="desc"><p><span class="merged" id="all.1KZLrG" title="原文 : This tutorial describes how to build a Helidon MicroProfile (MP) application from scratch including JSON REST endpoints, metrics, health check, and configuration.">このチュートリアルでは、JSON RESTエンドポイント、メトリック、ヘルス・チェックおよび構成を含むHelidon MicroProfile (MP)アプリケーションを最初からビルドする方法について説明します。</span></p>
+<dd slot="desc"><p><span class="merged" id="all.1KZLrG" title="原文 : This tutorial describes how to build a Helidon MicroProfile (MP) application from scratch including JSON REST endpoints, metrics, health check, and configuration.">このチュートリアルでは、JSON RESTエンドポイント、メトリクス、ヘルス・チェックおよび構成を含むHelidon MicroProfile (MP)アプリケーションを最初からビルドする方法について説明します。</span></p>
 </dd>
 </dl>
 </v-card-text>
@@ -108,7 +108,7 @@ title="初期Maven POMファイル"
 <li data-value="5"><span class="merged" id="all.3Fg9mt.spl1" title="原文 : Adds plugins to be executed during the build.">ビルド中に実行されるプラグインを追加します。</span> <span class="merged" id="all.3Fg9mt.spl2" title="原文 : The maven-dependency-plugin is used to copy the runtime dependencies into your target directory."><code>maven-dependency-plugin</code>は、ランタイム依存性をターゲット・ディレクトリにコピーするために使用されます。</span> <span class="merged" id="all.3Fg9mt.spl3" title="原文 : The jandex-maven-plugin builds an index of your class files for faster loading."><code>jandex-maven-plugin</code>は、ロードを高速化するためにクラス・ファイルの索引をビルドします。</span> <span class="merged" id="all.3Fg9mt.spl4" title="原文 : The Helidon parent pom handles the details of configuring these plugins.">Helidonの親POMは、これらのプラグインの構成の詳細を処理します。</span> <span class="merged" id="all.3Fg9mt.spl5" title="原文 : But you can modify the configuration here.">ただし、ここで構成を変更できます。</span> </li>
 </ul>
 <div class="admonition tip">
-<p class="admonition-inline"><span class="merged" id="all.2mxriT.spl1" title="原文 : MicroProfile contains features like Metrics, Health Check, Streams Operators, Open Tracing, OpenAPI, REST client, and fault tolerance.">MicroProfileには、メトリック、ヘルス・チェック、ストリーム・オペレータ、オープン・トレース、OpenAPI、RESTクライアント、フォルト・トレランスなどの機能が含まれます。</span> <span class="merged" id="all.2mxriT.spl2" title="原文 : You can find detailed information about MicroProfile on the Eclipse MicroProfile site.">MicroProfileの詳細は、<a href="https://projects.eclipse.org/projects/technology.microprofile" id="" target="_blank" >Eclipse MicroProfile</a>サイトを参照してください。</span> </p>
+<p class="admonition-inline"><span class="merged" id="all.2mxriT.spl1" title="原文 : MicroProfile contains features like Metrics, Health Check, Streams Operators, Open Tracing, OpenAPI, REST client, and fault tolerance.">MicroProfileには、メトリクス、ヘルス・チェック、ストリーム・オペレータ、オープン・トレース、OpenAPI、RESTクライアント、フォルト・トレランスなどの機能が含まれます。</span> <span class="merged" id="all.2mxriT.spl2" title="原文 : You can find detailed information about MicroProfile on the Eclipse MicroProfile site.">MicroProfileの詳細は、<a href="https://projects.eclipse.org/projects/technology.microprofile" id="" target="_blank" >Eclipse MicroProfile</a>サイトを参照してください。</span> </p>
 </div>
 <p><span class="merged" id="all.1EoHq4" title="原文 : With this pom.xml, the application can be built successfully with Maven:">この<code>pom.xml</code>では、Mavenを使用してアプリケーションを正常に構築できます:</span></p>
 
@@ -494,32 +494,32 @@ http://localhost:8080/greet</markup>
 
 </div>
 
-<h2 id="_metrics"><span class="merged" id="all.4LL0ot.4"  title="原文:: Metrics">メトリック</span></h2>
+<h2 id="_metrics"><span class="merged" id="all.4LL0ot.4"  title="原文:: Metrics">メトリクス</span></h2>
 <div class="section">
-<p><span class="merged" id="all.O2AKQ" title="原文 : Helidon provides built-in support for metrics endpoints.">Helidonには、メトリック・エンドポイントの組込みサポートが用意されています。</span></p>
+<p><span class="merged" id="all.O2AKQ" title="原文 : Helidon provides built-in support for metrics endpoints.">Helidonには、メトリクス・エンドポイントの組込みサポートが用意されています。</span></p>
 
 <markup
 lang="bash"
-title="Prometheus形式のメトリック"
+title="Prometheus形式のメトリクス"
 >curl -s -X GET http://localhost:8080/metrics</markup>
 
 <markup
 lang="bash"
-title="JSON形式のメトリック"
+title="JSON形式のメトリクス"
 >curl -H 'Accept: application/json' -X GET http://localhost:8080/metrics</markup>
 
-<p><span class="merged" id="all.4XBqiT" title="原文 : It is possible to disable metrics by adding properties to the microprofile-config.properties file, for example:"><code>microprofile-config.properties</code>ファイルにプロパティを追加することで、メトリックを無効にできます。次に例を示します:</span></p>
+<p><span class="merged" id="all.4XBqiT" title="原文 : It is possible to disable metrics by adding properties to the microprofile-config.properties file, for example:"><code>microprofile-config.properties</code>ファイルにプロパティを追加することで、メトリクスを無効にできます。次に例を示します:</span></p>
 
 <markup
 lang="bash"
 title="メトリックの無効化"
 >metrics.base.classloader.currentLoadedClass.count.enabled=false</markup>
 
-<p><span class="merged" id="all.chi81" title="原文 : Call the metrics endpoint before adding this change to confirm that the metric is included, then add the property to disable the metric, rebuild and restart the application and check again:">この変更を追加する前にメトリック・エンドポイントをコールしてメトリックが含まれていることを確認してから、プロパティを追加してメトリックを無効にし、アプリケーションを再ビルドして再起動し、再度確認します:</span></p>
+<p><span class="merged" id="all.chi81" title="原文 : Call the metrics endpoint before adding this change to confirm that the metric is included, then add the property to disable the metric, rebuild and restart the application and check again:">この変更を追加する前にメトリクス・エンドポイントをコールしてメトリックが含まれていることを確認してから、プロパティを追加してメトリックを無効にし、アプリケーションを再ビルドして再起動し、再度確認します:</span></p>
 
 <markup
 lang="bash"
-title="メトリックを無効化する前後のメトリックの確認"
+title="メトリックを無効化する前後のメトリクスの確認"
 ># before
 curl -s http://localhost:8080/metrics | grep classloader_current
 # TYPE base:classloader_current_loaded_class_count counter
@@ -530,14 +530,14 @@ base:classloader_current_loaded_class_count 7936
 curl -s http://localhost:8080/metrics | grep classloader_current
 # (no output)</markup>
 
-<p><span class="merged" id="all.2GSSnq.spl1" title="原文 : Helidon also support custom metrics.">Helidonでは、カスタム・メトリックもサポートされます。</span> <span class="merged" id="all.2GSSnq.spl2" title="原文 : To add a new metric, annotate the JAX-RS resource with one of the metric annotations as shown in the example below:">新しいメトリックを追加するには、次の例に示すように、JAX-RSリソースにいずれかのメトリック注釈を付けます:</span> </p>
+<p><span class="merged" id="all.2GSSnq.spl1" title="原文 : Helidon also support custom metrics.">Helidonでは、カスタム・メトリクスもサポートされます。</span> <span class="merged" id="all.2GSSnq.spl2" title="原文 : To add a new metric, annotate the JAX-RS resource with one of the metric annotations as shown in the example below:">新しいメトリックを追加するには、次の例に示すように、JAX-RSリソースにいずれかのメトリック注釈を付けます:</span> </p>
 
 <div class="admonition tip">
-<p class="admonition-inline"><span class="merged" id="all.HJMVR" title="原文 : You can find details of the available annotations in the MicroProfile Metrics Specification.">使用可能な注釈の詳細は、<a href="https://microprofile.io/project/eclipse/microprofile-metrics" id="" target="_blank" >「MicroProfileメトリック仕様」</a>を参照してください。</span></p>
+<p class="admonition-inline"><span class="merged" id="all.HJMVR" title="原文 : You can find details of the available annotations in the MicroProfile Metrics Specification.">使用可能な注釈の詳細は、<a href="https://microprofile.io/project/eclipse/microprofile-metrics" id="" target="_blank" >「MicroProfileメトリクス仕様」</a>を参照してください。</span></p>
 </div>
 <markup
 lang="java"
-title="カスタム・メトリックで更新されたGreetResource.java"
+title="カスタム・メトリクスで更新されたGreetResource.java"
 >import org.eclipse.microprofile.metrics.annotation.Timed;
 
     // some lines omitted
@@ -552,11 +552,11 @@ title="カスタム・メトリックで更新されたGreetResource.java"
 <ul class="colist">
 <li data-value="1"><span class="merged" id="all.18euoV" title="原文 : The Timed annotation is added to the getDefaultMessage() method."><code>Timed</code>注釈が<code>getDefaultMessage()</code>メソッドに追加されます。</span></li>
 </ul>
-<p><span class="merged" id="all.1Szgqq.spl1" title="原文 : Rebuild and run the application.">アプリケーションを再ビルドして実行します。</span> <span class="merged" id="all.1Szgqq.spl2" title="原文 : Make some calls to the endpoint (http://localhost:8080/greet) so there will be some data to report.">レポートするデータがいくつか存在するように、エンドポイント(<a href="http://localhost:8080/greet" id="" target="_blank" >http://localhost:8080/greet</a>)をコールします。</span> <span class="merged" id="all.1Szgqq.spl3" title="原文 : Then obtain the application metrics as follows:">次に、次のようにアプリケーション・メトリックを取得します:</span> </p>
+<p><span class="merged" id="all.1Szgqq.spl1" title="原文 : Rebuild and run the application.">アプリケーションを再ビルドして実行します。</span> <span class="merged" id="all.1Szgqq.spl2" title="原文 : Make some calls to the endpoint (http://localhost:8080/greet) so there will be some data to report.">レポートするデータがいくつか存在するように、エンドポイント(<a href="http://localhost:8080/greet" id="" target="_blank" >http://localhost:8080/greet</a>)をコールします。</span> <span class="merged" id="all.1Szgqq.spl3" title="原文 : Then obtain the application metrics as follows:">次に、次のようにアプリケーション・メトリクスを取得します:</span> </p>
 
 <markup
 lang="bash"
-title="アプリケーション・メトリックの確認"
+title="アプリケーション・メトリクスの確認"
 >curl -H "Accept: application/json" http://localhost:8080/metrics/application
 {
   "io.helidon.examples.GreetResource.getDefaultMessage": {
@@ -578,7 +578,7 @@ title="アプリケーション・メトリックの確認"
   }
 }</markup>
 
-<p><span class="merged" id="all.3DCxcQ" title="原文 : Learn more about using Helidon and MicroProfile metrics in the Metrics Guide."><router-link to="/mp/guides/05_metrics">「メトリック・ガイド」</router-link>でのHelidonおよびMicroProfileメトリックの使用についてさらに学習します。</span></p>
+<p><span class="merged" id="all.3DCxcQ" title="原文 : Learn more about using Helidon and MicroProfile metrics in the Metrics Guide."><router-link to="/mp/guides/05_metrics">「メトリクス・ガイド」</router-link>でのHelidonおよびMicroProfileメトリクスの使用についてさらに学習します。</span></p>
 
 </div>
 
@@ -889,7 +889,7 @@ title="Kubernetesからのアプリケーションの削除"
 
 <h2 id="_conclusion"><span class="merged" id="all.1V7peH"  title="原文:: Conclusion">まとめ</span></h2>
 <div class="section">
-<p><span class="merged" id="all.3iqLsa.spl1" title="原文 : This concludes the tutorial.">これでチュートリアルは終わりです。</span> <span class="merged" id="all.3iqLsa.spl2" title="原文 : The tutorial has demonstrated how to build a Helidon MP application from scratch, how to use Helidon and MicroProfile configuration, logging, metrics, and health checks.">チュートリアルでは、Helidon MPアプリケーションを最初からビルドする方法、HelidonおよびMicroProfileの構成、ロギング、メトリックおよびヘルス・チェックの使用方法について説明しました。</span> <span class="merged" id="all.3iqLsa.spl3" title="原文 : It also demonstrated how to package the application in a Docker image and run it in Kubernetes.">また、アプリケーションをDockerイメージにパッケージ化し、Kubernetesで実行する方法も示しました。</span> </p>
+<p><span class="merged" id="all.3iqLsa.spl1" title="原文 : This concludes the tutorial.">これでチュートリアルは終わりです。</span> <span class="merged" id="all.3iqLsa.spl2" title="原文 : The tutorial has demonstrated how to build a Helidon MP application from scratch, how to use Helidon and MicroProfile configuration, logging, metrics, and health checks.">チュートリアルでは、Helidon MPアプリケーションを最初からビルドする方法、HelidonおよびMicroProfileの構成、ロギング、メトリクスおよびヘルス・チェックの使用方法について説明しました。</span> <span class="merged" id="all.3iqLsa.spl3" title="原文 : It also demonstrated how to package the application in a Docker image and run it in Kubernetes.">また、アプリケーションをDockerイメージにパッケージ化し、Kubernetesで実行する方法も示しました。</span> </p>
 
 <p><span class="merged" id="all.2DwKZy.spl1" title="原文 : There were several links to more detailed information included in the tutorial.">チュートリアルには、詳細情報へのリンクがいくつか含まれています。</span> <span class="merged" id="all.2DwKZy.spl2" title="原文 : These links are repeated below and can be explored to learn more details about Helidon application development.">これらのリンクを次に繰り返し、Helidonアプリケーション開発の詳細を確認できます。</span> </p>
 
@@ -915,11 +915,11 @@ title="Kubernetesからのアプリケーションの削除"
 
 </li>
 <li>
-<p><span class="merged" id="all.AvEOZ" title="原文 : MicroProfile Metrics Specification"><a href="https://microprofile.io/project/eclipse/microprofile-metrics" id="" target="_blank" >MicroProfileメトリック仕様</a></span></p>
+<p><span class="merged" id="all.AvEOZ" title="原文 : MicroProfile Metrics Specification"><a href="https://microprofile.io/project/eclipse/microprofile-metrics" id="" target="_blank" >MicroProfileメトリクス仕様</a></span></p>
 
 </li>
 <li>
-<p><span class="merged" id="all.1GHj85" title="原文 : Metrics Guide"><router-link to="/mp/guides/05_metrics">メトリック・ガイド</router-link></span></p>
+<p><span class="merged" id="all.1GHj85" title="原文 : Metrics Guide"><router-link to="/mp/guides/05_metrics">メトリクス・ガイド</router-link></span></p>
 
 </li>
 <li>

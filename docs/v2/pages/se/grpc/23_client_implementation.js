@@ -11,7 +11,7 @@
 
 </li>
 <li>
-<p><span class="merged" id="all.1CES9e" title="原文 : It allows you to configure some of the Helidon value-added features, such as security and metrics collection and interceptors down to the method level.">これにより、<router-link @click.native="this.scrollFix('#08_security.adoc')" to="#08_security.adoc">「セキュリティ」</router-link>や<router-link @click.native="this.scrollFix('#07_metrics.adoc')" to="#07_metrics.adoc">「メトリックの収集とインターセプタ」</router-link>など、一部のHelidonの付加価値機能をメソッド・レベルまで構成できます。</span></p>
+<p><span class="merged" id="all.1CES9e" title="原文 : It allows you to configure some of the Helidon value-added features, such as security and metrics collection and interceptors down to the method level.">これにより、<router-link @click.native="this.scrollFix('#08_security.adoc')" to="#08_security.adoc">「セキュリティ」</router-link>や<router-link @click.native="this.scrollFix('#07_metrics.adoc')" to="#07_metrics.adoc">「メトリクスの収集とインターセプタ」</router-link>など、一部のHelidonの付加価値機能をメソッド・レベルまで構成できます。</span></p>
 
 </li>
 <li>
