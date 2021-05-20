@@ -4,7 +4,7 @@
 
 <h2 id="_reactive_messaging"><span class="merged" id="all.46TtuU.1" title="原文 : Reactive Messaging">リアクティブ・メッセージング</span></h2>
 <div class="section">
-<p><span class="merged" id="all.uuiVe.spl1" title="原文 : Asynchronous messaging is a commonly used form of communication in the world of microservices.">非同期メッセージングは、マイクロサービスの世界でよく使用される通信形式です。</span> <span class="merged" id="all.uuiVe.spl2" title="原文 : While its possible to start building your reactive streams directly by combining operators and connecting them to reactive APIs, with Helidon SE Reactive Messaging, you can now use prepared tools for repetitive use case scenarios .">Helidon SEリアクティブ・メッセージングを使用すると、演算子を組み合せてリアクティブAPIに接続することで、リアクティブ・ストリームのビルドを直接開始できますが、反復的なユースケース・シナリオのための準備済ツールを使用できるようになりました。</span> </p>
+<p><span class="merged" id="all.uuiVe.spl1" title="原文 : Asynchronous messaging is a commonly used form of communication in the world of microservices.">非同期メッセージングは、マイクロサービスの世界でよく使用される通信形式です。</span> <span class="merged" id="all.uuiVe.spl2" title="原文 : While its possible to start building your reactive streams directly by combining operators and connecting them to reactive APIs, with Helidon SE Reactive Messaging, you can now use prepared tools for repetitive use case scenarios .">Helidon SEリアクティブ・メッセージングを使用すると、オペレータを組み合せてリアクティブAPIに接続することで、リアクティブ・ストリームのビルドを直接開始できますが、反復的なユースケース・シナリオのための準備済ツールを使用できるようになりました。</span> </p>
 
 <p><span class="merged" id="all.33f99F" title="原文 : For example connecting your streams to external services usually requires a lot of boiler-plate code for configuration handling, backpressure propagation, acknowledgement and more.">たとえば、ストリームを外部サービスに接続するには、通常、構成処理、バックプレッシャ伝播、確認などに多くのボイラープレート・コードが必要です。</span></p>
 

@@ -704,8 +704,8 @@ function createRoutes(){
         {
             path: '/se/reactivestreams/03_rsoperators',
             meta: {
-                h1: 'リアクティブ・ストリーム演算子',
-                title: 'リアクティブ・ストリーム演算子',
+                h1: 'リアクティブ・ストリーム・オペレータ',
+                title: 'リアクティブ・ストリーム・オペレータ',
                 h1Prefix: 'SE',
                 description: 'MicroProfile Reactive Streams Operators support in Helidon SE',
                 keywords: 'helidon, se, microprofile, reactivestreams',
@@ -1705,8 +1705,8 @@ function createRoutes(){
         {
             path: '/mp/reactivestreams/03_rsoperators',
             meta: {
-                h1: 'リアクティブ・ストリーム演算子',
-                title: 'リアクティブ・ストリーム演算子',
+                h1: 'リアクティブ・ストリーム・オペレータ',
+                title: 'リアクティブ・ストリーム・オペレータ',
                 h1Prefix: 'MP',
                 description: 'MicroProfile Reactive Streams Operators support in Helidon MP',
                 keywords: 'helidon, mp, microprofile, reactivestreams',
@@ -2131,7 +2131,7 @@ function createNav(){
                             items: [
                                 { href: '/se/reactivestreams/01_overview', title: '概要' },
                                 { href: '/se/reactivestreams/02_engine', title: 'Helidonリアクティブ・エンジン' },
-                                { href: '/se/reactivestreams/03_rsoperators', title: 'リアクティブ・ストリーム演算子' }
+                                { href: '/se/reactivestreams/03_rsoperators', title: 'リアクティブ・ストリーム・オペレータ' }
                             ]
                         },
                         {
@@ -2375,7 +2375,7 @@ function createNav(){
                             items: [
                                 { href: '/mp/reactivestreams/01_overview', title: '概要' },
                                 { href: '/mp/reactivestreams/02_engine', title: 'Helidonリアクティブ・エンジン' },
-                                { href: '/mp/reactivestreams/03_rsoperators', title: 'リアクティブ・ストリーム演算子' }
+                                { href: '/mp/reactivestreams/03_rsoperators', title: 'リアクティブ・ストリーム・オペレータ' }
                             ]
                         },
                         {

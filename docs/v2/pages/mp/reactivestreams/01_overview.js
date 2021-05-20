@@ -11,13 +11,13 @@
 </div>
 <v-card-title primary class="headline layout justify-center"><span style="text-align:center">Helidonリアクティブ・エンジン</span></v-card-title> <v-card-text class="caption">
 <p></p>
-<p><span class="merged" id="all.3GqGUX" title="原文 : A set of reactive operators.">リアクティブ演算子のセット。</span></p>
+<p><span class="merged" id="all.3GqGUX" title="原文 : A set of reactive operators.">リアクティブ・オペレータのセット。</span></p>
 </v-card-text> </v-card> </v-flex> <v-flex xs12 sm4 lg3> <v-card> <router-link to="/mp/reactivestreams/03_rsoperators"><div class="card__link-hover"/>
 <span class="merged" id="all.4JUCkx" title="原文 :  fa-book "></router-link> <v-layout align-center justify-center class=""> <v-avatar size="150px"> <v-icon class="xxx-large">fa-book</v-icon> </v-avatar> </v-layout></span>
 <div class="px-3">
 <v-divider class="indigo lighten-4"/>
 </div>
-<v-card-title primary class="headline layout justify-center"><span style="text-align:center">MicroProfileリアクティブ・ストリーム演算子</span></v-card-title> <v-card-text class="caption">
+<v-card-title primary class="headline layout justify-center"><span style="text-align:center">MicroProfileリアクティブ・ストリーム・オペレータ</span></v-card-title> <v-card-text class="caption">
 <p></p>
 <p><span class="merged" id="all.zORRN.1" title="原文 : Microprofile implementation.">マイクロプロファイルの実装。</span></p>
 </v-card-text>

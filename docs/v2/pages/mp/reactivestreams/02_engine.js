@@ -4,7 +4,7 @@
 
 <h2 id="_helidon_reactive_engine"><span class="merged" id="all.oahf" title="原文 : Helidon Reactive Engine">Helidonリアクティブ・エンジン</span></h2>
 <div class="section">
-<p><span class="merged" id="all.1282rN.spl1" title="原文 : Helidon has its own set of reactive operators that have no dependencies outside of the Helidon ecosystem.">Helidonには、Helidonエコシステムの外部に依存関係のない、独自のリアクティブ演算子のセットがあります。</span> <span class="merged" id="all.1282rN.spl2" title="原文 : These operators can be used with java.util.concurrent.Flow based reactive streams.">これらの演算子は、<code>java.util.concurrent.Flow</code>ベースのリアクティブ・ストリームで使用できます。</span> <span class="merged" id="all.1282rN.spl3" title="原文 : Stream processing operator chain can be easily constructed by io.helidon.common.reactive.Multi, or io.helidon.common.reactive.Single for streams with single value.">ストリーム処理演算子チェーンは、単一の値を持つストリームに対して<code>io.helidon.common.reactive.Multi</code>または<code>io.helidon.common.reactive.Single</code>で簡単に構築できます。</span> </p>
+<p><span class="merged" id="all.1282rN.spl1" title="原文 : Helidon has its own set of reactive operators that have no dependencies outside of the Helidon ecosystem.">Helidonには、Helidonエコシステムの外部に依存関係のない、独自のリアクティブ・オペレータのセットがあります。</span> <span class="merged" id="all.1282rN.spl2" title="原文 : These operators can be used with java.util.concurrent.Flow based reactive streams.">これらのオペレータは、<code>java.util.concurrent.Flow</code>ベースのリアクティブ・ストリームで使用できます。</span> <span class="merged" id="all.1282rN.spl3" title="原文 : Stream processing operator chain can be easily constructed by io.helidon.common.reactive.Multi, or io.helidon.common.reactive.Single for streams with single value.">ストリーム処理オペレータ・チェーンは、単一の値を持つストリームに対して<code>io.helidon.common.reactive.Multi</code>または<code>io.helidon.common.reactive.Single</code>で簡単に構築できます。</span> </p>
 
 <markup
 lang="java"
@@ -31,7 +31,7 @@ title="単一使用例:"
 
 &gt; Result: 6</markup>
 
-<div class="block-title"><span class="merged" id="all.2wgXq3"  title="原文:: Operators"><span>演算子</span></span></div>
+<div class="block-title"><span class="merged" id="all.2wgXq3"  title="原文:: Operators"><span>オペレータ</span></span></div>
 <div class="table__overflow elevation-1  ">
 <table class="datatable table">
 <colgroup>
@@ -257,13 +257,13 @@ title="単一使用例:"
 </table>
 </div>
 
-<h3 id="_operator_chains_composition"><span class="merged" id="all.1CeSRX" title="原文 : Operator chains composition">演算子チェーンの構成</span></h3>
+<h3 id="_operator_chains_composition"><span class="merged" id="all.1CeSRX" title="原文 : Operator chains composition">オペレータ・チェーンの構成</span></h3>
 <div class="section">
-<p><span class="merged" id="all.24f8lE" title="原文 : In the situations when part of the operator chain needs to be prepared in advance, compose and to operators are at hand.">演算子チェーンの一部を事前に準備する必要がある場合は、<code>compose</code>および<code>to</code>の演算子を使用できます。</span></p>
+<p><span class="merged" id="all.24f8lE" title="原文 : In the situations when part of the operator chain needs to be prepared in advance, compose and to operators are at hand.">オペレータ・チェーンの一部を事前に準備する必要がある場合は、<code>compose</code>および<code>to</code>のオペレータを使用できます。</span></p>
 
 <markup
 lang="java"
-title="演算子チェーンの組合せ:"
+title="オペレータ・チェーンの組合せ:"
 >        // Assembly of stream, nothing is streamed yet
         Multi&lt;String&gt; publisherStage =
                 Multi.just("foo", "bar")

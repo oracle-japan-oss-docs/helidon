@@ -118,7 +118,7 @@
 
 </li>
 <li>
-<p><span class="merged" id="all.lidfg.spl1" title="原文 : Extending MicroProfile Reactive Messaging and Reactive Operators Support MP Reactive Operators will be included in both frameworks, while MP Reactive Messaging will only be included in Helidon MP."><strong>「MicroProfileリアクティブ・メッセージングおよびリアクティブ・オペレータのサポートの拡張」</strong><br>MPリアクティブ演算子は両方のフレームワークに含まれますが、MPリアクティブ・メッセージングはHelidon MPにのみ含まれます。</span> <span class="merged" id="all.lidfg.spl2" title="原文 : Learn more about Reactive Messaging and Reactive Streams."><router-link to="/mp/reactivemessaging/01_introduction">「リアクティブ・メッセージング」</router-link>および<router-link to="/mp/reactivestreams/01_overview">「リアクティブ・ストリーム」</router-link>についてさらに学習します。</span> </p>
+<p><span class="merged" id="all.lidfg.spl1" title="原文 : Extending MicroProfile Reactive Messaging and Reactive Operators Support MP Reactive Operators will be included in both frameworks, while MP Reactive Messaging will only be included in Helidon MP."><strong>「MicroProfileリアクティブ・メッセージングおよびリアクティブ・オペレータのサポートの拡張」</strong><br>MPリアクティブ・オペレータは両方のフレームワークに含まれますが、MPリアクティブ・メッセージングはHelidon MPにのみ含まれます。</span> <span class="merged" id="all.lidfg.spl2" title="原文 : Learn more about Reactive Messaging and Reactive Streams."><router-link to="/mp/reactivemessaging/01_introduction">「リアクティブ・メッセージング」</router-link>および<router-link to="/mp/reactivestreams/01_overview">「リアクティブ・ストリーム」</router-link>についてさらに学習します。</span> </p>
 
 </li>
 <li>

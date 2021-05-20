@@ -2,9 +2,9 @@
 <span title="免責事項: ここに記載されているドキュメントは、お客様の利便性のために翻訳ソフトウエアにより機械的に翻訳(機械翻訳)したものです。オリジナルの英語版もあわせてご確認ください。" style="width:150px;padding-left:5px;padding-right:5px;border:#ff0000 solid 1px;border-color: gray;font-size: small;color:gray;margin: 0 auto 0 auto;text-align:center;"><a href="https://docs.oracle.com/cd/E85181_01/mt_disclaimer.html" target="disclaimer">&nbsp;&nbsp;機械翻訳について&nbsp;&nbsp;</a></span>
 
 
-<h2 id="_reactive_streams_operators"><span class="merged" id="all.2mqniA.1" title="原文 : Reactive Streams Operators">リアクティブ・ストリーム演算子</span></h2>
+<h2 id="_reactive_streams_operators"><span class="merged" id="all.2mqniA.1" title="原文 : Reactive Streams Operators">リアクティブ・ストリーム・オペレータ</span></h2>
 <div class="section">
-<p><span class="merged" id="all.1EI1nv.1.spl1" title="原文 : Implementation of MicroProfile Reactive Streams Operators specification."><a href="https://download.eclipse.org/microprofile/microprofile-reactive-streams-operators-1.0.1/microprofile-reactive-streams-operators-spec.html" id="" target="_blank" >「MicroProfileリアクティブ・ストリーム演算子」</a>仕様の実装。</span> <span class="merged" id="all.1EI1nv.1.spl2" title="原文 : A standardised tool for manipulation with Reactive Streams, provides set of operators as so called stages, and the builders to prepare graphs of stages for streams to be build from."><a href="https://www.reactive-streams.org/" id="" target="_blank" >「リアクティブ・ストリーム」</a>で操作するための標準化されたツールで、ステージと呼ばれる演算子のセットと、ストリームのビルド元となるステージのグラフを準備するためのビルダーが用意されています。</span> </p>
+<p><span class="merged" id="all.1EI1nv.1.spl1" title="原文 : Implementation of MicroProfile Reactive Streams Operators specification."><a href="https://download.eclipse.org/microprofile/microprofile-reactive-streams-operators-1.0.1/microprofile-reactive-streams-operators-spec.html" id="" target="_blank" >「MicroProfileリアクティブ・ストリーム・オペレータ」</a>仕様の実装。</span> <span class="merged" id="all.1EI1nv.1.spl2" title="原文 : A standardised tool for manipulation with Reactive Streams, provides set of operators as so called stages, and the builders to prepare graphs of stages for streams to be build from."><a href="https://www.reactive-streams.org/" id="" target="_blank" >「リアクティブ・ストリーム」</a>で操作するための標準化されたツールで、ステージと呼ばれるオペレータのセットと、ストリームのビルド元となるステージのグラフを準備するためのビルダーが用意されています。</span> </p>
 
 <markup
 lang="java"
@@ -44,7 +44,7 @@ ReactiveStreams.of("1", "2", "3", "4", "5")
 </tr>
 <tr>
 <td class=""><span class="merged" id="all.3S4iEp.1"  title="原文:: iterate">iterate</span></td>
-<td class=""><span class="merged" id="all.2r9qtx.1" title="原文 : Create infinite stream with every next item created by supplied operator from previous item">指定された演算子によって前のアイテムから作成された次のすべてのアイテムで無限ストリームを作成</span></td>
+<td class=""><span class="merged" id="all.2r9qtx.1" title="原文 : Create infinite stream with every next item created by supplied operator from previous item">指定されたオペレータによって前のアイテムから作成された次のすべてのアイテムで無限ストリームを作成</span></td>
 </tr>
 <tr>
 <td class=""><span class="merged" id="all.4b11Wl.1"  title="原文:: generate">generate</span></td>
@@ -72,7 +72,7 @@ ReactiveStreams.of("1", "2", "3", "4", "5")
 </tr>
 <tr>
 <td class=""><span class="merged" id="all.3dRAL3.3"  title="原文:: peek">peek</span></td>
-<td class=""><span class="merged" id="all.CIzxG.1" title="原文 : Invoke consumer for every item passing this operator">この演算子を渡すすべてのアイテムに対してコンシューマを起動</span></td>
+<td class=""><span class="merged" id="all.CIzxG.1" title="原文 : Invoke consumer for every item passing this operator">このオペレータを渡すすべてのアイテムに対してコンシューマを起動</span></td>
 </tr>
 <tr>
 <td class=""><span class="merged" id="all.2L4Dzp.3"  title="原文:: filter">filter</span></td>
