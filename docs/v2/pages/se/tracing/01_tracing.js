@@ -2,6 +2,20 @@
 <span title="免責事項: ここに記載されているドキュメントは、お客様の利便性のために翻訳ソフトウエアにより機械的に翻訳(機械翻訳)したものです。オリジナルの英語版もあわせてご確認ください。" style="width:150px;padding-left:5px;padding-right:5px;border:#ff0000 solid 1px;border-color: gray;font-size: small;color:gray;margin: 0 auto 0 auto;text-align:center;"><a href="https://docs.oracle.com/cd/E85181_01/mt_disclaimer.html" target="disclaimer">&nbsp;&nbsp;機械翻訳について&nbsp;&nbsp;</a></span>
 
 
+<h2 id="maven-coordinates"><span class="merged" id="all.317oeS.59" title="原文 : Maven Coordinates">Maven連携</span></h2>
+<div class="section">
+<p><span class="merged" id="all.1MisCI" title="原文 : To enable Tracing add the following dependency to your project&rsquo;s pom.xml (see Managing Dependencies).">トレースを有効にするには、プロジェクトの<code>pom.xml</code>に次の依存関係を追加します(<router-link to="/about/04_managing-dependencies">「依存関係の管理」</router-link>を参照)。</span></p>
+
+<markup
+lang="xml"
+
+>&lt;dependency&gt;
+    &lt;groupId&gt;io.helidon.tracing&lt;/groupId&gt;
+    &lt;artifactId&gt;helidon-tracing&lt;/artifactId&gt;
+&lt;/dependency&gt;</markup>
+
+</div>
+
 <h2 id="_tracing_support"><span class="merged" id="all.2zfxHj" title="原文 : Tracing Support">トレースのサポート</span></h2>
 <div class="section">
 <p><span class="merged" id="all.1n5s7W.spl1" title="原文 : Helidon includes support for tracing through the OpenTracing APIs.">Helidonには、<code><a href="https://opentracing.io/" id="" target="_blank" >OpenTracing</a></code> APIを介したトレースのサポートが含まれています。</span> <span class="merged" id="all.1n5s7W.spl2" title="原文 : Tracing is integrated with WebServer, gRPC Server, and Security.">トレースは、WebServer、gRPCサーバーおよびセキュリティと統合されています。</span> </p>
@@ -12,16 +26,6 @@
 
 <h2 id="_configuring_tracing_with_helidon_se"><span class="merged" id="all.15KpLN" title="原文 : Configuring Tracing with Helidon SE">Helidon SEでのトレースの構成</span></h2>
 <div class="section">
-<p><span class="merged" id="all.4f38G2" title="原文 : Declare the following dependency in your project to use the tracer abstraction:">トレーサ抽象化を使用するには、プロジェクトで次の依存性を宣言します:</span></p>
-
-<markup
-lang="xml"
-title="トレーサ抽象化"
->&lt;dependency&gt;
-    &lt;groupId&gt;io.helidon.tracing&lt;/groupId&gt;
-    &lt;artifactId&gt;helidon-tracing&lt;/artifactId&gt;
-&lt;/dependency&gt;</markup>
-
 
 <h3 id="_configuring_tracing_with_webserver"><span class="merged" id="all.4CbRaL" title="原文 : Configuring Tracing with WebServer">WebServerでのトレースの構成</span></h3>
 <div class="section">

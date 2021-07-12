@@ -415,7 +415,7 @@ lang="yaml"
 lang="java"
 
 >WebServer.builder()
-   .addSocket(SocketConfigurationBuidler.builder()
+   .addSocket(SocketConfigurationBuilder.builder()
       .port(8001)
       .name("admin")));</markup>
 

@@ -2,11 +2,9 @@
 <span title="免責事項: ここに記載されているドキュメントは、お客様の利便性のために翻訳ソフトウエアにより機械的に翻訳(機械翻訳)したものです。オリジナルの英語版もあわせてご確認ください。" style="width:150px;padding-left:5px;padding-right:5px;border:#ff0000 solid 1px;border-color: gray;font-size: small;color:gray;margin: 0 auto 0 auto;text-align:center;"><a href="https://docs.oracle.com/cd/E85181_01/mt_disclaimer.html" target="disclaimer">&nbsp;&nbsp;機械翻訳について&nbsp;&nbsp;</a></span>
 
 
-<h2 id="_configuring_tracing_with_helidon_mp"><span class="merged" id="all.2OXQ0T" title="原文 : Configuring Tracing with Helidon MP">Helidon MPでのトレースの構成</span></h2>
+<h2 id="maven-coordinates"><span class="merged" id="all.317oeS.30" title="原文 : Maven Coordinates">Maven連携</span></h2>
 <div class="section">
-<p><span class="merged" id="all.1vRDWD" title="原文 : Tracing support is implemented for both for Helidon MP Server and for Jersey client.">トレース・サポートは、Helidon MP ServerとJerseyクライアントの両方に実装されています。</span></p>
-
-<p><span class="merged" id="all.4JnU1V.7" title="原文 : Declare the following dependency in your project:">プロジェクトで次の依存性を宣言します:</span></p>
+<p><span class="merged" id="all.7jmra" title="原文 : To enable MicroProfile Tracing either add a dependency on the helidon-microprofile bundle or add the following dependency to your project&rsquo;s pom.xml (see Managing Dependencies).">MicroProfileトレースを有効にするには、<router-link to="/mp/introduction/02_microprofile">helidon-microprofile bundle</router-link>に依存関係を追加するか、プロジェクトの<code>pom.xml</code>に次の依存関係を追加します(<router-link to="/about/04_managing-dependencies">「依存関係の管理」</router-link>を参照)。</span></p>
 
 <markup
 lang="xml"
@@ -16,7 +14,11 @@ lang="xml"
     &lt;artifactId&gt;helidon-microprofile-tracing&lt;/artifactId&gt;
 &lt;/dependency&gt;</markup>
 
-<p><span class="merged" id="all.9kQHG" title="原文 : In addition you need to add one of the tracer implementations:">さらに、トレーサ実装のいずれかを追加する必要があります:</span></p>
+</div>
+
+<h2 id="_configuring_tracing_with_helidon_mp"><span class="merged" id="all.2OXQ0T" title="原文 : Configuring Tracing with Helidon MP">Helidon MPでのトレースの構成</span></h2>
+<div class="section">
+<p><span class="merged" id="all.1a9uUL.spl1" title="原文 : Tracing support is implemented for both for Helidon MP Server and for Jersey client.">トレース・サポートは、Helidon MP ServerとJerseyクライアントの両方に実装されています。</span> <span class="merged" id="all.1a9uUL.spl2" title="原文 : In addition you need to add one of the tracer implementations:">さらに、トレーサ実装のいずれかを追加する必要があります:</span> </p>
 
 <ul class="ulist">
 <li>

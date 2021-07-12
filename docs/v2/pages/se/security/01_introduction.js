@@ -3,7 +3,33 @@
  <v-layout row wrap> <v-flex xs12 sm10 lg10> <v-card class="section-def" v-bind:color="$store.state.currentColor"> <v-card-text class="pa-3"> <v-card class="section-def__card"> <v-card-text>
 <dl>
 <dt slot=title><span class="merged" id="all.43xTBs" title="原文 : Security Introduction">セキュリティの概要</span></dt>
-<dd slot="desc"><p><span class="merged" id="all.4Sqcb0" title="原文 : Helidon Security provides the following features">Helidonセキュリティには、次の機能があります</span></p>
+<dd slot="desc"><p><span class="merged" id="all.316SZv" title="原文 : Helidon Security provides authentication, authroization and auditing for your Helidon application.">Helidon Securityは、Helidonアプリケーションの認証、認可および監査を提供します。</span></p>
+</dd>
+</dl>
+</v-card-text>
+</v-card>
+</v-card-text>
+</v-card>
+</v-flex>
+</v-layout>
+
+<h2 id="maven-coordinates"><span class="merged" id="all.317oeS.58" title="原文 : Maven Coordinates">Maven連携</span></h2>
+<div class="section">
+<p><span class="merged" id="all.3phYpy.1" title="原文 : To enable Security add the following dependency to your project&rsquo;s pom.xml (see Managing Dependencies).">セキュリティを有効にするには、プロジェクトの<code>pom.xml</code>に次の依存関係を追加します(<router-link to="/about/04_managing-dependencies">「依存関係の管理」</router-link>を参照)。</span></p>
+
+<markup
+lang="xml"
+
+>&lt;dependency&gt;
+    &lt;groupId&gt;io.helidon.security&lt;/groupId&gt;
+    &lt;artifactId&gt;helidon-security&lt;/artifactId&gt;
+&lt;/dependency&gt;</markup>
+
+</div>
+
+<h2 id="_overview"><span class="merged" id="all.YrpRV.9"  title="原文:: Overview">概要</span></h2>
+<div class="section">
+<p><span class="merged" id="all.4Sqcb0" title="原文 : Helidon Security provides the following features">Helidonセキュリティには、次の機能があります</span></p>
 
 <ol style="margin-left: 15px;">
 <li>
@@ -33,14 +59,8 @@
 </li>
 </ol>
 <p><span class="merged" id="all.10GojY.spl1" title="原文 : Security module is quite HTTP centric (as most common use cases are related to HTTP REST), though it is not HTTP specific (the security module may be used to secure even other transports, such as JMS, Kafka messages etc. if an appropriate integration module is developed, as all APIs can be mapped to a non-HTTP protocol).">セキュリティ・モジュールはHTTP中心ですが(最も一般的なユースケースはHTTP RESTに関連していますが)、HTTP固有ではありません(セキュリティ・モジュールは、すべてのAPIをHTTP以外のプロトコルにマップできるため、適切な統合モジュールが開発されている場合は、JMSやKafkaメッセージなどの他のトランスポートを保護するために使用できます)。</span> <span class="merged" id="all.10GojY.spl2" title="原文 : Nevertheless there may be security providers that only make sense with HTTP (such as HTTP digest authentication).">ただし、HTTPでのみ有効なセキュリティ・プロバイダ(HTTPダイジェスト認証など)が存在する場合もあります。</span> </p>
-</dd>
-</dl>
-</v-card-text>
-</v-card>
-</v-card-text>
-</v-card>
-</v-flex>
-</v-layout>
+
+</div>
 
 <h2 id="_how_to_use"><span class="merged" id="all.3aZOU2"  title="原文:: How to use">使用方法</span></h2>
 <div class="section">
@@ -167,19 +187,5 @@ Security security = Security.builder()
                 .build();</markup>
 
 </div>
-</div>
-
-<h2 id="_maven_coordinates"><span class="merged" id="all.317oeS.12" title="原文 : Maven Coordinates">Maven連携</span></h2>
-<div class="section">
-<p><span class="merged" id="all.49Lzm0" title="原文 : You need to declare the following dependency in your project:">プロジェクトで次の依存性を宣言する必要があります:</span></p>
-
-<markup
-lang="xml"
-title="Mavenの依存性"
->&lt;dependency&gt;
-    &lt;groupId&gt;io.helidon.security&lt;/groupId&gt;
-    &lt;artifactId&gt;helidon-security&lt;/artifactId&gt;
-&lt;/dependency&gt;</markup>
-
 </div>
 </doc-view>

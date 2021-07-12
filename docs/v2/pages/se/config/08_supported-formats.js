@@ -13,9 +13,9 @@
 </v-flex>
 </v-layout>
 
-<h2 id="_introduction"><span class="merged" id="all.4LJMHk.7"  title="原文:: Introduction">導入</span></h2>
+<h2 id="_introduction"><span class="merged" id="all.4LJMHk.8"  title="原文:: Introduction">導入</span></h2>
 <div class="section">
-<p><span class="merged" id="all.33khoc.spl1" title="原文 : This document describes the additional config formats and sources the Helidon config system supports and how to include them and use them in your project.">このドキュメントでは、Helidon構成システムでサポートされている追加の構成形式とソース、およびそれらをプロジェクトに含めて使用する方法について説明します。</span> <span class="merged" id="all.33khoc.spl2" title="原文 : In each case you need to add module dependencies to your project and, in some cases, write your application accordingly.">いずれの場合も、プロジェクトにモジュール依存性を追加し、場合によってはそれに応じてアプリケーションを記述する必要があります。</span> </p>
+<p><span class="merged" id="all.33khoc.spl1" title="原文 : This document describes the additional config formats and sources the Helidon config system supports and how to include them and use them in your project.">このドキュメントでは、Helidon構成システムでサポートされている追加の構成形式とソース、およびそれらをプロジェクトに含めて使用する方法について説明します。</span> <span class="merged" id="all.33khoc.spl2" title="原文 : In each case you need to add module dependencies to your project and, in some cases, write your application accordingly.">いずれの場合も、プロジェクトにモジュール依存関係を追加し、場合によってはそれに応じてアプリケーションを記述する必要があります。</span> </p>
 
 </div>
 
@@ -43,19 +43,17 @@
 <h3 id="Config-ModuleYaml"><span class="merged" id="all.42WB1c.3" title="原文 : YAML">YAML</span></h3>
 <div class="section">
 
-<h4 id="_maven_coordinates"><span class="merged" id="all.317oeS.5" title="原文 : Maven Coordinates">Maven連携</span></h4>
+<h4 id="_maven_coordinates"><span class="merged" id="all.317oeS.34" title="原文 : Maven Coordinates">Maven連携</span></h4>
 <div class="section">
-<p><span class="merged" id="all.2qm8Zd" title="原文 : Add the following dependency in your project:">プロジェクトに次の依存性を追加します:</span></p>
+<p><span class="merged" id="all.2qm8Zd" title="原文 : Add the following dependency in your project:">プロジェクトに次の依存関係を追加します:</span></p>
 
 <markup
 lang="xml"
 title="<code>pom.xml</code>でのYAML依存関係の構成"
->&lt;dependencies&gt;
-    &lt;dependency&gt;
+>    &lt;dependency&gt;
         &lt;groupId&gt;io.helidon.config&lt;/groupId&gt;
         &lt;artifactId&gt;helidon-config-yaml&lt;/artifactId&gt;
-    &lt;/dependency&gt;
-&lt;/dependencies&gt;</markup>
+    &lt;/dependency&gt;</markup>
 
 <markup
 lang="java"
@@ -124,23 +122,21 @@ title="パーサー・サービスが無効になっているためYAMLパーサ
 <p><span class="merged" id="all.2xXsXj" title="原文 : The Helidon HOCON config module handles sources in the HOCON and JSON formats.">Helidon HOCON構成モジュールは、HOCONおよびJSON形式のソースを処理します。</span></p>
 
 
-<h4 id="_maven_coordinates_2"><span class="merged" id="all.317oeS.6" title="原文 : Maven Coordinates">Maven連携</span></h4>
+<h4 id="_maven_coordinates_2"><span class="merged" id="all.317oeS.35" title="原文 : Maven Coordinates">Maven連携</span></h4>
 <div class="section">
-<p><span class="merged" id="all.2qm8Zd.1" title="原文 : Add the following dependency in your project:">プロジェクトに次の依存性を追加します:</span></p>
+<p><span class="merged" id="all.2qm8Zd.1" title="原文 : Add the following dependency in your project:">プロジェクトに次の依存関係を追加します:</span></p>
 
 <markup
 lang="xml"
-title="<code>pom.xml</code>でのHOCON依存性の構成"
->&lt;dependencies&gt;
-    &lt;dependency&gt;
+title="<code>pom.xml</code>でのHOCON依存関係の構成"
+>    &lt;dependency&gt;
         &lt;groupId&gt;io.helidon.config&lt;/groupId&gt;
         &lt;artifactId&gt;helidon-config-hocon&lt;/artifactId&gt;
-    &lt;/dependency&gt;
-&lt;/dependencies&gt;</markup>
+    &lt;/dependency&gt;</markup>
 
 <markup
 lang="java"
-title="<code>module-info.java</code>でのHOCON依存性の構成"
+title="<code>module-info.java</code>でのHOCON依存関係の構成"
 >module myModule {
     requires io.helidon.config.hocon;
 }</markup>
@@ -232,23 +228,21 @@ title="カスタマイズされたHOCONパーサー"
 <p><span class="merged" id="all.A0156" title="原文 : The Helidon Etcd config module supports reading configuration from a specified Etcd key.">Helidon Etcd構成モジュールは、指定されたEtcdキーからの構成の読取りをサポートします。</span></p>
 
 
-<h4 id="_maven_coordinates_3"><span class="merged" id="all.317oeS.7" title="原文 : Maven Coordinates">Maven連携</span></h4>
+<h4 id="_maven_coordinates_3"><span class="merged" id="all.317oeS.36" title="原文 : Maven Coordinates">Maven連携</span></h4>
 <div class="section">
-<p><span class="merged" id="all.3kvreo" title="原文 : Add the following dependency to your project:">次の依存性をプロジェクトに追加します:</span></p>
+<p><span class="merged" id="all.3kvreo" title="原文 : Add the following dependency to your project:">次の依存関係をプロジェクトに追加します:</span></p>
 
 <markup
 lang="xml"
-title="<code>pom.xml</code>でのEtcd依存性の構成"
->&lt;dependencies&gt;
-    &lt;dependency&gt;
+title="<code>pom.xml</code>でのEtcd依存関係の構成"
+>    &lt;dependency&gt;
         &lt;groupId&gt;io.helidon.config&lt;/groupId&gt;
         &lt;artifactId&gt;helidon-config-etcd&lt;/artifactId&gt;
-    &lt;/dependency&gt;
-&lt;/dependencies&gt;</markup>
+    &lt;/dependency&gt;</markup>
 
 <markup
 lang="java"
-title="<code>module-info.java</code>でのEtcd依存性の構成"
+title="<code>module-info.java</code>でのEtcd依存関係の構成"
 >module myModule {
     requires io.helidon.config.etcd;
 }</markup>
@@ -351,23 +345,21 @@ title="etcdソースのメタ構成<code>config-meta-etcd.yaml</code>"
 <p><span class="merged" id="all.23DgxX" title="原文 : The Helidon git config module supports reading configuration from a git repository.">Helidon git構成モジュールは、gitリポジトリからの構成の読取りをサポートします。</span></p>
 
 
-<h4 id="_maven_coordinates_4"><span class="merged" id="all.317oeS.8" title="原文 : Maven Coordinates">Maven連携</span></h4>
+<h4 id="_maven_coordinates_4"><span class="merged" id="all.317oeS.37" title="原文 : Maven Coordinates">Maven連携</span></h4>
 <div class="section">
-<p><span class="merged" id="all.3kvreo.1" title="原文 : Add the following dependency to your project:">次の依存性をプロジェクトに追加します:</span></p>
+<p><span class="merged" id="all.3kvreo.1" title="原文 : Add the following dependency to your project:">次の依存関係をプロジェクトに追加します:</span></p>
 
 <markup
 lang="xml"
-title="<code>pom.xml</code>でのgit依存性の構成"
->&lt;dependencies&gt;
-    &lt;dependency&gt;
+title="<code>pom.xml</code>でのgit依存関係の構成"
+>    &lt;dependency&gt;
         &lt;groupId&gt;io.helidon.config&lt;/groupId&gt;
         &lt;artifactId&gt;helidon-config-git&lt;/artifactId&gt;
-    &lt;/dependency&gt;
-&lt;/dependencies&gt;</markup>
+    &lt;/dependency&gt;</markup>
 
 <markup
 lang="java"
-title="<code>module-info.java</code>でのgit依存性の構成"
+title="<code>module-info.java</code>でのgit依存関係の構成"
 >module myModule {
     requires io.helidon.config.git;
 }</markup>

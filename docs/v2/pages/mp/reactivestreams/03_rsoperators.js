@@ -4,6 +4,25 @@
 
 <h2 id="_reactive_streams_operators"><span class="merged" id="all.2mqniA" title="原文 : Reactive Streams Operators">リアクティブ・ストリーム・オペレータ</span></h2>
 <div class="section">
+
+</div>
+
+<h2 id="maven-coordinates"><span class="merged" id="all.317oeS.25" title="原文 : Maven Coordinates">Maven連携</span></h2>
+<div class="section">
+<p><span class="merged" id="all.3clYDl" title="原文 : To enable Reactive Streams add the following dependency to your project&rsquo;s pom.xml (see Managing Dependencies).">リアクティブ・ストリームを有効にするには、プロジェクトの<code>pom.xml</code>に次の依存関係を追加します(<router-link to="/about/04_managing-dependencies">「依存関係の管理」</router-link>を参照)。</span></p>
+
+<markup
+lang="xml"
+
+>&lt;dependency&gt;
+   &lt;groupId&gt;io.helidon.microprofile.reactive-streams&lt;/groupId&gt;
+   &lt;artifactId&gt;helidon-microprofile-reactive-streams&lt;/artifactId&gt;
+&lt;/dependency&gt;</markup>
+
+</div>
+
+<h2 id="_reactive_streams_operators_2"><span class="merged" id="all.2mqniA.1" title="原文 : Reactive Streams Operators">リアクティブ・ストリーム・オペレータ</span></h2>
+<div class="section">
 <p><span class="merged" id="all.1EI1nv.spl1" title="原文 : Implementation of MicroProfile Reactive Streams Operators specification."><a href="https://download.eclipse.org/microprofile/microprofile-reactive-streams-operators-1.0.1/microprofile-reactive-streams-operators-spec.html" id="" target="_blank" >「MicroProfileリアクティブ・ストリーム・オペレータ」</a>仕様の実装。</span> <span class="merged" id="all.1EI1nv.spl2" title="原文 : A standardised tool for manipulation with Reactive Streams, provides set of operators as so called stages, and the builders to prepare graphs of stages for streams to be build from."><a href="https://www.reactive-streams.org/" id="" target="_blank" >「リアクティブ・ストリーム」</a>で操作するための標準化されたツールで、ステージと呼ばれるオペレータのセットと、ストリームのビルド元となるステージのグラフを準備するためのビルダーが用意されています。</span> </p>
 
 <markup
@@ -206,20 +225,6 @@ title="グラフの結合とストリームの実行:"
 
 &gt; Item received: FOO
 &gt; Item received: BAR</markup>
-
-</div>
-
-<h3 id="_dependency"><span class="merged" id="all.1l1QyT.2"  title="原文:: Dependency">依存性</span></h3>
-<div class="section">
-<p><span class="merged" id="all.4JnU1V.6" title="原文 : Declare the following dependency in your project:">プロジェクトで次の依存性を宣言します:</span></p>
-
-<markup
-lang="xml"
-
->&lt;dependency&gt;
-   &lt;groupId&gt;io.helidon.microprofile.reactive-streams&lt;/groupId&gt;
-   &lt;artifactId&gt;helidon-microprofile-reactive-streams&lt;/artifactId&gt;
-&lt;/dependency&gt;</markup>
 
 </div>
 </div>

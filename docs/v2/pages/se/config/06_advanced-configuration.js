@@ -746,7 +746,7 @@ Config config = MetaConfig.config(metaConfig); <span class="conum" data-value="2
 <thead>
 <tr>
 <th><span class="merged" id="all.2uXUf3"  title="原文:: Strategy Type">戦略のタイプ</span></th>
-<th><span class="merged" id="all.JUOSC.5"  title="原文:: Usage">使用方法</span></th>
+<th><span class="merged" id="all.JUOSC.6"  title="原文:: Usage">使用方法</span></th>
 <th><span class="merged" id="all.3fmb7X"  title="原文:: Properties">プロパティ</span></th>
 </tr>
 </thead>
@@ -775,7 +775,7 @@ Config config = MetaConfig.config(metaConfig); <span class="conum" data-value="2
 <thead>
 <tr>
 <th><span class="merged" id="all.W3q2t"  title="原文:: Policy Type">ポリシー・タイプ</span></th>
-<th><span class="merged" id="all.JUOSC.6"  title="原文:: Usage">使用方法</span></th>
+<th><span class="merged" id="all.JUOSC.7"  title="原文:: Usage">使用方法</span></th>
 <th><span class="merged" id="all.3fmb7X.1"  title="原文:: Properties">プロパティ</span></th>
 </tr>
 </thead>

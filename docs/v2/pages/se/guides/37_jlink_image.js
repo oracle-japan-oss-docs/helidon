@@ -13,15 +13,15 @@
 </v-flex>
 </v-layout>
 
-<h2 id="_introduction"><span class="merged" id="all.4LJMHk.13"  title="原文:: Introduction">導入</span></h2>
+<h2 id="_introduction"><span class="merged" id="all.4LJMHk.14"  title="原文:: Introduction">導入</span></h2>
 <div class="section">
-<p><span class="merged" id="all.2qcB0R.1.spl1" title="原文 : JDK 9 introduced the jlink command that supports assembling a set of modules and their dependencies into a custom runtime image.">JDK 9では、一連のモジュールとその依存性のカスタム・ランタイム・イメージへのアセンブルをサポートする<a href="https://docs.oracle.com/en/java/javase/11/tools/jlink.html" id="" target="_blank" ><code>jlink</code></a>コマンドが導入されました。</span> <span class="merged" id="all.2qcB0R.1.spl2" title="原文 : The helidon-maven-plugin has support for easily creating a custom runtime image for your Helidon application resulting in a smaller, better performing runtime."><code>helidon-maven-plugin</code>では、Helidonアプリケーションのカスタム・ランタイム・イメージの簡単な作成がサポートされているため、実行時間が小さくなり、パフォーマンスが向上します。</span> </p>
+<p><span class="merged" id="all.2qcB0R.1.spl1" title="原文 : JDK 9 introduced the jlink command that supports assembling a set of modules and their dependencies into a custom runtime image.">JDK 9では、一連のモジュールとその依存関係のカスタム・ランタイム・イメージへのアセンブルをサポートする<a href="https://docs.oracle.com/en/java/javase/11/tools/jlink.html" id="" target="_blank" ><code>jlink</code></a>コマンドが導入されました。</span> <span class="merged" id="all.2qcB0R.1.spl2" title="原文 : The helidon-maven-plugin has support for easily creating a custom runtime image for your Helidon application resulting in a smaller, better performing runtime."><code>helidon-maven-plugin</code>では、Helidonアプリケーションのカスタム・ランタイム・イメージの簡単な作成がサポートされているため、実行時間が小さくなり、パフォーマンスが向上します。</span> </p>
 
 <p><span class="merged" id="all.267xx2.1" title="原文 : In this guide you will learn how to build a custom runtime image locally on your machine, as well as how to build it in a Docker image.">このガイドでは、マシンでカスタム・ランタイム・イメージをローカルにビルドする方法と、Dockerイメージでビルドする方法について説明します。</span></p>
 
 </div>
 
-<h2 id="_what_you_need"><span class="merged" id="all.27ZcMH.8"  title="原文:: What You Need">必要事項</span></h2>
+<h2 id="_what_you_need"><span class="merged" id="all.27ZcMH.9"  title="原文:: What You Need">必要事項</span></h2>
 <div class="section">
 
 <div class="table__overflow elevation-1  ">
@@ -33,10 +33,10 @@
 </thead>
 <tbody>
 <tr>
-<td class=""><span class="merged" id="all.10cPjD.6" title="原文 : About 10 minutes">約10分</span></td>
+<td class=""><span class="merged" id="all.10cPjD.7" title="原文 : About 10 minutes">約10分</span></td>
 </tr>
 <tr>
-<td class=""><span class="merged" id="all.27GIMH.20" title="原文 : Helidon Prerequisites"><router-link to="/about/03_prerequisites">Helidonの前提条件</router-link></span></td>
+<td class=""><span class="merged" id="all.27GIMH.21" title="原文 : Helidon Prerequisites"><router-link to="/about/03_prerequisites">Helidonの前提条件</router-link></span></td>
 </tr>
 </tbody>
 </table>
@@ -75,7 +75,7 @@ lang="bash"
 >mvn -U archetype:generate -DinteractiveMode=false \
     -DarchetypeGroupId=io.helidon.archetypes \
     -DarchetypeArtifactId=helidon-quickstart-se \
-    -DarchetypeVersion=2.2.1-SNAPSHOT \
+    -DarchetypeVersion=2.3.1 \
     -DgroupId=io.helidon.examples \
     -DartifactId=helidon-quickstart-se \
     -Dpackage=io.helidon.examples.quickstart.se</markup>
@@ -140,7 +140,7 @@ lang="bash"
 </div>
 <p><span class="merged" id="all.1wrkc9.1" title="原文 : After the build completes it will report some statistics about the build including the reduction in image size.">ビルドが完了すると、イメージ・サイズの縮小など、ビルドに関する統計がレポートされます。</span></p>
 
-<p><span class="merged" id="all.3s0YWq.spl1" title="原文 : The target/helidon-quickstart-se-jri directory is a self contained custom image of your application."><code>target/helidon-quickstart-se-jri</code>ディレクトリは、アプリケーションの自己完結型カスタム・イメージです。</span> <span class="merged" id="all.3s0YWq.spl2" title="原文 : It contains your application, its runtime dependencies and the JDK modules it depends on.">これには、アプリケーション、そのランタイム依存性および依存するJDKモジュールが含まれます。</span> <span class="merged" id="all.3s0YWq.spl3" title="原文 : You can start your application using the provide start script:">提供された<code>start</code>スクリプトを使用してアプリケーションを起動できます:</span> </p>
+<p><span class="merged" id="all.3s0YWq.spl1" title="原文 : The target/helidon-quickstart-se-jri directory is a self contained custom image of your application."><code>target/helidon-quickstart-se-jri</code>ディレクトリは、アプリケーションの自己完結型カスタム・イメージです。</span> <span class="merged" id="all.3s0YWq.spl2" title="原文 : It contains your application, its runtime dependencies and the JDK modules it depends on.">これには、アプリケーション、そのランタイム依存関係および依存するJDKモジュールが含まれます。</span> <span class="merged" id="all.3s0YWq.spl3" title="原文 : You can start your application using the provide start script:">提供された<code>start</code>スクリプトを使用してアプリケーションを起動できます:</span> </p>
 
 <markup
 lang="bash"
@@ -177,7 +177,7 @@ lang="bash"
 
 <div class="admonition tip">
 <p class="admonition-textlabel"><span class="merged" id="all.245DJ6.7"  title="原文:: Tip">ヒント</span></p>
-<p ><span class="merged" id="all.3BIrNM.3.spl1" title="原文 : This does a full build inside the Docker container.">これにより、Dockerコンテナ内で完全なビルドが実行されます。</span> <span class="merged" id="all.3BIrNM.3.spl2" title="原文 : The first time you run it, it will take a while because it is downloading all of the Maven dependencies and caching them in a Docker layer.">初回実行時には、すべてのMaven依存性をダウンロードしてDockerレイヤーにキャッシュするため、しばらく時間がかかります。</span> <span class="merged" id="all.3BIrNM.3.spl3" title="原文 : Subsequent builds will be much faster as long as you don&rsquo;t change the pom.xml file."><code>pom.xml</code>ファイルを変更しないかぎり、後続のビルドははるかに高速になります。</span> <span class="merged" id="all.3BIrNM.3.spl4" title="原文 : If the pom is modified then the dependencies will be re-downloaded.">POMが変更されると、依存性が再ダウンロードされます。</span> </p>
+<p ><span class="merged" id="all.3BIrNM.3.spl1" title="原文 : This does a full build inside the Docker container.">これにより、Dockerコンテナ内で完全なビルドが実行されます。</span> <span class="merged" id="all.3BIrNM.3.spl2" title="原文 : The first time you run it, it will take a while because it is downloading all of the Maven dependencies and caching them in a Docker layer.">初回実行時には、すべてのMaven依存関係をダウンロードしてDockerレイヤーにキャッシュするため、しばらく時間がかかります。</span> <span class="merged" id="all.3BIrNM.3.spl3" title="原文 : Subsequent builds will be much faster as long as you don&rsquo;t change the pom.xml file."><code>pom.xml</code>ファイルを変更しないかぎり、後続のビルドははるかに高速になります。</span> <span class="merged" id="all.3BIrNM.3.spl4" title="原文 : If the pom is modified then the dependencies will be re-downloaded.">POMが変更されると、依存関係が再ダウンロードされます。</span> </p>
 </div>
 <p><span class="merged" id="all.42Bugy.3" title="原文 : Start the application:">アプリケーションを起動します:</span></p>
 

@@ -13,7 +13,7 @@
 </v-flex>
 </v-layout>
 
-<h2 id="_overview"><span class="merged" id="all.YrpRV.6"  title="原文:: Overview">概要</span></h2>
+<h2 id="_overview"><span class="merged" id="all.YrpRV.7"  title="原文:: Overview">概要</span></h2>
 <div class="section">
 <p><span class="merged" id="all.40Lkef.spl1" title="原文 : Even though in-memory config trees are immutable, the config system internally records which config sources it used to load each config tree and some metadata about the configuration.">インメモリー構成ツリーは不変ですが、構成システムは、各構成ツリーのロードに使用した構成ソースおよび構成に関する一部のメタデータを内部的に記録します。</span> <span class="merged" id="all.40Lkef.spl2" title="原文 : Your application can be aware of updates to the underlying config sources by:">アプリケーションは、次の方法で基礎となる構成ソースの更新を認識できます:</span> </p>
 
@@ -63,7 +63,7 @@ lang="java"
 <thead>
 <tr>
 <th><span class="merged" id="all.1e8dVO.3"  title="原文:: Method">メソッド</span></th>
-<th><span class="merged" id="all.JUOSC.4"  title="原文:: Usage">使用方法</span></th>
+<th><span class="merged" id="all.JUOSC.5"  title="原文:: Usage">使用方法</span></th>
 </tr>
 </thead>
 <tbody>
@@ -241,7 +241,7 @@ title="<code>greeting</code>プロパティの変更のサブスクライブ"
 <li data-value="7"><span class="merged" id="all.24WmZT" title="原文 : The config system invokes onComplete if all config sources indicate there will be no other change event.">すべての構成ソースが<em>「他の変更イベントはありません」</em>を示している場合、構成システムは<code>onComplete</code>を呼び出します。</span></li>
 </ul>
 <div class="admonition note">
-<p class="admonition-textlabel"><span class="merged" id="all.22fJPu.1"  title="原文:: Note">ノート</span></p>
+<p class="admonition-textlabel"><span class="merged" id="all.22fJPu.2"  title="原文:: Note">ノート</span></p>
 <p ><span class="merged" id="all.1JhAZm.spl1" title="原文 : Your application does not need to subscribe to the new Config instance passed to your onNext method.">アプリケーションは、<code>onNext</code>メソッドに渡された新しい<code>Config</code>インスタンスをサブスクライブする必要が<em>ありません</em>。</span> <span class="merged" id="all.1JhAZm.spl2" title="原文 : The original subscription remains in force for changes to the &quot;new&quot; instance.">元のサブスクリプションは、新しいインスタンスへの変更に対して有効なままです。</span> </p>
 </div>
 </div>

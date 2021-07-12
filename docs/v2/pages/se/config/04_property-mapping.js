@@ -446,7 +446,7 @@ title="<code>pom.xml</code>でのオブジェクト・マッピング依存関�
 <thead>
 <tr>
 <th><span class="merged" id="all.2CrnVw"  title="原文:: Attribute">属性</span></th>
-<th><span class="merged" id="all.JUOSC.3"  title="原文:: Usage">使用方法</span></th>
+<th><span class="merged" id="all.JUOSC.4"  title="原文:: Usage">使用方法</span></th>
 </tr>
 </thead>
 <tbody>

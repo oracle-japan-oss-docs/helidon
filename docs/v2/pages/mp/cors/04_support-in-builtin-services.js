@@ -36,20 +36,12 @@
 </li>
 <li>
 
-<div><p><span class="merged" id="all.rrMls.1" title="原文 : Add a dependency on the Helidon MP CORS artifact to your Maven pom.xml file.">Helidon MP CORSアーティファクトへの依存関係をMaven <code>pom.xml</code>ファイルに追加します。</span></p>
+<div><p><span class="merged" id="all.rrMls" title="原文 : Add a dependency on the Helidon MP CORS artifact to your Maven pom.xml file.">Helidon MP CORSアーティファクトへの依存関係をMaven <code>pom.xml</code>ファイルに追加します。</span></p>
 
 <div class="admonition note">
-<p class="admonition-inline"><span class="merged" id="all.3bV9CI" title="原文 : If you want the built-in services to support CORS, then you need to add the CORS dependency even if your own endpoints do not use CORS.">組込みサービスでCORSをサポートする場合は、独自のエンドポイントでCORSを使用しない場合でもCORS依存性を追加する必要があります。</span></p>
+<p class="admonition-inline"><span class="merged" id="all.3bV9CI" title="原文 : If you want the built-in services to support CORS, then you need to add the CORS dependency even if your own endpoints do not use CORS.">組込みサービスでCORSをサポートする場合は、独自のエンドポイントでCORSを使用しない場合でもCORS依存関係を追加する必要があります。</span></p>
 </div>
-<p><span class="merged" id="all.ec1sW.1.spl1" title="原文 : The Managing Dependencies page describes how you should declare dependency management for Helidon applications."><router-link to="/about/04_managing-dependencies">「依存関係の管理」</router-link>ページでは、Helidonアプリケーションの依存性管理を宣言する方法について説明します。</span> <span class="merged" id="all.ec1sW.1.spl2" title="原文 : For CORS support in Helidon MP, you must include the following dependency in your project:">Helidon MPでCORSをサポートするには、プロジェクトに次の依存性を含める必要があります:</span> </p>
-
-<markup
-lang="xml"
-
->&lt;dependency&gt;
-    &lt;groupId&gt;io.helidon.microprofile&lt;/groupId&gt;
-    &lt;artifactId&gt;helidon-microprofile-cors&lt;/artifactId&gt;
-&lt;/dependency&gt;</markup>
+<p><span class="merged" id="all.ec1sW.spl1" title="原文 : The Managing Dependencies page describes how you should declare dependency management for Helidon applications."><router-link to="/about/04_managing-dependencies">「依存関係の管理」</router-link>ページでは、Helidonアプリケーションの依存関係管理を宣言する方法について説明します。</span> <span class="merged" id="all.ec1sW.spl2" title="原文 : For CORS support in Helidon MP, you must include the following dependency in your project:">Helidon MPでCORSをサポートするには、プロジェクトに次の依存関係を含める必要があります:</span> </p>
 </div>
 
 </li>
@@ -58,7 +50,7 @@ lang="xml"
 
 </li>
 </ol>
-<p><span class="merged" id="all.3dly93.spl1" title="原文 : The documentation for the individual built-in services describes how to add each service to your application, including adding a Maven dependency.">個々の組込みサービスのドキュメントでは、Maven依存性の追加など、各サービスをアプリケーションに追加する方法について説明します。</span> <span class="merged" id="all.3dly93.spl2" title="原文 : In your application&rsquo;s configuration file, the configuration for each service appears under its own key.">アプリケーションの構成ファイルでは、各サービスの構成が独自のキーの下に表示されます。</span> </p>
+<p><span class="merged" id="all.3dly93.spl1" title="原文 : The documentation for the individual built-in services describes how to add each service to your application, including adding a Maven dependency.">個々の組込みサービスのドキュメントでは、Maven依存関係の追加など、各サービスをアプリケーションに追加する方法について説明します。</span> <span class="merged" id="all.3dly93.spl2" title="原文 : In your application&rsquo;s configuration file, the configuration for each service appears under its own key.">アプリケーションの構成ファイルでは、各サービスの構成が独自のキーの下に表示されます。</span> </p>
 
 
 <div class="table__overflow elevation-1  ">
@@ -89,7 +81,7 @@ lang="xml"
 </tbody>
 </table>
 </div>
-<p><span class="merged" id="all.1BG4GC" title="原文 : The Helidon MP QuickStart example uses these services, so you can use that as a template for your own application, or use the example project itself to experiment with customizing the CORS behavior in the built-in services."><a href="https://github.com/oracle/helidon/tree/2.2.1/examples//quickstarts/helidon-quickstart-mp" id="" target="_blank" >「Helidon MP QuickStartの例」</a>ではこれらのサービスが使用されるため、独自のアプリケーションのテンプレートとして使用することも、サンプル・プロジェクト自体を使用して組込みサービスのCORS動作のカスタマイズを試すこともできます。</span></p>
+<p><span class="merged" id="all.tOGvI" title="原文 : The Helidon MP QuickStart example uses these services, so you can use that as a template for your own application, or use the example project itself to experiment with customizing the CORS behavior in the built-in services."><a href="https://github.com/oracle/helidon/tree/2.3.1/examples/quickstarts/helidon-quickstart-mp" id="" target="_blank" >「Helidon MP QuickStartの例」</a>ではこれらのサービスが使用されるため、独自のアプリケーションのテンプレートとして使用することも、サンプル・プロジェクト自体を使用して組込みサービスのCORS動作のカスタマイズを試すこともできます。</span></p>
 
 </div>
 

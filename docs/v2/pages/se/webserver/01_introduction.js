@@ -13,6 +13,20 @@
 </v-flex>
 </v-layout>
 
+<h2 id="maven-coordinates"><span class="merged" id="all.317oeS.63" title="原文 : Maven Coordinates">Maven連携</span></h2>
+<div class="section">
+<p><span class="merged" id="all.YBhty" title="原文 : To enable WebServer add the following dependency to your project&rsquo;s pom.xml (see Managing Dependencies).">WebServerを有効にするには、プロジェクトの<code>pom.xml</code>に次の依存関係を追加します(<router-link to="/about/04_managing-dependencies">「依存関係の管理」</router-link>を参照)。</span></p>
+
+<markup
+lang="xml"
+
+>&lt;dependency&gt;
+    &lt;groupId&gt;io.helidon.webserver&lt;/groupId&gt;
+    &lt;artifactId&gt;helidon-webserver&lt;/artifactId&gt;
+&lt;/dependency&gt;</markup>
+
+</div>
+
 <h2 id="_quick_start"><span class="merged" id="all.2FbcJI.3"  title="原文:: Quick Start">クイック・スタート</span></h2>
 <div class="section">
 <p><span class="merged" id="all.3F6RBt" title="原文 : Here is the code for a minimalist web application that runs on a random free port:">ランダムな空きポートで実行される最小のwebアプリケーションのコードを次に示します:</span></p>
@@ -35,23 +49,6 @@ lang="java"
 <li data-value="2"><span class="merged" id="all.4MC0LP.2"  title="原文:: Start the server.">サーバーを起動します。</span></li>
 <li data-value="3"><span class="merged" id="all.1WukzX" title="原文 : Wait for the server to start while throwing possible errors as runtime exceptions.">サーバーが起動するまで待機し、実行時例外として発生する可能性のあるエラーをスローします。</span></li>
 <li data-value="4"><span class="merged" id="all.3MUwZI" title="原文 : The server is bound to a random free port.">サーバーはランダムな空きポートにバインドされています。</span></li>
-</ul>
-</div>
-
-<h2 id="_maven_coordinates"><span class="merged" id="all.317oeS.14" title="原文 : Maven Coordinates">Maven連携</span></h2>
-<div class="section">
-<p><span class="merged" id="all.3Y1dJo.5.spl1" title="原文 : The Managing Dependencies page describes how you should declare dependency management for Helidon applications."><router-link to="/about/04_managing-dependencies">「依存関係の管理」</router-link>ページでは、Helidonアプリケーションの依存性管理を宣言する方法について説明します。</span> <span class="merged" id="all.3Y1dJo.5.spl2" title="原文 : Then declare the following dependency in your project:">次に、プロジェクトで次の依存性を宣言します:</span> </p>
-
-<markup
-lang="xml"
-
->&lt;dependency&gt;
-    &lt;groupId&gt;io.helidon.webserver&lt;/groupId&gt;
-    &lt;artifactId&gt;helidon-webserver&lt;/artifactId&gt; <span class="conum" data-value="1" />
-&lt;/dependency&gt;</markup>
-
-<ul class="colist">
-<li data-value="1"><span class="merged" id="all.4AxbAR" title="原文 : Dependency on WebServer.">WebServerへの依存性。</span></li>
 </ul>
 </div>
 </doc-view>

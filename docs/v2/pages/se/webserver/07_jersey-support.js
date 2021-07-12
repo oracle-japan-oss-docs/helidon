@@ -2,24 +2,24 @@
 <span title="免責事項: ここに記載されているドキュメントは、お客様の利便性のために翻訳ソフトウエアにより機械的に翻訳(機械翻訳)したものです。オリジナルの英語版もあわせてご確認ください。" style="width:150px;padding-left:5px;padding-right:5px;border:#ff0000 solid 1px;border-color: gray;font-size: small;color:gray;margin: 0 auto 0 auto;text-align:center;"><a href="https://docs.oracle.com/cd/E85181_01/mt_disclaimer.html" target="disclaimer">&nbsp;&nbsp;機械翻訳について&nbsp;&nbsp;</a></span>
 
 
-<h2 id="_jax_rs_support"><span class="merged" id="all.2VK4t4" title="原文 : JAX-RS Support">JAX-RSのサポート</span></h2>
+<h2 id="maven-coordinates"><span class="merged" id="all.317oeS.65" title="原文 : Maven Coordinates">Maven連携</span></h2>
 <div class="section">
-<p><span class="merged" id="all.4efXgj" title="原文 : You can register a Jersey (JAX-RS) application at a context root using the JerseySupport class."><code>JerseySupport</code>クラスを使用して、Jersey (JAX-RS)アプリケーションを<em>「コンテキスト・ルート」</em>に登録できます。</span></p>
-
-
-<h3 id="_maven_coordinates"><span class="merged" id="all.317oeS.15" title="原文 : Maven Coordinates">Maven連携</span></h3>
-<div class="section">
-<p><span class="merged" id="all.4JnU1V.15" title="原文 : Declare the following dependency in your project:">プロジェクトで次の依存性を宣言します:</span></p>
+<p><span class="merged" id="all.1fcxx9" title="原文 : To enable Jersey (JAX-RS) Support add the following dependency to your project&rsquo;s pom.xml (see Managing Dependencies).">Jersey (JAX-RS)サポートを有効にするには、プロジェクトの<code>pom.xml</code>に次の依存関係を追加します(<router-link to="/about/04_managing-dependencies">「依存関係の管理」</router-link>を参照)。</span></p>
 
 <markup
 lang="xml"
-title="WebServer Jerseyの依存性"
+
 >&lt;dependency&gt;
     &lt;groupId&gt;io.helidon.webserver&lt;/groupId&gt;
     &lt;artifactId&gt;helidon-webserver-jersey&lt;/artifactId&gt;
 &lt;/dependency&gt;</markup>
 
 </div>
+
+<h2 id="_jax_rs_support"><span class="merged" id="all.2VK4t4" title="原文 : JAX-RS Support">JAX-RSのサポート</span></h2>
+<div class="section">
+<p><span class="merged" id="all.4efXgj" title="原文 : You can register a Jersey (JAX-RS) application at a context root using the JerseySupport class."><code>JerseySupport</code>クラスを使用して、Jersey (JAX-RS)アプリケーションを<em>「コンテキスト・ルート」</em>に登録できます。</span></p>
+
 
 <h3 id="_registering_a_jersey_application"><span class="merged" id="all.3iRrG4" title="原文 : Registering a Jersey Application">Jerseyアプリケーションの登録</span></h3>
 <div class="section">

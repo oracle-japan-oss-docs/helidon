@@ -187,7 +187,7 @@ cors.paths.1.allow-methods = GET, HEAD, OPTIONS, POST</markup>
 
 </li>
 <li>
-<p><span class="merged" id="all.2b3Fwa.1" title="原文 : See the Helidon CORS support in action by building and running the CORS example."><a href="https://github.com/oracle/helidon/tree/2.2.1/examples//microprofile/cors" id="" target="_blank" >「CORSの例」</a>をビルドして実行し、動作中のHelidon CORSサポートを参照してください。</span></p>
+<p><span class="merged" id="all.1Xgvrw.1" title="原文 : See the Helidon CORS support in action by building and running the CORS example."><a href="https://github.com/oracle/helidon/tree/2.3.1/examples/microprofile/cors" id="" target="_blank" >「CORSの例」</a>をビルドして実行し、動作中のHelidon CORSサポートを参照してください。</span></p>
 
 </li>
 </ul>

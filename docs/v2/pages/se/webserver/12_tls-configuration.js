@@ -101,7 +101,7 @@ WebServerTls.builder()
 <th><span class="merged" id="all.28YvFB.3" title="原文 : Configuration key">構成キー</span></th>
 <th><span class="merged" id="all.3T02MF.8"  title="原文:: Default value">デフォルト値</span></th>
 <th><span class="merged" id="all.2fU2gv.4"  title="原文:: Java type">Javaタイプ</span></th>
-<th><span class="merged" id="all.4JM9z7.19"  title="原文:: Description">説明</span></th>
+<th><span class="merged" id="all.4JM9z7.23"  title="原文:: Description">説明</span></th>
 </tr>
 </thead>
 <tbody>

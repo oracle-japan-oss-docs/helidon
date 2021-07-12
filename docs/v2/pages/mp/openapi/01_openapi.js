@@ -13,6 +13,30 @@
 </v-flex>
 </v-layout>
 
+<h2 id="maven-coordinates"><span class="merged" id="all.317oeS.19" title="原文 : Maven Coordinates">Maven連携</span></h2>
+<div class="section">
+<p><span class="merged" id="all.36yvsT" title="原文 : To enable MicroProfile OpenAPI either add a dependency on the helidon-microprofile bundle or add the following dependency to your project&rsquo;s pom.xml (see Managing Dependencies).">MicroProfile OpenAPIを有効にするには、<router-link to="/mp/introduction/02_microprofile">helidon-microprofile bundle</router-link>に依存関係を追加するか、プロジェクトの<code>pom.xml</code>に次の依存関係を追加します(<router-link to="/about/04_managing-dependencies">「依存関係の管理」</router-link>を参照)。</span></p>
+
+<markup
+lang="xml"
+
+>&lt;dependency&gt; <span class="conum" data-value="1" />
+    &lt;groupId&gt;org.eclipse.microprofile.openapi&lt;/groupId&gt;
+    &lt;artifactId&gt;microprofile-openapi-api&lt;/artifactId&gt;
+&lt;/dependency&gt;
+
+&lt;dependency&gt; <span class="conum" data-value="2" />
+    &lt;groupId&gt;io.helidon.microprofile.openapi&lt;/groupId&gt;
+    &lt;artifactId&gt;helidon-microprofile-openapi&lt;/artifactId&gt;
+    &lt;scope&gt;runtime&lt;/scope&gt;
+&lt;/dependency&gt;</markup>
+
+<ul class="colist">
+<li data-value="1"><span class="merged" id="all.23oadO" title="原文 : Defines the MicroProfile OpenAPI annotations so you can use them in your code.">コードで使用できるようにMicroProfile OpenAPI注釈を定義します。</span></li>
+<li data-value="2"><span class="merged" id="all.1WaVqx" title="原文 : Adds the Helidon MP OpenAPI runtime support.">Helidon MP OpenAPIランタイム・サポートを追加します。</span></li>
+</ul>
+</div>
+
 <h2 id="_openapi_support_in_helidon_mp"><span class="merged" id="all.eMVyd" title="原文 : OpenAPI support in Helidon MP">Helidon MPでのOpenAPIサポート</span></h2>
 <div class="section">
 <p><span class="merged" id="all.1oihtN.spl1" title="原文 : You can very simply add support for OpenAPI to your Helidon MP application.">Helidon MPアプリケーションにOpenAPIのサポートを追加するだけですみます。</span> <span class="merged" id="all.1oihtN.spl2" title="原文 : This document shows what changes you need to make to your application and how to access the OpenAPI document for your application at runtime.">このドキュメントでは、アプリケーションに加える必要がある変更と、実行時にアプリケーションのOpenAPIドキュメントにアクセスする方法について説明します。</span> </p>
@@ -23,7 +47,7 @@
 <div class="section">
 <p><span class="merged" id="all.4bCDWr" title="原文 : Helidon MP conforms to the MicroProfile OpenAPI specification, which was inspired by the OpenAPI spec itself.">Helidon MPは、<a href="https://github.com/OAI/OpenAPI-Specification" id="" target="_blank" >「OpenAPI仕様」</a>自体によってインスピレーションされた<a href="https://github.com/eclipse/microprofile-open-api/blob/master/spec/src/main/asciidoc/microprofile-openapi-spec.adoc" id="" target="_blank" >「MicroProfile OpenAPI仕様」</a>に準拠しています。</span></p>
 
-<p><span class="merged" id="all.1MHLhk" title="原文 : Helidon MP includes a complete OpenAPI example based on the MP quick-start sample app.">Helidon MPには、MPクイックスタート・サンプル・アプリケーションに基づく<a href="https://github.com/oracle/helidon/tree/2.2.1/examples//microprofile/openapi-basic" id="" target="_blank" >「完全なOpenAPIの例」</a>が含まれています。</span></p>
+<p><span class="merged" id="all.2epw3c" title="原文 : Helidon MP includes a complete OpenAPI example based on the MP quick-start sample app.">Helidon MPには、MPクイックスタート・サンプル・アプリケーションに基づく<a href="https://github.com/oracle/helidon/tree/2.3.1/examples/microprofile/openapi-basic" id="" target="_blank" >「完全なOpenAPIの例」</a>が含まれています。</span></p>
 
 <p><span class="merged" id="all.ndBCy" title="原文 : To use OpenAPI from your Helidon MP app:">Helidon MPアプリケーションからOpenAPIを使用するには:</span></p>
 
@@ -71,38 +95,12 @@ lang="xml"
 <p><span class="merged" id="all.3X1PmZ" title="原文 : When you build your app maven should include the index META-INF/jandex.idx in the JAR.">アプリケーションをビルドする場合、<code>maven</code>はJARに索引<code>META-INF/jandex.idx</code>を含める必要があります。</span></p>
 
 <div class="admonition note">
-<p class="admonition-textlabel"><span class="merged" id="all.22fJPu"  title="原文:: Note">ノート</span></p>
+<p class="admonition-textlabel"><span class="merged" id="all.22fJPu.1"  title="原文:: Note">ノート</span></p>
 <p ><p><span class="merged" id="all.3MyPQN.spl1" title="原文 : If you do not modify your build to create the index then the Helidon MP OpenAPI runtime automatically creates one in memory during app start-up.">索引を作成するようにビルドを変更<em>しない</em>と、Helidon MP OpenAPIランタイムによって、アプリケーションの起動時にメモリーに索引が自動的に作成されます。</span> <span class="merged" id="all.3MyPQN.spl2" title="原文 : This slows down your app start-up and, depending on how CDI is configured, might inadvertently miss information.">これにより、アプリケーションの起動が遅くなり、CDIの構成方法によっては、誤って情報が失われる可能性があります。</span> </p>
 
 <p><span class="merged" id="all.2Eurto" title="原文 : We strongly recommend using the Jandex plug-in to build the index into your app.">Jandexプラグインを使用して、アプリに索引を作成することを<em>強くお薦めします</em>。</span></p>
 </p>
 </div>
-</div>
-
-<h4 id="_adding_helidon_mp_openapi_support_to_your_app"><span class="merged" id="all.31BUpE" title="原文 : Adding Helidon MP OpenAPI support to your app">アプリへのHelidon MP OpenAPIサポートの追加</span></h4>
-<div class="section">
-<p><span class="merged" id="all.3UWtZY" title="原文 : Add these two sections to the &lt;dependencies&gt; portion of your pom.xml:">次の2つのセクションを<code>pom.xml</code>の<code>&lt;dependencies></code>部分に追加します:</span></p>
-
-<markup
-lang="xml"
-
->&lt;dependency&gt; <span class="conum" data-value="1" />
-    &lt;groupId&gt;org.eclipse.microprofile.openapi&lt;/groupId&gt;
-    &lt;artifactId&gt;microprofile-openapi-api&lt;/artifactId&gt;
-    &lt;version&gt;1.1.2&lt;/version&gt;
-&lt;/dependency&gt;
-
-&lt;dependency&gt; <span class="conum" data-value="2" />
-    &lt;groupId&gt;io.helidon.microprofile.openapi&lt;/groupId&gt;
-    &lt;artifactId&gt;helidon-microprofile-openapi&lt;/artifactId&gt;
-    &lt;version&gt;2.2.1-SNAPSHOT&lt;/version&gt;
-    &lt;scope&gt;runtime&lt;/scope&gt;
-&lt;/dependency&gt;</markup>
-
-<ul class="colist">
-<li data-value="1"><span class="merged" id="all.23oadO" title="原文 : Defines the MicroProfile OpenAPI annotations so you can use them in your code.">コードで使用できるようにMicroProfile OpenAPI注釈を定義します。</span></li>
-<li data-value="2"><span class="merged" id="all.1WaVqx" title="原文 : Adds the Helidon MP OpenAPI runtime support.">Helidon MP OpenAPIランタイム・サポートを追加します。</span></li>
-</ul>
 </div>
 </div>
 
@@ -135,7 +133,7 @@ public JsonObject getDefaultMessage() {...}</markup>
 </ul>
 <p><span class="merged" id="all.ClJ2Y" title="原文 : You can also define any request parameters the endpoint expects, although this endpoint uses none.">エンドポイントで想定されるリクエスト・パラメータを定義することもできますが、このエンドポイントでは何も使用しません。</span></p>
 
-<p><span class="merged" id="all.3HrRy4.spl1" title="原文 : This excerpt shows only a few annotations for illustration.">この抜粋は、例示のためにいくつかの注釈のみを示しています。</span> <span class="merged" id="all.3HrRy4.spl2" title="原文 : The Helidon MP OpenAPI example illustrates more, and the MicroProfile OpenAPI spec describes them all."><a href="https://github.com/oracle/helidon/tree/2.2.1/examples//microprofile/openapi-basic" id="" target="_blank" >「Helidon MP OpenAPIの例」</a>ではさらに説明し、<a href="https://github.com/eclipse/microprofile-open-api/blob/master/spec/src/main/asciidoc/microprofile-openapi-spec.adoc" id="" target="_blank" >「MicroProfile OpenAPI仕様」</a>ではそれらすべてについて説明します。</span> </p>
+<p><span class="merged" id="all.3GBVy8.spl1" title="原文 : This excerpt shows only a few annotations for illustration.">この抜粋は、例示のためにいくつかの注釈のみを示しています。</span> <span class="merged" id="all.3GBVy8.spl2" title="原文 : The Helidon MP OpenAPI example illustrates more, and the MicroProfile OpenAPI spec describes them all."><a href="https://github.com/oracle/helidon/tree/2.3.1/examples/microprofile/openapi-basic" id="" target="_blank" >「Helidon MP OpenAPIの例」</a>ではさらに説明し、<a href="https://github.com/eclipse/microprofile-open-api/blob/master/spec/src/main/asciidoc/microprofile-openapi-spec.adoc" id="" target="_blank" >「MicroProfile OpenAPI仕様」</a>ではそれらすべてについて説明します。</span> </p>
 
 </div>
 

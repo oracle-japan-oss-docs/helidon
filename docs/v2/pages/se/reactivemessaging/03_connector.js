@@ -104,7 +104,7 @@ public class ExampleConnector implements IncomingConnectorFactory {
 
 <h4 id="_explicit_config"><span class="merged" id="all.5flUv" title="原文 : Explicit Config">明示的な構成</span></h4>
 <div class="section">
-<p><span class="merged" id="all.1e2uV6.spl1" title="原文 : An explicit config for channel&rsquo;s publisher is possible with Channel.Builder#publisherConfig(Config config) and for subscriber with Channel.Builder#subscriberConfig(Config config).">チャネルのパブリッシャの明示的な構成は、<code>Channel.Builder#publisherConfig(Config config)</code>および<code>Channel.Builder#subscriberConfig(Config config)</code>のサブスクライバで可能です。</span> <span class="merged" id="all.1e2uV6.spl2" title="原文 : Supplied Heldion Config is merged with mandatory attributes and any implicit config found.">指定された<router-link to="/se/config/01_introduction">「Heldion構成」</router-link>は、必須属性および検出された暗黙的構成とマージされます。</span> <span class="merged" id="all.1e2uV6.spl3" title="原文 : Resulting config is served to Connector.">結果の構成はコネクタに提供されます。</span> </p>
+<p><span class="merged" id="all.3rg5y1.spl1" title="原文 : An explicit config for channel&rsquo;s publisher is possible with Channel.Builder#publisherConfig(Config config) and for subscriber with Channel.Builder#subscriberConfig(Config config).">チャネルのパブリッシャの明示的な構成は、<code>Channel.Builder#publisherConfig(Config config)</code>および<code>Channel.Builder#subscriberConfig(Config config)</code>のサブスクライバで可能です。</span> <span class="merged" id="all.3rg5y1.spl2" title="原文 : Supplied Helidon Config is merged with mandatory attributes and any implicit config found.">指定された<router-link to="/se/config/01_introduction">「Helidon構成」</router-link>は、必須属性および検出された暗黙的構成とマージされます。</span> <span class="merged" id="all.3rg5y1.spl3" title="原文 : Resulting config is served to Connector.">結果の構成はコネクタに提供されます。</span> </p>
 
 <markup
 lang="java"
@@ -145,7 +145,7 @@ Messaging messaging = Messaging.builder()
 
 <h4 id="_implicit_config"><span class="merged" id="all.2zC5xM" title="原文 : Implicit Config">暗黙的な構成</span></h4>
 <div class="section">
-<p><span class="merged" id="all.27GEkS" title="原文 : Implicit config without any hard-coding is possible with Heldion Config following notation of MicroProfile Reactive Messaging.">ハードコードを使用しない暗黙的な構成は、<a href="https://download.eclipse.org/microprofile/microprofile-reactive-messaging-1.0/microprofile-reactive-messaging-spec.html#_configuration" id="" target="_blank" >「MicroProfileリアクティブ・メッセージング」</a>の表記に従った<router-link to="/se/config/01_introduction">「Heldion構成」</router-link>で可能です。</span></p>
+<p><span class="merged" id="all.2hu9ks" title="原文 : Implicit config without any hard-coding is possible with Helidon Config following notation of MicroProfile Reactive Messaging.">ハードコードを使用しない暗黙的な構成は、<a href="https://download.eclipse.org/microprofile/microprofile-reactive-messaging-1.0/microprofile-reactive-messaging-spec.html#_configuration" id="" target="_blank" >「MicroProfileリアクティブ・メッセージング」</a>の表記に従った<router-link to="/se/config/01_introduction">「Helidon構成」</router-link>で可能です。</span></p>
 
 <markup
 lang="yaml"

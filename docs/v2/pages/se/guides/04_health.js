@@ -29,7 +29,7 @@
 <td class=""><span class="merged" id="all.2IiFMu.1" title="原文 : About 15 minutes">約15分</span></td>
 </tr>
 <tr>
-<td class=""><span class="merged" id="all.27GIMH.15" title="原文 : Helidon Prerequisites"><router-link to="/about/03_prerequisites">Helidonの前提条件</router-link></span></td>
+<td class=""><span class="merged" id="all.27GIMH.16" title="原文 : Helidon Prerequisites"><router-link to="/about/03_prerequisites">Helidonの前提条件</router-link></span></td>
 </tr>
 </tbody>
 </table>
@@ -45,7 +45,7 @@ title="Maven原型を実行します:"
 >mvn -U archetype:generate -DinteractiveMode=false \
     -DarchetypeGroupId=io.helidon.archetypes \
     -DarchetypeArtifactId=helidon-quickstart-se \
-    -DarchetypeVersion=2.2.1-SNAPSHOT \
+    -DarchetypeVersion=2.3.1 \
     -DgroupId=io.helidon.examples \
     -DartifactId=helidon-quickstart-se \
     -Dpackage=io.helidon.examples.quickstart.se</markup>
@@ -74,7 +74,7 @@ title="Maven原型を実行します:"
 
 <markup
 lang="xml"
-title="組込みのヘルス・チェック依存性がプロジェクトのpom.xmlファイルにすでに存在することを確認します:"
+title="組込みのヘルス・チェック依存関係がプロジェクトのpom.xmlファイルにすでに存在することを確認します:"
 >&lt;dependency&gt;
     &lt;groupId&gt;io.helidon.health&lt;/groupId&gt;
     &lt;artifactId&gt;helidon-health-checks&lt;/artifactId&gt;
@@ -95,7 +95,7 @@ title="<code>Main.java</code>および<code>createRouting</code>メソッドを�
 }</markup>
 
 <ul class="colist">
-<li data-value="1"><span class="merged" id="all.abS0F" title="原文 : Add built-in health-checks (requires the helidon-health-checks dependency).">組込みヘルス・チェックを追加します(<code>helidon-health-checks</code>依存性が必要です)。</span></li>
+<li data-value="1"><span class="merged" id="all.abS0F" title="原文 : Add built-in health-checks (requires the helidon-health-checks dependency).">組込みヘルス・チェックを追加します(<code>helidon-health-checks</code>依存関係が必要です)。</span></li>
 <li data-value="2"><span class="merged" id="all.1VF6jO" title="原文 : Register the created health support with web server routing (adds the /health endpoint).">作成したヘルス・サポートをwebサーバー・ルーティングに登録します(<code>/health</code>エンドポイントを追加します)。</span></li>
 </ul>
 <markup
@@ -161,7 +161,7 @@ title="JSONレスポンス:"
 
 <markup
 lang="xml"
-title="カスタムのヘルス・チェック依存性がプロジェクトのpom.xmlファイルにすでに存在することを確認します:"
+title="カスタムのヘルス・チェック依存関係がプロジェクトのpom.xmlファイルにすでに存在することを確認します:"
 >&lt;dependency&gt;
     &lt;groupId&gt;io.helidon.health&lt;/groupId&gt;
     &lt;artifactId&gt;helidon-health&lt;/artifactId&gt;

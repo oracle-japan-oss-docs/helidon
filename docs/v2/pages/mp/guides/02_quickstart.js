@@ -46,7 +46,7 @@ title="Maven原型の実行"
 >mvn -U archetype:generate -DinteractiveMode=false \
     -DarchetypeGroupId=io.helidon.archetypes \
     -DarchetypeArtifactId=helidon-quickstart-mp \
-    -DarchetypeVersion=2.2.1-SNAPSHOT \
+    -DarchetypeVersion=2.3.1 \
     -DgroupId=io.helidon.examples \
     -DartifactId=helidon-quickstart-mp \
     -Dpackage=io.helidon.examples.quickstart.mp</markup>
@@ -66,7 +66,7 @@ lang="bash"
 title="アプリケーションのビルド"
 >mvn package</markup>
 
-<p><span class="merged" id="all.3MdOSG.spl1" title="原文 : The project builds an application jar for the example and saves all runtime dependencies in the target/libs directory.">このプロジェクトでは、例のアプリケーションjarがビルドされ、すべてのランタイム依存性が<code>target/libs</code>ディレクトリに保存されます。</span> <span class="merged" id="all.3MdOSG.spl2" title="原文 : This means you can easily start the application by running the application jar file:">つまり、アプリケーションjarファイルを実行することで、アプリケーションを簡単に起動できます:</span> </p>
+<p><span class="merged" id="all.3MdOSG.spl1" title="原文 : The project builds an application jar for the example and saves all runtime dependencies in the target/libs directory.">このプロジェクトでは、例のアプリケーションjarがビルドされ、すべてのランタイム依存関係が<code>target/libs</code>ディレクトリに保存されます。</span> <span class="merged" id="all.3MdOSG.spl2" title="原文 : This means you can easily start the application by running the application jar file:">つまり、アプリケーションjarファイルを実行することで、アプリケーションを簡単に起動できます:</span> </p>
 
 <markup
 lang="bash"

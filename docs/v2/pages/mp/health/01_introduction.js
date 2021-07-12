@@ -2,6 +2,30 @@
 <span title="免責事項: ここに記載されているドキュメントは、お客様の利便性のために翻訳ソフトウエアにより機械的に翻訳(機械翻訳)したものです。オリジナルの英語版もあわせてご確認ください。" style="width:150px;padding-left:5px;padding-right:5px;border:#ff0000 solid 1px;border-color: gray;font-size: small;color:gray;margin: 0 auto 0 auto;text-align:center;"><a href="https://docs.oracle.com/cd/E85181_01/mt_disclaimer.html" target="disclaimer">&nbsp;&nbsp;機械翻訳について&nbsp;&nbsp;</a></span>
 
 
+<h2 id="maven-coordinates"><span class="merged" id="all.317oeS.12" title="原文 : Maven Coordinates">Maven連携</span></h2>
+<div class="section">
+<p><span class="merged" id="all.1nQ8Dd" title="原文 : To enable MicroProfile Health either add a dependency on the helidon-microprofile bundle or add the following dependency to your project&rsquo;s pom.xml (see Managing Dependencies).">MicroProfile Healthを有効にするには、<router-link to="/mp/introduction/02_microprofile">helidon-microprofile bundle</router-link>に依存関係を追加するか、プロジェクトの<code>pom.xml</code>に次の依存関係を追加します(<router-link to="/about/04_managing-dependencies">「依存関係の管理」</router-link>を参照)。</span></p>
+
+<markup
+lang="xml"
+
+>        &lt;dependency&gt;
+            &lt;groupId&gt;io.helidon.microprofile.health&lt;/groupId&gt;
+            &lt;artifactId&gt;helidon-microprofile-health&lt;/artifactId&gt;
+        &lt;/dependency&gt;</markup>
+
+<p><span class="merged" id="all.1XLfXw" title="原文 : To enable built-in health checks add the following dependency (or use the helidon-microprofile bundle )">組込みヘルス・チェックを有効にするには、次の依存関係を追加します(または<router-link to="/mp/introduction/02_microprofile">helidon-microprofile bundle</router-link>を使用します)</span></p>
+
+<markup
+lang="xml"
+
+>        &lt;dependency&gt;
+            &lt;groupId&gt;io.helidon.health&lt;/groupId&gt;
+            &lt;artifactId&gt;helidon-health-checks&lt;/artifactId&gt;
+        &lt;/dependency&gt;</markup>
+
+</div>
+
 <h2 id="_overview"><span class="merged" id="all.YrpRV.1"  title="原文:: Overview">概要</span></h2>
 <div class="section">
 <p><span class="merged" id="all.1yi98X" title="原文 : Microservices expose their health status primarily so external tools (for example, an orchestrator such as Kubernetes) can monitor each service and take action, such as restarting a service instance if it has failed or temporarily shunting traffic away from the instance if the service is unable to process incoming requests normally.">マイクロサービスは、主に外部ツール(Kubernetesなどのオーケストレータ)が各サービスを監視し、障害が発生した場合のサービス・インスタンスの再起動や、サービスが受信リクエストを正常に処理できない場合のインスタンスからのトラフィックの一時的な停止などのアクションを実行できるように、ヘルス・ステータスを公開します。</span></p>
@@ -94,7 +118,7 @@
 <div class="section">
 <p><span class="merged" id="all.2wwN0I" title="原文 : Add custom health checks to your own microservices.">独自のマイクロサービスにカスタム・ヘルス・チェックを追加します。</span></p>
 
-<p><span class="merged" id="all.rn5ka" title="原文 : The Helidon MP Health Check Guide shows how to create a sample project and add custom liveness and readiness health checks."><router-link to="/mp/guides/04_health">「Helidon MPヘルス・チェック・ガイド」</router-link>は、サンプル・プロジェクトを作成し、カスタムのリブネスおよび準備ヘルス・チェックを追加する方法を示しています。</span></p>
+<p><span class="merged" id="all.rn5ka" title="原文 : The Helidon MP Health Check Guide shows how to create a sample project and add custom liveness and readiness health checks."><router-link to="/mp/guides/04_health">「Helidon MPヘルス・チェック・ガイド」</router-link>は、サンプル・プロジェクトを作成し、カスタムのリブネスおよびレディネス・ヘルス・チェックを追加する方法を示しています。</span></p>
 
 </div>
 </div>

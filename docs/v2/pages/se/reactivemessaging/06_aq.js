@@ -2,18 +2,22 @@
 <span title="免責事項: ここに記載されているドキュメントは、お客様の利便性のために翻訳ソフトウエアにより機械的に翻訳(機械翻訳)したものです。オリジナルの英語版もあわせてご確認ください。" style="width:150px;padding-left:5px;padding-right:5px;border:#ff0000 solid 1px;border-color: gray;font-size: small;color:gray;margin: 0 auto 0 auto;text-align:center;"><a href="https://docs.oracle.com/cd/E85181_01/mt_disclaimer.html" target="disclaimer">&nbsp;&nbsp;機械翻訳について&nbsp;&nbsp;</a></span>
 
 
-<h2 id="_reactive_oracle_aq_connector"><span class="merged" id="all.4eUebl" title="原文 : Reactive Oracle AQ Connector">リアクティブOracle AQコネクタ</span></h2>
+<h2 id="maven-coordinates"><span class="merged" id="all.317oeS.54" title="原文 : Maven Coordinates">Maven連携</span></h2>
 <div class="section">
-<p><span class="merged" id="all.lD4Q7" title="原文 : Connecting streams to Oracle Advanced Queueing with Reactive Messaging needs nothing more than one dependency.">リアクティブ・メッセージングを使用したOracle Advanced Queueingへのストリームの接続には、複数の依存関係は必要ありません。</span></p>
+<p><span class="merged" id="all.2z6RGq.1" title="原文 : To enable AQ Connector add the following dependency to your project&rsquo;s pom.xml (see Managing Dependencies).">AQコネクタを有効にするには、プロジェクトの<code>pom.xml</code>に次の依存関係を追加します(<router-link to="/about/04_managing-dependencies">「依存関係の管理」</router-link>を参照)。</span></p>
 
 <markup
 lang="xml"
-title="必要な依存関係:"
+
 >&lt;dependency&gt;
     &lt;groupId&gt;io.helidon.messaging.aq&lt;/groupId&gt;
     &lt;artifactId&gt;helidon-messaging-aq&lt;/artifactId&gt;
 &lt;/dependency&gt;</markup>
 
+</div>
+
+<h2 id="_reactive_oracle_aq_connector"><span class="merged" id="all.4eUebl" title="原文 : Reactive Oracle AQ Connector">リアクティブOracle AQコネクタ</span></h2>
+<div class="section">
 
 <h3 id="_sending_and_receiving"><span class="merged" id="all.c23dW" title="原文 : Sending and receiving">送受信</span></h3>
 <div class="section">

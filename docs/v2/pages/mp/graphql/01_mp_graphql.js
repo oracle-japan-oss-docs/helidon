@@ -20,17 +20,9 @@
 </div>
 </div>
 
-<h2 id="_about_the_microprofile_graphql_specification"><span class="merged" id="all.3FAKkB" title="原文 : About the MicroProfile GraphQL Specification">MicroProfile GraphQL仕様について</span></h2>
+<h2 id="maven-coordinates"><span class="merged" id="all.317oeS.9" title="原文 : Maven Coordinates">Maven連携</span></h2>
 <div class="section">
-<p><span class="merged" id="all.1DOdYB.spl1" title="原文 : Helidon MP implements the MicroProfile GraphQL spec version 1.0.3.">Helidon MPは、MicroProfile GraphQL <a href="https://github.com/eclipse/microprofile-graphql" id="" target="_blank" >spec</a>バージョン1.0.3を実装しています。</span> <span class="merged" id="all.1DOdYB.spl2" title="原文 : The spec prescribes how applications can be built to expose an endpoint for GraphQL.">仕様には、GraphQLのエンドポイントを公開するためのアプリケーションの構築方法が規定されています。</span> <span class="merged" id="all.1DOdYB.spl3" title="原文 : GraphQL is an open-source data query and manipulation language for APIs, and a runtime for fulfilling queries with existing data.">GraphQLは、APIのオープンソースのデータ問合せおよび操作言語であり、問合せを既存のデータで実行するためのランタイムです。</span> <span class="merged" id="all.1DOdYB.spl4" title="原文 : It provides an alternative to, though not necessarily a replacement for, REST.">RESTの代替機能を提供します(必ずしも代替機能ではありません)。</span> </p>
-
-<p><span class="merged" id="all.nXkYc" title="原文 : For more information on GraphQL see https://graphql.org/.">GraphQLの詳細は、<a href="https://graphql.org/" id="" target="_blank" >https://graphql.org/</a>を参照してください。</span></p>
-
-</div>
-
-<h2 id="_maven_coordinates"><span class="merged" id="all.317oeS" title="原文 : Maven Coordinates">Maven連携</span></h2>
-<div class="section">
-<p><span class="merged" id="all.3Y1dJo.spl1" title="原文 : The Managing Dependencies page describes how you should declare dependency management for Helidon applications."><router-link to="/about/04_managing-dependencies">「依存関係の管理」</router-link>ページでは、Helidonアプリケーションの依存性管理を宣言する方法について説明します。</span> <span class="merged" id="all.3Y1dJo.spl2" title="原文 : Then declare the following dependency in your project:">次に、プロジェクトで次の依存性を宣言します:</span> </p>
+<p><span class="merged" id="all.1XIx7" title="原文 : To enable MicroProfile GraphQL add the following dependency to your project&rsquo;s pom.xml (see Managing Dependencies).">MicroProfile GraphQLを有効にするには、プロジェクトの<code>pom.xml</code>に次の依存関係を追加します(<router-link to="/about/04_managing-dependencies">「依存関係の管理」</router-link>を参照)。</span></p>
 
 <markup
 lang="xml"
@@ -39,6 +31,14 @@ lang="xml"
     &lt;groupId&gt;io.helidon.microprofile.graphql&lt;/groupId&gt;
     &lt;artifactId&gt;helidon-microprofile-graphql-server&lt;/artifactId&gt;
 &lt;/dependency&gt;</markup>
+
+</div>
+
+<h2 id="_about_the_microprofile_graphql_specification"><span class="merged" id="all.3FAKkB" title="原文 : About the MicroProfile GraphQL Specification">MicroProfile GraphQL仕様について</span></h2>
+<div class="section">
+<p><span class="merged" id="all.3iBFGA.spl1" title="原文 : Helidon MP implements the MicroProfile GraphQL spec version 1.1.0.">Helidon MPは、MicroProfile GraphQL <a href="https://github.com/eclipse/microprofile-graphql" id="" target="_blank" >spec</a>バージョン1.1.0を実装しています。</span> <span class="merged" id="all.3iBFGA.spl2" title="原文 : The spec prescribes how applications can be built to expose an endpoint for GraphQL.">仕様には、GraphQLのエンドポイントを公開するためのアプリケーションの構築方法が規定されています。</span> <span class="merged" id="all.3iBFGA.spl3" title="原文 : GraphQL is an open-source data query and manipulation language for APIs, and a runtime for fulfilling queries with existing data.">GraphQLは、APIのオープンソースのデータ問合せおよび操作言語であり、問合せを既存のデータで実行するためのランタイムです。</span> <span class="merged" id="all.3iBFGA.spl4" title="原文 : It provides an alternative to, though not necessarily a replacement for, REST.">RESTの代替機能を提供します(必ずしも代替機能ではありません)。</span> </p>
+
+<p><span class="merged" id="all.nXkYc" title="原文 : For more information on GraphQL see https://graphql.org/.">GraphQLの詳細は、<a href="https://graphql.org/" id="" target="_blank" >https://graphql.org/</a>を参照してください。</span></p>
 
 </div>
 

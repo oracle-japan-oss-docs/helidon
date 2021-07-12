@@ -13,7 +13,7 @@
 </v-flex>
 </v-layout>
 
-<h2 id="_overview"><span class="merged" id="all.YrpRV.5"  title="原文:: Overview">概要</span></h2>
+<h2 id="_overview"><span class="merged" id="all.YrpRV.6"  title="原文:: Overview">概要</span></h2>
 <div class="section">
 <p><span class="merged" id="all.1a6ndp.spl1" title="原文 : Each config source reads data from a location of a specific type, without regard to the format of the config data there.">各構成ソースは、構成データの形式に関係なく、特定のタイプのロケーションからデータを読み取ります。</span> <span class="merged" id="all.1a6ndp.spl2" title="原文 : Each config parser converts data expressed in a particular format into the in-memory config data structure that the rest of the config system uses, without any concern for where that data resides or how it is physically retrieved.">各構成パーサーは、特定の形式で表されたデータを、残りの構成システムが使用するインメモリー構成データ構造に変換します。その際、そのデータが存在する場所や物理的に取得される方法は考慮されません。</span> <span class="merged" id="all.1a6ndp.spl3" title="原文 : These two work together to prepare data in a given format at a given location for the config system.">これらの2つは連携して、構成システムの特定のロケーションで特定の形式でデータを準備します。</span> <span class="merged" id="all.1a6ndp.spl4" title="原文 : When your application prepares a Config.Builder it sets what ConfigSources and ConfigParsers the builder should use in constructing the resulting Config object.">アプリケーションで<code>Config.Builder</code>を準備する際、ビルダーが結果の<code>Config</code>オブジェクトをビルドする際に使用する<code>ConfigSource</code>および<code>ConfigParser</code>を設定します。</span> </p>
 

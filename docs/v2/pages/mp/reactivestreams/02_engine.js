@@ -4,6 +4,25 @@
 
 <h2 id="_helidon_reactive_engine"><span class="merged" id="all.oahf" title="原文 : Helidon Reactive Engine">Helidonリアクティブ・エンジン</span></h2>
 <div class="section">
+
+</div>
+
+<h2 id="maven-coordinates"><span class="merged" id="all.317oeS.24" title="原文 : Maven Coordinates">Maven連携</span></h2>
+<div class="section">
+<p><span class="merged" id="all.35e2sP" title="原文 : To enable Reactive Engine add the following dependency to your project&rsquo;s pom.xml (see Managing Dependencies).">リアクティブ・エンジンを有効にするには、プロジェクトの<code>pom.xml</code>に次の依存関係を追加します(<router-link to="/about/04_managing-dependencies">「依存関係の管理」</router-link>を参照)。</span></p>
+
+<markup
+lang="xml"
+
+>&lt;dependency&gt;
+    &lt;groupId&gt;io.helidon.common&lt;/groupId&gt;
+    &lt;artifactId&gt;helidon-common-reactive&lt;/artifactId&gt;
+&lt;/dependency&gt;</markup>
+
+</div>
+
+<h2 id="_reactive_engine"><span class="merged" id="all.2s64zc" title="原文 : Reactive Engine">リアクティブ・エンジン</span></h2>
+<div class="section">
 <p><span class="merged" id="all.1282rN.spl1" title="原文 : Helidon has its own set of reactive operators that have no dependencies outside of the Helidon ecosystem.">Helidonには、Helidonエコシステムの外部に依存関係のない、独自のリアクティブ・オペレータのセットがあります。</span> <span class="merged" id="all.1282rN.spl2" title="原文 : These operators can be used with java.util.concurrent.Flow based reactive streams.">これらのオペレータは、<code>java.util.concurrent.Flow</code>ベースのリアクティブ・ストリームで使用できます。</span> <span class="merged" id="all.1282rN.spl3" title="原文 : Stream processing operator chain can be easily constructed by io.helidon.common.reactive.Multi, or io.helidon.common.reactive.Single for streams with single value.">ストリーム処理オペレータ・チェーンは、単一の値を持つストリームに対して<code>io.helidon.common.reactive.Multi</code>または<code>io.helidon.common.reactive.Single</code>で簡単に構築できます。</span> </p>
 
 <markup
@@ -31,7 +50,7 @@ title="単一使用例:"
 
 &gt; Result: 6</markup>
 
-<div class="block-title"><span class="merged" id="all.2wgXq3"  title="原文:: Operators"><span>オペレータ</span></span></div>
+<div class="block-title"><span class="merged" id="all.2wgXq3"  title="原文:: Operators"><span>演算子</span></span></div>
 <div class="table__overflow elevation-1  ">
 <table class="datatable table">
 <colgroup>
@@ -281,20 +300,6 @@ title="オペレータ・チェーンの組合せ:"
 
 &gt; Item received: FOO
 &gt; Item received: BAR</markup>
-
-</div>
-
-<h3 id="_dependency"><span class="merged" id="all.1l1QyT.1"  title="原文:: Dependency">依存性</span></h3>
-<div class="section">
-<p><span class="merged" id="all.4JnU1V.5" title="原文 : Declare the following dependency in your project:">プロジェクトで次の依存性を宣言します:</span></p>
-
-<markup
-lang="xml"
-
->&lt;dependency&gt;
-    &lt;groupId&gt;io.helidon.common&lt;/groupId&gt;
-    &lt;artifactId&gt;helidon-common-reactive&lt;/artifactId&gt;
-&lt;/dependency&gt;</markup>
 
 </div>
 </div>

@@ -13,9 +13,23 @@
 </v-flex>
 </v-layout>
 
+<h2 id="maven-coordinates"><span class="merged" id="all.317oeS.8" title="原文 : Maven Coordinates">Maven連携</span></h2>
+<div class="section">
+<p><span class="merged" id="all.3N39hj" title="原文 : To enable MicroProfile Fault Tolerance either add a dependency on the helidon-microprofile bundle or add the following dependency to your project&rsquo;s pom.xml (see Managing Dependencies).">MicroProfileフォルト・トレランスを有効にするには、<router-link to="/mp/introduction/02_microprofile">helidon-microprofile bundle</router-link>に依存関係を追加するか、プロジェクトの<code>pom.xml</code>に次の依存関係を追加します(<router-link to="/about/04_managing-dependencies">「依存関係の管理」</router-link>を参照)。</span></p>
+
+<markup
+lang="xml"
+
+>     &lt;dependency&gt;
+         &lt;groupId&gt;io.helidon.microprofile&lt;/groupId&gt;
+         &lt;artifactId&gt;helidon-microprofile-fault-tolerance&lt;/artifactId&gt;
+     &lt;/dependency&gt;</markup>
+
+</div>
+
 <h2 id="_fault_tolerance_in_helidon"><span class="merged" id="all.1RJluX" title="原文 : Fault Tolerance in Helidon">Helidonのフォルト・トレランス</span></h2>
 <div class="section">
-<p><span class="merged" id="all.SnnS7.spl1" title="原文 : The latest implementation of MP Fault Tolerance is built on top of Helidon&rsquo;s SE Fault Tolerance.">MPフォルト・トレランスの最新の実装は、HelidonのSEフォルト・トレランスの上に構築されます。</span> <span class="merged" id="all.SnnS7.spl2" title="原文 : Thus, some configuration for Helidon SE Fault Tolerance also applies to MP.">したがって、Helidon SEフォルト・トレランスの一部の構成はMPにも適用されます。</span> <span class="merged" id="all.SnnS7.spl3" title="原文 : The next section describes some configuration properties that are of particular interest to MP applications.">次の項では、MPアプリケーションに特に重要な構成プロパティについて説明します。</span> </p>
+<p><span class="merged" id="all.RBE74.spl1" title="原文 : The latest implementation of MP Fault Tolerance is built on top of Helidon&rsquo;s SE Fault Tolerance.">MPフォルト・トレランスの最新の実装は、HelidonのSEフォルト・トレランスの上に構築されます。</span> <span class="merged" id="all.RBE74.spl2" title="原文 : Thus, some configuration for Helidon SE Fault Tolerance also applies to MP.">したがって、Helidon SEフォルト・トレランスの一部の構成はMPにも適用されます。</span> <span class="merged" id="all.RBE74.spl3" title="原文 : The next section describes configuration properties that are of particular interest to MP applications.">次の項では、MPアプリケーションに特に関連する構成プロパティについて説明します。</span> </p>
 
 
 <h3 id="_configuration"><span class="merged" id="all.Pfqvy"  title="原文:: Configuration">構成</span></h3>
@@ -26,15 +40,15 @@
 lang="yaml"
 
 >executor:
-  core-pool-size: 8
+  core-pool-size: 32
 
 scheduled-executor:
-  core-pool-size: 8</markup>
+  core-pool-size: 32</markup>
 
 <div class="admonition note">
 <p class="admonition-inline"><span class="merged" id="all.3ycTie" title="原文 : There is currently no support to configure these executor properties via a microprofile-config.properties file."><code>microprofile-config.properties</code>ファイルを介したこれらのエグゼキュータ・プロパティの構成は、現在<em>「サポートがありません」</em>。</span></p>
 </div>
-<p><span class="merged" id="all.200Lsz" title="原文 : The complete set of properties available to configure these executors is in ./apidocs/io.helidon.common.configurable/io/helidon/common/configurable/ThreadPoolSupplier.Builder.html#config(io.helidon.config.Config)[ServerThreadPoolSupplier] and ./apidocs/io.helidon.common.configurable/io/helidon/common/configurable/ScheduledThreadPoolSupplier.Builder.html#config(io.helidon.config.Config)[ScheduledThreadPoolSupplier].">これらのエグゼキュータを構成するために使用できるプロパティの完全なセットは、./apidocs/io.helidon.common.configurable/io/helidon/common/configurable/ThreadPoolSupplier.Builder.html#config(io.helidon.config.Config)[ServerThreadPoolSupplier]および./apidocs/io.helidon.common.configurable/io/helidon/common/configurable/ScheduledThreadPoolSupplier.Builder.html#config(io.helidon.config.Config)[ScheduledThreadPoolSupplier]にあります。</span></p>
+<p><span class="merged" id="all.1GovYw" title="原文 : For a complete set of properties available to configure these executors, see ServerThreadPoolSupplier and ScheduledThreadPoolSupplier.">これらのエグゼキュータの構成に使用可能なプロパティの完全なセットは、<a href="./apidocs/io.helidon.common.configurable/io/helidon/common/configurable/ThreadPoolSupplier.Builder.html#config(io.helidon.config.Config)" id="" target="_blank" >ServerThreadPoolSupplier</a>および<a href="./apidocs/io.helidon.common.configurable/io/helidon/common/configurable/ScheduledThreadPoolSupplier.Builder.html#config(io.helidon.config.Config)" id="" target="_blank" >ScheduledThreadPoolSupplier</a>を参照してください。</span></p>
 
 </div>
 </div>

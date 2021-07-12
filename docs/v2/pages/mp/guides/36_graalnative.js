@@ -13,7 +13,7 @@
 </v-flex>
 </v-layout>
 
-<h2 id="_introduction"><span class="merged" id="all.4LJMHk.4"  title="原文:: Introduction">導入</span></h2>
+<h2 id="_introduction"><span class="merged" id="all.4LJMHk.5"  title="原文:: Introduction">導入</span></h2>
 <div class="section">
 <p><span class="merged" id="all.17BpTA.spl1" title="原文 : Native images are ahead-of-time compiled Java code that result in a self contained native executable."><a href="https://www.graalvm.org/docs/reference-manual/aot-compilation/" id="" target="_blank" >「ネイティブ・イメージ」</a>は、自己完結型のネイティブ実行可能ファイルになるコンパイル済Javaコードです。</span> <span class="merged" id="all.17BpTA.spl2" title="原文 : When used appropriately native images have dramatically faster startup and lower runtime memory overhead compared to a Java VM.">適切にネイティブ・イメージを使用すると、Java VMに比べて起動が大幅に高速化され、ランタイム・メモリー・オーバーヘッドが削減されます。</span> </p>
 
@@ -39,7 +39,7 @@
 <td class=""><span class="merged" id="all.27GIMH.11" title="原文 : Helidon Prerequisites"><router-link to="/about/03_prerequisites">Helidonの前提条件</router-link></span></td>
 </tr>
 <tr>
-<td class=""><span class="merged" id="all.1hP39Z" title="原文 : GraalVM CE 20.2.0">GraalVM CE <a href="https://github.com/graalvm/graalvm-ce-builds/releases/tag/vm-20.2.0" id="" target="_blank" >20.2.0</a></span></td>
+<td class=""><span class="merged" id="all.Y9EVZ" title="原文 : GraalVM CE 21.0.0">GraalVM CE <a href="https://github.com/graalvm/graalvm-ce-builds/releases/tag/vm-21.0.0" id="" target="_blank" >21.0.0</a></span></td>
 </tr>
 </tbody>
 </table>
@@ -54,7 +54,7 @@
 lang="bash"
 
 ># Your path might be different
-export GRAALVM_HOME=/usr/local/graalvm-ce-20.2.0/Contents/Home/</markup>
+export GRAALVM_HOME=/usr/local/graalvm-ce-21.0.0/Contents/Home/</markup>
 
 <p><span class="merged" id="all.3IZxtz" title="原文 : Then install the optional native-image command:">次に、オプションの<code>native-image</code>コマンドをインストールします:</span></p>
 
@@ -83,7 +83,7 @@ lang="bash"
 >mvn -U archetype:generate -DinteractiveMode=false \
     -DarchetypeGroupId=io.helidon.archetypes \
     -DarchetypeArtifactId=helidon-quickstart-mp \
-    -DarchetypeVersion=2.2.1-SNAPSHOT \
+    -DarchetypeVersion=2.3.1 \
     -DgroupId=io.helidon.examples \
     -DartifactId=helidon-quickstart-mp \
     -Dpackage=io.helidon.examples.quickstart.mp</markup>
@@ -118,7 +118,7 @@ lang="bash"
 
 </div>
 
-<h2 id="_building_a_native_image"><span class="merged" id="all.237MTc" title="原文 : Building a Native Image">ネイティブ・イメージのビルド</span></h2>
+<h2 id="_building_a_native_image"><span class="merged" id="all.237MTc"  title="原文: Building a Native Image">ネイティブ・イメージのビルド</span></h2>
 <div class="section">
 <p><span class="merged" id="all.4dEyqu" title="原文 : You can build a native executable in 2 different ways:">ネイティブ実行可能ファイルは、次の2つの方法でビルドできます:</span></p>
 
@@ -175,7 +175,7 @@ lang="bash"
 
 <div class="admonition tip">
 <p class="admonition-textlabel"><span class="merged" id="all.245DJ6.1"  title="原文:: Tip">ヒント</span></p>
-<p ><span class="merged" id="all.3BIrNM.spl1" title="原文 : This does a full build inside the Docker container.">これにより、Dockerコンテナ内で完全なビルドが実行されます。</span> <span class="merged" id="all.3BIrNM.spl2" title="原文 : The first time you run it, it will take a while because it is downloading all of the Maven dependencies and caching them in a Docker layer.">初回実行時には、すべてのMaven依存性をダウンロードしてDockerレイヤーにキャッシュするため、しばらく時間がかかります。</span> <span class="merged" id="all.3BIrNM.spl3" title="原文 : Subsequent builds will be much faster as long as you don&rsquo;t change the pom.xml file."><code>pom.xml</code>ファイルを変更しないかぎり、後続のビルドははるかに高速になります。</span> <span class="merged" id="all.3BIrNM.spl4" title="原文 : If the pom is modified then the dependencies will be re-downloaded.">POMが変更されると、依存性が再ダウンロードされます。</span> </p>
+<p ><span class="merged" id="all.3BIrNM.spl1" title="原文 : This does a full build inside the Docker container.">これにより、Dockerコンテナ内で完全なビルドが実行されます。</span> <span class="merged" id="all.3BIrNM.spl2" title="原文 : The first time you run it, it will take a while because it is downloading all of the Maven dependencies and caching them in a Docker layer.">初回実行時には、すべてのMaven依存関係をダウンロードしてDockerレイヤーにキャッシュするため、しばらく時間がかかります。</span> <span class="merged" id="all.3BIrNM.spl3" title="原文 : Subsequent builds will be much faster as long as you don&rsquo;t change the pom.xml file."><code>pom.xml</code>ファイルを変更しないかぎり、後続のビルドははるかに高速になります。</span> <span class="merged" id="all.3BIrNM.spl4" title="原文 : If the pom is modified then the dependencies will be re-downloaded.">POMが変更されると、依存関係が再ダウンロードされます。</span> </p>
 </div>
 <p><span class="merged" id="all.42Bugy" title="原文 : Start the application:">アプリケーションを起動します:</span></p>
 

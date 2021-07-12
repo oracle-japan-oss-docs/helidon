@@ -255,11 +255,11 @@
 
 </div>
 
-<h2 id="_java_ee_dependencies"><span class="merged" id="all.4JwUWf" title="原文 : Java EE dependencies">Java EEの依存性</span></h2>
+<h2 id="_java_ee_dependencies"><span class="merged" id="all.4JwUWf" title="原文 : Java EE dependencies">Java EEの依存関係</span></h2>
 <div class="section">
-<p><span class="merged" id="all.1dYc2H" title="原文 : We have moved from dependencies in groupId javax (Java EE modules) to dependencies in groupId jakarta (Jakarta EE modules).">groupId <code>javax</code> (Java EEモジュール)の依存性からgroupId <code>jakarta</code> (Jakarta EEモジュール)の依存性に移動しました。</span></p>
+<p><span class="merged" id="all.1dYc2H" title="原文 : We have moved from dependencies in groupId javax (Java EE modules) to dependencies in groupId jakarta (Jakarta EE modules).">groupId <code>javax</code> (Java EEモジュール)の依存関係からgroupId <code>jakarta</code> (Jakarta EEモジュール)の依存関係に移動しました。</span></p>
 
-<p><span class="merged" id="all.1Ho09k" title="原文 : In case you declared a dependency on a javax module, you should change it to a jakarta one.">javaxモジュールへの依存性を宣言した場合は、jakartaに変更する必要があります。</span></p>
+<p><span class="merged" id="all.1Ho09k" title="原文 : In case you declared a dependency on a javax module, you should change it to a jakarta one.">javaxモジュールへの依存関係を宣言した場合は、jakartaに変更する必要があります。</span></p>
 
 <p><span class="merged" id="all.2apT5L"  title="原文:: Example:">例:</span></p>
 
@@ -281,7 +281,7 @@ lang="xml"
     &lt;artifactId&gt;jakarta.activation-api&lt;/artifactId&gt;
 &lt;/dependency&gt;</markup>
 
-<p><span class="merged" id="all.2aSGuP" title="原文 : As the javax module is no longer in dependency management of Helidon parent pom files."><code>javax</code>モジュールがHelidon親POMファイルの依存性管理に存在しなくなったためです。</span></p>
+<p><span class="merged" id="all.2aSGuP" title="原文 : As the javax module is no longer in dependency management of Helidon parent pom files."><code>javax</code>モジュールがHelidon親POMファイルの依存関係管理に存在しなくなったためです。</span></p>
 
 </div>
 </doc-view>

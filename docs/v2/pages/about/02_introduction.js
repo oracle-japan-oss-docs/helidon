@@ -122,7 +122,7 @@
 
 </li>
 <li>
-<p><span class="merged" id="all.1mOkAA.spl1" title="原文 : Helidon Web Client The new reactive web client can integrate with other Helidon SE APIs."><strong>Helidon Web Client</strong><br>新しいリアクティブwebクライアントは、他のHelidon SE APIと統合できます。</span> <span class="merged" id="all.1mOkAA.spl2" title="原文 : Learn more about the Helidon Web Client."><router-link to="/se/webclient/01_introduction">「Helidon Web Clientについてさらに学習します」</router-link>。</span> </p>
+<p><span class="merged" id="all.1mOkAA.spl1" title="原文 : Helidon Web Client The new reactive web client can integrate with other Helidon SE APIs."><strong>「Helidon Webクライアント」</strong><br>新しいリアクティブwebクライアントは、他のHelidon SE APIと統合できます。</span> <span class="merged" id="all.1mOkAA.spl2" title="原文 : Learn more about the Helidon Web Client."><router-link to="/se/webclient/01_introduction">「Helidon Webクライアントについてさらに学習します」</router-link>。</span> </p>
 
 </li>
 <li>

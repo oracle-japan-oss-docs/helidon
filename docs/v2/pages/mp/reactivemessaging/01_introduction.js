@@ -2,6 +2,30 @@
 <span title="免責事項: ここに記載されているドキュメントは、お客様の利便性のために翻訳ソフトウエアにより機械的に翻訳(機械翻訳)したものです。オリジナルの英語版もあわせてご確認ください。" style="width:150px;padding-left:5px;padding-right:5px;border:#ff0000 solid 1px;border-color: gray;font-size: small;color:gray;margin: 0 auto 0 auto;text-align:center;"><a href="https://docs.oracle.com/cd/E85181_01/mt_disclaimer.html" target="disclaimer">&nbsp;&nbsp;機械翻訳について&nbsp;&nbsp;</a></span>
 
 
+<h2 id="maven-coordinates"><span class="merged" id="all.317oeS.20" title="原文 : Maven Coordinates">Maven連携</span></h2>
+<div class="section">
+<p><span class="merged" id="all.1RF9at" title="原文 : To enable MicroProfile Reactive Messaging add the following dependency to your project&rsquo;s pom.xml (see Managing Dependencies).">MicroProfileリアクティブ・メッセージングを有効にするには、プロジェクトの<code>pom.xml</code>に次の依存関係を追加します(<router-link to="/about/04_managing-dependencies">「依存関係の管理」</router-link>を参照)。</span></p>
+
+<markup
+lang="xml"
+
+>&lt;dependency&gt;
+   &lt;groupId&gt;io.helidon.microprofile.messaging&lt;/groupId&gt;
+   &lt;artifactId&gt;helidon-microprofile-messaging&lt;/artifactId&gt;
+&lt;/dependency&gt;</markup>
+
+<p><span class="merged" id="all.ji3qN" title="原文 : To include health checks for Messaging add the following dependency:">メッセージングのヘルス・チェックを含めるには、次の依存関係を追加します:</span></p>
+
+<markup
+lang="xml"
+
+>&lt;dependency&gt;
+   &lt;groupId&gt;io.helidon.microprofile.messaging&lt;/groupId&gt;
+   &lt;artifactId&gt;helidon-microprofile-messaging-health&lt;/artifactId&gt;
+&lt;/dependency&gt;</markup>
+
+</div>
+
 <h2 id="_reactive_messaging"><span class="merged" id="all.46TtuU" title="原文 : Reactive Messaging">リアクティブ・メッセージング</span></h2>
 <div class="section">
 <p><span class="merged" id="all.304ygj.spl1" title="原文 : MicroProfile Reactive Messaging uses CDI beans to produce, consume or process messages over Reactive Streams."><a href="https://download.eclipse.org/microprofile/microprofile-reactive-messaging-1.0/microprofile-reactive-messaging-spec.html" id="" target="_blank" >「MicroProfileリアクティブ・メッセージング」</a>はCDI beanを使用して、リアクティブ・ストリームを介してメッセージを生産、消費または処理します。</span> <span class="merged" id="all.304ygj.spl2" title="原文 : Such messaging bean is expected to be either in ApplicationScoped or Dependent scope.">このようなメッセージングBeanは、<code>ApplicationScoped</code>スコープまたは<code>Dependent</code>スコープのいずれかである必要があります。</span> <span class="merged" id="all.304ygj.spl3" title="原文 : Messages are managed by methods annotated by @Incoming and @Outgoing and the invocation is always driven by message core - either at assembly time, or for every message coming from the stream.">メッセージは、<code>@Incoming</code>および<code>@Outgoing</code>によって注釈が付けられたメソッドによって管理され、呼出しは常にメッセージ・コアによって駆動されます - アセンブリ時、またはストリームからのすべてのメッセージに対して。</span> </p>
@@ -158,31 +182,9 @@ public String processMessage(String msg) {
 
 </div>
 
-<h3 id="_dependency"><span class="merged" id="all.1l1QyT"  title="原文:: Dependency">依存性</span></h3>
-<div class="section">
-<p><span class="merged" id="all.4JnU1V.4" title="原文 : Declare the following dependency in your project:">プロジェクトで次の依存性を宣言します:</span></p>
-
-<markup
-lang="xml"
-
->&lt;dependency&gt;
-   &lt;groupId&gt;io.helidon.microprofile.messaging&lt;/groupId&gt;
-   &lt;artifactId&gt;helidon-microprofile-messaging&lt;/artifactId&gt;
-&lt;/dependency&gt;</markup>
-
-</div>
-
 <h3 id="_health_check"><span class="merged" id="all.2R32ij"  title="原文:: Health check">ヘルス・チェック</span></h3>
 <div class="section">
-<p><span class="merged" id="all.1kiYsk.spl1" title="原文 : Messaging in Helidon has built in health probes for liveness and readiness.">Helidonのメッセージングには、リブネスおよびレディネスのためのヘルス・プローブが組み込まれています。</span> <span class="merged" id="all.1kiYsk.spl2" title="原文 : To activate it just add following dependency:">アクティブ化するには、次の依存性を追加します:</span> </p>
-
-<markup
-lang="xml"
-
->&lt;dependency&gt;
-   &lt;groupId&gt;io.helidon.microprofile.messaging&lt;/groupId&gt;
-   &lt;artifactId&gt;helidon-microprofile-messaging-health&lt;/artifactId&gt;
-&lt;/dependency&gt;</markup>
+<p><span class="merged" id="all.3z2DoT.spl1" title="原文 : Messaging in Helidon has built in health probes for liveness and readiness.">Helidonのメッセージングには、リブネスおよびレディネスのためのヘルス・プローブが組み込まれています。</span> <span class="merged" id="all.3z2DoT.spl2" title="原文 : To activate it add the health check dependency.">アクティブ化するには、<router-link @click.native="this.scrollFix('#maven-coordinates')" to="#maven-coordinates">「ヘルス・チェックの依存関係」</router-link>を追加します。</span> </p>
 
 <ul class="ulist">
 <li>

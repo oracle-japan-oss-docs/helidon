@@ -13,7 +13,7 @@
 </v-flex>
 </v-layout>
 
-<h2 id="_overview"><span class="merged" id="all.YrpRV.7"  title="原文:: Overview">概要</span></h2>
+<h2 id="_overview"><span class="merged" id="all.YrpRV.8"  title="原文:: Overview">概要</span></h2>
 <div class="section">
 <p><span class="merged" id="all.2vwqfq.spl1" title="原文 : The CORS protocol helps developers control if and how REST resources served by their applications can be shared across origins.">CORSプロトコルは、開発者がアプリケーションによって提供されるRESTリソースをオリジン間で共有できるかどうか、およびその方法を制御するのに役立ちます。</span> <span class="merged" id="all.2vwqfq.spl2" title="原文 : Helidon SE includes an implementation of CORS that you can use to add CORS behavior to the services you develop.">Helidon SEには、開発するサービスにCORSの動作を追加するために使用できるCORSの実装が含まれています。</span> <span class="merged" id="all.2vwqfq.spl3" title="原文 : You can define your application&rsquo;s CORS behavior programmatically using the Helidon CORS API alone, or together with configuration.">アプリケーションのCORS動作は、Helidon CORS APIのみを使用してプログラムで定義することも、構成とともに定義することもできます。</span> <span class="merged" id="all.2vwqfq.spl4" title="原文 : Helidon also provides three built-in services that add their own endpoints to your application - health, metrics, and OpenAPI - that have integrated CORS support.">Helidonには、独自のエンドポイントをアプリケーションに追加する3つの組込みサービスも用意されています - ヘルス、メトリクスおよびOpenAPI - CORSサポートが統合されています。</span> <span class="merged" id="all.2vwqfq.spl5" title="原文 : By adding very little code to your application, you control how all the resources in your application - the ones you write and the ones provided by the Helidon built-in services - can be shared across origins.">アプリケーションにコードをほとんど追加しないことで、アプリケーション内のすべてのリソース(作成するリソースとHelidon組込みサービスによって提供されるリソース)をオリジン間で共有する方法を制御できます。</span> </p>
 

@@ -11,7 +11,7 @@
 
 <markup
 lang="xml"
-title="Mavenの依存性"
+title="Mavenの依存関係"
 >&lt;dependency&gt;
     &lt;groupId&gt;io.helidon.config&lt;/groupId&gt;
     &lt;artifactId&gt;helidon-config-encryption&lt;/artifactId&gt;
@@ -25,7 +25,7 @@ title="Mavenの依存性"
 
 <markup
 lang="xml"
-title="Mavenの依存性"
+title="Mavenの依存関係"
 >&lt;dependency&gt;
     &lt;groupId&gt;io.helidon.common&lt;/groupId&gt;
     &lt;artifactId&gt;helidon-common-key-util&lt;/artifactId&gt;

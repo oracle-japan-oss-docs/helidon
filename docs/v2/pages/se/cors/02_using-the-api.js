@@ -13,6 +13,20 @@
 </v-flex>
 </v-layout>
 
+<h2 id="maven-coordinates"><span class="merged" id="all.317oeS.38" title="原文 : Maven Coordinates">Maven連携</span></h2>
+<div class="section">
+<p><span class="merged" id="all.3KHkSD.1" title="原文 : To enable CORS add the following dependency to your project&rsquo;s pom.xml (see Managing Dependencies).">CORSを有効にするには、プロジェクトの<code>pom.xml</code>に次の依存関係を追加します(<router-link to="/about/04_managing-dependencies">「依存関係の管理」</router-link>を参照)。</span></p>
+
+<markup
+lang="xml"
+
+>&lt;dependency&gt;
+    &lt;groupId&gt;io.helidon.webserver&lt;/groupId&gt;
+    &lt;artifactId&gt;helidon-webserver-cors&lt;/artifactId&gt;
+&lt;/dependency&gt;</markup>
+
+</div>
+
 <h2 id="_understanding_the_helidon_se_cors_api"><span class="merged" id="all.4RHuCD" title="原文 : Understanding the Helidon SE CORS API">Helidon SE CORS APIの理解</span></h2>
 <div class="section">
 <p><span class="merged" id="all.4BCqT1.spl1" title="原文 : To add CORS behavior to endpoints, you need to make only minimal changes to how you set up the routing for those endpoints.">CORS動作をエンドポイントに追加するには、それらのエンドポイントのルーティングの設定方法を最小限に変更するだけで済みます。</span> <span class="merged" id="all.4BCqT1.spl2" title="原文 : Using the Helidon SE CORS API, you define the CORS behavior that you want and then include that behavior as you build the routing rules for the services in your application.">Helidon SE CORS APIを使用して、必要なCORS動作を定義し、アプリケーションでサービスのルーティング・ルールをビルドするときにその動作を含めます。</span> </p>
@@ -43,19 +57,7 @@
 
 </li>
 <li>
-
-<div><p><span class="merged" id="all.2NZzgZ" title="原文 : Add a dependency on the Helidon SE CORS artifact to your Maven pom.xml file.">Helidon SE CORSアーティファクトへの依存関係をMaven <code>pom.xml</code>ファイルに追加します。</span></p>
-
-<p><span class="merged" id="all.3iYcGC.spl1" title="原文 : The Managing Dependencies page describes how you should declare dependency management for Helidon applications."><router-link to="/about/04_managing-dependencies">「依存関係の管理」</router-link>ページでは、Helidonアプリケーションの依存性管理を宣言する方法について説明します。</span> <span class="merged" id="all.3iYcGC.spl2" title="原文 : For CORS support in Helidon SE, you must include the following dependency in your project:">Helidon SEでCORSをサポートするには、プロジェクトに次の依存性を含める必要があります:</span> </p>
-
-<markup
-lang="xml"
-
->&lt;dependency&gt;
-    &lt;groupId&gt;io.helidon.webserver&lt;/groupId&gt;
-    &lt;artifactId&gt;helidon-webserver-cors&lt;/artifactId&gt;
-&lt;/dependency&gt;</markup>
-</div>
+<span class="merged" id="all.pWDVJ" title="原文 : Add a dependency on the Helidon SE CORS artifact to your Maven pom.xml file.">Helidon SE CORS <router-link @click.native="this.scrollFix('#maven-coordinates')" to="#maven-coordinates">「アーティファクト」</router-link>への依存関係をMaven <code>pom.xml</code>ファイルに追加します。</span>
 
 </li>
 <li>
@@ -158,7 +160,7 @@ lang="xml"
 
 <h2 id="se-api-routing-example"><span class="merged" id="all.4RlqMi" title="原文 : Sample Routing Setup Using the CrossOriginConfig API"><code>CrossOriginConfig</code> APIを使用したルーティング設定の例</span></h2>
 <div class="section">
-<p><span class="merged" id="all.442Ckk" title="原文 : The Helidon SE Quickstart application lets you change the greeting by sending a PUT request to the /greet/greeting resource."><a href="https://github.com/oracle/helidon/tree/2.2.1/examples//quickstarts/helidon-quickstart-se" id="" target="_blank" >「Helidon SE Quickstartアプリケーション」</a>では、<code>PUT</code>リクエストを<code>/greet/greeting</code>リソースに送信することで、応答メッセージを変更できます。</span></p>
+<p><span class="merged" id="all.1hcFQD" title="原文 : The Helidon SE Quickstart application lets you change the greeting by sending a PUT request to the /greet/greeting resource."><a href="https://github.com/oracle/helidon/tree/2.3.1/examples/quickstarts/helidon-quickstart-se" id="" target="_blank" >「Helidon SE Quickstartアプリケーション」</a>では、<code>PUT</code>リクエストを<code>/greet/greeting</code>リソースに送信することで、応答メッセージを変更できます。</span></p>
 
 <p><span class="merged" id="all.4XTDRL.spl1" title="原文 : This example, based on the QuickStart greeting app, uses the low-level CrossOriginConfig API and the CorsSupport API to influence the routing, thereby determining how that resource is shared.">この例では、QuickStart応答メッセージ・アプリケーションに基づいて、低レベルの<code>CrossOriginConfig</code> APIおよび<code>CorsSupport</code> APIを使用して<router-link to="/se/webserver/03_routing">「ルーティング」</router-link>に影響を与え、そのリソースの共有方法を決定します。</span> <span class="merged" id="all.4XTDRL.spl2" title="原文 : (If desired, you can use configuration instead of the low-level API.">(必要に応じて、低レベルAPIのかわりに構成を使用できます。</span> <span class="merged" id="all.4XTDRL.spl3" title="原文 : Learn more.)"><router-link to="/se/cors/03_using-configuration">「さらに学習します。」</router-link> )</span> </p>
 
@@ -215,7 +217,7 @@ lang="java"
 
 </li>
 <li>
-<p><span class="merged" id="all.1mwSCj" title="原文 : See the Helidon CORS support in action by building and running the CORS example."><a href="https://github.com/oracle/helidon/tree/2.2.1/examples//cors" id="" target="_blank" >「CORSの例」</a>をビルドして実行し、動作中のHelidon CORSサポートを参照してください。</span></p>
+<p><span class="merged" id="all.2GHazE" title="原文 : See the Helidon CORS support in action by building and running the CORS example."><a href="https://github.com/oracle/helidon/tree/2.3.1/examples/cors" id="" target="_blank" >「CORSの例」</a>をビルドして実行し、動作中のHelidon CORSサポートを参照してください。</span></p>
 
 </li>
 </ul>

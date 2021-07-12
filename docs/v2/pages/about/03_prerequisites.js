@@ -83,5 +83,8 @@ export JAVA_HOME=/usr/lib/jvm/jdk-11</markup>
 <div class="admonition tip">
 <p class="admonition-inline"><span class="merged" id="all.4ALrt6" title="原文 : See About Helidon for more information on the differences between Helidon MP and SE.">Helidon MPとSEの違いの詳細は、<router-link to="/about/02_introduction">「Helidonについて」</router-link>を参照してください。</span></p>
 </div>
+<div class="admonition tip">
+<p class="admonition-inline"><span class="merged" id="all.3mcr8q" title="原文 : See Helidon on Windows for some tips on using Helidon on Windows.">WindowsでのHelidonの使用に関するヒントは、<router-link to="/about/04_windows">「Windows上のHelidon」</router-link>を参照してください。</span></p>
+</div>
 </div>
 </doc-view>

@@ -13,13 +13,13 @@
 </v-flex>
 </v-layout>
 
-<h2 id="_prerequisites"><span class="merged" id="all.2LZvWc.7"  title="原文:: Prerequisites">前提条件</span></h2>
+<h2 id="maven-coordinates"><span class="merged" id="all.317oeS.43" title="原文 : Maven Coordinates">Maven連携</span></h2>
 <div class="section">
-<p><span class="merged" id="all.4JnU1V.8" title="原文 : Declare the following dependency in your project:">プロジェクトで次の依存性を宣言します:</span></p>
+<p><span class="merged" id="all.CRDQB" title="原文 : To enable gRPC Server Security add the following dependency to your project&rsquo;s pom.xml (see Managing Dependencies).">gRPCサーバー・セキュリティを有効にするには、プロジェクトの<code>pom.xml</code>に次の依存関係を追加します(<router-link to="/about/04_managing-dependencies">「依存関係の管理」</router-link>を参照)。</span></p>
 
 <markup
 lang="xml"
-title="Mavenの依存性"
+
 >&lt;dependency&gt;
     &lt;groupId&gt;io.helidon.security.integration&lt;/groupId&gt;
     &lt;artifactId&gt;helidon-security-integration-grpc&lt;/artifactId&gt;

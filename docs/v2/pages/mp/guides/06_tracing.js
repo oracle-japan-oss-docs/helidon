@@ -36,7 +36,7 @@
 </div>
 </div>
 
-<h2 id="_introduction"><span class="merged" id="all.4LJMHk.1"  title="原文:: Introduction">導入</span></h2>
+<h2 id="_introduction"><span class="merged" id="all.4LJMHk.2"  title="原文:: Introduction">導入</span></h2>
 <div class="section">
 <p><span class="merged" id="all.1S9AXr.spl1" title="原文 : Distributed tracing is a critical feature of micro-service based applications, since it traces workflow both within a service and across multiple services.">分散トレースは、サービス内と複数のサービス間の両方でワークフローをトレースするため、マイクロサービス・ベースのアプリケーションの重要な機能です。</span> <span class="merged" id="all.1S9AXr.spl2" title="原文 : This provides insight to sequence and timing data for specific blocks of work, which helps you identify performance and operational issues.">これにより、特定の作業ブロックのデータを順序付けおよびタイミング化するための洞察が得られ、パフォーマンスおよび操作上の問題を識別するのに役立ちます。</span> <span class="merged" id="all.1S9AXr.spl3" title="原文 : Helidon MP includes support for distributed tracing through the OpenTracing API.">Helidon MPには、<a href="https://opentracing.io" id="" target="_blank" >OpenTracing API</a>を介した分散トレースのサポートが含まれます。</span> <span class="merged" id="all.1S9AXr.spl4" title="原文 : Tracing is integrated with WebServer, gRPC Server, and Security using either the Zipkin or Jaeger tracers.">トレースは、<a href="https://zipkin.io" id="" target="_blank" >Zipkin</a>または<a href="https://www.jaegertracing.io" id="" target="_blank" >Jaeger</a>トレーサを使用して、WebServer、gRPCサーバーおよびセキュリティと統合されます。</span> </p>
 
@@ -63,7 +63,7 @@ title="Maven原型を実行します:"
 >mvn -U archetype:generate -DinteractiveMode=false \
     -DarchetypeGroupId=io.helidon.archetypes \
     -DarchetypeArtifactId=helidon-quickstart-mp \
-    -DarchetypeVersion=2.2.1-SNAPSHOT \
+    -DarchetypeVersion=2.3.1 \
     -DgroupId=io.helidon.examples \
     -DartifactId=helidon-quickstart-mp \
     -Dpackage=io.helidon.examples.quickstart.mp</markup>
@@ -116,7 +116,7 @@ title="Zipkinサーバーのヘルスを確認します:"
 
 <markup
 lang="xml"
-title="次の依存性を<code>pom.xml</code>に追加します:"
+title="次の依存関係を<code>pom.xml</code>に追加します:"
 >&lt;dependency&gt;
   &lt;groupId&gt;io.helidon.tracing&lt;/groupId&gt;
   &lt;artifactId&gt;helidon-tracing-zipkin&lt;/artifactId&gt;
@@ -437,7 +437,7 @@ title="Maven原型を実行します:"
 >mvn -U archetype:generate -DinteractiveMode=false \
     -DarchetypeGroupId=io.helidon.archetypes \
     -DarchetypeArtifactId=helidon-quickstart-mp \
-    -DarchetypeVersion=2.2.1-SNAPSHOT \
+    -DarchetypeVersion=2.3.1 \
     -DgroupId=io.helidon.examples \
     -DartifactId=helidon-quickstart-mp-2 \
     -Dpackage=io.helidon.examples.quickstart.mp</markup>
@@ -449,7 +449,7 @@ title="プロジェクトは、<code>helidon-quickstart-mp</code>ディレクト
 
 <markup
 lang="xml"
-title="次の依存性を<code>pom.xml</code>に追加します:"
+title="次の依存関係を<code>pom.xml</code>に追加します:"
 >&lt;dependency&gt;
   &lt;groupId&gt;io.helidon.tracing&lt;/groupId&gt;
   &lt;artifactId&gt;helidon-tracing-zipkin&lt;/artifactId&gt;
@@ -484,7 +484,7 @@ title="新しいターミナル・ウィンドウでcurlコマンドを実行し
 
 <h4 id="_modify_the_first_service"><span class="merged" id="all.tF0GP" title="原文 : Modify the first service">最初のサービスの変更</span></h4>
 <div class="section">
-<p><span class="merged" id="all.4Yeqrw" title="原文 : Once you have validated that the second service is running correctly, you need to modify the original application to call it.">2つ目のサービスが正しく実行されていることを確認したら、元のアプリケーションを変更してコールする必要があります。</span></p>
+<p><span class="merged" id="all.4Yeqrw" title="原文 : Once you have validated that the second service is running correctly, you need to modify the original application to call it.">2つ目のサービスが正しく実行されていることをバリデートしたら、元のアプリケーションを変更してコールする必要があります。</span></p>
 
 <markup
 lang="java"
@@ -634,7 +634,7 @@ title="Zipkin外部サーバーを作成し、ポート9142で公開します:"
 <ul class="colist">
 <li data-value="1"><span class="merged" id="all.evEqn" title="原文 : Create a service so that you can access the Zipkin UI.">Zipkin UIにアクセスできるようにサービスを作成します。</span></li>
 </ul>
-<p><span class="merged" id="all.2FDwiI.spl1" title="原文 : Navigate to http://localhost:9412/zipkin to validate that you can access Zipkin running in Kubernetes."><a href="http://localhost:9412/zipkin" id="" target="_blank" >http://localhost:9412/zipkin</a>に移動して、Kubernetesで実行されているZipkinにアクセスできることを確認します。</span> <span class="merged" id="all.2FDwiI.spl2" title="原文 : It may take a few seconds before it is ready.">準備ができるまで数秒かかる場合があります。</span> </p>
+<p><span class="merged" id="all.2FDwiI.spl1" title="原文 : Navigate to http://localhost:9412/zipkin to validate that you can access Zipkin running in Kubernetes."><a href="http://localhost:9412/zipkin" id="" target="_blank" >http://localhost:9412/zipkin</a>に移動して、Kubernetesで実行されているZipkinにアクセスできることをバリデートします。</span> <span class="merged" id="all.2FDwiI.spl2" title="原文 : It may take a few seconds before it is ready.">準備ができるまで数秒かかる場合があります。</span> </p>
 
 </div>
 

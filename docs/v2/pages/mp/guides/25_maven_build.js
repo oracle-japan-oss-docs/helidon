@@ -13,7 +13,7 @@
 </v-flex>
 </v-layout>
 
-<h2 id="_introduction"><span class="merged" id="all.4LJMHk.2"  title="原文:: Introduction">導入</span></h2>
+<h2 id="_introduction"><span class="merged" id="all.4LJMHk.3"  title="原文:: Introduction">導入</span></h2>
 <div class="section">
 <p><span class="merged" id="all.2FRJJH" title="原文 : Helidon supports Maven by providing the following:">Helidonは、次の機能を提供することでMavenをサポートします:</span></p>
 
@@ -39,7 +39,7 @@
 
 <ol style="margin-left: 15px;">
 <li>
-<span class="merged" id="all.1K9u7y" title="原文 : Helidon dependency management.">Helidonの依存性管理。</span>
+<span class="merged" id="all.1K9u7y" title="原文 : Helidon dependency management.">Helidonの依存関係管理。</span>
 
 </li>
 <li>
@@ -47,17 +47,17 @@
 
 </li>
 </ol>
-<p><span class="merged" id="all.2E7gjU.spl1" title="原文 : If you want to use your own parent POM, then take a look at the standalone quickstart example.">独自の親POMを使用する場合は、<a href="https://github.com/oracle/helidon/tree/2.2.1/examples//quickstarts/helidon-standalone-quickstart-mp" id="" target="_blank" >「スタンドアロン・クイックスタートの例」</a>を参照してください。</span> <span class="merged" id="all.2E7gjU.spl2" title="原文 : This example has a stand-alone POM that you can pattern your own application POM after.">この例には、独自のアプリケーションPOMを後からパターン化できるスタンドアロンPOMがあります。</span> </p>
+<p><span class="merged" id="all.2o9Tmx.spl1" title="原文 : If you want to use your own parent POM, then take a look at the standalone quickstart example.">独自の親POMを使用する場合は、<a href="https://github.com/oracle/helidon/tree/2.3.1/examples/quickstarts/helidon-standalone-quickstart-mp" id="" target="_blank" >「スタンドアロン・クイックスタートの例」</a>を参照してください。</span> <span class="merged" id="all.2o9Tmx.spl2" title="原文 : This example has a stand-alone POM that you can pattern your own application POM after.">この例には、独自のアプリケーションPOMを後からパターン化できるスタンドアロンPOMがあります。</span> </p>
 
-<p><span class="merged" id="all.2WpVep" title="原文 : For more details on Helidon application POMs see the Helidon&rsquo;s Application POMS">HelidonアプリケーションPOMの詳細は、<a href="https://github.com/oracle/helidon/blob/2.2.1-SNAPSHOT/docs-internal/application-pom.md" id="" target="_blank" >「HelidonアプリケーションPOMS」</a>を参照してください</span></p>
+<p><span class="merged" id="all.2W06xt" title="原文 : For more details on Helidon application POMs see the Helidon&rsquo;s Application POMS">HelidonアプリケーションPOMの詳細は、<a href="https://github.com/oracle/helidon/blob/2.3.1/docs-internal/application-pom.md" id="" target="_blank" >「HelidonアプリケーションPOMS」</a>を参照してください</span></p>
 
 </div>
 
 <h2 id="_dependency_management"><span class="merged" id="all.Udjxg"  title="原文:: Dependency Management"> 依存性管理</span></h2>
 <div class="section">
-<p><span class="merged" id="all.1K7bwt" title="原文 : In Maven you use Dependency Management to manage the versions of the dependencies used by your project so that you do not need to specify versions when declaring project dependencies.">Mavenでは、依存性管理を使用してプロジェクトで使用される依存性のバージョンを管理するため、プロジェクトの依存性を宣言するときにバージョンを指定する必要がありません。</span></p>
+<p><span class="merged" id="all.1K7bwt" title="原文 : In Maven you use Dependency Management to manage the versions of the dependencies used by your project so that you do not need to specify versions when declaring project dependencies.">Mavenでは、依存関係管理を使用してプロジェクトで使用される依存関係のバージョンを管理するため、プロジェクトの依存関係を宣言するときにバージョンを指定する必要がありません。</span></p>
 
-<p><span class="merged" id="all.1Ue6Is" title="原文 : Helidon provides two POMs that are used together for dependency management:">Helidonには、依存性管理のために一緒に使用される2つのPOMが用意されています:</span></p>
+<p><span class="merged" id="all.1Ue6Is" title="原文 : Helidon provides two POMs that are used together for dependency management:">Helidonには、依存関係管理のために一緒に使用される2つのPOMが用意されています:</span></p>
 
 <ol style="margin-left: 15px;">
 <li>
@@ -69,28 +69,28 @@
 
 </li>
 </ol>
-<p><span class="merged" id="all.3pnN8a.spl1" title="原文 : When you use a Helidon Application POM as your project&rsquo;s parent pom, you inheritent Helidon&rsquo;s dependency management.">HelidonアプリケーションPOMをプロジェクトの親POMとして使用する場合、Helidonの依存性管理を継承します。</span> <span class="merged" id="all.3pnN8a.spl2" title="原文 : If you have your own parent, then you can import Helidon dependency management like this:">独自の親がある場合は、次のようにHelidonの依存性管理をインポートできます:</span> </p>
+<p><span class="merged" id="all.3pnN8a.spl1" title="原文 : When you use a Helidon Application POM as your project&rsquo;s parent pom, you inheritent Helidon&rsquo;s dependency management.">HelidonアプリケーションPOMをプロジェクトの親POMとして使用する場合、Helidonの依存関係管理を継承します。</span> <span class="merged" id="all.3pnN8a.spl2" title="原文 : If you have your own parent, then you can import Helidon dependency management like this:">独自の親がある場合は、次のようにHelidonの依存関係管理をインポートできます:</span> </p>
 
 <markup
 lang="xml"
-title="Helidon依存性管理のインポート"
+title="Helidon依存関係管理のインポート"
 >&lt;dependencyManagement&gt;
     &lt;dependencies&gt;
         &lt;dependency&gt;
             &lt;groupId&gt;io.helidon&lt;/groupId&gt;
             &lt;artifactId&gt;helidon-dependencies&lt;/artifactId&gt;
-            &lt;version&gt;2.2.1-SNAPSHOT&lt;/version&gt;
+            &lt;version&gt;2.3.1&lt;/version&gt;
             &lt;type&gt;pom&lt;/type&gt;
             &lt;scope&gt;import&lt;/scope&gt;
         &lt;/dependency&gt;
     &lt;/dependencies&gt;
 &lt;/dependencyManagement&gt;</markup>
 
-<p><span class="merged" id="all.3eHftr" title="原文 : You then declare dependencies on Helidon (and other) components without specifying a version.">次に、バージョンを指定せずに、Helidon (およびその他の)コンポーネントへの依存性を宣言します。</span></p>
+<p><span class="merged" id="all.3eHftr" title="原文 : You then declare dependencies on Helidon (and other) components without specifying a version.">次に、バージョンを指定せずに、Helidon (およびその他の)コンポーネントへの依存関係を宣言します。</span></p>
 
 <markup
 lang="xml"
-title="コンポーネントの依存性"
+title="コンポーネントの依存関係"
 >&lt;dependency&gt;
     &lt;groupId&gt;io.helidon.webserver&lt;/groupId&gt;
     &lt;artifactId&gt;helidon-webserver&lt;/artifactId&gt;

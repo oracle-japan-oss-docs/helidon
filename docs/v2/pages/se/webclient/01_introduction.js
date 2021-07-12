@@ -1,9 +1,24 @@
 <doc-view>
 <span title="免責事項: ここに記載されているドキュメントは、お客様の利便性のために翻訳ソフトウエアにより機械的に翻訳(機械翻訳)したものです。オリジナルの英語版もあわせてご確認ください。" style="width:150px;padding-left:5px;padding-right:5px;border:#ff0000 solid 1px;border-color: gray;font-size: small;color:gray;margin: 0 auto 0 auto;text-align:center;"><a href="https://docs.oracle.com/cd/E85181_01/mt_disclaimer.html" target="disclaimer">&nbsp;&nbsp;機械翻訳について&nbsp;&nbsp;</a></span>
- <v-layout row wrap> <v-flex xs12 sm10 lg10> <v-card class="section-def" v-bind:color="$store.state.currentColor"> <v-card-text class="pa-3"> <v-card class="section-def__card"> <v-card-text>
-<dl>
-<dt slot=title><span class="merged" id="all.2nPSDE" title="原文 : WebClient Introduction">WebClient概要</span></dt>
-<dd slot="desc"><p><span class="merged" id="all.47o4uv.spl1" title="原文 : WebClient is an HTTP client for Helidon SE 2.0.">WebClientは、Helidon SE 2.0のHTTPクライアントです。</span> <span class="merged" id="all.47o4uv.spl2" title="原文 : It handles the responses to the HTTP requests in a reactive way.">HTTPリクエストへのレスポンスを事後対応的に処理します。</span> </p>
+
+
+<h2 id="maven-coordinates"><span class="merged" id="all.317oeS.62" title="原文 : Maven Coordinates">Maven連携</span></h2>
+<div class="section">
+<p><span class="merged" id="all.2jNZe4" title="原文 : To enable WebClient add the following dependency to your project&rsquo;s pom.xml (see Managing Dependencies).">WebClientを有効にするには、プロジェクトの<code>pom.xml</code>に次の依存関係を追加します(<router-link to="/about/04_managing-dependencies">「依存関係の管理」</router-link>を参照)。</span></p>
+
+<markup
+lang="xml"
+
+>&lt;dependency&gt;
+    &lt;groupId&gt;io.helidon.webclient&lt;/groupId&gt;
+    &lt;artifactId&gt;helidon-webclient&lt;/artifactId&gt;
+&lt;/dependency&gt;</markup>
+
+</div>
+
+<h2 id="_overview"><span class="merged" id="all.YrpRV.11"  title="原文:: Overview">概要</span></h2>
+<div class="section">
+<p><span class="merged" id="all.47o4uv.spl1" title="原文 : WebClient is an HTTP client for Helidon SE 2.0.">WebClientは、Helidon SE 2.0のHTTPクライアントです。</span> <span class="merged" id="all.47o4uv.spl2" title="原文 : It handles the responses to the HTTP requests in a reactive way.">HTTPリクエストへのレスポンスを事後対応的に処理します。</span> </p>
 
 <p><span class="merged" id="all.46Z5LG" title="原文 : Helidon WebClient provides the following features:">Helidon WebClientには、次の機能があります:</span></p>
 
@@ -24,14 +39,8 @@
 <p><span class="merged" id="all.3uSpEN" title="原文 : Tracing, metrics and security propagation Automatically propagates the configured tracing, metrics and security settings of the Helidon WebServer to the WebClient and uses them during request and response."><strong>「トレース、メトリクスおよびセキュリティ伝播」</strong><br>Helidon WebServerの構成済トレース、メトリクスおよびセキュリティ設定をWebClientに自動的に伝播し、リクエストおよびレスポンス時に使用します。</span></p>
 
 </li>
-</ul></dd>
-</dl>
-</v-card-text>
-</v-card>
-</v-card-text>
-</v-card>
-</v-flex>
-</v-layout>
+</ul>
+</div>
 
 <h2 id="_configuring_the_webclient"><span class="merged" id="all.43xHy3" title="原文 : Configuring the WebClient">WebClientの構成</span></h2>
 <div class="section">
@@ -130,7 +139,7 @@ lang="java"
 <p><span class="merged" id="all.2zcdqZ" title="原文 : To change the default settings and register additional services, you can use simple builder that allows you to customize the client behavior.">デフォルト設定を変更して追加サービスを登録するには、クライアントの動作をカスタマイズできる単純なビルダーを使用できます。</span></p>
 
 
-<h3 id="_example"><span class="merged" id="all.2xA7W7.4"  title="原文:: Example">Example</span></h3>
+<h3 id="_example"><span class="merged" id="all.2xA7W7.6"  title="原文:: Example">例</span></h3>
 <div class="section">
 <markup
 lang="java"
@@ -179,7 +188,7 @@ title="単純なビルダーを使用してWebClientを作成します:"
 </li>
 </ul>
 
-<h3 id="_example_2"><span class="merged" id="all.2xA7W7.5"  title="原文:: Example">Example</span></h3>
+<h3 id="_example_2"><span class="merged" id="all.2xA7W7.7"  title="原文:: Example">例</span></h3>
 <div class="section">
 <markup
 lang="java"
@@ -204,7 +213,7 @@ title="エンドポイントに対して単純なGETリクエストを実行し�
 <thead>
 <tr>
 <th><span class="merged" id="all.35CVhz.1"  title="原文:: Parameter">パラメータ</span></th>
-<th><span class="merged" id="all.4JM9z7.13"  title="原文:: Description">説明</span></th>
+<th><span class="merged" id="all.4JM9z7.17"  title="原文:: Description">説明</span></th>
 </tr>
 </thead>
 <tbody>
@@ -253,7 +262,7 @@ title="エンドポイントに対して単純なGETリクエストを実行し�
 <p><span class="merged" id="all.N4JLk.spl1" title="原文 : JSON Processing (JSON-P) media support is not present in the WebClient by default.">JSON Processing (JSON-P)メディア・サポートは、デフォルトではWebClientに存在しません。</span> <span class="merged" id="all.N4JLk.spl2" title="原文 : So, in this case, you must first register it before making a request.">そのため、この場合、リクエストを行う前に登録する必要があります。</span> <span class="merged" id="all.N4JLk.spl3" title="原文 : This example shows how to register JsonpSupport using the following two methods.">この例では、次のメソッドを使用して<code>JsonpSupport</code>を登録するメソッドを示します。</span> </p>
 
 
-<h3 id="_example_3"><span class="merged" id="all.2xA7W7.6"  title="原文:: Example">Example</span></h3>
+<h3 id="_example_3"><span class="merged" id="all.2xA7W7.8"  title="原文:: Example">例</span></h3>
 <div class="section">
 <markup
 lang="java"
@@ -286,19 +295,5 @@ requestBuilder.request(JsonObject.class)</markup>
 <li data-value="2"><span class="merged" id="all.3ikIGE" title="原文 : Adds JSON-P reader only to this request.">JSON-Pリーダーのみをこのリクエストに追加します。</span></li>
 </ul>
 </div>
-</div>
-
-<h2 id="_maven_coordinates"><span class="merged" id="all.317oeS.13" title="原文 : Maven Coordinates">Maven連携</span></h2>
-<div class="section">
-<p><span class="merged" id="all.2lxcNY.spl1" title="原文 : The Managing Dependencies page describes how you should declare dependency management for Helidon applications."><router-link to="/about/04_managing-dependencies">「依存関係の管理」</router-link>ページでは、Helidonアプリケーションの依存性管理を宣言する方法について説明します。</span> <span class="merged" id="all.2lxcNY.spl2" title="原文 : You must declare the following dependency in your project&rsquo;s pom.xml:">プロジェクトのpom.xmlで次の依存性を宣言する必要があります:</span> </p>
-
-<markup
-lang="xml"
-title="WebClientへの依存性。"
->&lt;dependency&gt;
-    &lt;groupId&gt;io.helidon.webclient&lt;/groupId&gt;
-    &lt;artifactId&gt;helidon-webclient&lt;/artifactId&gt;
-&lt;/dependency&gt;</markup>
-
 </div>
 </doc-view>

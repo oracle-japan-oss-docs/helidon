@@ -15,7 +15,7 @@
 </v-flex>
 </v-layout>
 
-<h2 id="_introduction"><span class="merged" id="all.4LJMHk.6"  title="原文:: Introduction">導入</span></h2>
+<h2 id="_introduction"><span class="merged" id="all.4LJMHk.7"  title="原文:: Introduction">導入</span></h2>
 <div class="section">
 <p><span class="merged" id="all.2143Jo" title="原文 : Each config extension implements one of the interfaces defined in the Configuration SPI:">各構成拡張は、構成SPIで定義されたインタフェースのいずれかを実装します:</span></p>
 
@@ -300,7 +300,7 @@ title="<code>module-info.java</code>でのカスタム・パーサー定義の�
 <tr>
 <th><span class="merged" id="all.3KfTIM"  title="原文:: Interface">インタフェース</span></th>
 <th><span class="merged" id="all.1e8dVO.4"  title="原文:: Method">メソッド</span></th>
-<th><span class="merged" id="all.JUOSC.7"  title="原文:: Usage">使用方法</span></th>
+<th><span class="merged" id="all.JUOSC.8"  title="原文:: Usage">使用方法</span></th>
 </tr>
 </thead>
 <tbody>
@@ -472,7 +472,7 @@ title="<code>module-info.java</code>でのカスタム・マッパー・プロ�
 <thead>
 <tr>
 <th><span class="merged" id="all.35CVhz"  title="原文:: Parameter">パラメータ</span></th>
-<th><span class="merged" id="all.JUOSC.8"  title="原文:: Usage">使用方法</span></th>
+<th><span class="merged" id="all.JUOSC.9"  title="原文:: Usage">使用方法</span></th>
 <th><span class="merged" id="all.oxso7.1"  title="原文:: Default">デフォルト</span></th>
 </tr>
 </thead>
@@ -485,7 +485,7 @@ title="<code>module-info.java</code>でのカスタム・マッパー・プロ�
 <tr>
 <td class=""><span class="merged" id="all.3DfVEe"  title="原文: delayFactor"><code>delayFactor</code></span></td>
 <td class=""><span class="merged" id="all.1UoBpS" title="原文 : Multiplier applied to delay on each successive call">連続する各コールで<code>delay</code>に適用される乗数</span></td>
-<td class=""><span class="merged" id="all.UT3bJ.1"  title="原文: 2">2</span></td>
+<td class=""><span class="merged" id="all.UT3bJ.2"  title="原文: 2">2</span></td>
 </tr>
 <tr>
 <td class=""><span class="merged" id="all.48gnez"  title="原文: callTimeout"><code>callTimeout</code></span></td>

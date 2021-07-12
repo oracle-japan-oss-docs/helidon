@@ -64,7 +64,7 @@ title="アクセス・ログ構成ファイル"
 <th><span class="merged" id="all.4HTTVU" title="原文 : Config key">構成キー</span></th>
 <th><span class="merged" id="all.3T02MF.7"  title="原文:: Default value">デフォルト値</span></th>
 <th><span class="merged" id="all.12txOr.4" title="原文 : Builder method">ビルダー・メソッド</span></th>
-<th><span class="merged" id="all.4JM9z7.17"  title="原文:: Description">説明</span></th>
+<th><span class="merged" id="all.4JM9z7.21"  title="原文:: Description">説明</span></th>
 </tr>
 </thead>
 <tbody>
@@ -110,7 +110,7 @@ title="アクセス・ログ構成ファイル"
 <tr>
 <th><span class="merged" id="all.1jELq" title="原文 : Config format">構成形式</span></th>
 <th><span class="merged" id="all.2YyVUN" title="原文 : Class (to use with builder)">クラス(ビルダーで使用)</span></th>
-<th><span class="merged" id="all.4JM9z7.18"  title="原文:: Description">説明</span></th>
+<th><span class="merged" id="all.4JM9z7.22"  title="原文:: Description">説明</span></th>
 </tr>
 </thead>
 <tbody>

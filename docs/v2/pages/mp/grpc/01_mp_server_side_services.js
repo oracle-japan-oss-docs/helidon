@@ -15,9 +15,9 @@
 </v-flex>
 </v-layout>
 
-<h2 id="_maven_coordinates"><span class="merged" id="all.317oeS.1" title="原文 : Maven Coordinates">Maven連携</span></h2>
+<h2 id="maven-coordinates"><span class="merged" id="all.317oeS.10" title="原文 : Maven Coordinates">Maven連携</span></h2>
 <div class="section">
-<p><span class="merged" id="all.3Y1dJo.1.spl1" title="原文 : The Managing Dependencies page describes how you should declare dependency management for Helidon applications."><router-link to="/about/04_managing-dependencies">「依存関係の管理」</router-link>ページでは、Helidonアプリケーションの依存性管理を宣言する方法について説明します。</span> <span class="merged" id="all.3Y1dJo.1.spl2" title="原文 : Then declare the following dependency in your project:">次に、プロジェクトで次の依存性を宣言します:</span> </p>
+<p><span class="merged" id="all.jqeNc" title="原文 : To enable gRPC MicroProfile Server add the following dependency to your project&rsquo;s pom.xml (see Managing Dependencies).">gRPC MicroProfile Serverを有効にするには、プロジェクトの<code>pom.xml</code>に次の依存関係を追加します(<router-link to="/about/04_managing-dependencies">「依存関係の管理」</router-link>を参照)。</span></p>
 
 <markup
 lang="xml"

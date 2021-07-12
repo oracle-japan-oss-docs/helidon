@@ -29,7 +29,7 @@
 <tr>
 <th><span class="merged" id="all.p0YxL.3"  title="原文:: Type">タイプ</span></th>
 <th><span class="merged" id="all.3su0xG"  title="原文:: Java Interface">Javaインタフェース</span></th>
-<th><span class="merged" id="all.JUOSC"  title="原文:: Usage">使用方法</span></th>
+<th><span class="merged" id="all.JUOSC.1"  title="原文:: Usage">使用方法</span></th>
 </tr>
 </thead>
 <tbody>
@@ -113,7 +113,7 @@ data {
 <thead>
 <tr>
 <th><span class="merged" id="all.KhTn2"  title="原文:: Node Type">ノード・タイプ</span></th>
-<th><span class="merged" id="all.4eTLuy"  title="原文:: Name">名前</span></th>
+<th><span class="merged" id="all.4eTLuy.2"  title="原文:: Name">名前</span></th>
 </tr>
 </thead>
 <tbody>
@@ -180,7 +180,7 @@ Config provName5 = config.get("data").get("providers").get("0").get("name"); <sp
 <thead>
 <tr>
 <th><span class="merged" id="all.1e8dVO.1"  title="原文:: Method">メソッド</span></th>
-<th><span class="merged" id="all.JUOSC.1"  title="原文:: Usage">使用方法</span></th>
+<th><span class="merged" id="all.JUOSC.2"  title="原文:: Usage">使用方法</span></th>
 </tr>
 </thead>
 <tbody>
@@ -221,7 +221,7 @@ Config provName5 = config.get("data").get("providers").get("0").get("name"); <sp
 <thead>
 <tr>
 <th><span class="merged" id="all.1e8dVO.2"  title="原文:: Method">メソッド</span></th>
-<th><span class="merged" id="all.JUOSC.2"  title="原文:: Usage">使用方法</span></th>
+<th><span class="merged" id="all.JUOSC.3"  title="原文:: Usage">使用方法</span></th>
 </tr>
 </thead>
 <tbody>
@@ -296,7 +296,7 @@ assert providers.get(1).key().toString().equals("data.providers.1"); <span class
 
 <ul class="colist">
 <li data-value="1"><span class="merged" id="all.2jSe5L" title="原文 : Get child nodes of the data.providers list node as a List of Config instances."><code>data.providers</code><em>「リスト」</em>ノードの子ノードを<code>Config</code>インスタンスの<code>List</code>として取得します。</span></li>
-<li data-value="2"><span class="merged" id="all.1FYNEY" title="原文 : Check that the list contains the expected child nodes with keys data.providers.0 and data.providers.1.">リストに、<code>data.providers.0</code>および<code>data.providers.1</code>のキーを持つ予想される子ノードが含まれていることを確認します。</span></li>
+<li data-value="2"><span class="merged" id="all.1FYNEY" title="原文 : Check that the list contains the expected child nodes with keys data.providers.0 and data.providers.1.">リストに、<code>data.providers.0</code>および<code>data.providers.1</code>のキーを持つ予想される子ノードが含まれていることをバリデートします。</span></li>
 </ul>
 <p><span class="merged" id="all.1OnUnH.spl1" title="原文 : The traverse() method returns a stream of the nodes in the subtree that is rooted at the current configuration node."><code>traverse()</code>メソッドは、現在の構成ノードをルートとするサブツリー内のノードのストリームを返します。</span> <span class="merged" id="all.1OnUnH.spl2" title="原文 : Depending on the structure of the loaded configuration the stream contains a mix of object, list or leaf value nodes.">ロードされた構成の構造に応じて、ストリームにはオブジェクト、リストまたはリーフ値ノードが混在して含まれます。</span> </p>
 

@@ -2,7 +2,7 @@
 <span title="免責事項: ここに記載されているドキュメントは、お客様の利便性のために翻訳ソフトウエアにより機械的に翻訳(機械翻訳)したものです。オリジナルの英語版もあわせてご確認ください。" style="width:150px;padding-left:5px;padding-right:5px;border:#ff0000 solid 1px;border-color: gray;font-size: small;color:gray;margin: 0 auto 0 auto;text-align:center;"><a href="https://docs.oracle.com/cd/E85181_01/mt_disclaimer.html" target="disclaimer">&nbsp;&nbsp;機械翻訳について&nbsp;&nbsp;</a></span>
  <v-layout row wrap> <v-flex xs12 sm10 lg10> <v-card class="section-def" v-bind:color="$store.state.currentColor"> <v-card-text class="pa-3"> <v-card class="section-def__card"> <v-card-text>
 <dl>
-<dt slot=title><span class="merged" id="all.XxxYZ" title="原文 : Helidon SE">Helidon SE</span></dt>
+<dt slot=title><span class="merged" id="all.XxxYZ.1" title="原文 : Helidon SE">Helidon SE</span></dt>
 <dd slot="desc"><p><span class="merged" id="all.12Jdyl" title="原文 : Helidon SE is a compact toolkit that embraces the latest Java SE features: reactive streams, asynchronous and functional programming, and fluent-style APIs.">Helidon SEは、最新のJava SE機能を組み込むコンパクトなツールキットです: リアクティブ・ストリーム、非同期および関数型プログラミング、およびfluentスタイルのAPI。</span></p>
 </dd>
 </dl>

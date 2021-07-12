@@ -13,11 +13,25 @@
 </v-flex>
 </v-layout>
 
-<h2 id="_experimental"><span class="merged" id="all.3qlK5J.2"  title="原文:: Experimental">試作</span></h2>
+<h2 id="_experimental"><span class="merged" id="all.3qlK5J.6"  title="原文:: Experimental">試作</span></h2>
 <div class="section">
 <div class="admonition warning">
 <p class="admonition-inline"><span class="merged" id="all.omcRl" title="原文 : The Helidon gRPC feature is currently experimental and the APIs are subject to changes until gRPC support is stabilized.">Helidon gRPC機能は現在試験的であり、gRPCサポートが安定するまでAPIは変更される可能性があります。</span></p>
 </div>
+</div>
+
+<h2 id="maven-coordinates"><span class="merged" id="all.317oeS.42" title="原文 : Maven Coordinates">Maven連携</span></h2>
+<div class="section">
+<p><span class="merged" id="all.3JfjiN" title="原文 : To enable gRPC add the following dependency to your project&rsquo;s pom.xml (see Managing Dependencies).">gRPCを有効にするには、プロジェクトの<code>pom.xml</code>に次の依存関係を追加します(<router-link to="/about/04_managing-dependencies">「依存関係の管理」</router-link>を参照)。</span></p>
+
+<markup
+lang="xml"
+
+>    &lt;dependency&gt;
+        &lt;groupId&gt;io.helidon.grpc&lt;/groupId&gt;
+        &lt;artifactId&gt;helidon-grpc-server&lt;/artifactId&gt;
+    &lt;/dependency&gt;</markup>
+
 </div>
 
 <h2 id="_quick_start"><span class="merged" id="all.2FbcJI.1"  title="原文:: Quick Start">クイック・スタート</span></h2>
@@ -56,22 +70,5 @@ lang="java"
 </ul>
 <p><span class="merged" id="all.1VZmZO.spl1" title="原文 : The example above deploys a very simple service to the gRPC server that by default uses Java serialization to marshall requests and responses.">前述の例では、デフォルトでJava直列化を使用してリクエストとレスポンスをマーシャリングするgRPCサーバーに、非常に単純なサービスをデプロイします。</span> <span class="merged" id="all.1VZmZO.spl2" title="原文 : We will look into deployment of &quot;standard&quot; gRPC services that use Protobuf for request and response marshalling, as well as how you can configure custom marshallers, later in this document.">Protobufを使用してリクエストおよびレスポンスのマーシャリングを行う「標準」gRPCサービスのデプロイメント、およびカスタム・マーシャラの構成方法については、このドキュメントの後半で説明します。</span> </p>
 
-</div>
-
-<h2 id="_maven_coordinates"><span class="merged" id="all.317oeS.10" title="原文 : Maven Coordinates">Maven連携</span></h2>
-<div class="section">
-<p><span class="merged" id="all.1WKs1p.1.spl1" title="原文 : The Getting Started page describes how you should declare dependency management for Helidon applications."><router-link to="/about/04_managing-dependencies">「開始」</router-link>ページでは、Helidonアプリケーションの依存性管理を宣言する方法について説明します。</span> <span class="merged" id="all.1WKs1p.1.spl2" title="原文 : Then declare the following dependency in your project:">次に、プロジェクトで次の依存性を宣言します:</span> </p>
-
-<markup
-lang="xml"
-
->&lt;dependency&gt;
-    &lt;groupId&gt;io.helidon.grpc&lt;/groupId&gt;
-    &lt;artifactId&gt;helidon-grpc-server&lt;/artifactId&gt; <span class="conum" data-value="1" />
-&lt;/dependency&gt;</markup>
-
-<ul class="colist">
-<li data-value="1"><span class="merged" id="all.2PgyL" title="原文 : Dependency on gRPC Server.">gRPCサーバーへの依存性。</span></li>
-</ul>
 </div>
 </doc-view>

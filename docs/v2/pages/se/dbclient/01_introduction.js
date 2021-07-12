@@ -13,6 +13,40 @@
 </v-flex>
 </v-layout>
 
+<h2 id="maven-coordinates"><span class="merged" id="all.317oeS.39" title="原文 : Maven Coordinates">Maven連携</span></h2>
+<div class="section">
+<p><span class="merged" id="all.2XpjqT" title="原文 : To enable DB Client add the following dependency to your project&rsquo;s pom.xml (see Managing Dependencies).">DBクライアントを有効にするには、プロジェクトの<code>pom.xml</code>に次の依存関係を追加します(<router-link to="/about/04_managing-dependencies">「依存関係の管理」</router-link>を参照)。</span></p>
+
+<markup
+lang="xml"
+
+>     &lt;dependency&gt;
+         &lt;groupId&gt;io.helidon.dbclient&lt;/groupId&gt;
+         &lt;artifactId&gt;helidon-dbclient&lt;/artifactId&gt;
+     &lt;/dependency&gt;</markup>
+
+<p><span class="merged" id="all.4AZBqb" title="原文 : To use with a JDBC client also add the following dependency:">JDBCクライアントで使用するには、次の依存関係も追加します:</span></p>
+
+<markup
+lang="xml"
+
+>     &lt;dependency&gt;
+         &lt;groupId&gt;io.helidon.dbclient&lt;/groupId&gt;
+         &lt;artifactId&gt;helidon-dbclient-jdbc&lt;/artifactId&gt;
+     &lt;/dependency&gt;</markup>
+
+<p><span class="merged" id="all.180MLQ" title="原文 : Or to use with MongoDB client add the following dependency:">または、MongoDBクライアントで使用するには、次の依存関係を追加します:</span></p>
+
+<markup
+lang="xml"
+
+>     &lt;dependency&gt;
+         &lt;groupId&gt;io.helidon.dbclient&lt;/groupId&gt;
+         &lt;artifactId&gt;helidon-dbclient-mongodb&lt;/artifactId&gt;
+     &lt;/dependency&gt;</markup>
+
+</div>
+
 <h2 id="_helidon_db_client_features_overview"><span class="merged" id="all.3h1SHp" title="原文 : Helidon DB Client Features Overview">Helidon DBクライアント機能の概要</span></h2>
 <div class="section">
 <p><span class="merged" id="all.3ZBmwH.spl1" title="原文 : The DB Client simplifies how you work with databases by abstracting the type of the database.">DBクライアントは、データベースのタイプを抽象化することで、データベースの操作を簡略化します。</span> <span class="merged" id="all.3ZBmwH.spl2" title="原文 : The API can be used both for relational and non-relational databases.">このAPIは、リレーショナル・データベースと非リレーショナル・データベースの両方に使用できます。</span> </p>
@@ -50,19 +84,15 @@
 
 <h2 id="_getting_started"><span class="merged" id="all.J6ASm.7"  title="原文:: Getting Started">開始</span></h2>
 <div class="section">
-<p><span class="merged" id="all.2UiGXF" title="原文 : Before you begin you must add the DB Client dependencies and configure the client.">開始する前に、DBクライアントの依存性を追加し、クライアントを構成する必要があります。</span></p>
+<p><span class="merged" id="all.2UiGXF" title="原文 : Before you begin you must add the DB Client dependencies and configure the client.">開始する前に、DBクライアントの依存関係を追加し、クライアントを構成する必要があります。</span></p>
 
-<ol style="margin-left: 15px;">
-<li>
-<span class="merged" id="all.3KI1Bq" title="原文 : Add the DB Client dependencies to the Maven pom.xml file.">DBクライアント依存性をMaven <code>pom.xml</code>ファイルに追加します。</span>
-<p><span class="merged" id="all.327FaB" title="原文 : The Managing Dependencies page describes how you should declare dependency management for Helidon applications."><router-link to="/about/04_managing-dependencies">「依存関係の管理」</router-link>ページでは、Helidonアプリケーションの依存性管理を宣言する方法について説明します。</span></p>
 
-</li>
-</ol>
-<p><span class="merged" id="all.2QyEnM" title="原文 : For the DB Client using JDBC implementation and H2 database, you must include the following dependencies in your project:">JDBC実装およびH2データベースを使用するDBクライアントの場合、プロジェクトに次の依存性を含める必要があります:</span></p>
+<h3 id="_add_the_db_client_dependencies_to_the_maven_pom_xml_file"><span class="merged" id="all.3KI1Bq" title="原文 : Add the DB Client dependencies to the Maven pom.xml file.">DBクライアント依存関係をMaven <code>pom.xml</code>ファイルに追加します。</span></h3>
+<div class="section">
+<p><span class="merged" id="all.2QyEnM" title="原文 : For the DB Client using JDBC implementation and H2 database, you must include the following dependencies in your project:">JDBC実装およびH2データベースを使用するDBクライアントの場合、プロジェクトに次の依存関係を含める必要があります:</span></p>
 
 <markup
-lang="java"
+lang="xml"
 
 >&lt;dependencies&gt;
      &lt;dependency&gt;
@@ -74,9 +104,8 @@ lang="java"
          &lt;artifactId&gt;helidon-dbclient-jdbc&lt;/artifactId&gt;
      &lt;/dependency&gt;
      &lt;dependency&gt;
-         &lt;groupId&gt;com.h2.database&lt;/groupId&gt; <span class="conum" data-value="3" />
+         &lt;groupId&gt;com.h2database&lt;/groupId&gt; <span class="conum" data-value="3" />
          &lt;artifactId&gt;h2&lt;/artifactId&gt;
-         &lt;version&gt;1.4.200&lt;/version&gt;
     &lt;/dependency&gt;
 &lt;/dependencies&gt;</markup>
 
@@ -85,6 +114,10 @@ lang="java"
 <li data-value="2"><span class="merged" id="all.zlY1K" title="原文 : Specify JDBC or MongoDB">JDBCまたはMongoDBの指定</span></li>
 <li data-value="3"><span class="merged" id="all.1syUxA" title="原文 : Add the database JDBC driver (only for JDBC)">データベースJDBCドライバの追加(JDBCの場合のみ)</span></li>
 </ul>
+</div>
+
+<h3 id="_use_helidon_config_to_configure_the_client"><span class="merged" id="all.1Vaotl" title="原文 : Use Helidon Config to configure the client.">Helidon Configを使用してクライアントを構成します。</span></h3>
+<div class="section">
 <p><span class="merged" id="all.2JQoxR.spl1" title="原文 : The DB Client must be configured before you begin.">開始する前に、DBクライアントを構成する必要があります。</span> <span class="merged" id="all.2JQoxR.spl2" title="原文 : In the example below we&rsquo;ll use Helidon Config to set up JDBC-based client:">次の例では、Helidon Configを使用してJDBCベースのクライアントを設定します:</span> </p>
 
 <markup
@@ -106,6 +139,7 @@ lang="yaml"
 <li data-value="3"><span class="merged" id="all.2QsWDp" title="原文 : Statements: named statements to be used in application">Statements: アプリケーションで使用される名前付き文</span></li>
 <li data-value="4"><span class="merged" id="all.1iPGKu" title="原文 : A ping statement used by health check">ヘルス・チェックで使用されるping文</span></li>
 </ul>
+</div>
 </div>
 
 <h2 id="_using_db_client_api_methods"><span class="merged" id="all.eQ2K0" title="原文 : Using DB Client API Methods">DBクライアントAPIメソッドの使用</span></h2>

@@ -119,7 +119,7 @@ title="application.yaml - サーバー構成"
 
 </div>
 
-<h2 id="_configuring_additional_ports"><span class="merged" id="all.3uDA6e" title="原文 : Configuring additional ports">追加ポートの構成</span></h2>
+<h2 id="conf-additional-ports"><span class="merged" id="all.3uDA6e" title="原文 : Configuring additional ports">追加ポートの構成</span></h2>
 <div class="section">
 <p><span class="merged" id="all.3tXYqy" title="原文 : Helidon MP can expose multiple ports, with the following limitations:">Helidon MPでは複数のポートを公開できますが、次の制限があります:</span></p>
 

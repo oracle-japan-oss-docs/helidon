@@ -3,7 +3,7 @@
  <v-layout row wrap> <v-flex xs12 sm10 lg10> <v-card class="section-def" v-bind:color="$store.state.currentColor"> <v-card-text class="pa-3"> <v-card class="section-def__card"> <v-card-text>
 <dl>
 <dt slot=title><span class="merged" id="all.8l1BP" title="原文 : Helidon MP Metrics Guide">Helidon MPメトリクス・ガイド</span></dt>
-<dd slot="desc"><p><span class="merged" id="all.11MWoi" title="原文 : This guide describes how to create a sample MicroProfile (MP) project that can be used to run some basic examples using both built-in and custom metrics with Helidon MP.">このガイドでは、Helidon MPで組込みメトリクスとカスタム・メトリクスの両方を使用していくつかの基本的な例を実行するために使用できるサンプルMicroProfile (MP)プロジェクトの作成方法について説明します。</span></p>
+<dd slot="desc"><p><span class="merged" id="all.QkyUS" title="原文 : This guide describes how to create a sample Helidon MicroProfile (MP) project that can be used to run some basic examples using both built-in and custom metrics with Helidon MP.">このガイドでは、Helidon MPで組込みメトリクスとカスタム・メトリクスの両方を使用していくつかの基本的な例を実行するために使用できるサンプルHelidon MicroProfile (MP)プロジェクトの作成方法について説明します。</span></p>
 </dd>
 </dl>
 </v-card-text>
@@ -44,11 +44,11 @@
 
 <markup
 lang="bash"
-title="Maven原型を実行します:"
+title="Maven原型の実行"
 >mvn -U archetype:generate -DinteractiveMode=false \
     -DarchetypeGroupId=io.helidon.archetypes \
     -DarchetypeArtifactId=helidon-quickstart-mp \
-    -DarchetypeVersion=2.2.1-SNAPSHOT \
+    -DarchetypeVersion=2.3.1 \
     -DgroupId=io.helidon.examples \
     -DartifactId=helidon-quickstart-mp \
     -Dpackage=io.helidon.examples.quickstart.mp</markup>
@@ -57,7 +57,7 @@ title="Maven原型を実行します:"
 
 <h3 id="_using_the_built_in_metrics"><span class="merged" id="all.43ESSC" title="原文 : Using the built-in metrics">組込みメトリクスの使用</span></h3>
 <div class="section">
-<p><span class="merged" id="all.lNNDM.spl1" title="原文 : Helidon provides three scopes of metrics: base, vendor, and application.">Helidonには、3つのメトリクス・スコープが用意されています: ベース、ベンダーおよびアプリケーション。</span> <span class="merged" id="all.lNNDM.spl2" title="原文 : Helidon automatically provides built-in base and vendor metrics.">Helidonには、基本メトリクスとベンダー・メトリクスが自動的に組み込まれています。</span> <span class="merged" id="all.lNNDM.spl3" title="原文 : Applications can use these metrics without additional configuration or code changes.">アプリケーションでは、追加の構成またはコードを変更せずに、これらのメトリクスを使用できます。</span> <span class="merged" id="all.lNNDM.spl4" title="原文 : Here are the metric endpoints:">メトリック・エンドポイントは次のとおりです:</span> </p>
+<p><span class="merged" id="all.3Kl5Gc.spl1" title="原文 : Helidon provides three scopes of metrics: base, vendor, and application.">Helidonには、3つのメトリクス・スコープが用意されています: ベース、ベンダーおよびアプリケーション。</span> <span class="merged" id="all.3Kl5Gc.spl2" title="原文 : Here are the metric endpoints:">メトリック・エンドポイントは次のとおりです:</span> </p>
 
 <ol style="margin-left: 15px;">
 <li>
@@ -195,6 +195,50 @@ title="JSONレスポンス:"
 <p><span class="merged" id="all.2EkcS4.spl1" title="原文 : Note that the applications you generate using the full Helidon archetype do enable this feature in the generated config file.">完全なHelidon原型を使用して生成したアプリケーションでは、生成された構成ファイルでこの機能を有効に<em>します</em>。</span> <span class="merged" id="all.2EkcS4.spl2" title="原文 : You can see the results in the sample output shown in earlier example runs.">結果は、前の実行例に示したサンプル出力で確認できます。</span> </p>
 
 </div>
+
+<h4 id="_key_performance_indicator_kpi_metrics"><span class="merged" id="all.tqY2Q" title="原文 : Key Performance Indicator (KPI) Metrics">キー・パフォーマンス・インジケータ(KPI)メトリクス</span></h4>
+<div class="section">
+<p><span class="merged" id="all.3sOZXl" title="原文 : Any time you include the Helidon metrics module in your application, Helidon tracks two basic performance indicator metrics:">アプリケーションにHelidonメトリクス・モジュールを含めるたびに、Helidonでは、次の2つの基本的なパフォーマンス・メトリクスが追跡されます:</span></p>
+
+<ul class="ulist">
+<li>
+<p><span class="merged" id="all.3AcZDp" title="原文 : a Counter of all requests received (requests.count), and">受信したすべてのリクエストの<code>Counter</code> (<code>requests.count</code>)</span></p>
+
+</li>
+<li>
+<p><span class="merged" id="all.153KWy" title="原文 : a Meter of all requests received (requests.meter).">受信したすべてのリクエストの<code>Meter</code> (<code>requests.meter</code>)。</span></p>
+
+</li>
+</ul>
+<p><span class="merged" id="all.2dm2kv" title="原文 : Helidon MP also includes additional, extended KPI metrics which are disabled by default:">Helidon MPには、デフォルトで無効になっている追加の拡張KPIメトリクスも含まれています:</span></p>
+
+<ul class="ulist">
+<li>
+<p><span class="merged" id="all.JrarW" title="原文 : current number of requests in-flight - a ConcurrentGauge (requests.inFlight) of requests currently being processed">現在進行中のリクエスト数 - 現在処理中のリクエストの<code>ConcurrentGauge</code> (<code>requests.inFlight</code>)</span></p>
+
+</li>
+<li>
+<p><span class="merged" id="all.2cyom6" title="原文 : long-running requests - a Meter (requests.longRunning) measuring the rate at which Helidon processes requests which take at least a given amount of time to complete; configurable, defaults to 10000 milliseconds (10 seconds)">長時間実行リクエスト - Helidonが完了までに少なくとも指定された時間を要するリクエストを処理する速度を測定する<code>Meter</code> (<code>requests.longRunning</code>)です。構成可能で、デフォルトは10000ミリ秒(10秒)です</span></p>
+
+</li>
+<li>
+<p><span class="merged" id="all.2iOF4J" title="原文 : load - a Meter (requests.load) measuring the rate at which requests are worked on (as opposed to received)">load - リクエストの処理速度を測定する<code>Meter</code> (<code>requests.load</code>) (受信したものとは対照的)</span></p>
+
+</li>
+<li>
+<p><span class="merged" id="all.1QFwn1" title="原文 : deferred - a Meter (requests.deferred) measuring the rate at which a request&rsquo;s processing is delayed after Helidon receives the request">延期 - Helidonがリクエストを受信した後にリクエスト処理が遅延する割合を測定する<code>Meter</code> (<code>requests.deferred</code>)</span></p>
+
+</li>
+</ul>
+<p><span class="merged" id="all.oRutk" title="原文 : You can enable and control these metrics using configuration:">構成を使用して、次のメトリクスを有効化および制御できます:</span></p>
+
+<markup
+lang="properties"
+title="拡張KPIメトリクスを制御する構成プロパティ・ファイル"
+>metrics.key-performance-indicators.extended = true
+metrics.key-performance-indicators.long-running.threshold-ms = 2000</markup>
+
+</div>
 </div>
 
 <h3 id="_metrics_metadata"><span class="merged" id="all.1eMrtK" title="原文 : Metrics metadata">メトリクス・メタデータ</span></h3>
@@ -211,7 +255,7 @@ title="JSONレスポンス:"
 
 </li>
 <li>
-<span class="merged" id="all.1KJjfe" title="原文 : type: The type of metric: Counter, Timer, Meter, Histogram, or Gauge.">type: メトリックのタイプ: <code>Counter</code>, <code>Timer</code>, <code>Meter</code>, <code>Histogram</code>、または<code>Gauge</code>。</span>
+<span class="merged" id="all.2JdHdF" title="原文 : type: The type of metric: Counter, Timer, Meter, Histogram, SimpleTimer, or Gauge.">type: メトリックのタイプ: <code>Counter</code>, <code>Timer</code>, <code>Meter</code>, <code>Histogram</code>, <code>SimpleTimer</code>、または<code>Gauge</code>。</span>
 
 </li>
 </ol>
@@ -657,7 +701,7 @@ public class GreetingCards {
 }</markup>
 
 <ul class="colist">
-<li data-value="1"><span class="merged" id="all.VBcUI" title="原文 : A Counter metric field, cacheHits, is automatically injected by Helidon."><code>Counter</code>メトリック・フィールド<code>cacheHits</code>は、Helidonによって自動的に挿入されます。</span></li>
+<li data-value="1"><span class="merged" id="all.VBcUI" title="原文 : A Counter metric field, cacheHits, is automatically injected by Helidon."><code>Counter</code>メトリック・フィールド<code>cacheHits</code>は、Helidonによって自動的にインジェクトされます。</span></li>
 <li data-value="2"><span class="merged" id="all.11bvPF" title="原文 : Call updateStats() to update the cache hits."><code>updateStats()</code>をコールして、キャッシュ・ヒットを更新します。</span></li>
 <li data-value="3"><span class="merged" id="all.11bvPF.1" title="原文 : Call updateStats() to update the cache hits."><code>updateStats()</code>をコールして、キャッシュ・ヒットを更新します。</span></li>
 <li data-value="4"><span class="merged" id="all.ATusR" title="原文 : Randomly increment the cacheHits counter."><code>cacheHits</code>カウンタをランダムに増分します。</span></li>
@@ -781,6 +825,9 @@ title="<code>/metrics/application</code>からのJSONレスポンス:"
 
 <h3 id="_integration_with_kubernetes_and_prometheus"><span class="merged" id="all.3Am6oP" title="原文 : Integration with Kubernetes and Prometheus">KubernetesおよびPrometheusとの統合</span></h3>
 <div class="section">
+
+<h4 id="_kubernetes_integration"><span class="merged" id="all.1Im2hg" title="原文 : Kubernetes integration">Kubernetes統合</span></h4>
+<div class="section">
 <p><span class="merged" id="all.HOIa7" title="原文 : The following example shows how to integrate the Helidon MP application with Kubernetes.">次の例は、Helidon MPアプリケーションをKubernetesと統合する方法を示しています。</span></p>
 
 <markup
@@ -858,6 +905,7 @@ title="ポート<code>30116</code>を使用してメトリクス・エンドポ�
 
 <div class="admonition note">
 <p class="admonition-inline"><span class="merged" id="all.4tlHG" title="原文 : Leave the application running in Kubernetes since it will be used for Prometheus integration.">Prometheus統合に使用されるため、アプリケーションはKubernetesで実行したままにします。</span></p>
+</div>
 </div>
 
 <h4 id="_prometheus_integration"><span class="merged" id="all.3WUGFL" title="原文 : Prometheus integration">Prometheus統合</span></h4>

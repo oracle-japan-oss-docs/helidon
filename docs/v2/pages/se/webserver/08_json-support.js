@@ -2,18 +2,13 @@
 <span title="免責事項: ここに記載されているドキュメントは、お客様の利便性のために翻訳ソフトウエアにより機械的に翻訳(機械翻訳)したものです。オリジナルの英語版もあわせてご確認ください。" style="width:150px;padding-left:5px;padding-right:5px;border:#ff0000 solid 1px;border-color: gray;font-size: small;color:gray;margin: 0 auto 0 auto;text-align:center;"><a href="https://docs.oracle.com/cd/E85181_01/mt_disclaimer.html" target="disclaimer">&nbsp;&nbsp;機械翻訳について&nbsp;&nbsp;</a></span>
 
 
-<h2 id="_json_support"><span class="merged" id="all.1dpXAk" title="原文 : Json Support">Jsonサポート</span></h2>
+<h2 id="maven-coordinates"><span class="merged" id="all.317oeS.66" title="原文 : Maven Coordinates">Maven連携</span></h2>
 <div class="section">
-<p><span class="merged" id="all.3OJjiJ.spl1" title="原文 : The WebServer supports JSON-P.">WebServerはJSON-Pをサポートしています。</span> <span class="merged" id="all.3OJjiJ.spl2" title="原文 : When enabled, you can send and receive JSON-P objects transparently.">有効にすると、JSON-Pオブジェクトを透過的に送受信できます。</span> </p>
-
-
-<h3 id="_maven_coordinates"><span class="merged" id="all.317oeS.16" title="原文 : Maven Coordinates">Maven連携</span></h3>
-<div class="section">
-<p><span class="merged" id="all.4JnU1V.16" title="原文 : Declare the following dependency in your project:">プロジェクトで次の依存性を宣言します:</span></p>
+<p><span class="merged" id="all.19aBve" title="原文 : To enable JSON Support add the following dependency to your project&rsquo;s pom.xml (see Managing Dependencies).">JSONサポートを有効にするには、プロジェクトの<code>pom.xml</code>に次の依存関係を追加します(<router-link to="/about/04_managing-dependencies">「依存関係の管理」</router-link>を参照)。</span></p>
 
 <markup
 lang="xml"
-title="WebサーバーJSON-P依存性"
+
 >&lt;dependency&gt;
     &lt;groupId&gt;io.helidon.media&lt;/groupId&gt;
     &lt;artifactId&gt;helidon-media-jsonp&lt;/artifactId&gt;
@@ -21,7 +16,12 @@ title="WebサーバーJSON-P依存性"
 
 </div>
 
-<h3 id="_usage"><span class="merged" id="all.JUOSC.9"  title="原文:: Usage">使用方法</span></h3>
+<h2 id="_json_support"><span class="merged" id="all.1dpXAk" title="原文 : Json Support">Jsonサポート</span></h2>
+<div class="section">
+<p><span class="merged" id="all.3OJjiJ.spl1" title="原文 : The WebServer supports JSON-P.">WebServerはJSON-Pをサポートしています。</span> <span class="merged" id="all.3OJjiJ.spl2" title="原文 : When enabled, you can send and receive JSON-P objects transparently.">有効にすると、JSON-Pオブジェクトを透過的に送受信できます。</span> </p>
+
+
+<h3 id="_usage"><span class="merged" id="all.JUOSC.10"  title="原文:: Usage">使用方法</span></h3>
 <div class="section">
 <p><span class="merged" id="all.1mX58H.spl1" title="原文 : To enable JSON-P support, first register it with the web server.">JSON-Pサポートを有効にするには、まずwebサーバーに登録します。</span> <span class="merged" id="all.1mX58H.spl2" title="原文 : Then you can add routes that handle and return JSON.">その後、JSONを処理して返すルートを追加できます。</span> </p>
 

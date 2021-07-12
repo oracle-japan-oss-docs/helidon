@@ -40,7 +40,7 @@
 
 <h2 id="_what_youll_do"><span class="merged" id="all.1U0hyr" title="原文 : What You&rsquo;ll Do">実行内容</span></h2>
 <div class="section">
-<p><span class="merged" id="all.m2aa7.spl1" title="原文 : By following this guide, you&rsquo;ll enhance a bare-bones Helidon MP application to access an in-memory H2 database database.">このガイドに従うことで、メモリー内<a href="https://www.h2database.com/html/main.html" id="" target="_blank" >「H2データベース」</a>データベースにアクセスするためのベア・ボーンHelidon MPアプリケーションが拡張されます。</span> <span class="merged" id="all.m2aa7.spl2" title="原文 : You&rsquo;ll see how to install the relevant dependencies, set up and configure the datasource, and add datasource-related code to your application.">関連する依存性をインストールし、データソースを設定および構成し、データソース関連のコードをアプリケーションに追加する方法について説明します。</span> </p>
+<p><span class="merged" id="all.m2aa7.spl1" title="原文 : By following this guide, you&rsquo;ll enhance a bare-bones Helidon MP application to access an in-memory H2 database database.">このガイドに従うことで、メモリー内<a href="https://www.h2database.com/html/main.html" id="" target="_blank" >「H2データベース」</a>データベースにアクセスするためのベア・ボーンHelidon MPアプリケーションが拡張されます。</span> <span class="merged" id="all.m2aa7.spl2" title="原文 : You&rsquo;ll see how to install the relevant dependencies, set up and configure the datasource, and add datasource-related code to your application.">関連する依存関係をインストールし、データソースを設定および構成し、データソース関連のコードをアプリケーションに追加する方法について説明します。</span> </p>
 
 </div>
 
@@ -55,7 +55,7 @@ lang="bash"
     -DinteractiveMode=false \
     -DarchetypeGroupId=io.helidon.archetypes \
     -DarchetypeArtifactId=helidon-bare-mp \
-    -DarchetypeVersion=2.2.1-SNAPSHOT \
+    -DarchetypeVersion=2.3.1 \
     -DgroupId=io.helidon.example \
     -DartifactId=helidon-ds \
     -Dpackage=io.helidon.example.ds \
@@ -68,7 +68,7 @@ lang="bash"
 
 <h2 id="_add_the_h2_database_driver_to_the_runtime_classpath"><span class="merged" id="all.4FIoJ" title="原文 : Add the H2 Database Driver to the Runtime Classpath">H2データベース・ドライバのランタイム・クラスパスへの追加</span></h2>
 <div class="section">
-<p><span class="merged" id="all.2mi5Cl" title="原文 : Add the following dependency in your pom.xml:"><code>pom.xml</code>に次の依存性を追加します:</span></p>
+<p><span class="merged" id="all.2mi5Cl" title="原文 : Add the following dependency in your pom.xml:"><code>pom.xml</code>に次の依存関係を追加します:</span></p>
 
 <markup
 lang="xml"
@@ -80,13 +80,13 @@ title="<code>pom.xml</code>"
     &lt;scope&gt;runtime&lt;/scope&gt;
 &lt;/dependency&gt;</markup>
 
-<p><span class="merged" id="all.3mRi1P" title="原文 : In a production application, you may use a different database, so in that case you may add a different database driver dependency here instead.">本番アプリケーションでは、別のデータベースを使用することもできます。その場合は、かわりにここで別のデータベース・ドライバの依存性を追加できます。</span></p>
+<p><span class="merged" id="all.3mRi1P" title="原文 : In a production application, you may use a different database, so in that case you may add a different database driver dependency here instead.">本番アプリケーションでは、別のデータベースを使用することもできます。その場合は、かわりにここで別のデータベース・ドライバの依存関係を追加できます。</span></p>
 
 </div>
 
 <h2 id="_add_the_hikari_connection_pool_extension_to_the_runtime_classpath"><span class="merged" id="all.3Jsz1M" title="原文 : Add the Hikari Connection Pool Extension to the Runtime Classpath">ランタイム・クラスパスへのHikari接続プール拡張機能の追加</span></h2>
 <div class="section">
-<p><span class="merged" id="all.2mi5Cl.1" title="原文 : Add the following dependency in your pom.xml:"><code>pom.xml</code>に次の依存性を追加します:</span></p>
+<p><span class="merged" id="all.2mi5Cl.1" title="原文 : Add the following dependency in your pom.xml:"><code>pom.xml</code>に次の依存関係を追加します:</span></p>
 
 <markup
 lang="xml"
@@ -169,7 +169,7 @@ private DataSource testDataSource;</markup>
 <div class="section">
 <p><span class="merged" id="all.3u66Oh" title="原文 : Now that you have a DataSource, you&rsquo;ll use it to connect to the database."><code>DataSource</code>ができたので、これを使用してデータベースに接続します。</span></p>
 
-<p><span class="merged" id="all.3Gvt8b" title="原文 : First, ensure the io.heldion.example.ds.ExampleResource resource class imports various java.sql classes:">まず、<code>io.heldion.example.ds.ExampleResource</code>リソース・クラスが様々な<code>java.sql</code>クラスをインポートしていることを確認します:</span></p>
+<p><span class="merged" id="all.2ME66R" title="原文 : First, ensure the io.helidon.example.ds.ExampleResource resource class imports various java.sql classes:">まず、<code>io.helidon.example.ds.ExampleResource</code>リソース・クラスが様々な<code>java.sql</code>クラスをインポートしていることを確認します:</span></p>
 
 <markup
 lang="java"
@@ -250,11 +250,11 @@ lang="bash"
 
 <ul class="ulist">
 <li>
-<p><span class="merged" id="all.1kGFzz" title="原文 : An example showing a Hikari connection pool data source connected to an H2 database"><a href="https://github.com/oracle/helidon/tree/2.2.1/examples//integrations/cdi/datasource-hikaricp-h2" id="" target="_blank" >H2データベースに接続されたHikari接続プール・データ・ソースを示す例</a></span></p>
+<p><span class="merged" id="all.1Aq4YU" title="原文 : An example showing a Hikari connection pool data source connected to an H2 database"><a href="https://github.com/oracle/helidon/tree/2.3.1/examples/integrations/cdi/datasource-hikaricp-h2" id="" target="_blank" >H2データベースに接続されたHikari接続プール・データ・ソースを示す例</a></span></p>
 
 </li>
 <li>
-<p><span class="merged" id="all.1vLMOg" title="原文 : An example showing a Hikari connection pool data source connected to a MySQL database"><a href="https://github.com/oracle/helidon/tree/2.2.1/examples//integrations/cdi/datasource-hikaricp-mysql" id="" target="_blank" >MySQLデータベースに接続されたHikari接続プール・データ・ソースを示す例</a></span></p>
+<p><span class="merged" id="all.25lLoQ" title="原文 : An example showing a Hikari connection pool data source connected to a MySQL database"><a href="https://github.com/oracle/helidon/tree/2.3.1/examples/integrations/cdi/datasource-hikaricp-mysql" id="" target="_blank" >MySQLデータベースに接続されたHikari接続プール・データ・ソースを示す例</a></span></p>
 
 </li>
 </ul>

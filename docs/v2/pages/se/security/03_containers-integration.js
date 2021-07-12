@@ -13,7 +13,7 @@
 
 <markup
 lang="xml"
-title="Mavenの依存性"
+title="Mavenの依存関係"
 >&lt;dependency&gt;
     &lt;groupId&gt;io.helidon.security.integration&lt;/groupId&gt;
     &lt;artifactId&gt;helidon-security-integration-webserver&lt;/artifactId&gt;
@@ -161,7 +161,7 @@ security.web-server.paths.3.roles-allowed=user,monitor</markup>
 
 <markup
 lang="xml"
-title="Mavenの依存性"
+title="Mavenの依存関係"
 >&lt;dependency&gt;
     &lt;groupId&gt;io.helidon.security.integration&lt;/groupId&gt;
     &lt;artifactId&gt;helidon-security-integration-jersey&lt;/artifactId&gt;
@@ -217,7 +217,7 @@ private SecurityContext securityContext;</markup>
 
 <markup
 lang="xml"
-title="Mavenの依存性"
+title="Mavenの依存関係"
 >&lt;dependency&gt;
     &lt;groupId&gt;io.helidon.security.integration&lt;/groupId&gt;
     &lt;artifactId&gt;helidon-security-integration-jersey-client&lt;/artifactId&gt;

@@ -145,7 +145,7 @@ lang="java"
 </table>
 </div>
 
-<h3 id="_example"><span class="merged" id="all.2xA7W7"  title="原文:: Example">Example</span></h3>
+<h3 id="_example"><span class="merged" id="all.2xA7W7"  title="原文:: Example">例</span></h3>
 <div class="section">
 <markup
 lang="java"
@@ -207,7 +207,7 @@ Config config = ConfigProviderResolver.instance()
 <p><span class="merged" id="all.2E3cSo.spl1" title="原文 : You can create Yaml Microprofile Config Source from a path or a URL.">パスまたはURLからYaml Microprofile構成ソースを作成できます。</span> <span class="merged" id="all.2E3cSo.spl2" title="原文 : When you create a MicroProfile instance from the builder, the YamlMpConfigSource allows you to create a custom Config Source and register it with the builder.">ビルダーからMicroProfileインスタンスを作成する場合、<code>YamlMpConfigSource</code>を使用すると、カスタム構成ソースを作成してビルダーに登録できます。</span> </p>
 
 
-<h3 id="_example_2"><span class="merged" id="all.2xA7W7.1"  title="原文:: Example">Example</span></h3>
+<h3 id="_example_2"><span class="merged" id="all.2xA7W7.1"  title="原文:: Example">例</span></h3>
 <div class="section">
 <markup
 lang="java"

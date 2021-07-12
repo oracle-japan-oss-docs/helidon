@@ -1,6 +1,31 @@
 <doc-view>
 <span title="免責事項: ここに記載されているドキュメントは、お客様の利便性のために翻訳ソフトウエアにより機械的に翻訳(機械翻訳)したものです。オリジナルの英語版もあわせてご確認ください。" style="width:150px;padding-left:5px;padding-right:5px;border:#ff0000 solid 1px;border-color: gray;font-size: small;color:gray;margin: 0 auto 0 auto;text-align:center;"><a href="https://docs.oracle.com/cd/E85181_01/mt_disclaimer.html" target="disclaimer">&nbsp;&nbsp;機械翻訳について&nbsp;&nbsp;</a></span>
+ <v-layout row wrap> <v-flex xs12 sm10 lg10> <v-card class="section-def" v-bind:color="$store.state.currentColor"> <v-card-text class="pa-3"> <v-card class="section-def__card"> <v-card-text>
+<dl>
+<dt slot=title><span class="merged" id="all.1ylOg7" title="原文 : MicroProfile Config">MicroProfile構成</span></dt>
+<dd slot="desc"><p><span class="merged" id="all.4O2nw3" title="原文 : Helidon&rsquo;s MicroProfile Config, an implementation of Eclipse MicroProfile Config, enables you to configure your applications using MicroProfile&rsquo;s config configuration sources and APIs.">HelidonのMicroProfile Config (Eclipse MicroProfile Configの実装)を使用すると、MicroProfileの構成ソースおよびAPIを使用してアプリケーションを構成できます。</span></p>
+</dd>
+</dl>
+</v-card-text>
+</v-card>
+</v-card-text>
+</v-card>
+</v-flex>
+</v-layout>
 
+<h2 id="maven-coordinates"><span class="merged" id="all.317oeS.1" title="原文 : Maven Coordinates">Maven連携</span></h2>
+<div class="section">
+<p><span class="merged" id="all.OOJZz" title="原文 : To enable MicroProfile Config either add a dependency on the helidon-microprofile bundle or add the following dependency to your project&rsquo;s pom.xml (see Managing Dependencies).">MicroProfile Configを有効にするには、<router-link to="/mp/introduction/02_microprofile">helidon-microprofile bundle</router-link>に依存関係を追加するか、プロジェクトの<code>pom.xml</code>に次の依存関係を追加します(<router-link to="/about/04_managing-dependencies">「依存関係の管理」</router-link>を参照)。</span></p>
+
+<markup
+lang="xml"
+
+>        &lt;dependency&gt;
+            &lt;groupId&gt;io.helidon.microprofile.config&lt;/groupId&gt;
+            &lt;artifactId&gt;helidon-microprofile-config&lt;/artifactId&gt;
+        &lt;/dependency&gt;</markup>
+
+</div>
 
 <h2 id="_about_microprofile_config"><span class="merged" id="all.3F03o4" title="原文 : About MicroProfile Config">MicroProfile構成について</span></h2>
 <div class="section">
@@ -16,6 +41,8 @@
 <p><span class="merged" id="all.3ZvA7o" title="原文 : The data is then available through MicroProfile Config APIs to be injected into CDI Beans, or to be obtained using a Config instance programmatically.">その後、MicroProfile Config APIを介してデータを使用してCDI Beanにインジェクトしたり、<code>Config</code>インスタンスをプログラムで使用して取得できます。</span></p>
 
 <p><span class="merged" id="all.3blk6S" title="原文 : MicroProfile Config provides typed access to configuration values, using built-in converters, and Converter implementations located by Java Service Loader.">MicroProfile Configは、組込みコンバータおよびJavaサービス・ローダーによって配置される<code>Converter</code>実装を使用して、構成値へのタイプ付きアクセスを提供します。</span></p>
+
+<p><span class="merged" id="all.4MqB7y.spl1" title="原文 : MicroProfile Config supports a concept of configuration profiles.">MicroProfile Configは、構成プロファイルの概念をサポートしています。</span> <span class="merged" id="all.4MqB7y.spl2" title="原文 : You can define a profile using the configuration property mp.config.profile (when using default configuration, this can be defined as a system property, environment variable or as a property in microprofile-config.properties).">プロファイルは、構成プロパティ<code>mp.config.profile</code>を使用して定義できます(デフォルト構成を使用する場合、これはシステム・プロパティ、環境変数または<code>microprofile-config.properties</code>のプロパティとして定義できます)。</span> <span class="merged" id="all.4MqB7y.spl3" title="原文 : When a profile is defined, additional config source is loaded (microprofile-config-profile.properties) and properties from profile have precedence over default properties. Profile properties can be defined using `%profile prefix, such as %dev.server.port.">プロファイルを定義すると、追加の構成ソース(<code>microprofile-config.properties</code>)が読み込まれ、プロファイルのプロパティがデフォルトのプロパティよりも優先されます。プロファイルのプロパティは、<code>%dev.server.port</code>のように<code>%profile</code>プレフィックスを使用し定義できます。</span> </p>
 
 
 <h4 id="_using_microprofile_config_api"><span class="merged" id="all.388j4A" title="原文 : Using MicroProfile Config API">MicroProfile Config APIの使用</span></h4>
@@ -67,7 +94,7 @@ server.host=0.0.0.0</markup>
 </ul>
 <markup
 lang="yaml"
-title="Example"
+title="例"
 >uri: "http://localhost:8080"
 service-1: "${uri}/service1"
 service-2: "${uri}/service2"</markup>
@@ -91,40 +118,48 @@ client_secret=${CLEAR=known_password}</markup>
 
 <ul class="ulist">
 <li>
-<p><span class="merged" id="all.2aH4nC.spl1" title="原文 : Meta Configuration You can configure the Config using Helidon SE Config meta configuration feature."><strong>「メタ構成」</strong><br>Helidon SE構成メタ構成機能を使用して構成を構成できます。</span> <span class="merged" id="all.2aH4nC.spl2" title="原文 : When used, the MicroProfile Config uses a single configuration source - Helidon SE Config configured from meta configuration.">MicroProfile構成を使用する場合は、単一の構成ソースを使用 - メタ構成から構成されたHelidon SE構成。</span> </p>
+<p><span class="merged" id="all.1H8DoD.spl1" title="原文 : Meta Configuration You can configure the Config using Helidon MP Config meta configuration feature."><strong>「メタ構成」</strong><br>Helidon MP Configメタ構成機能を使用して構成を構成できます。</span> <span class="merged" id="all.1H8DoD.spl2" title="原文 : This is a Helidon specific feature available since version 2.3.0.">これは、バージョン2.3.0以降で使用可能なHelidon固有の機能です。</span> </p>
 
 </li>
 </ul>
-<p><span class="merged" id="all.3gTM7X" title="原文 : The meta-config allows configuration of config sources and other configuration options, including retry policies and polling strategies.">meta-configを使用すると、構成ソースおよびその他の構成オプション(再試行ポリシーやポーリング戦略など)を構成できます。</span></p>
+<p><span class="merged" id="all.4O4kUc" title="原文 : When used, the MicroProfile Config uses configuration sources and flags configured in the meta configuration file.">MicroProfile構成を使用すると、メタ構成ファイルで構成された構成ソースおよびフラグが使用されます。</span></p>
 
-<p><span class="merged" id="all.pBd9Z" title="原文 : If a file named meta-config.yaml, or meta-config.properties is in the current directory or on the classpath and there is no explicit setup of Config in the code, the configuration will be loaded from the meta-config file."><code>meta-config.yaml</code>または<code>meta-config.properties</code>という名前のファイルが現在のディレクトリまたはクラスパスにあり、コードに<code>Config</code>の明示的な設定がない場合、構成は<code>meta-config</code>ファイルからロードされます。</span></p>
+<p><span class="merged" id="all.95G5C" title="原文 : The meta-config allows configuration of config sources and other configuration options, including addition of discovered sources and converters.">meta-configを使用すると、検出されたソースやコンバータの追加など、構成ソースやその他の構成オプションを構成できます。</span></p>
+
+<p><span class="merged" id="all.1Xhh6i.spl1" title="原文 : If a file named mp-meta-config.yaml, or mp-meta-config.properties is in the current directory or on the classpath, and there is no explicit setup of configuration in the code, the configuration will be loaded from the meta-config file."><code>mp-meta-config.yaml</code>または<code>mp-meta-config.properties</code>という名前のファイルが現在のディレクトリまたはクラスパスにあり、コードに構成が明示的に設定されていない場合、構成は<code>meta-config</code>ファイルからロードされます。</span> <span class="merged" id="all.1Xhh6i.spl2" title="原文 : The location of the file can be overridden using system property io.helidon.config.mp.meta-config, or environment variable HELIDON_MP_META_CONFIG">ファイルのロケーションは、システム・プロパティ<code>io.helidon.config.mp.meta-config</code>または環境変数<code>HELIDON_MP_META_CONFIG</code>を使用してオーバーライドできます</span> </p>
 
 <markup
 lang="yaml"
 title="YAMLメタ構成ファイルの例:"
->sources:
-  - type: "system-properties" <span class="conum" data-value="1" />
-  - type: "environment-variables" <span class="conum" data-value="2" />
-  - type: "file"
-    properties:
-      optional: true
-      path: "mp-config.yaml" <span class="conum" data-value="3" />
-  - type: "classpath"
-    properties:
-      optional: true
-      resource: application.yaml <span class="conum" data-value="4" />
-  - type: "classpath"
-      multi-source: true
-    properties:
-      resource: "META-INF/microprofile-config.properties" <span class="conum" data-value="5" /></markup>
+>add-discovered-sources: true <span class="conum" data-value="1" />
+add-discovered-converters: false <span class="conum" data-value="2" />
+add-default-sources: false <span class="conum" data-value="3" />
+
+sources:
+  - type: "environment-variables" <span class="conum" data-value="4" />
+  - type: "system-properties" <span class="conum" data-value="5" />
+  - type: "properties" <span class="conum" data-value="6" />
+    path: "/conf/prod.properties" <span class="conum" data-value="7" />
+    ordinal: 50 <span class="conum" data-value="8" />
+    optional: true <span class="conum" data-value="9" />
+  - type: "yaml"  <span class="conum" data-value="10" />
+    classpath: "META-INF/database.yaml" <span class="conum" data-value="11" /></markup>
 
 <ul class="colist">
-<li data-value="1"><span class="merged" id="all.3FFWmo" title="原文 : Loads the environment variables config source.">環境変数config sourceをロードします。</span></li>
-<li data-value="2"><span class="merged" id="all.3zaLXG" title="原文 : Loads the system variables config source.">システム変数構成ソースをロードします。</span></li>
-<li data-value="3"><span class="merged" id="all.OLy5k" title="原文 : Loads the file config source from mp-config.yaml that is optional.">オプションである<code>mp-config.yaml</code>からファイル構成ソースをロードします。</span></li>
-<li data-value="4"><span class="merged" id="all.2JJjz6" title="原文 : Loads the file config source from application.yaml that is optional.">オプションである<code>application.yaml</code>からファイル構成ソースをロードします。</span></li>
-<li data-value="5"><span class="merged" id="all.1uiIJE" title="原文 : Loads the classpath resource config source for microprofile-config.properties that is the default configuration source of Microprofile application and is mandatory.">Microprofileアプリケーションのデフォルト構成ソースであり、必須である<code>microprofile-config.properties</code>のクラスパス・リソース構成ソースをロードします。</span></li>
+<li data-value="1"><span class="merged" id="all.1p1btH" title="原文 : If configured to true, config sources discovered through service loader will be added"><code>true</code>に構成されている場合、サービス・ローダーによって検出された構成ソースが追加されます</span></li>
+<li data-value="2"><span class="merged" id="all.B8b0A" title="原文 : If configured to true, converters discovered through service loader will be added"><code>true</code>に構成されている場合、サービス・ローダーによって検出されたコンバータが追加されます</span></li>
+<li data-value="3"><span class="merged" id="all.40Pt8f" title="原文 : If configured to true, default config sources (system properties, environment variables, and `META-INF/microprofile-config.properties) will be added"><code>true</code>に構成されている場合、デフォルトの構成ソース(システム・プロパティ、環境変数および`META-INF/microprofile-config.properties)が追加されます</span></li>
+<li data-value="4"><span class="merged" id="all.3FFWmo" title="原文 : Loads the environment variables config source.">環境変数config sourceをロードします。</span></li>
+<li data-value="5"><span class="merged" id="all.3vLBQT" title="原文 : Loads the system properties config source.">システム・プロパティ構成ソースをロードします。</span></li>
+<li data-value="6"><span class="merged" id="all.2miQuf" title="原文 : Loads a properties file">プロパティ・ファイルをロード</span></li>
+<li data-value="7"><span class="merged" id="all.4bGGDz" title="原文 : Location of the file: /conf/prod.properties on the file system">ファイルのロケーション: ファイル・システム上の<code>/conf/prod.properties</code></span></li>
+<li data-value="8"><span class="merged" id="all.4EkWjL" title="原文 : Custom ordinal, if not defined, the value defined in the file, or default value is used">カスタム序数(定義されていない場合はファイルに定義されている値、またはデフォルト値が使用されます)</span></li>
+<li data-value="9"><span class="merged" id="all.ABxGj" title="原文 : The file is optional (if not optional and no file is found, the bootstrap fails)">ファイルはオプションです(オプションでなく、ファイルが見つからない場合、ブートストラップは失敗します)</span></li>
+<li data-value="10"><span class="merged" id="all.Lq3Ha" title="原文 : Loads a YAML file">YAMLファイルをロード</span></li>
+<li data-value="11"><span class="merged" id="all.4RkofF" title="原文 : Location of the file: META-INF/database.yaml on the classpath">ファイルのロケーション: クラスパス上の<code>META-INF/database.yaml</code></span></li>
 </ul>
+<p><span class="merged" id="all.33gfHe.spl1" title="原文 : For backward compatibility, we will support usage of Helidon SE meta-configuration until version 3.0.0.">下位互換性のために、バージョン3.0.0までのHelidon SEメタ構成の使用がサポートされています。</span> <span class="merged" id="all.33gfHe.spl2" title="原文 : Using this approach causes behavior that is not compatible with MicroProfile Config specification.">このアプローチを使用すると、MicroProfile Config仕様と互換性のない動作が発生します。</span> </p>
+
 </div>
 </div>
 
@@ -234,15 +269,15 @@ Config config = ConfigProviderResolver.instance()
 <div class="section">
 <ul class="ulist">
 <li>
-<p><span class="merged" id="all.4YkvIT" title="原文 : Helidon Config SPI"><a href="https://helidon.io/docs/latest/apidocs/io/helidon/config/spi/package-summary.html" id="" target="_blank" >Helidon構成SPI</a></span></p>
+<p><span class="merged" id="all.cQjwR" title="原文 : Helidon Config SPI"><a href="./apidocs//io.helidon.config/io/helidon/config/spi/package-summary.html" id="" target="_blank" >Helidon構成SPI</a></span></p>
 
 </li>
 <li>
-<p><span class="merged" id="all.SSJd7" title="原文 : Helidon Config API"><a href="https://helidon.io/docs/latest/apidocs/io/helidon/config/package-summary.html" id="" target="_blank" >Helidon構成API</a></span></p>
+<p><span class="merged" id="all.3UOnMp" title="原文 : Helidon Config API"><a href="./apidocs//io.helidon.config/io/helidon/config/package-summary.html" id="" target="_blank" >Helidon構成API</a></span></p>
 
 </li>
 <li>
-<p><span class="merged" id="all.3ZxeZZ" title="原文 : Eclipse MicroProfile API"><a href="https://download.eclipse.org/microprofile/microprofile-config-1.3/apidocs/" id="" target="_blank" >Eclipse MicroProfile API</a></span></p>
+<p><span class="merged" id="all.4LgaGm" title="原文 : Eclispe MicroProfile API"><a href="https://download.eclipse.org/microprofile/microprofile-config-1.3/apidocs/" id="" target="_blank" >Eclispe MicroProfile API</a></span></p>
 
 </li>
 </ul>

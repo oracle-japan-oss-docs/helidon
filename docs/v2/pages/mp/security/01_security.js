@@ -3,7 +3,7 @@
  <v-layout row wrap> <v-flex xs12 sm10 lg10> <v-card class="section-def" v-bind:color="$store.state.currentColor"> <v-card-text class="pa-3"> <v-card class="section-def__card"> <v-card-text>
 <dl>
 <dt slot=title><span class="merged" id="all.2wSmwl"  title="原文:: Adding Security">セキュリティの追加</span></dt>
-<dd slot="desc"><p><span class="merged" id="all.1in22W" title="原文 : To add security, such as protecting resource methods with authentication, to a MicroProfile application, add the Helidon security integration dependency to your project.">認証によるリソース・メソッドの保護などのセキュリティをMicroProfileアプリケーションに追加するには、Helidonセキュリティ統合の依存性をプロジェクトに追加します。</span></p>
+<dd slot="desc"><p><span class="merged" id="all.1in22W" title="原文 : To add security, such as protecting resource methods with authentication, to a MicroProfile application, add the Helidon security integration dependency to your project.">認証によるリソース・メソッドの保護などのセキュリティをMicroProfileアプリケーションに追加するには、Helidonセキュリティ統合の依存関係をプロジェクトに追加します。</span></p>
 </dd>
 </dl>
 </v-card-text>
@@ -13,11 +13,13 @@
 </v-flex>
 </v-layout>
 
-<h2 id="_maven_coordinates"><span class="merged" id="all.317oeS.4" title="原文 : Maven Coordinates">Maven連携</span></h2>
+<h2 id="maven-coordinates"><span class="merged" id="all.317oeS.28" title="原文 : Maven Coordinates">Maven連携</span></h2>
 <div class="section">
+<p><span class="merged" id="all.3phYpy" title="原文 : To enable Security add the following dependency to your project&rsquo;s pom.xml (see Managing Dependencies).">セキュリティを有効にするには、プロジェクトの<code>pom.xml</code>に次の依存関係を追加します(<router-link to="/about/04_managing-dependencies">「依存関係の管理」</router-link>を参照)。</span></p>
+
 <markup
 lang="xml"
-title="Mavenの依存性"
+
 >&lt;dependency&gt;
   &lt;groupId&gt;io.helidon.microprofile&lt;/groupId&gt;
   &lt;artifactId&gt;helidon-microprofile-security&lt;/artifactId&gt;
@@ -37,7 +39,7 @@ title="protectedリソース・メソッド"
 // you can also use io.helidon.security.abac.role.RoleValidator.Roles
 @RolesAllowed("admin")
 public String adminResource(@Context io.helidon.security.SecurityContext securityContext) {
-  return "you are " + securityContext.getUser();
+  return "you are " + securityContext.userName();
 }</markup>
 
 <p><span class="merged" id="all.3yefc6" title="原文 : Security in Helidon MicroProfile is built on top of Jersey&rsquo;s and can be enabled/disabled using the property security.jersey.enabled=[true|false].">Helidon MicroProfileのセキュリティはJerseyの上に構築され、<code>security.jersey.enabled=[true|false]</code>プロパティを使用して有効化/無効化できます。</span></p>

@@ -20,20 +20,20 @@
 <th><span class="merged" id="all.1yHHYo"  title="原文:: Provider">プロバイダ</span></th>
 <th><span class="merged" id="all.p0YxL.1"  title="原文:: Type">タイプ</span></th>
 <th><span class="merged" id="all.1cYUCu" title="原文 : Outbound supported">アウトバウンドのサポート</span></th>
-<th><span class="merged" id="all.4JM9z7.2"  title="原文:: Description">説明</span></th>
+<th><span class="merged" id="all.4JM9z7.4"  title="原文:: Description">説明</span></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td class=""><span class="merged" id="all.33Jt5X" title="原文 : OIDC Provider"><router-link @click.native="this.scrollFix('#_oidc_provider')" to="#_oidc_provider">OIDCプロバイダ</router-link></span></td>
 <td class=""><span class="merged" id="all.wpYVJ"  title="原文:: Authentication">認証</span></td>
-<td class=""><span class="merged" id="all.5W6W2.41" title="原文 : ✅">✅</span></td>
+<td class=""><span class="merged" id="all.5W6W2.48" title="原文 : ✅">✅</span></td>
 <td class=""><span class="merged" id="all.DFw7y" title="原文 : Open ID Connect supporting JWT, Scopes, Groups and OIDC code flow">JWT、スコープ、グループおよびOIDCコード・フローをサポートするOpen ID Connect</span></td>
 </tr>
 <tr>
 <td class=""><span class="merged" id="all.1UfZL9" title="原文 : HTTP Basic Authentication"><router-link @click.native="this.scrollFix('#_http_basic_authentication_provider')" to="#_http_basic_authentication_provider">HTTP Basic認証</router-link></span></td>
 <td class=""><span class="merged" id="all.wpYVJ.1"  title="原文:: Authentication">認証</span></td>
-<td class=""><span class="merged" id="all.5W6W2.42" title="原文 : ✅">✅</span></td>
+<td class=""><span class="merged" id="all.5W6W2.49" title="原文 : ✅">✅</span></td>
 <td class=""><span class="merged" id="all.1hsi93" title="原文 : HTTP Basic Authentication support">HTTP Basic認証のサポート</span></td>
 </tr>
 <tr>
@@ -45,13 +45,13 @@
 <tr>
 <td class=""><span class="merged" id="all.1cz3Mg" title="原文 : Header Assertion"><router-link @click.native="this.scrollFix('#_header_authentication_provider')" to="#_header_authentication_provider">ヘッダー・アサーション</router-link></span></td>
 <td class=""><span class="merged" id="all.wpYVJ.3"  title="原文:: Authentication">認証</span></td>
-<td class=""><span class="merged" id="all.5W6W2.43" title="原文 : ✅">✅</span></td>
+<td class=""><span class="merged" id="all.5W6W2.50" title="原文 : ✅">✅</span></td>
 <td class=""><span class="merged" id="all.1UNZue" title="原文 : Asserting a user based on a header value">ヘッダー値に基づいたユーザーのアサート</span></td>
 </tr>
 <tr>
 <td class=""><span class="merged" id="all.2TSs7A" title="原文 : HTTP Signatures"><router-link @click.native="this.scrollFix('#_http_signatures_provider')" to="#_http_signatures_provider">HTTPシグネチャ</router-link></span></td>
 <td class=""><span class="merged" id="all.wpYVJ.4"  title="原文:: Authentication">認証</span></td>
-<td class=""><span class="merged" id="all.5W6W2.44" title="原文 : ✅">✅</span></td>
+<td class=""><span class="merged" id="all.5W6W2.51" title="原文 : ✅">✅</span></td>
 <td class=""><span class="merged" id="all.4BD4U" title="原文 : Protecting service to service communication through signatures">シグネチャを介したサービス間通信の保護</span></td>
 </tr>
 <tr>
@@ -85,20 +85,20 @@
 <th><span class="merged" id="all.1yHHYo.1"  title="原文:: Provider">プロバイダ</span></th>
 <th><span class="merged" id="all.p0YxL.2"  title="原文:: Type">タイプ</span></th>
 <th><span class="merged" id="all.1cYUCu.1" title="原文 : Outbound supported">アウトバウンドのサポート</span></th>
-<th><span class="merged" id="all.4JM9z7.3"  title="原文:: Description">説明</span></th>
+<th><span class="merged" id="all.4JM9z7.5"  title="原文:: Description">説明</span></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td class=""><span class="merged" id="all.1iC3WF" title="原文 : Google Login"><router-link @click.native="this.scrollFix('#_google_login_provider')" to="#_google_login_provider">Googleログイン</router-link></span></td>
 <td class=""><span class="merged" id="all.wpYVJ.5"  title="原文:: Authentication">認証</span></td>
-<td class=""><span class="merged" id="all.5W6W2.45" title="原文 : ✅">✅</span></td>
+<td class=""><span class="merged" id="all.5W6W2.52" title="原文 : ✅">✅</span></td>
 <td class=""><span class="merged" id="all.4P3RKa" title="原文 : Authenticates a token from request against Google servers">Googleサーバーに対するリクエストからのトークンを認証</span></td>
 </tr>
 <tr>
 <td class=""><span class="merged" id="all.2r2fCG" title="原文 : JWT Provider"><router-link @click.native="this.scrollFix('#_jwt_provider')" to="#_jwt_provider">JWTプロバイダ</router-link></span></td>
 <td class=""><span class="merged" id="all.wpYVJ.6"  title="原文:: Authentication">認証</span></td>
-<td class=""><span class="merged" id="all.5W6W2.46" title="原文 : ✅">✅</span></td>
+<td class=""><span class="merged" id="all.5W6W2.53" title="原文 : ✅">✅</span></td>
 <td class=""><span class="merged" id="all.2wuVJ2" title="原文 : JWT tokens passed from frontend">フロントエンドから渡されたJWTトークン</span></td>
 </tr>
 </tbody>
@@ -114,7 +114,7 @@
 <div class="section">
 <markup
 lang="xml"
-title="Mavenの依存性"
+title="Mavenの依存関係"
 >&lt;dependency&gt;
     &lt;groupId&gt;io.helidon.microprofile&lt;/groupId&gt;
     &lt;artifactId&gt;helidon-microprofile-oidc&lt;/artifactId&gt;
@@ -176,7 +176,7 @@ title="構成例"
 </thead>
 <tbody>
 <tr>
-<td class=""><span class="merged" id="all.41Kf4l"  title="原文: client-id"><code>client-id</code></span></td>
+<td class=""><span class="merged" id="all.41Kf4l.2"  title="原文: client-id"><code>client-id</code></span></td>
 <td class="">&#160;</td>
 <td class=""><span class="merged" id="all.E9qML" title="原文 : Client ID as generated by identity server">アイデンティティ・サーバーによって生成されたクライアントID</span></td>
 </tr>
@@ -198,12 +198,12 @@ title="構成例"
 <tr>
 <td class=""><span class="merged" id="all.3AHuzZ"  title="原文: issuer"><code>issuer</code></span></td>
 <td class=""><span class="merged" id="all.dKWNi" title="原文 : issuer from OIDC metadata">OIDCメタデータからの<code>issuer</code></span></td>
-<td class=""><span class="merged" id="all.1wtIb3" title="原文 : Issuer of token - each JWT is validated to check the issuer">トークンの発行者 - 各JWTは、発行者をチェックするために検証されます</span></td>
+<td class=""><span class="merged" id="all.1wtIb3" title="原文 : Issuer of token - each JWT is validated to check the issuer">トークンの発行者 - 各JWTは、発行者をチェックするためにバリデートされます</span></td>
 </tr>
 <tr>
 <td class=""><span class="merged" id="all.4WSwQo"  title="原文: audience"><code>audience</code></span></td>
 <td class="">&#160;</td>
-<td class=""><span class="merged" id="all.3aGKE2" title="原文 : Audience of a token - each JWT is validated to check the audience">トークンの対象者 - 各JWTは、オーディエンスをチェックするために検証されます</span></td>
+<td class=""><span class="merged" id="all.3aGKE2" title="原文 : Audience of a token - each JWT is validated to check the audience">トークンの対象者 - 各JWTは、オーディエンスをチェックするためにバリデートされます</span></td>
 </tr>
 <tr>
 <td class=""><span class="merged" id="all.1AyTFz"  title="原文: proxy-protocol"><code>proxy-protocol</code></span></td>
@@ -313,12 +313,12 @@ title="構成例"
 <tr>
 <td class=""><span class="merged" id="all.47mBmt"  title="原文: validate-with-jwk"><code>validate-with-jwk</code></span></td>
 <td class=""><span class="merged" id="all.xEiHU.4"  title="原文: true"><code>true</code></span></td>
-<td class=""><span class="merged" id="all.4bhk53" title="原文 : When true - validate against jwk defined by &quot;sign-jwk&quot;, when false validate JWT through OIDC Server endpoint &quot;validation-endpoint-uri&quot;">trueの場合 - "sign-jwk"で定義されたjwkに対して検証し、falseの場合はOIDCサーバー・エンドポイント"validation-endpoint-uri"を介してJWTを検証</span></td>
+<td class=""><span class="merged" id="all.4bhk53" title="原文 : When true - validate against jwk defined by &quot;sign-jwk&quot;, when false validate JWT through OIDC Server endpoint &quot;validation-endpoint-uri&quot;">trueの場合 - "sign-jwk"で定義されたjwkに対してバリデートし、falseの場合はOIDCサーバー・エンドポイント"validation-endpoint-uri"を介してJWTをバリデート</span></td>
 </tr>
 <tr>
 <td class=""><span class="merged" id="all.8wfMM"  title="原文: sign-jwk.resource"><code>sign-jwk.resource</code></span></td>
-<td class=""><span class="merged" id="all.fgGdF" title="原文 : &quot;jwks-uri&quot; in OIDC metadata, or identity-uri/admin/v1/SigningCert/jwk if not available, only needed when jwt validation is done by us">OIDCメタデータの"jwks-uri"、または使用できない場合は<code>identity-uri/admin/v1/SigningCert/jwk</code>(jwt検証が行われる場合のみ必要)</span></td>
-<td class=""><span class="merged" id="all.1YuYeB.spl1" title="原文 : A resource pointing to JWK with public keys of signing certificates used to validate JWT.">JWTの検証に使用される署名証明書の公開キーを持つJWKを指すリソース。</span> <span class="merged" id="all.1YuYeB.spl2" title="原文 : See Resource.create(io.helidon.config.Config)">Resource.create(io.helidon.config.Config)を参照</span> </td>
+<td class=""><span class="merged" id="all.fgGdF" title="原文 : &quot;jwks-uri&quot; in OIDC metadata, or identity-uri/admin/v1/SigningCert/jwk if not available, only needed when jwt validation is done by us">OIDCメタデータの"jwks-uri"、または使用できない場合は<code>identity-uri/admin/v1/SigningCert/jwk</code>(jwtバリデーションが行われる場合のみ必要)</span></td>
+<td class=""><span class="merged" id="all.1YuYeB.spl1" title="原文 : A resource pointing to JWK with public keys of signing certificates used to validate JWT.">JWTのバリデートに使用される署名証明書の公開キーを持つJWKを指すリソース。</span> <span class="merged" id="all.1YuYeB.spl2" title="原文 : See Resource.create(io.helidon.config.Config)">Resource.create(io.helidon.config.Config)を参照</span> </td>
 </tr>
 <tr>
 <td class=""><span class="merged" id="all.1B7o3g"  title="原文: introspect-endpoint-uri"><code>introspect-endpoint-uri</code></span></td>
@@ -426,7 +426,7 @@ title="構成例"
 
 <ol style="margin-left: 15px;">
 <li>
-<span class="merged" id="all.3wWz4X" title="原文 : client-id, client-secret, and identityUri are validated - these must provide values"><code>client-id</code>、<code>client-secret</code>および<code>identityUri</code>が検証されます - これらは値を指定する必要があります</span>
+<span class="merged" id="all.3wWz4X" title="原文 : client-id, client-secret, and identityUri are validated - these must provide values"><code>client-id</code>、<code>client-secret</code>および<code>identityUri</code>がバリデートされます - これらは値を指定する必要があります</span>
 
 </li>
 <li>
@@ -472,11 +472,11 @@ title="構成例"
 
 </li>
 <li>
-<span class="merged" id="all.4V3YQL" title="原文 : We validate the JWT signature either against local JWK or against the identity server&rsquo;s introspection endpoint depending on configuration">JWTシグネチャは、構成に応じて、ローカルJWKまたはアイデンティティ・サーバーのイントロスペクション・エンドポイントのいずれかに対して検証されます</span>
+<span class="merged" id="all.4V3YQL" title="原文 : We validate the JWT signature either against local JWK or against the identity server&rsquo;s introspection endpoint depending on configuration">JWTシグネチャは、構成に応じて、ローカルJWKまたはアイデンティティ・サーバーのイントロスペクション・エンドポイントのいずれかに対してバリデートされます</span>
 
 </li>
 <li>
-<span class="merged" id="all.3Rdm1A" title="原文 : We validate the issuer and audience of the token if it matches the configured values">トークンの発行者とオーディエンスが構成済の値と一致するかどうかを検証</span>
+<span class="merged" id="all.3Rdm1A" title="原文 : We validate the issuer and audience of the token if it matches the configured values">トークンの発行者とオーディエンスが構成済の値と一致するかどうかをバリデート</span>
 
 </li>
 <li>
@@ -484,7 +484,7 @@ title="構成例"
 
 </li>
 <li>
-<span class="merged" id="all.4WPiBt" title="原文 : We validate that we have sufficient scopes to proceed, and return 403 if not">続行するのに十分なスコープがあることを検証し、ない場合は<code>403</code>を返します</span>
+<span class="merged" id="all.4WPiBt" title="原文 : We validate that we have sufficient scopes to proceed, and return 403 if not">続行するのに十分なスコープがあることをバリデートし、ない場合は<code>403</code>を返します</span>
 
 </li>
 <li>
@@ -504,7 +504,7 @@ title="構成例"
 <div class="section">
 <markup
 lang="xml"
-title="Mavenの依存性"
+title="Mavenの依存関係"
 >&lt;dependency&gt;
     &lt;groupId&gt;io.helidon.security.providers&lt;/groupId&gt;
     &lt;artifactId&gt;helidon-security-providers-http-auth&lt;/artifactId&gt;
@@ -667,7 +667,7 @@ title="構成例"
 
 <p><span class="merged" id="all.2pB05a" title="原文 : When a request is received without the Authorization: basic …​. header, a challenge is returned to provide such authentication."><code>Authorization: basic …​.</code>ヘッダーなしでリクエストを受信すると、このような認証を提供するチャレンジが返されます。</span></p>
 
-<p><span class="merged" id="all.2MuSBK" title="原文 : When a request is received with the Authorization: basic …​. header, the username and password is validated against configured users (and users obtained from custom service if any provided)."><code>Authorization: basic …​.</code>ヘッダーを含むリクエストを受信すると、ユーザー名とパスワードが構成済ユーザー(および指定されている場合はカスタム・サービスから取得したユーザー)に対して検証されます。</span></p>
+<p><span class="merged" id="all.2MuSBK" title="原文 : When a request is received with the Authorization: basic …​. header, the username and password is validated against configured users (and users obtained from custom service if any provided)."><code>Authorization: basic …​.</code>ヘッダーを含むリクエストを受信すると、ユーザー名とパスワードが構成済ユーザー(および指定されている場合はカスタム・サービスから取得したユーザー)に対してバリデートされます。</span></p>
 
 <p><span class="merged" id="all.4EiPav" title="原文 : Subject is created based on the username and roles provided by the user store.">サブジェクトは、ユーザー・ストアによって提供されるユーザー名とロールに基づいて作成されます。</span></p>
 
@@ -703,7 +703,7 @@ title="構成例"
 </ol>
 <p><span class="merged" id="all.4eG9bs" title="原文 : Custom user store"><strong>カスタム・ユーザー・ストア</strong></span></p>
 
-<p><span class="merged" id="all.303dxT.spl1" title="原文 : Java service loader service io.helidon.security.providers.httpauth.spi.UserStoreService can be implemented to provide users to the provider, such as when validated against an internal database or LDAP server.">Javaサービス・ローダー・サービス<code>io.helidon.security.providers.httpauth.spi.UserStoreService</code>を実装すると、内部データベースやLDAPサーバーに対して検証された場合など、プロバイダにユーザーを提供できます。</span> <span class="merged" id="all.303dxT.spl2" title="原文 : The user store is defined so you never need the clear text password of the user.">ユーザー・ストアはユーザーのクリア・テキスト・パスワードを必要としないように定義されています。</span> </p>
+<p><span class="merged" id="all.303dxT.spl1" title="原文 : Java service loader service io.helidon.security.providers.httpauth.spi.UserStoreService can be implemented to provide users to the provider, such as when validated against an internal database or LDAP server.">Javaサービス・ローダー・サービス<code>io.helidon.security.providers.httpauth.spi.UserStoreService</code>を実装すると、内部データベースやLDAPサーバーに対してバリデートされた場合など、プロバイダにユーザーを提供できます。</span> <span class="merged" id="all.303dxT.spl2" title="原文 : The user store is defined so you never need the clear text password of the user.">ユーザー・ストアはユーザーのクリア・テキスト・パスワードを必要としないように定義されています。</span> </p>
 
 <p><span class="merged" id="all.15FyFi" title="原文 : Warning on security of HTTP Basic Authenticaton (or lack thereof)"><em>HTTP Basic認証のセキュリティに関する警告(またはその不足)</em></span></p>
 
@@ -721,7 +721,7 @@ title="構成例"
 <div class="section">
 <markup
 lang="xml"
-title="Mavenの依存性"
+title="Mavenの依存関係"
 >&lt;dependency&gt;
     &lt;groupId&gt;io.helidon.security.providers&lt;/groupId&gt;
     &lt;artifactId&gt;helidon-security-providers-http-auth&lt;/artifactId&gt;
@@ -827,13 +827,13 @@ title="構成例"
 
 <p><span class="merged" id="all.4DQNzX" title="原文 : When a request is received without the Authorization: digest …​. header, a challenge is returned to provide such authentication using WWW-Authenticate header."><code>Authorization: digest …​.</code>ヘッダーなしでリクエストを受信すると、チャレンジが返され、<code>WWW-Authenticate</code>ヘッダーを使用してこのような認証が提供されます。</span></p>
 
-<p><span class="merged" id="all.1lWis3" title="原文 : When a request is received with the Authorization: digest …​. header, the request is validated against configured users (and users obtained from custom service if any provided)."><code>Authorization: digest …​.</code>ヘッダーを含むリクエストを受信すると、そのリクエストは構成済ユーザー(および指定されている場合はカスタム・サービスから取得したユーザー)に対して検証されます。</span></p>
+<p><span class="merged" id="all.1lWis3" title="原文 : When a request is received with the Authorization: digest …​. header, the request is validated against configured users (and users obtained from custom service if any provided)."><code>Authorization: digest …​.</code>ヘッダーを含むリクエストを受信すると、そのリクエストは構成済ユーザー(および指定されている場合はカスタム・サービスから取得したユーザー)に対してバリデートされます。</span></p>
 
 <p><span class="merged" id="all.4EiPav.1" title="原文 : Subject is created based on the username and roles provided by the user store.">サブジェクトは、ユーザー・ストアによって提供されるユーザー名とロールに基づいて作成されます。</span></p>
 
 <p><span class="merged" id="all.4eG9bs.1" title="原文 : Custom user store"><strong>カスタム・ユーザー・ストア</strong></span></p>
 
-<p><span class="merged" id="all.303dxT.1.spl1" title="原文 : Java service loader service io.helidon.security.providers.httpauth.spi.UserStoreService can be implemented to provide users to the provider, such as when validated against an internal database or LDAP server.">Javaサービス・ローダー・サービス<code>io.helidon.security.providers.httpauth.spi.UserStoreService</code>を実装すると、内部データベースやLDAPサーバーに対して検証された場合など、プロバイダにユーザーを提供できます。</span> <span class="merged" id="all.303dxT.1.spl2" title="原文 : The user store is defined so you never need the clear text password of the user.">ユーザー・ストアはユーザーのクリア・テキスト・パスワードを必要としないように定義されています。</span> </p>
+<p><span class="merged" id="all.303dxT.1.spl1" title="原文 : Java service loader service io.helidon.security.providers.httpauth.spi.UserStoreService can be implemented to provide users to the provider, such as when validated against an internal database or LDAP server.">Javaサービス・ローダー・サービス<code>io.helidon.security.providers.httpauth.spi.UserStoreService</code>を実装すると、内部データベースやLDAPサーバーに対してバリデートされた場合など、プロバイダにユーザーを提供できます。</span> <span class="merged" id="all.303dxT.1.spl2" title="原文 : The user store is defined so you never need the clear text password of the user.">ユーザー・ストアはユーザーのクリア・テキスト・パスワードを必要としないように定義されています。</span> </p>
 
 <p><span class="merged" id="all.BisMl" title="原文 : Note on security of HTTP Digest Authenticaton"><em>HTTPダイジェスト認証のセキュリティに関するノート</em></span></p>
 
@@ -851,7 +851,7 @@ title="構成例"
 <div class="section">
 <markup
 lang="xml"
-title="Mavenの依存性"
+title="Mavenの依存関係"
 >&lt;dependency&gt;
     &lt;groupId&gt;io.helidon.security.providers&lt;/groupId&gt;
     &lt;artifactId&gt;helidon-security-providers-header&lt;/artifactId&gt;
@@ -1030,7 +1030,7 @@ title="構成例"
 <div class="section">
 <markup
 lang="xml"
-title="Mavenの依存性"
+title="Mavenの依存関係"
 >&lt;dependency&gt;
     &lt;groupId&gt;io.helidon.security.providers&lt;/groupId&gt;
     &lt;artifactId&gt;helidon-security-providers-http-sign&lt;/artifactId&gt;
@@ -1268,7 +1268,7 @@ title="構成例"
 
 </li>
 <li>
-<p><span class="merged" id="all.1LhMNY.spl1" title="原文 : key-id: an arbitrary string used to locate signature configuration - when a request is received the provider locates validation configuration based on this id (e.g. HMAC shared secret or RSA public key).">key-id: シグネチャ構成の検索に使用される任意の文字列 - リクエストを受信すると、プロバイダはこのID (HMAC共有シークレットやRSA公開キーなど)に基づいて検証構成を検索します。</span> <span class="merged" id="all.1LhMNY.spl2" title="原文 : Commonly used meanings are: key fingerprint (RSA); API Key">よく使用される意味は次のとおりです: キー・フィンガープリント(RSA)、APIキー</span> </p>
+<p><span class="merged" id="all.1LhMNY.spl1" title="原文 : key-id: an arbitrary string used to locate signature configuration - when a request is received the provider locates validation configuration based on this id (e.g. HMAC shared secret or RSA public key).">key-id: シグネチャ構成の検索に使用される任意の文字列 - リクエストを受信すると、プロバイダはこのID (HMAC共有シークレットやRSA公開キーなど)に基づいてバリデーション構成を検索します。</span> <span class="merged" id="all.1LhMNY.spl2" title="原文 : Commonly used meanings are: key fingerprint (RSA); API Key">よく使用される意味は次のとおりです: キー・フィンガープリント(RSA)、APIキー</span> </p>
 
 </li>
 </ul>
@@ -1276,7 +1276,7 @@ title="構成例"
 
 <h4 id="_how_does_it_work_5"><span class="merged" id="all.aWBLA.4"  title="原文: How does it work?"> 動作の仕組み</span></h4>
 <div class="section">
-<p><span class="merged" id="all.1S55jT.spl1" title="原文 : Inbound Signatures We act as a server and another party is calling us with a signed HTTP request."><strong>「インバウンド・シグネチャ」</strong>はサーバーとして動作し、別のパーティが署名付きHTTPリクエストを使用してコールしています。</span> <span class="merged" id="all.1S55jT.spl2" title="原文 : We validate the signature and assume identity of the caller.">シグネチャを検証し、呼出し側のアイデンティティを想定します。</span> </p>
+<p><span class="merged" id="all.1S55jT.spl1" title="原文 : Inbound Signatures We act as a server and another party is calling us with a signed HTTP request."><strong>「インバウンド・シグネチャ」</strong>はサーバーとして動作し、別のパーティが署名付きHTTPリクエストを使用してコールしています。</span> <span class="merged" id="all.1S55jT.spl2" title="原文 : We validate the signature and assume identity of the caller.">シグネチャをバリデートし、呼出し側のアイデンティティを想定します。</span> </p>
 
 <p><span class="merged" id="all.2S4FPl.spl1" title="原文 : Outbound Signatures We act as a client and we sign our outgoing requests."><strong>「アウトバウンド・シグネチャ」</strong>クライアントとして動作し、送信リクエストに署名します。</span> <span class="merged" id="all.2S4FPl.spl2" title="原文 : If there is a matching outbound target specified in configuration, its configuration will be applied for signing the outgoing request, otherwise there is no signature added">構成に一致する<code>outbound</code>ターゲットが指定されている場合、その構成が送信リクエストのシグネチャに適用されます。それ以外の場合、シグネチャは追加されません</span> </p>
 
@@ -1292,7 +1292,7 @@ title="構成例"
 <div class="section">
 <markup
 lang="xml"
-title="Mavenの依存性"
+title="Mavenの依存関係"
 >&lt;dependency&gt;
     &lt;groupId&gt;io.helidon.security.providers&lt;/groupId&gt;
     &lt;artifactId&gt;helidon-security-providers-idcs-mapper&lt;/artifactId&gt;
@@ -1439,7 +1439,7 @@ title="構成例"
 <div class="section">
 <markup
 lang="xml"
-title="Mavenの依存性"
+title="Mavenの依存関係"
 >&lt;dependency&gt;
     &lt;groupId&gt;io.helidon.security.providers&lt;/groupId&gt;
     &lt;artifactId&gt;helidon-security-providers-abac&lt;/artifactId&gt;
@@ -1493,12 +1493,12 @@ title="構成例"
 <tr>
 <td class=""><span class="merged" id="all.dXhT6"  title="原文: fail-on-unvalidated"><code>fail-on-unvalidated</code></span></td>
 <td class=""><span class="merged" id="all.xEiHU.9"  title="原文: true"><code>true</code></span></td>
-<td class=""><span class="merged" id="all.PuOzo" title="原文 : &quot;Unvalidated&quot; means: an attribute is defined, but there is no validator available for it">「未検証」とは、: 属性が定義されていますが、使用可能なバリデータがありません</span></td>
+<td class=""><span class="merged" id="all.PuOzo" title="原文 : &quot;Unvalidated&quot; means: an attribute is defined, but there is no validator available for it">「未バリデート」とは、: 属性が定義されていますが、使用可能なバリデータがありません</span></td>
 </tr>
 <tr>
 <td class=""><span class="merged" id="all.348v9l"  title="原文: fail-if-none-validated"><code>fail-if-none-validated</code></span></td>
 <td class=""><span class="merged" id="all.xEiHU.10"  title="原文: true"><code>true</code></span></td>
-<td class=""><span class="merged" id="all.2kIejh" title="原文 : &quot;None validated&quot; means: there was not a single attribute that was validated">「検証なし」は、: 検証された単一の属性がありませんでした</span></td>
+<td class=""><span class="merged" id="all.2kIejh" title="原文 : &quot;None validated&quot; means: there was not a single attribute that was validated">「バリデートなし」は、: バリデートされた単一の属性がありませんでした</span></td>
 </tr>
 </tbody>
 </table>
@@ -1507,21 +1507,21 @@ title="構成例"
 
 <h4 id="_how_does_it_work_7"><span class="merged" id="all.aWBLA.6"  title="原文: How does it work?"> 動作の仕組み</span></h4>
 <div class="section">
-<p><span class="merged" id="all.nxxf6" title="原文 : ABAC uses available validators and validates them against attributes of the authenticated user.">ABACは、使用可能なバリデータを使用して、認証されたユーザーの属性に対して検証します。</span></p>
+<p><span class="merged" id="all.nxxf6" title="原文 : ABAC uses available validators and validates them against attributes of the authenticated user.">ABACは、使用可能なバリデータを使用して、認証されたユーザーの属性に対してバリデートします。</span></p>
 
 <p><span class="merged" id="all.2wVCt5" title="原文 : Combinations of fail-on-unvalidated and fail-if-none-validated:"><code>fail-on-unvalidated</code>と<code>fail-if-none-validated</code>の組合せ:</span></p>
 
 <ol style="margin-left: 15px;">
 <li>
-<span class="merged" id="all.VE4Of" title="原文 : true &amp; true: Will fail if any attribute is not validated and if any has failed validation"><code>true</code> &amp; <code>true</code>: 検証されていない属性がある場合、および検証に失敗した属性がある場合は失敗</span>
+<span class="merged" id="all.VE4Of" title="原文 : true &amp; true: Will fail if any attribute is not validated and if any has failed validation"><code>true</code> &amp; <code>true</code>: バリデートされていない属性がある場合、およびバリデーションに失敗した属性がある場合は失敗</span>
 
 </li>
 <li>
-<span class="merged" id="all.2UuR0f" title="原文 : false &amp; true: Will fail if there is one or more attributes present and NONE of them is validated or if any has failed validation, Will NOT fail if there is at least one validated attribute and any number of not validated attributes (and NONE failed)"><code>false</code> &amp; <code>true</code>: 1つ以上の属性が存在し、そのいずれかが検証されなかった場合、または検証に失敗した場合は失敗します。検証された属性が1つ以上あり、検証されなかった属性の数(およびNONEが失敗した場合)は失敗しません</span>
+<span class="merged" id="all.2UuR0f" title="原文 : false &amp; true: Will fail if there is one or more attributes present and NONE of them is validated or if any has failed validation, Will NOT fail if there is at least one validated attribute and any number of not validated attributes (and NONE failed)"><code>false</code> &amp; <code>true</code>: 1つ以上の属性が存在し、そのいずれかがバリデートされなかった場合、またはバリデーションに失敗した場合は失敗します。バリデートされた属性が1つ以上あり、バリデートされなかった属性の数(およびNONEが失敗した場合)は失敗しません</span>
 
 </li>
 <li>
-<span class="merged" id="all.49BjyI" title="原文 : false &amp; false: Will fail if there is any attribute that failed validation, Will NOT fail if there are no failed validation or if there are NONE validated"><code>false</code> &amp; <code>false</code>: 検証に失敗した属性がある場合は失敗し、検証に失敗しなかった場合またはNONEが検証されている場合は失敗しません</span>
+<span class="merged" id="all.49BjyI" title="原文 : false &amp; false: Will fail if there is any attribute that failed validation, Will NOT fail if there are no failed validation or if there are NONE validated"><code>false</code> &amp; <code>false</code>: バリデーションに失敗した属性がある場合は失敗し、バリデートに失敗しなかった場合またはNONEがバリデートされている場合は失敗しません</span>
 
 </li>
 </ol>
@@ -1545,7 +1545,7 @@ title="構成例"
 
 </li>
 </ul>
-<p><span class="merged" id="all.11tgoV.spl1" title="原文 : This provider checks that all defined ABAC validators are validated.">このプロバイダは、定義されているすべてのABACバリデータが検証されていることを確認します。</span> <span class="merged" id="all.11tgoV.spl2" title="原文 : If there is a definition for a validator that is not checked, the request is denied (depending on configuration as mentioned above).">チェックされていないバリデータの定義がある場合、(前述の構成に応じて)リクエストは拒否されます。</span> </p>
+<p><span class="merged" id="all.11tgoV.spl1" title="原文 : This provider checks that all defined ABAC validators are validated.">このプロバイダは、定義されているすべてのABACバリデータがバリデートされていることを確認します。</span> <span class="merged" id="all.11tgoV.spl2" title="原文 : If there is a definition for a validator that is not checked, the request is denied (depending on configuration as mentioned above).">チェックされていないバリデータの定義がある場合、(前述の構成に応じて)リクエストは拒否されます。</span> </p>
 
 <p><span class="merged" id="all.t7VTR.spl1" title="原文 : ABAC provider also allows an object to be used in authorization process, such as when evaluating if an object&rsquo;s owner is the current user.">ABACプロバイダを使用すると、オブジェクトの所有者が現在のユーザーかどうかを評価する場合など、認可プロセスでオブジェクトを使用することもできます。</span> <span class="merged" id="all.t7VTR.spl2" title="原文 : The following example uses the Expression language validator to demonstrate the point in a JAX-RS resource:">次の例では、式言語バリデータを使用してJAX-RSリソースのポイントを示します:</span> </p>
 
@@ -1701,7 +1701,7 @@ public class AbacResource {
 <div class="section">
 <markup
 lang="xml"
-title="Mavenの依存性"
+title="Mavenの依存関係"
 >&lt;dependency&gt;
     &lt;groupId&gt;io.helidon.security.providers&lt;/groupId&gt;
     &lt;artifactId&gt;helidon-security-providers-google-login&lt;/artifactId&gt;
@@ -1754,7 +1754,7 @@ title="構成例"
 </thead>
 <tbody>
 <tr>
-<td class=""><span class="merged" id="all.41Kf4l.1"  title="原文: client-id"><code>client-id</code></span></td>
+<td class=""><span class="merged" id="all.41Kf4l.3"  title="原文: client-id"><code>client-id</code></span></td>
 <td class="">&#160;</td>
 <td class=""><span class="merged" id="all.12Mych.spl1" title="原文 : Client id of an application.">アプリケーションのクライアントID。</span> <span class="merged" id="all.12Mych.spl2" title="原文 : To create an application, use the Google developer console (https://developers.google.com/identity/sign-in/web/sign-in)">アプリケーションを作成するには、Google開発者コンソール(<a href="https://developers.google.com/identity/sign-in/web/sign-in" id="" target="_blank" >https://developers.google.com/identity/sign-in/web/sign-in</a>)を使用</span> </td>
 </tr>
@@ -1836,7 +1836,7 @@ title="構成例"
 
 <ol style="margin-left: 15px;">
 <li>
-<span class="merged" id="all.1XFk0r" title="原文 : Validate if it timed out locally">ローカルでタイムアウトしたかどうかを検証</span>
+<span class="merged" id="all.1XFk0r" title="原文 : Validate if it timed out locally">ローカルでタイムアウトしたかどうかをバリデート</span>
 
 </li>
 <li>
@@ -1898,7 +1898,7 @@ title="構成例"
 <div class="section">
 <markup
 lang="xml"
-title="Mavenの依存性"
+title="Mavenの依存関係"
 >&lt;dependency&gt;
     &lt;groupId&gt;io.helidon.security.providers&lt;/groupId&gt;
     &lt;artifactId&gt;helidon-security-providers-jwt&lt;/artifactId&gt;
@@ -2001,7 +2001,7 @@ title="構成例"
 <tr>
 <td class=""><span class="merged" id="all.436rIa"  title="原文: atn-token.jwk.resource.*"><code>atn-token.jwk.resource.*</code></span></td>
 <td class="">&#160;</td>
-<td class=""><span class="merged" id="all.2IbXDf.spl1" title="原文 : Configuration of the JWK to obtain key(s) to validate signatures of inbound token.">インバウンド・トークンのシグネチャを検証するキーを取得するためのJWKの構成。</span> <span class="merged" id="all.2IbXDf.spl2" title="原文 : The JWK should contain public keys.">JWKには公開キーを含める必要があります。</span> <span class="merged" id="all.2IbXDf.spl3" title="原文 : This may be: jwk.resource.path, jwk.resource.resource-path, jwk.resource.url, jwk.resource.content-plain (actual JSON string), jwk.resource.content (base64)">次のようになります: jwk.resource.path、jwk.resource.resource-path、jwk.resource.url、jwk.resource.content-plan (実際のJSON文字列)、jwk.resource.content (base64)</span> </td>
+<td class=""><span class="merged" id="all.2IbXDf.spl1" title="原文 : Configuration of the JWK to obtain key(s) to validate signatures of inbound token.">インバウンド・トークンのシグネチャをバリデートするキーを取得するためのJWKの構成。</span> <span class="merged" id="all.2IbXDf.spl2" title="原文 : The JWK should contain public keys.">JWKには公開キーを含める必要があります。</span> <span class="merged" id="all.2IbXDf.spl3" title="原文 : This may be: jwk.resource.path, jwk.resource.resource-path, jwk.resource.url, jwk.resource.content-plain (actual JSON string), jwk.resource.content (base64)">次のようになります: jwk.resource.path、jwk.resource.resource-path、jwk.resource.url、jwk.resource.content-plan (実際のJSON文字列)、jwk.resource.content (base64)</span> </td>
 </tr>
 <tr>
 <td class=""><span class="merged" id="all.y0cAd"  title="原文: atn-token.handler"><code>atn-token.handler</code></span></td>
@@ -2036,7 +2036,7 @@ title="構成例"
 <tr>
 <td class=""><span class="merged" id="all.1jxKXY"  title="原文: sign-token.jwt-issuer"><code>sign-token.jwt-issuer</code></span></td>
 <td class="">&#160;</td>
-<td class=""><span class="merged" id="all.212d4a" title="原文 : When we issue a new token, this is the issuer to be placed into it (validated by target service)">新しいトークンを発行すると、これがそこに配置される発行者になります(ターゲット・サービスによって検証されます)</span></td>
+<td class=""><span class="merged" id="all.212d4a" title="原文 : When we issue a new token, this is the issuer to be placed into it (validated by target service)">新しいトークンを発行すると、これがそこに配置される発行者になります(ターゲット・サービスによってバリデートされます)</span></td>
 </tr>
 <tr>
 <td class=""><span class="merged" id="all.3uVxDq"  title="原文: sign-token.outbound"><code>sign-token.outbound</code></span></td>
@@ -2086,7 +2086,7 @@ title="構成例"
 <tr>
 <td class=""><span class="merged" id="all.2TS7AT"  title="原文: sign-token.outbound.*.jwt-audience"><code>sign-token.outbound.*.jwt-audience</code></span></td>
 <td class="">&#160;</td>
-<td class=""><span class="merged" id="all.2X9JJW" title="原文 : Audience this key is generated for (e.g. http://www.example.org/api/myService) - validated by the other service">このキーが生成されるオーディエンス(<a href="http://www.example.org/api/myService" id="" target="_blank" >http://www.example.org/api/myService</a>など) - 他のサービスによって検証されました</span></td>
+<td class=""><span class="merged" id="all.2X9JJW" title="原文 : Audience this key is generated for (e.g. http://www.example.org/api/myService) - validated by the other service">このキーが生成されるオーディエンス(<a href="http://www.example.org/api/myService" id="" target="_blank" >http://www.example.org/api/myService</a>など) - 他のサービスによってバリデートされました</span></td>
 </tr>
 <tr>
 <td class=""><span class="merged" id="all.EfDmi"  title="原文: sign-token.outbound.*.jwt-not-before-seconds"><code>sign-token.outbound.*.jwt-not-before-seconds</code></span></td>

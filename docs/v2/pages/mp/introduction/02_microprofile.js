@@ -18,13 +18,13 @@
 <p><span class="merged" id="all.2OCfyz.spl1" title="原文 : Helidon provides a MicroProfile server implementation (io.helidon.microprofile.server) that encapsulates the Helidon WebServer.">Helidonは、Helidon WebServerをカプセル化するMicroProfileサーバー実装(<code>io.helidon.microprofile.server</code>)を提供します。</span> <span class="merged" id="all.2OCfyz.spl2" title="原文 : You can either instantiate the server directly as is done in the Helidon MP Quickstart example or use its built-in main as shown below."><router-link @click.native="this.scrollFix('#guides/03_quickstart-mp.adoc')" to="#guides/03_quickstart-mp.adoc">「Helidon MPクイックスタートの例」</router-link>の場合と同様にサーバーを直接インスタンス化するか、次に示すように組込み<code>main</code>を使用できます。</span> </p>
 
 
-<h3 id="_maven_coordinates"><span class="merged" id="all.317oeS.3" title="原文 : Maven Coordinates">Maven連携</span></h3>
+<h3 id="_maven_coordinates"><span class="merged" id="all.317oeS.13" title="原文 : Maven Coordinates">Maven連携</span></h3>
 <div class="section">
-<p><span class="merged" id="all.3Y1dJo.3.spl1" title="原文 : The Managing Dependencies page describes how you should declare dependency management for Helidon applications."><router-link to="/about/04_managing-dependencies">「依存関係の管理」</router-link>ページでは、Helidonアプリケーションの依存性管理を宣言する方法について説明します。</span> <span class="merged" id="all.3Y1dJo.3.spl2" title="原文 : Then declare the following dependency in your project:">次に、プロジェクトで次の依存性を宣言します:</span> </p>
+<p><span class="merged" id="all.3Y1dJo.spl1" title="原文 : The Managing Dependencies page describes how you should declare dependency management for Helidon applications."><router-link to="/about/04_managing-dependencies">「依存関係の管理」</router-link>ページでは、Helidonアプリケーションの依存関係管理を宣言する方法について説明します。</span> <span class="merged" id="all.3Y1dJo.spl2" title="原文 : Then declare the following dependency in your project:">次に、プロジェクトで次の依存関係を宣言します:</span> </p>
 
 <markup
 lang="xml"
-title="完全なMicroProfileのMaven依存性"
+title="完全なMicroProfileのMaven依存関係"
 >&lt;dependency&gt;
   &lt;groupId&gt;io.helidon.microprofile.bundles&lt;/groupId&gt;
   &lt;artifactId&gt;helidon-microprofile&lt;/artifactId&gt;
@@ -34,7 +34,7 @@ title="完全なMicroProfileのMaven依存性"
 
 <markup
 lang="xml"
-title="MicroProfileのコア機能のみに対するMavenの依存性"
+title="MicroProfileのコア機能のみに対するMavenの依存関係"
 >&lt;dependency&gt;
   &lt;groupId&gt;io.helidon.microprofile.bundles&lt;/groupId&gt;
   &lt;artifactId&gt;helidon-microprofile-core&lt;/artifactId&gt;

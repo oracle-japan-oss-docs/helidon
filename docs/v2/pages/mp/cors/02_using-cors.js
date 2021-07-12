@@ -13,6 +13,20 @@
 </v-flex>
 </v-layout>
 
+<h2 id="maven-coordinates"><span class="merged" id="all.317oeS.2" title="原文 : Maven Coordinates">Maven連携</span></h2>
+<div class="section">
+<p><span class="merged" id="all.3KHkSD" title="原文 : To enable CORS add the following dependency to your project&rsquo;s pom.xml (see Managing Dependencies).">CORSを有効にするには、プロジェクトの<code>pom.xml</code>に次の依存関係を追加します(<router-link to="/about/04_managing-dependencies">「依存関係の管理」</router-link>を参照)。</span></p>
+
+<markup
+lang="xml"
+
+>&lt;dependency&gt;
+    &lt;groupId&gt;io.helidon.microprofile&lt;/groupId&gt;
+    &lt;artifactId&gt;helidon-microprofile-cors&lt;/artifactId&gt;
+&lt;/dependency&gt;</markup>
+
+</div>
+
 <h2 id="_understanding_the_crossorigin_annotation"><span class="merged" id="all.3qpLlQ" title="原文 : Understanding the @CrossOrigin Annotation"><code>@CrossOrigin</code>注釈の理解</span></h2>
 <div class="section">
 <p><span class="merged" id="all.MAawT" title="原文 : You set up CORS in Helidon MP using the @CrossOrigin annotation.">CORSは、<a href="./apidocs/io.helidon.microprofile.cors/io/helidon/microprofile/cors/CrossOrigin.html" id="" target="_blank" ><code>@CrossOrigin</code></a>注釈を使用してHelidon MPで設定します。</span></p>
@@ -38,19 +52,7 @@ lang="java"
 
 </li>
 <li>
-
-<div><p><span class="merged" id="all.rrMls" title="原文 : Add a dependency on the Helidon MP CORS artifact to your Maven pom.xml file.">Helidon MP CORSアーティファクトへの依存関係をMaven <code>pom.xml</code>ファイルに追加します。</span></p>
-
-<p><span class="merged" id="all.ec1sW.spl1" title="原文 : The Managing Dependencies page describes how you should declare dependency management for Helidon applications."><router-link to="/about/04_managing-dependencies">「依存関係の管理」</router-link>ページでは、Helidonアプリケーションの依存性管理を宣言する方法について説明します。</span> <span class="merged" id="all.ec1sW.spl2" title="原文 : For CORS support in Helidon MP, you must include the following dependency in your project:">Helidon MPでCORSをサポートするには、プロジェクトに次の依存性を含める必要があります:</span> </p>
-
-<markup
-lang="xml"
-
->&lt;dependency&gt;
-    &lt;groupId&gt;io.helidon.microprofile&lt;/groupId&gt;
-    &lt;artifactId&gt;helidon-microprofile-cors&lt;/artifactId&gt;
-&lt;/dependency&gt;</markup>
-</div>
+<span class="merged" id="all.1stjsg" title="原文 : Add a dependency on the Helidon MP CORS artifact to your Maven pom.xml file.">Helidon MP CORS <router-link @click.native="this.scrollFix('#maven-coordinates')" to="#maven-coordinates">「アーティファクト」</router-link>への依存関係をMaven <code>pom.xml</code>ファイルに追加します。</span>
 
 </li>
 <li>
@@ -82,7 +84,7 @@ lang="xml"
 
 <h2 id="_sample_application_using_the_crossorigin_annotation"><span class="merged" id="all.3dR4NJ" title="原文 : Sample Application Using the @CrossOrigin Annotation"><code>@CrossOrigin</code>注釈を使用するサンプル・アプリケーション</span></h2>
 <div class="section">
-<p><span class="merged" id="all.4KwIIe.spl1" title="原文 : In the Helidon MP Quickstart application you can change the greeting by sending a PUT request to the /greet/greeting resource."><a href="https://github.com/oracle/helidon/tree/2.2.1/examples//quickstarts/helidon-quickstart-mp" id="" target="_blank" >「Helidon MP Quickstartアプリケーション」</a>では、<code>PUT</code>リクエストを<code>/greet/greeting</code>リソースに送信することで、応答メッセージを変更できます。</span> <span class="merged" id="all.4KwIIe.spl2" title="原文 : The example below extends the Helidon MP QuickStart application (the greeting app) to:">次の例では、Helidon MP QuickStartアプリケーション(greetingアプリケーション)を次のように拡張します:</span> </p>
+<p><span class="merged" id="all.2lmpzD.spl1" title="原文 : In the Helidon MP Quickstart application you can change the greeting by sending a PUT request to the /greet/greeting resource."><a href="https://github.com/oracle/helidon/tree/2.3.1/examples/quickstarts/helidon-quickstart-mp" id="" target="_blank" >「Helidon MP Quickstartアプリケーション」</a>では、<code>PUT</code>リクエストを<code>/greet/greeting</code>リソースに送信することで、応答メッセージを変更できます。</span> <span class="merged" id="all.2lmpzD.spl2" title="原文 : The example below extends the Helidon MP QuickStart application (the greeting app) to:">次の例では、Helidon MP QuickStartアプリケーション(greetingアプリケーション)を次のように拡張します:</span> </p>
 
 <ul class="ulist">
 <li>
@@ -120,7 +122,7 @@ public void optionsForGreeting() {}</markup>
 
 </li>
 <li>
-<p><span class="merged" id="all.2b3Fwa" title="原文 : See the Helidon CORS support in action by building and running the CORS example."><a href="https://github.com/oracle/helidon/tree/2.2.1/examples//microprofile/cors" id="" target="_blank" >「CORSの例」</a>をビルドして実行し、動作中のHelidon CORSサポートを参照してください。</span></p>
+<p><span class="merged" id="all.1Xgvrw" title="原文 : See the Helidon CORS support in action by building and running the CORS example."><a href="https://github.com/oracle/helidon/tree/2.3.1/examples/microprofile/cors" id="" target="_blank" >「CORSの例」</a>をビルドして実行し、動作中のHelidon CORSサポートを参照してください。</span></p>
 
 </li>
 </ul>

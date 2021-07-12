@@ -13,11 +13,13 @@
 </v-flex>
 </v-layout>
 
-<h2 id="_dependency"><span class="merged" id="all.1l1QyT.3"  title="原文:: Dependency">依存性</span></h2>
+<h2 id="maven-coordinates"><span class="merged" id="all.317oeS.29" title="原文 : Maven Coordinates">Maven連携</span></h2>
 <div class="section">
+<p><span class="merged" id="all.mtDjU" title="原文 : To enable Testing add the following dependency to your project&rsquo;s pom.xml (see Managing Dependencies).">テストを有効にするには、プロジェクトの<code>pom.xml</code>に次の依存関係を追加します(<router-link to="/about/04_managing-dependencies">「依存関係の管理」</router-link>を参照)。</span></p>
+
 <markup
 lang="xml"
-title="Mavenの依存性"
+
 >&lt;dependency&gt;
     &lt;groupId&gt;io.helidon.microprofile.tests&lt;/groupId&gt;
     &lt;artifactId&gt;helidon-microprofile-tests-junit5&lt;/artifactId&gt;

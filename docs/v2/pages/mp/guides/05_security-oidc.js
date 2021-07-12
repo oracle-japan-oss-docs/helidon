@@ -327,7 +327,7 @@ title="Windowsでは次のコマンドを実行します:"
 
 <h3 id="_set_up_helidon"><span class="merged" id="all.MbZxe" title="原文 : Set up Helidon">Helidonの設定</span></h3>
 <div class="section">
-<p><span class="merged" id="all.4YZTMG.spl1" title="原文 : Use the Helidon MP Maven archetype to create a simple project.">Helidon MP Maven原型を使用して、単純なプロジェクトを作成します。</span> <span class="merged" id="all.4YZTMG.spl2" title="原文 : It will be used as an example to show how to set up Helidon.">Helidonの設定方法を示す例として使用されます。</span> <span class="merged" id="all.4YZTMG.spl3" title="原文 : Replace 2.2.1-SNAPSHOT by the latest helidon version."><code>2.2.1-SNAPSHOT</code>を最新のhelidonバージョンに置き換えます。</span> <span class="merged" id="all.4YZTMG.spl4" title="原文 : It will download the quickstart project into the current directory.">クイックスタート・プロジェクトが現在のディレクトリにダウンロードされます。</span> </p>
+<p><span class="merged" id="all.17iam0.spl1" title="原文 : Use the Helidon MP Maven archetype to create a simple project.">Helidon MP Maven原型を使用して、単純なプロジェクトを作成します。</span> <span class="merged" id="all.17iam0.spl2" title="原文 : It will be used as an example to show how to set up Helidon.">Helidonの設定方法を示す例として使用されます。</span> <span class="merged" id="all.17iam0.spl3" title="原文 : Replace 2.3.1 by the latest helidon version."><code>2.3.1</code>を最新のhelidonバージョンに置き換えます。</span> <span class="merged" id="all.17iam0.spl4" title="原文 : It will download the quickstart project into the current directory.">クイックスタート・プロジェクトが現在のディレクトリにダウンロードされます。</span> </p>
 
 <markup
 lang="bash"
@@ -335,7 +335,7 @@ title="Maven原型の実行"
 >mvn -U archetype:generate -DinteractiveMode=false \
     -DarchetypeGroupId=io.helidon.archetypes \
     -DarchetypeArtifactId=helidon-quickstart-mp \
-    -DarchetypeVersion=2.2.1-SNAPSHOT \
+    -DarchetypeVersion=2.3.1 \
     -DgroupId=io.helidon.examples \
     -DartifactId=helidon-quickstart-mp \
     -Dpackage=io.helidon.examples.quickstart.mp</markup>
@@ -352,7 +352,7 @@ title="プロジェクトはhelidon-quickstart-mpディレクトリからビル�
 
 <markup
 lang="xml"
-title="次の依存性を<code>pom.xml</code>に追加します:"
+title="次の依存関係を<code>pom.xml</code>に追加します:"
 >&lt;dependency&gt;
     &lt;groupId&gt;io.helidon.microprofile&lt;/groupId&gt;
     &lt;artifactId&gt;helidon-microprofile-oidc&lt;/artifactId&gt;
@@ -526,7 +526,7 @@ security:
 
 <p><span class="merged" id="all.3XdaSu.spl1" title="原文 : By adding this new application.yaml, it will append the properties to the application.yaml located into java/resources.">この新しいapplication.yamlを追加すると、<code>java/resources</code>にあるapplication.yamlにプロパティが追加されます。</span> <span class="merged" id="all.3XdaSu.spl2" title="原文 : The oidc properties are not overridden, and the server cannot decide which security provider to choose.">oidcプロパティはオーバーライドされず、サーバーは選択するセキュリティ・プロバイダを決定できません。</span> </p>
 
-<p><span class="merged" id="all.i1nJ5" title="原文 : Excluding oidc dependency during the test leaves only basic authentication security available for the tests.">テスト中にoidc依存性を除外すると、テストで使用可能な基本認証セキュリティのみが残されます。</span></p>
+<p><span class="merged" id="all.i1nJ5" title="原文 : Excluding oidc dependency during the test leaves only basic authentication security available for the tests.">テスト中にoidc依存関係を除外すると、テストで使用可能な基本認証セキュリティのみが残されます。</span></p>
 
 <markup
 lang="xml"

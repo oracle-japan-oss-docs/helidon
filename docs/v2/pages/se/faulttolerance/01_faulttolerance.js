@@ -2,7 +2,21 @@
 <span title="免責事項: ここに記載されているドキュメントは、お客様の利便性のために翻訳ソフトウエアにより機械的に翻訳(機械翻訳)したものです。オリジナルの英語版もあわせてご確認ください。" style="width:150px;padding-left:5px;padding-right:5px;border:#ff0000 solid 1px;border-color: gray;font-size: small;color:gray;margin: 0 auto 0 auto;text-align:center;"><a href="https://docs.oracle.com/cd/E85181_01/mt_disclaimer.html" target="disclaimer">&nbsp;&nbsp;機械翻訳について&nbsp;&nbsp;</a></span>
 
 
-<h2 id="_introduction"><span class="merged" id="all.4LJMHk.8"  title="原文:: Introduction">導入</span></h2>
+<h2 id="maven-coordinates"><span class="merged" id="all.317oeS.40" title="原文 : Maven Coordinates">Maven連携</span></h2>
+<div class="section">
+<p><span class="merged" id="all.4X3bY2" title="原文 : To enable Fault Tolerance add the following dependency to your project&rsquo;s pom.xml (see Managing Dependencies).">フォルト・トレランスを有効にするには、プロジェクトの<code>pom.xml</code>に次の依存関係を追加します(<router-link to="/about/04_managing-dependencies">「依存関係の管理」</router-link>を参照)。</span></p>
+
+<markup
+lang="xml"
+
+>&lt;dependency&gt;
+    &lt;groupId&gt;io.helidon.fault-tolerance&lt;/groupId&gt;
+    &lt;artifactId&gt;helidon-fault-tolerance&lt;/artifactId&gt;
+&lt;/dependency&gt;</markup>
+
+</div>
+
+<h2 id="_introduction"><span class="merged" id="all.4LJMHk.9"  title="原文:: Introduction">導入</span></h2>
 <div class="section">
 <p><span class="merged" id="all.4SCeRV.spl1" title="原文 : Helidon SE Fault Tolerance support is inspired by MicroProfile Fault Tolerance.">Helidon SEフォルト・トレランスのサポートは、<a href="https://download.eclipse.org/microprofile/microprofile-fault-tolerance-2.1.1/microprofile-fault-tolerance-spec.html" id="" target="_blank" >「MicroProfileフォルト・トレランス」</a>によって提供されます。</span> <span class="merged" id="all.4SCeRV.spl2" title="原文 : The API defines the notion of a fault handler that can be combined with other handlers to improve application robustness.">APIは、アプリケーションの堅牢性を向上させるために他のハンドラと組み合せることができる<em>「フォルト・ハンドラ」</em>の概念を定義します。</span> <span class="merged" id="all.4SCeRV.spl3" title="原文 : Handlers are created to manage error conditions (faults) that may occur in real-world application environments.">ハンドラは、実際のアプリケーション環境で発生する可能性のあるエラー状態(フォルト)を管理するために作成されます。</span> <span class="merged" id="all.4SCeRV.spl4" title="原文 : Examples include service restarts, network delays, temporal infrastructure instabilities, etc.">たとえば、サービスの再起動、ネットワークの遅延、一時的なインフラストラクチャの不安定性などです。</span> </p>
 
@@ -15,16 +29,7 @@
 
 <h3 id="_updating_your_pom"><span class="merged" id="all.35AqnK" title="原文 : Updating your POM">POMの更新</span></h3>
 <div class="section">
-<p><span class="merged" id="all.4a3B9P" title="原文 : The following POM dependency is necessary to use the Fault Tolerance SE API in a Helidon application.">Helidonアプリケーションでフォルト・トレランスSE APIを使用するには、次のPOM依存性が必要です。</span></p>
-
-<markup
-lang="xml"
-title="<code>pom.xml</code>のフォルト・トレランスSE依存性"
->&lt;dependency&gt;
-    &lt;groupId&gt;io.helidon.fault-tolerance&lt;/groupId&gt;
-    &lt;artifactId&gt;helidon-fault-tolerance&lt;/artifactId&gt;
-    &lt;version&gt;{helidon-version}&lt;/version&gt;
-&lt;/dependency&gt;</markup>
+<p><span class="merged" id="all.lnAaK" title="原文 : In order to use Fault Tolerance you first need to add the maven dependency to your pom.xml.">フォルト・トレランスを使用するには、最初に<router-link @click.native="this.scrollFix('#maven-coordinates')" to="#maven-coordinates">「maven依存関係」</router-link>を<code>pom.xml</code>に追加する必要があります。</span></p>
 
 </div>
 

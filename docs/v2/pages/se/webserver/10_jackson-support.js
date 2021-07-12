@@ -2,14 +2,9 @@
 <span title="免責事項: ここに記載されているドキュメントは、お客様の利便性のために翻訳ソフトウエアにより機械的に翻訳(機械翻訳)したものです。オリジナルの英語版もあわせてご確認ください。" style="width:150px;padding-left:5px;padding-right:5px;border:#ff0000 solid 1px;border-color: gray;font-size: small;color:gray;margin: 0 auto 0 auto;text-align:center;"><a href="https://docs.oracle.com/cd/E85181_01/mt_disclaimer.html" target="disclaimer">&nbsp;&nbsp;機械翻訳について&nbsp;&nbsp;</a></span>
 
 
-<h2 id="_jackson_support"><span class="merged" id="all.2DXHdl" title="原文 : Jackson Support">Jacksonのサポート</span></h2>
+<h2 id="maven-coordinates"><span class="merged" id="all.317oeS.68" title="原文 : Maven Coordinates">Maven連携</span></h2>
 <div class="section">
-<p><span class="merged" id="all.13Y9qZ.spl1" title="原文 : The WebServer supports Jackson.">WebServerは、<a href="https://github.com/FasterXML/jackson#jackson-project-home-github" id="" target="_blank" >Jackson</a>をサポートしています。</span> <span class="merged" id="all.13Y9qZ.spl2" title="原文 : When this support is enabled, Java objects will be serialized to and deserialized from JSON automatically using Jackson.">このサポートが有効な場合、Javaオブジェクトは、Jacksonを使用してJSONに対して自動的に直列化および直列化復元されます。</span> </p>
-
-
-<h3 id="_maven_coordinates"><span class="merged" id="all.317oeS.18" title="原文 : Maven Coordinates">Maven連携</span></h3>
-<div class="section">
-<p><span class="merged" id="all.4JnU1V.18" title="原文 : Declare the following dependency in your project:">プロジェクトで次の依存性を宣言します:</span></p>
+<p><span class="merged" id="all.2UmVUi" title="原文 : To enable Jackson Support add the following dependency to your project&rsquo;s pom.xml (see Managing Dependencies).">Jacksonサポートを有効にするには、プロジェクトの<code>pom.xml</code>に次の依存関係を追加します(<router-link to="/about/04_managing-dependencies">「依存関係の管理」</router-link>を参照)。</span></p>
 
 <markup
 lang="xml"
@@ -21,7 +16,12 @@ lang="xml"
 
 </div>
 
-<h3 id="_usage"><span class="merged" id="all.JUOSC.11"  title="原文:: Usage">使用方法</span></h3>
+<h2 id="_jackson_support"><span class="merged" id="all.2DXHdl" title="原文 : Jackson Support">Jacksonのサポート</span></h2>
+<div class="section">
+<p><span class="merged" id="all.13Y9qZ.spl1" title="原文 : The WebServer supports Jackson.">WebServerは、<a href="https://github.com/FasterXML/jackson#jackson-project-home-github" id="" target="_blank" >Jackson</a>をサポートしています。</span> <span class="merged" id="all.13Y9qZ.spl2" title="原文 : When this support is enabled, Java objects will be serialized to and deserialized from JSON automatically using Jackson.">このサポートが有効な場合、Javaオブジェクトは、Jacksonを使用してJSONに対して自動的に直列化および直列化復元されます。</span> </p>
+
+
+<h3 id="_usage"><span class="merged" id="all.JUOSC.12"  title="原文:: Usage">使用方法</span></h3>
 <div class="section">
 <p><span class="merged" id="all.2Wh0qe" title="原文 : To enable Jackson support, first create and register a JacksonSupport instance with a WebServer.Builder.">Jacksonサポートを有効にするには、まず<a href="https://helidon.io/docs/latest/apidocs/io/helidon/media/jackson/JacksonSupport.html" id="" target="_blank" ><code>JacksonSupport</code></a>インスタンスを作成し、<a href="https://helidon.io/docs/latest/apidocs/io/helidon/webserver/WebServer.Builder.html" id="" target="_blank" ><code>WebServer.Builder</code></a>に登録します。</span></p>
 

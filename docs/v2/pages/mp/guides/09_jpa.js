@@ -61,7 +61,7 @@ lang="bash"
     -DinteractiveMode=false \
     -DarchetypeGroupId=io.helidon.archetypes \
     -DarchetypeArtifactId=helidon-bare-mp \
-    -DarchetypeVersion=2.2.1-SNAPSHOT \
+    -DarchetypeVersion=2.3.1 \
     -DgroupId=io.helidon.example \
     -DartifactId=helidon-jpa \
     -Dpackage=io.helidon.example.jpa</markup>
@@ -72,7 +72,7 @@ lang="bash"
 
 <h2 id="_add_the_h2_database_driver_to_the_runtime_classpath"><span class="merged" id="all.4FIoJ.1" title="原文 : Add the H2 Database Driver to the Runtime Classpath">H2データベース・ドライバのランタイム・クラスパスへの追加</span></h2>
 <div class="section">
-<p><span class="merged" id="all.2mi5Cl.2" title="原文 : Add the following dependency in your pom.xml:"><code>pom.xml</code>に次の依存性を追加します:</span></p>
+<p><span class="merged" id="all.2mi5Cl.2" title="原文 : Add the following dependency in your pom.xml:"><code>pom.xml</code>に次の依存関係を追加します:</span></p>
 
 <markup
 lang="xml"
@@ -83,13 +83,13 @@ title="<code>pom.xml</code>"
     &lt;scope&gt;runtime&lt;/scope&gt;
 &lt;/dependency&gt;</markup>
 
-<p><span class="merged" id="all.3mRi1P.1" title="原文 : In a production application, you may use a different database, so in that case you may add a different database driver dependency here instead.">本番アプリケーションでは、別のデータベースを使用することもできます。その場合は、かわりにここで別のデータベース・ドライバの依存性を追加できます。</span></p>
+<p><span class="merged" id="all.3mRi1P.1" title="原文 : In a production application, you may use a different database, so in that case you may add a different database driver dependency here instead.">本番アプリケーションでは、別のデータベースを使用することもできます。その場合は、かわりにここで別のデータベース・ドライバの依存関係を追加できます。</span></p>
 
 </div>
 
 <h2 id="_add_the_hikari_connection_pool_extension_to_the_runtime_classpath"><span class="merged" id="all.3Jsz1M.1" title="原文 : Add the Hikari Connection Pool Extension to the Runtime Classpath">ランタイム・クラスパスへのHikari接続プール拡張機能の追加</span></h2>
 <div class="section">
-<p><span class="merged" id="all.2mi5Cl.3" title="原文 : Add the following dependency in your pom.xml:"><code>pom.xml</code>に次の依存性を追加します:</span></p>
+<p><span class="merged" id="all.2mi5Cl.3" title="原文 : Add the following dependency in your pom.xml:"><code>pom.xml</code>に次の依存関係を追加します:</span></p>
 
 <markup
 lang="xml"
@@ -104,7 +104,7 @@ title="<code>pom.xml</code>"
 
 <h2 id="_add_the_jta_extension_to_the_runtime_classpath"><span class="merged" id="all.26FzI2" title="原文 : Add the JTA Extension to the Runtime Classpath">JTA拡張機能のランタイム・クラスパスへの追加</span></h2>
 <div class="section">
-<p><span class="merged" id="all.2mi5Cl.4" title="原文 : Add the following dependency in your pom.xml:"><code>pom.xml</code>に次の依存性を追加します:</span></p>
+<p><span class="merged" id="all.2mi5Cl.4" title="原文 : Add the following dependency in your pom.xml:"><code>pom.xml</code>に次の依存関係を追加します:</span></p>
 
 <markup
 lang="xml"
@@ -119,7 +119,7 @@ title="<code>pom.xml</code>"
 
 <h2 id="_add_the_provider_independent_helidon_jpa_extension_to_the_runtime_classpath"><span class="merged" id="all.4XHXnA" title="原文 : Add the Provider-Independent Helidon JPA Extension to the Runtime Classpath">プロバイダに依存しないHelidon JPA拡張機能のランタイム・クラスパスへの追加</span></h2>
 <div class="section">
-<p><span class="merged" id="all.2mi5Cl.5" title="原文 : Add the following dependency in your pom.xml:"><code>pom.xml</code>に次の依存性を追加します:</span></p>
+<p><span class="merged" id="all.2mi5Cl.5" title="原文 : Add the following dependency in your pom.xml:"><code>pom.xml</code>に次の依存関係を追加します:</span></p>
 
 <markup
 lang="xml"
@@ -134,7 +134,7 @@ title="<code>pom.xml</code>"
 
 <h2 id="_add_the_eclipselink_jpa_extension_to_the_runtime_classpath"><span class="merged" id="all.4XCkd4" title="原文 : Add the EclipseLink JPA Extension to the Runtime Classpath">EclipseLink JPA拡張機能のランタイム・クラスパスへの追加</span></h2>
 <div class="section">
-<p><span class="merged" id="all.2mi5Cl.6" title="原文 : Add the following dependency in your pom.xml:"><code>pom.xml</code>に次の依存性を追加します:</span></p>
+<p><span class="merged" id="all.2mi5Cl.6" title="原文 : Add the following dependency in your pom.xml:"><code>pom.xml</code>に次の依存関係を追加します:</span></p>
 
 <markup
 lang="xml"
@@ -147,9 +147,9 @@ title="<code>pom.xml</code>"
 
 </div>
 
-<h2 id="_add_the_jta_and_jpa_dependencies_to_the_provided_classpath"><span class="merged" id="all.4LY8VK" title="原文 : Add the JTA and JPA Dependencies to the Provided Classpath">指定したクラスパスへのJTAおよびJPA依存性の追加</span></h2>
+<h2 id="_add_the_jta_and_jpa_dependencies_to_the_provided_classpath"><span class="merged" id="all.4LY8VK" title="原文 : Add the JTA and JPA Dependencies to the Provided Classpath">指定したクラスパスへのJTAおよびJPA依存関係の追加</span></h2>
 <div class="section">
-<p><span class="merged" id="all.4fQ6aP" title="原文 : Add the following dependencies in your pom.xml:"><code>pom.xml</code>に次の依存性を追加します:</span></p>
+<p><span class="merged" id="all.4fQ6aP" title="原文 : Add the following dependencies in your pom.xml:"><code>pom.xml</code>に次の依存関係を追加します:</span></p>
 
 <markup
 lang="xml"

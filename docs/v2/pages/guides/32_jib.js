@@ -39,7 +39,7 @@
 <div class="section">
 <p><span class="merged" id="all.1BmNGX.spl1" title="原文 : Jib is a java tool chain for building Docker images for Java applications."><a href="https://github.com/GoogleContainerTools/jib" id="" target="_blank" >Jib</a>は、Javaアプリケーション用のDockerイメージをビルドするためのjavaツール・チェーンです。</span> <span class="merged" id="all.1BmNGX.spl2" title="原文 : It is integrated with Maven and Gradle and uses a distroless base image to produce small images.">MavenおよびGradleと統合され、<a href="https://github.com/GoogleContainerTools/distroless" id="" target="_blank" >ディストロレス</a>・ベース・イメージを使用して小さいイメージを生産します。</span> </p>
 
-<p><span class="merged" id="all.ecV07" title="原文 : Jib does not require the docker command or the Docker daemon, there is no need to solve the Docker-in-Docker problem in order to build Docker images as part of your continuous integration.">Jibには<code>docker</code>コマンドやDockerデーモンは必要ありません。継続的インテグレーションの一環としてDockerイメージをビルドするために、Docker-in-Dockerの問題を解決する必要はありません。</span></p>
+<p><span class="merged" id="all.ecV07" title="原文 : Jib does not require the docker command or the Docker daemon, there is no need to solve the Docker-in-Docker problem in order to build Docker images as part of your continuous integration.">Jibには<code>docker</code>コマンドやDockerデーモンは必要ありません。継続的統合の一環としてDockerイメージをビルドするために、Docker-in-Dockerの問題を解決する必要はありません。</span></p>
 
 <div class="admonition note">
 <p class="admonition-inline"><span class="merged" id="all.1H58xh" title="原文 : The docker command is only required for local usage when registering images in your local Docker registry."><code>docker</code>コマンドは、ローカルDockerレジストリにイメージを登録するときにローカルで使用する場合にのみ必要です。</span></p>

@@ -72,7 +72,7 @@ WebServer webServer = WebServer.create(routing, config.get("server")); <span cla
 <th><span class="merged" id="all.28YvFB.2" title="原文 : Configuration key">構成キー</span></th>
 <th><span class="merged" id="all.3T02MF.6"  title="原文:: Default value">デフォルト値</span></th>
 <th><span class="merged" id="all.2fU2gv.3"  title="原文:: Java type">Javaタイプ</span></th>
-<th><span class="merged" id="all.4JM9z7.16"  title="原文:: Description">説明</span></th>
+<th><span class="merged" id="all.4JM9z7.20"  title="原文:: Description">説明</span></th>
 </tr>
 </thead>
 <tbody>
@@ -146,7 +146,7 @@ WebServer webServer = WebServer.create(routing, config.get("server")); <span cla
 <td class=""><span class="merged" id="all.1Tpqna" title="原文 : validate-headers"><strong><code>validate-headers</code></strong></span></td>
 <td class=""><span class="merged" id="all.xEiHU.30"  title="原文: true"><code>true</code></span></td>
 <td class=""><span class="merged" id="all.2XHIO8.3"  title="原文:: boolean">boolean</span></td>
-<td class=""><span class="merged" id="all.WUWjV" title="原文 : Whether to validate header names, if they contain illegal characters.">ヘッダー名に無効な文字が含まれている場合に検証するかどうか。</span></td>
+<td class=""><span class="merged" id="all.WUWjV" title="原文 : Whether to validate header names, if they contain illegal characters.">ヘッダー名に無効な文字が含まれている場合にバリデートするかどうか。</span></td>
 </tr>
 <tr>
 <td class=""><span class="merged" id="all.2dZn1w" title="原文 : initial-buffer-size"><strong><code>initial-buffer-size</code></strong></span></td>

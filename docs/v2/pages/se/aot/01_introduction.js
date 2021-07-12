@@ -52,55 +52,55 @@
 </thead>
 <tbody>
 <tr>
-<td class=""><span class="merged" id="all.5W6W2.47" title="原文 : ✅">✅</span></td>
+<td class=""><span class="merged" id="all.5W6W2.54" title="原文 : ✅">✅</span></td>
 <td class=""><span class="merged" id="all.G09eF.1"  title="原文:: Config"><strong>構成</strong></span></td>
 <td class=""><span class="merged" id="all.3rjwSI.3"  title="原文:: Config">構成</span></td>
 <td class="">&#160;</td>
 </tr>
 <tr>
-<td class=""><span class="merged" id="all.5W6W2.48" title="原文 : ✅">✅</span></td>
+<td class=""><span class="merged" id="all.5W6W2.55" title="原文 : ✅">✅</span></td>
 <td class=""><strong>&#160;</strong></td>
-<td class=""><span class="merged" id="all.Nhjlz.1"  title="原文:: Encryption">暗号化</span></td>
+<td class=""><span class="merged" id="all.Nhjlz.2"  title="原文:: Encryption">暗号化</span></td>
 <td class="">&#160;</td>
 </tr>
 <tr>
-<td class=""><span class="merged" id="all.5W6W2.49" title="原文 : ✅">✅</span></td>
+<td class=""><span class="merged" id="all.5W6W2.56" title="原文 : ✅">✅</span></td>
 <td class=""><strong>&#160;</strong></td>
 <td class=""><span class="merged" id="all.4ZLyDS" title="原文 : HOCON">HOCON</span></td>
 <td class="">&#160;</td>
 </tr>
 <tr>
-<td class=""><span class="merged" id="all.5W6W2.50" title="原文 : ✅">✅</span></td>
+<td class=""><span class="merged" id="all.5W6W2.57" title="原文 : ✅">✅</span></td>
 <td class=""><strong>&#160;</strong></td>
 <td class=""><span class="merged" id="all.18OueY"  title="原文:: Object Mapping">オブジェクト・マッピング</span></td>
 <td class="">&#160;</td>
 </tr>
 <tr>
-<td class=""><span class="merged" id="all.5W6W2.51" title="原文 : ✅">✅</span></td>
+<td class=""><span class="merged" id="all.5W6W2.58" title="原文 : ✅">✅</span></td>
 <td class=""><strong>&#160;</strong></td>
 <td class=""><span class="merged" id="all.42WB1c.2" title="原文 : YAML">YAML</span></td>
 <td class="">&#160;</td>
 </tr>
 <tr>
-<td class=""><span class="merged" id="all.15jl0W.7" title="原文 : ❓">❓</span></td>
+<td class=""><span class="merged" id="all.15jl0W.3" title="原文 : ❓">❓</span></td>
 <td class=""><strong>&#160;</strong></td>
 <td class=""><span class="merged" id="all.2Er12C" title="原文 : etcd">etcd</span></td>
-<td class=""><span class="merged" id="all.iyV9h.7" title="原文 : Not yet tested.">テストされていません。</span></td>
+<td class=""><span class="merged" id="all.iyV9h.3" title="原文 : Not yet tested.">テストされていません。</span></td>
 </tr>
 <tr>
-<td class=""><span class="merged" id="all.5W6W2.52" title="原文 : ✅">✅</span></td>
+<td class=""><span class="merged" id="all.5W6W2.59" title="原文 : ✅">✅</span></td>
 <td class=""><strong>&#160;</strong></td>
 <td class=""><span class="merged" id="all.1UbBa0"  title="原文:: git">git</span></td>
 <td class="">&#160;</td>
 </tr>
 <tr>
-<td class=""><span class="merged" id="all.5W6W2.53" title="原文 : ✅">✅</span></td>
+<td class=""><span class="merged" id="all.5W6W2.60" title="原文 : ✅">✅</span></td>
 <td class=""><span class="merged" id="all.2zgzWe" title="原文 : Db Client"><strong>DBクライアント</strong></span></td>
 <td class=""><span class="merged" id="all.1L5eEp" title="原文 : Db Client">DBクライアント</span></td>
 <td class="">&#160;</td>
 </tr>
 <tr>
-<td class=""><span class="merged" id="all.5W6W2.54" title="原文 : ✅">✅</span></td>
+<td class=""><span class="merged" id="all.5W6W2.61" title="原文 : ✅">✅</span></td>
 <td class=""><strong>&#160;</strong></td>
 <td class=""><span class="merged" id="all.1G6No9.1"  title="原文:: Health Check">ヘルス・チェック</span></td>
 <td class="">&#160;</td>
@@ -112,321 +112,339 @@
 <td class=""><span class="merged" id="all.3bLUr4" title="原文 : Tested with Helidon modules for Oracle and H2 driver (see examples)">OracleおよびH2ドライバ用のHelidonモジュールでテスト済(例を参照)</span></td>
 </tr>
 <tr>
-<td class=""><span class="merged" id="all.5W6W2.55" title="原文 : ✅">✅</span></td>
+<td class=""><span class="merged" id="all.5W6W2.62" title="原文 : ✅">✅</span></td>
 <td class=""><strong>&#160;</strong></td>
 <td class=""><span class="merged" id="all.4LL0ot.6"  title="原文:: Metrics">メトリクス</span></td>
 <td class="">&#160;</td>
 </tr>
 <tr>
-<td class=""><span class="merged" id="all.5W6W2.56" title="原文 : ✅">✅</span></td>
+<td class=""><span class="merged" id="all.5W6W2.63" title="原文 : ✅">✅</span></td>
 <td class=""><strong>&#160;</strong></td>
 <td class=""><span class="merged" id="all.4Mk18P.3"  title="原文:: Tracing">トレース</span></td>
 <td class="">&#160;</td>
 </tr>
 <tr>
-<td class=""><span class="merged" id="all.5W6W2.57" title="原文 : ✅">✅</span></td>
+<td class=""><span class="merged" id="all.5W6W2.64" title="原文 : ✅">✅</span></td>
 <td class=""><strong>&#160;</strong></td>
 <td class=""><span class="merged" id="all.24ZfqJ" title="原文 : mongo">mongo</span></td>
 <td class="">&#160;</td>
 </tr>
 <tr>
-<td class=""><span class="merged" id="all.5W6W2.58" title="原文 : ✅">✅</span></td>
+<td class=""><span class="merged" id="all.5W6W2.65" title="原文 : ✅">✅</span></td>
 <td class=""><span class="merged" id="all.1gPV1X.1"  title="原文:: Health"><strong>ヘルス</strong></span></td>
 <td class=""><span class="merged" id="all.3gjytB.1"  title="原文:: Health">Health</span></td>
 <td class="">&#160;</td>
 </tr>
 <tr>
-<td class=""><span class="merged" id="all.5W6W2.59" title="原文 : ✅">✅</span></td>
+<td class=""><span class="merged" id="all.5W6W2.66" title="原文 : ✅">✅</span></td>
 <td class=""><strong>&#160;</strong></td>
 <td class=""><span class="merged" id="all.3NkOjw.1"  title="原文:: Built-ins">ビルトイン</span></td>
 <td class="">&#160;</td>
 </tr>
 <tr>
-<td class=""><span class="merged" id="all.5W6W2.60" title="原文 : ✅">✅</span></td>
+<td class=""><span class="merged" id="all.5W6W2.67" title="原文 : ✅">✅</span></td>
 <td class=""><span class="merged" id="all.3rAKtw.1"  title="原文:: Messaging"><strong>メッセージング</strong></span></td>
 <td class=""><span class="merged" id="all.1zdT7a.1"  title="原文:: Messaging">メッセージング</span></td>
 <td class="">&#160;</td>
 </tr>
 <tr>
-<td class=""><span class="merged" id="all.5W6W2.61" title="原文 : ✅">✅</span></td>
-<td class=""><span class="merged" id="all.3H9ySM.2"  title="原文:: Metrics"><strong>メトリクス</strong></span></td>
+<td class=""><span class="merged" id="all.5W6W2.68" title="原文 : ✅">✅</span></td>
+<td class=""><span class="merged" id="all.3H9ySM.1"  title="原文:: Metrics"><strong>メトリクス</strong></span></td>
 <td class=""><span class="merged" id="all.4LL0ot.7"  title="原文:: Metrics">メトリクス</span></td>
 <td class="">&#160;</td>
 </tr>
 <tr>
-<td class=""><span class="merged" id="all.5W6W2.62" title="原文 : ✅">✅</span></td>
+<td class=""><span class="merged" id="all.5W6W2.69" title="原文 : ✅">✅</span></td>
 <td class=""><span class="merged" id="all.1JX3D6"  title="原文: OpenAPI"><strong>OpenAPI</strong></span></td>
 <td class=""><span class="merged" id="all.1xELY5.1"  title="原文: OpenAPI">OpenAPI</span></td>
 <td class="">&#160;</td>
 </tr>
 <tr>
-<td class=""><span class="merged" id="all.5W6W2.63" title="原文 : ✅">✅</span></td>
+<td class=""><span class="merged" id="all.5W6W2.70" title="原文 : ✅">✅</span></td>
 <td class=""><span class="merged" id="all.S66bH.1"  title="原文:: Security"><strong>セキュリティ</strong></span></td>
 <td class=""><span class="merged" id="all.17B62B.2"  title="原文:: Security">セキュリティ</span></td>
 <td class="">&#160;</td>
 </tr>
 <tr>
-<td class=""><span class="merged" id="all.5W6W2.64" title="原文 : ✅">✅</span></td>
+<td class=""><span class="merged" id="all.5W6W2.71" title="原文 : ✅">✅</span></td>
 <td class=""><strong>&#160;</strong></td>
 <td class=""><span class="merged" id="all.3y2IdP.1" title="原文 : Integration: Jersey">統合: Jersey</span></td>
 <td class="">&#160;</td>
 </tr>
 <tr>
-<td class=""><span class="merged" id="all.5W6W2.65" title="原文 : ✅">✅</span></td>
+<td class=""><span class="merged" id="all.5W6W2.72" title="原文 : ✅">✅</span></td>
 <td class=""><strong>&#160;</strong></td>
 <td class=""><span class="merged" id="all.xLtxb.1" title="原文 : Integration: WebServer">統合: WebServer</span></td>
 <td class="">&#160;</td>
 </tr>
 <tr>
-<td class=""><span class="merged" id="all.5W6W2.66" title="原文 : ✅">✅</span></td>
+<td class=""><span class="merged" id="all.5W6W2.73" title="原文 : ✅">✅</span></td>
 <td class=""><strong>&#160;</strong></td>
 <td class=""><span class="merged" id="all.1tZse1.1" title="原文 : Integration: gRPC">統合: gRPC</span></td>
 <td class="">&#160;</td>
 </tr>
 <tr>
-<td class=""><span class="merged" id="all.5W6W2.67" title="原文 : ✅">✅</span></td>
+<td class=""><span class="merged" id="all.5W6W2.74" title="原文 : ✅">✅</span></td>
 <td class=""><strong>&#160;</strong></td>
 <td class=""><span class="merged" id="all.4Dxl7j.1" title="原文 : OIDC">OIDC</span></td>
 <td class="">&#160;</td>
 </tr>
 <tr>
-<td class=""><span class="merged" id="all.5W6W2.68" title="原文 : ✅">✅</span></td>
+<td class=""><span class="merged" id="all.5W6W2.75" title="原文 : ✅">✅</span></td>
 <td class=""><strong>&#160;</strong></td>
 <td class=""><span class="merged" id="all.2tIIr6.1" title="原文 : Provider: ABAC">Provider: ABAC</span></td>
 <td class="">&#160;</td>
 </tr>
 <tr>
-<td class=""><span class="merged" id="all.5W6W2.69" title="原文 : ✅">✅</span></td>
+<td class=""><span class="merged" id="all.5W6W2.76" title="原文 : ✅">✅</span></td>
 <td class=""><strong>&#160;</strong></td>
 <td class=""><span class="merged" id="all.1F2TWO.1" title="原文 : Provider/ABAC/Policy: EL">Provider/ABAC/Policy: EL</span></td>
-<td class=""><span class="merged" id="all.iyV9h.8" title="原文 : Not yet tested.">テストされていません。</span></td>
+<td class=""><span class="merged" id="all.3G7Sdn.1" title="原文 : Requires reflection configuration for used classes.">使用されるクラスのリフレクション構成が必要です。</span></td>
 </tr>
 <tr>
-<td class=""><span class="merged" id="all.5W6W2.70" title="原文 : ✅">✅</span></td>
+<td class=""><span class="merged" id="all.5W6W2.77" title="原文 : ✅">✅</span></td>
 <td class=""><strong>&#160;</strong></td>
 <td class=""><span class="merged" id="all.3T4kTO.1" title="原文 : Provider/ABAC: Role">Provider/ABAC: Role</span></td>
 <td class="">&#160;</td>
 </tr>
 <tr>
-<td class=""><span class="merged" id="all.5W6W2.71" title="原文 : ✅">✅</span></td>
+<td class=""><span class="merged" id="all.5W6W2.78" title="原文 : ✅">✅</span></td>
 <td class=""><strong>&#160;</strong></td>
 <td class=""><span class="merged" id="all.2KPFZB.1" title="原文 : Provider/ABAC: Scope">Provider/ABAC: Scope</span></td>
 <td class="">&#160;</td>
 </tr>
 <tr>
-<td class=""><span class="merged" id="all.5W6W2.72" title="原文 : ✅">✅</span></td>
+<td class=""><span class="merged" id="all.5W6W2.79" title="原文 : ✅">✅</span></td>
 <td class=""><strong>&#160;</strong></td>
 <td class=""><span class="merged" id="all.2ReCqH.1" title="原文 : Provider/ABAC: Time">Provider/ABAC: Time</span></td>
 <td class="">&#160;</td>
 </tr>
 <tr>
-<td class=""><span class="merged" id="all.15jl0W.8" title="原文 : ❓">❓</span></td>
+<td class=""><span class="merged" id="all.15jl0W.4" title="原文 : ❓">❓</span></td>
 <td class=""><strong>&#160;</strong></td>
 <td class=""><span class="merged" id="all.49a1QL.1" title="原文 : Provider: Google Login">Provider: Googleログイン</span></td>
-<td class=""><span class="merged" id="all.iyV9h.9" title="原文 : Not yet tested.">テストされていません。</span></td>
+<td class=""><span class="merged" id="all.iyV9h.4" title="原文 : Not yet tested.">テストされていません。</span></td>
 </tr>
 <tr>
-<td class=""><span class="merged" id="all.5W6W2.73" title="原文 : ✅">✅</span></td>
+<td class=""><span class="merged" id="all.5W6W2.80" title="原文 : ✅">✅</span></td>
 <td class=""><strong>&#160;</strong></td>
 <td class=""><span class="merged" id="all.4UtKqZ.1" title="原文 : Provider: Header">Provider: Header</span></td>
 <td class="">&#160;</td>
 </tr>
 <tr>
-<td class=""><span class="merged" id="all.5W6W2.74" title="原文 : ✅">✅</span></td>
+<td class=""><span class="merged" id="all.5W6W2.81" title="原文 : ✅">✅</span></td>
 <td class=""><strong>&#160;</strong></td>
 <td class=""><span class="merged" id="all.1Dsh1P.1" title="原文 : Provider: HTTP Basic">Provider: HTTP Basic</span></td>
 <td class="">&#160;</td>
 </tr>
 <tr>
-<td class=""><span class="merged" id="all.5W6W2.75" title="原文 : ✅">✅</span></td>
+<td class=""><span class="merged" id="all.5W6W2.82" title="原文 : ✅">✅</span></td>
 <td class=""><strong>&#160;</strong></td>
 <td class=""><span class="merged" id="all.1sZSdM.1" title="原文 : Provider: HTTP Digest">Provider: HTTPダイジェスト</span></td>
 <td class="">&#160;</td>
 </tr>
 <tr>
-<td class=""><span class="merged" id="all.5W6W2.76" title="原文 : ✅">✅</span></td>
+<td class=""><span class="merged" id="all.5W6W2.83" title="原文 : ✅">✅</span></td>
 <td class=""><strong>&#160;</strong></td>
 <td class=""><span class="merged" id="all.1kBjUX.1" title="原文 : Provider: HTTP Signatures">Provider: HTTPシグネチャ</span></td>
 <td class="">&#160;</td>
 </tr>
 <tr>
-<td class=""><span class="merged" id="all.15jl0W.9" title="原文 : ❓">❓</span></td>
+<td class=""><span class="merged" id="all.15jl0W.5" title="原文 : ❓">❓</span></td>
 <td class=""><strong>&#160;</strong></td>
 <td class=""><span class="merged" id="all.1Lw028.1" title="原文 : Provider: IDCS Role Mapper">Provider: IDCSロール・マッパー</span></td>
-<td class=""><span class="merged" id="all.iyV9h.10" title="原文 : Not yet tested.">テストされていません。</span></td>
+<td class=""><span class="merged" id="all.iyV9h.5" title="原文 : Not yet tested.">テストされていません。</span></td>
 </tr>
 <tr>
-<td class=""><span class="merged" id="all.5W6W2.77" title="原文 : ✅">✅</span></td>
+<td class=""><span class="merged" id="all.5W6W2.84" title="原文 : ✅">✅</span></td>
 <td class=""><strong>&#160;</strong></td>
 <td class=""><span class="merged" id="all.1nzqPO.1" title="原文 : Provider: JWT">Provider: JWT</span></td>
 <td class="">&#160;</td>
 </tr>
 <tr>
-<td class=""><span class="merged" id="all.5W6W2.78" title="原文 : ✅">✅</span></td>
+<td class=""><span class="merged" id="all.5W6W2.85" title="原文 : ✅">✅</span></td>
 <td class=""><span class="merged" id="all.129ViC.1" title="原文 : Tracing"><strong>トレース</strong></span></td>
 <td class=""><span class="merged" id="all.4Mk18P.4"  title="原文:: Tracing">トレース</span></td>
 <td class="">&#160;</td>
 </tr>
 <tr>
-<td class=""><span class="merged" id="all.5W6W2.79" title="原文 : ✅">✅</span></td>
+<td class=""><span class="merged" id="all.5W6W2.86" title="原文 : ✅">✅</span></td>
 <td class=""><strong>&#160;</strong></td>
 <td class=""><span class="merged" id="all.k4WNd.1" title="原文 : Integration: Jersey Server">統合: Jersey Server</span></td>
 <td class="">&#160;</td>
 </tr>
 <tr>
-<td class=""><span class="merged" id="all.5W6W2.80" title="原文 : ✅">✅</span></td>
+<td class=""><span class="merged" id="all.5W6W2.87" title="原文 : ✅">✅</span></td>
 <td class=""><strong>&#160;</strong></td>
 <td class=""><span class="merged" id="all.3KLmck.1" title="原文 : Integration: Jersey Client">統合: Jerseyクライアント</span></td>
 <td class="">&#160;</td>
 </tr>
 <tr>
-<td class=""><span class="merged" id="all.5W6W2.81" title="原文 : ✅">✅</span></td>
+<td class=""><span class="merged" id="all.5W6W2.88" title="原文 : ✅">✅</span></td>
 <td class=""><strong>&#160;</strong></td>
 <td class=""><span class="merged" id="all.1hFTJC.1" title="原文 : Jaeger">Jaeger</span></td>
 <td class="">&#160;</td>
 </tr>
 <tr>
-<td class=""><span class="merged" id="all.5W6W2.82" title="原文 : ✅">✅</span></td>
+<td class=""><span class="merged" id="all.5W6W2.89" title="原文 : ✅">✅</span></td>
 <td class=""><strong>&#160;</strong></td>
 <td class=""><span class="merged" id="all.3ObgPq.1" title="原文 : Zipkin">Zipkin</span></td>
 <td class="">&#160;</td>
 </tr>
 <tr>
-<td class=""><span class="merged" id="all.5W6W2.83" title="原文 : ✅">✅</span></td>
+<td class=""><span class="merged" id="all.5W6W2.90" title="原文 : ✅">✅</span></td>
 <td class=""><span class="merged" id="all.4NF9PA"  title="原文: WebClient"><strong>WebClient</strong></span></td>
 <td class=""><span class="merged" id="all.5tqDq"  title="原文: WebClient">WebClient</span></td>
 <td class="">&#160;</td>
 </tr>
 <tr>
-<td class=""><span class="merged" id="all.5W6W2.84" title="原文 : ✅">✅</span></td>
+<td class=""><span class="merged" id="all.5W6W2.91" title="原文 : ✅">✅</span></td>
 <td class=""><strong>&#160;</strong></td>
 <td class=""><span class="merged" id="all.2Of9L4.1"  title="原文:: Web Client">Webクライアント</span></td>
 <td class="">&#160;</td>
 </tr>
 <tr>
-<td class=""><span class="merged" id="all.5W6W2.85" title="原文 : ✅">✅</span></td>
+<td class=""><span class="merged" id="all.5W6W2.92" title="原文 : ✅">✅</span></td>
 <td class=""><strong>&#160;</strong></td>
 <td class=""><span class="merged" id="all.2ghgYh"  title="原文:: Jackson">Jackson</span></td>
 <td class="">&#160;</td>
 </tr>
 <tr>
-<td class=""><span class="merged" id="all.5W6W2.86" title="原文 : ✅">✅</span></td>
+<td class=""><span class="merged" id="all.5W6W2.93" title="原文 : ✅">✅</span></td>
 <td class=""><strong>&#160;</strong></td>
 <td class=""><span class="merged" id="all.1mODvU" title="原文 : JSON-B">JSON-B</span></td>
 <td class="">&#160;</td>
 </tr>
 <tr>
-<td class=""><span class="merged" id="all.5W6W2.87" title="原文 : ✅">✅</span></td>
+<td class=""><span class="merged" id="all.5W6W2.94" title="原文 : ✅">✅</span></td>
 <td class=""><strong>&#160;</strong></td>
 <td class=""><span class="merged" id="all.2gLB0a" title="原文 : JSON-P">JSON-P</span></td>
 <td class="">&#160;</td>
 </tr>
 <tr>
-<td class=""><span class="merged" id="all.5W6W2.88" title="原文 : ✅">✅</span></td>
+<td class=""><span class="merged" id="all.5W6W2.95" title="原文 : ✅">✅</span></td>
 <td class=""><strong>&#160;</strong></td>
 <td class=""><span class="merged" id="all.4LL0ot.8"  title="原文:: Metrics">メトリクス</span></td>
 <td class="">&#160;</td>
 </tr>
 <tr>
-<td class=""><span class="merged" id="all.5W6W2.89" title="原文 : ✅">✅</span></td>
+<td class=""><span class="merged" id="all.5W6W2.96" title="原文 : ✅">✅</span></td>
 <td class=""><strong>&#160;</strong></td>
 <td class=""><span class="merged" id="all.3s6VUz" title="原文 : Multi-part">Multi-part</span></td>
 <td class="">&#160;</td>
 </tr>
 <tr>
-<td class=""><span class="merged" id="all.5W6W2.90" title="原文 : ✅">✅</span></td>
+<td class=""><span class="merged" id="all.5W6W2.97" title="原文 : ✅">✅</span></td>
 <td class=""><strong>&#160;</strong></td>
 <td class=""><span class="merged" id="all.17B62B.3"  title="原文:: Security">セキュリティ</span></td>
 <td class="">&#160;</td>
 </tr>
 <tr>
-<td class=""><span class="merged" id="all.5W6W2.91" title="原文 : ✅">✅</span></td>
+<td class=""><span class="merged" id="all.5W6W2.98" title="原文 : ✅">✅</span></td>
 <td class=""><strong>&#160;</strong></td>
 <td class=""><span class="merged" id="all.4Mk18P.5"  title="原文:: Tracing">トレース</span></td>
 <td class="">&#160;</td>
 </tr>
 <tr>
-<td class=""><span class="merged" id="all.5W6W2.92" title="原文 : ✅">✅</span></td>
+<td class=""><span class="merged" id="all.5W6W2.99" title="原文 : ✅">✅</span></td>
 <td class=""><span class="merged" id="all.30Zw5"  title="原文: WebServer"><strong>WebServer</strong></span></td>
 <td class=""><span class="merged" id="all.2mhjof"  title="原文: WebServer">WebServer</span></td>
 <td class="">&#160;</td>
 </tr>
 <tr>
-<td class=""><span class="merged" id="all.5W6W2.93" title="原文 : ✅">✅</span></td>
+<td class=""><span class="merged" id="all.5W6W2.100" title="原文 : ✅">✅</span></td>
 <td class=""><strong>&#160;</strong></td>
 <td class=""><span class="merged" id="all.38NrJK.1"  title="原文:: Access Log">アクセス・ログ</span></td>
 <td class="">&#160;</td>
 </tr>
 <tr>
-<td class=""><span class="merged" id="all.5W6W2.94" title="原文 : ✅">✅</span></td>
+<td class=""><span class="merged" id="all.5W6W2.101" title="原文 : ✅">✅</span></td>
 <td class=""><strong>&#160;</strong></td>
 <td class=""><span class="merged" id="all.36nAfS.1"  title="原文:: CORS">CORS</span></td>
 <td class="">&#160;</td>
 </tr>
 <tr>
-<td class=""><span class="merged" id="all.5W6W2.95" title="原文 : ✅">✅</span></td>
+<td class=""><span class="merged" id="all.5W6W2.102" title="原文 : ✅">✅</span></td>
 <td class=""><strong>&#160;</strong></td>
 <td class=""><span class="merged" id="all.2ghgYh.1"  title="原文:: Jackson">Jackson</span></td>
 <td class="">&#160;</td>
 </tr>
 <tr>
-<td class=""><span class="merged" id="all.5W6W2.96" title="原文 : ✅">✅</span></td>
+<td class=""><span class="merged" id="all.5W6W2.103" title="原文 : ✅">✅</span></td>
 <td class=""><strong>&#160;</strong></td>
 <td class=""><span class="merged" id="all.4FQBwO"  title="原文:: Jersey">Jersey</span></td>
 <td class="">&#160;</td>
 </tr>
 <tr>
-<td class=""><span class="merged" id="all.5W6W2.97" title="原文 : ✅">✅</span></td>
+<td class=""><span class="merged" id="all.5W6W2.104" title="原文 : ✅">✅</span></td>
 <td class=""><strong>&#160;</strong></td>
 <td class=""><span class="merged" id="all.1mODvU.1" title="原文 : JSON-B">JSON-B</span></td>
 <td class="">&#160;</td>
 </tr>
 <tr>
-<td class=""><span class="merged" id="all.5W6W2.98" title="原文 : ✅">✅</span></td>
+<td class=""><span class="merged" id="all.5W6W2.105" title="原文 : ✅">✅</span></td>
 <td class=""><strong>&#160;</strong></td>
 <td class=""><span class="merged" id="all.2gLB0a.1" title="原文 : JSON-P">JSON-P</span></td>
 <td class="">&#160;</td>
 </tr>
 <tr>
-<td class=""><span class="merged" id="all.5W6W2.99" title="原文 : ✅">✅</span></td>
+<td class=""><span class="merged" id="all.5W6W2.106" title="原文 : ✅">✅</span></td>
 <td class=""><strong>&#160;</strong></td>
 <td class=""><span class="merged" id="all.3s6VUz.1" title="原文 : Multi-part">Multi-part</span></td>
 <td class="">&#160;</td>
 </tr>
 <tr>
-<td class=""><span class="merged" id="all.15jl0W.10" title="原文 : ❓">❓</span></td>
+<td class=""><span class="merged" id="all.15jl0W.6" title="原文 : ❓">❓</span></td>
 <td class=""><strong>&#160;</strong></td>
 <td class=""><span class="merged" id="all.S6LiV"  title="原文:: Prometheus">Prometheus</span></td>
-<td class=""><span class="merged" id="all.iyV9h.11" title="原文 : Not yet tested.">テストされていません。</span></td>
+<td class=""><span class="merged" id="all.iyV9h.6" title="原文 : Not yet tested.">テストされていません。</span></td>
 </tr>
 <tr>
-<td class=""><span class="merged" id="all.5W6W2.100" title="原文 : ✅">✅</span></td>
+<td class=""><span class="merged" id="all.5W6W2.107" title="原文 : ✅">✅</span></td>
 <td class=""><strong>&#160;</strong></td>
 <td class=""><span class="merged" id="all.3WHG7G.1"  title="原文:: Websocket">Websocket</span></td>
-<td class=""><span class="merged" id="all.iyA5Y"  title="原文:: Server only.">サーバーのみ</span></td>
+<td class=""><span class="merged" id="all.iyA5Y.1"  title="原文:: Server only.">サーバーのみ</span></td>
 </tr>
 <tr>
-<td class=""><span class="merged" id="all.5W6W2.101" title="原文 : ✅">✅</span></td>
+<td class=""><span class="merged" id="all.5W6W2.108" title="原文 : ✅">✅</span></td>
 <td class=""><span class="merged" id="all.28p4Zd.1" title="原文 : gRPC Server"><strong>gRPCサーバー</strong></span></td>
 <td class=""><span class="merged" id="all.1da6M9.1" title="原文 : gRPC Server">gRPCサーバー</span></td>
-<td class=""><span class="merged" id="all.dKzJf" title="原文 : Since GraalVM 21.0.0">GraalVM 21.0.0以降</span></td>
+<td class=""><span class="merged" id="all.dKzJf.2" title="原文 : Since GraalVM 21.0.0">GraalVM 21.0.0以降</span></td>
 </tr>
 <tr>
-<td class=""><span class="merged" id="all.5W6W2.102" title="原文 : ✅">✅</span></td>
+<td class=""><span class="merged" id="all.5W6W2.109" title="原文 : ✅">✅</span></td>
 <td class=""><strong>&#160;</strong></td>
 <td class=""><span class="merged" id="all.4LL0ot.9"  title="原文:: Metrics">メトリクス</span></td>
 <td class="">&#160;</td>
 </tr>
 <tr>
-<td class=""><span class="merged" id="all.5W6W2.103" title="原文 : ✅">✅</span></td>
+<td class=""><span class="merged" id="all.5W6W2.110" title="原文 : ✅">✅</span></td>
 <td class=""><span class="merged" id="all.2nOjUO.1" title="原文 : gRPC Client"><strong>gRPCクライアント</strong></span></td>
 <td class=""><span class="merged" id="all.3axUdK.1" title="原文 : gRPC Client">gRPCクライアント</span></td>
-<td class=""><span class="merged" id="all.dKzJf.1" title="原文 : Since GraalVM 21.0.0">GraalVM 21.0.0以降</span></td>
+<td class=""><span class="merged" id="all.dKzJf.3" title="原文 : Since GraalVM 21.0.0">GraalVM 21.0.0以降</span></td>
 </tr>
 <tr>
-<td class=""><span class="merged" id="all.5W6W2.104" title="原文 : ✅">✅</span></td>
+<td class=""><span class="merged" id="all.5W6W2.111" title="原文 : ✅">✅</span></td>
 <td class=""><strong>&#160;</strong></td>
 <td class=""><span class="merged" id="all.4LL0ot.10"  title="原文:: Metrics">メトリクス</span></td>
+<td class="">&#160;</td>
+</tr>
+<tr>
+<td class=""><span class="merged" id="all.5W6W2.112" title="原文 : ✅">✅</span></td>
+<td class=""><span class="merged" id="all.4S53Of.1"  title="原文:: Scheduling"><strong>スケジューリング</strong></span></td>
+<td class=""><span class="merged" id="all.3H14IH.2"  title="原文:: Scheduling">スケジューリング</span></td>
+<td class="">&#160;</td>
+</tr>
+<tr>
+<td class=""><span class="merged" id="all.5W6W2.113" title="原文 : ✅">✅</span></td>
+<td class=""><span class="merged" id="all.Dk7n.1"  title="原文:: OCI"><strong>OCI</strong></span></td>
+<td class=""><span class="merged" id="all.1ICdWw.1" title="原文 : OCI Integration">OCI統合</span></td>
+<td class=""><span class="merged" id="all.44S6t1.1" title="原文 : Modules with group id io.helidon.integrations.oci">グループIDが<code>io.helidon.integrations.oci</code>のモジュール</span></td>
+</tr>
+<tr>
+<td class=""><span class="merged" id="all.5W6W2.114" title="原文 : ✅">✅</span></td>
+<td class=""><span class="merged" id="all.2au54F.1"  title="原文:: Vault"><strong>Vault</strong></span></td>
+<td class=""><span class="merged" id="all.3gS2B3.1" title="原文 : Hashicorp Vault Integration">Hashicorp Vault統合</span></td>
 <td class="">&#160;</td>
 </tr>
 </tbody>

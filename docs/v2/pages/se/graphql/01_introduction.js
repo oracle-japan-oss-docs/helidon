@@ -13,11 +13,25 @@
 </v-flex>
 </v-layout>
 
-<h2 id="_experimental"><span class="merged" id="all.3qlK5J.1"  title="原文:: Experimental">試作</span></h2>
+<h2 id="_experimental"><span class="merged" id="all.3qlK5J.5"  title="原文:: Experimental">試作</span></h2>
 <div class="section">
 <div class="admonition warning">
 <p class="admonition-inline"><span class="merged" id="all.1Yszz0.1" title="原文 : The Helidon GraphQL feature is currently experimental and the APIs are subject to changes until GraphQL support is stabilized.">Helidon GraphQL機能は現在試験的であり、APIはGraphQLサポートが安定するまで変更される可能性があります。</span></p>
 </div>
+</div>
+
+<h2 id="maven-coordinates"><span class="merged" id="all.317oeS.41" title="原文 : Maven Coordinates">Maven連携</span></h2>
+<div class="section">
+<p><span class="merged" id="all.gHWxu" title="原文 : To enable GraphQL add the following dependency to your project&rsquo;s pom.xml (see Managing Dependencies).">GraphQLを有効にするには、プロジェクトの<code>pom.xml</code>に次の依存関係を追加します(<router-link to="/about/04_managing-dependencies">「依存関係の管理」</router-link>を参照)。</span></p>
+
+<markup
+lang="xml"
+
+>&lt;dependency&gt;
+    &lt;groupId&gt;io.helidon.graphql&lt;/groupId&gt;
+    &lt;artifactId&gt;helidon-graphql-server&lt;/artifactId&gt;
+&lt;/dependency&gt;</markup>
+
 </div>
 
 <h2 id="_quick_start"><span class="merged" id="all.2FbcJI"  title="原文:: Quick Start">クイック・スタート</span></h2>
@@ -99,19 +113,5 @@ lang="bash"
 
 </li>
 </ol>
-</div>
-
-<h2 id="_maven_coordinates"><span class="merged" id="all.317oeS.9" title="原文 : Maven Coordinates">Maven連携</span></h2>
-<div class="section">
-<p><span class="merged" id="all.1WKs1p.spl1" title="原文 : The Getting Started page describes how you should declare dependency management for Helidon applications."><router-link to="/about/04_managing-dependencies">「開始」</router-link>ページでは、Helidonアプリケーションの依存性管理を宣言する方法について説明します。</span> <span class="merged" id="all.1WKs1p.spl2" title="原文 : Then declare the following dependency in your project:">次に、プロジェクトで次の依存性を宣言します:</span> </p>
-
-<markup
-lang="xml"
-
->&lt;dependency&gt;
-    &lt;groupId&gt;io.helidon.graphql&lt;/groupId&gt;
-    &lt;artifactId&gt;helidon-graphql-server&lt;/artifactId&gt;
-&lt;/dependency&gt;</markup>
-
 </div>
 </doc-view>

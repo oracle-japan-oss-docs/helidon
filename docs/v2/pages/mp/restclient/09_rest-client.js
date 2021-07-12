@@ -2,11 +2,9 @@
 <span title="免責事項: ここに記載されているドキュメントは、お客様の利便性のために翻訳ソフトウエアにより機械的に翻訳(機械翻訳)したものです。オリジナルの英語版もあわせてご確認ください。" style="width:150px;padding-left:5px;padding-right:5px;border:#ff0000 solid 1px;border-color: gray;font-size: small;color:gray;margin: 0 auto 0 auto;text-align:center;"><a href="https://docs.oracle.com/cd/E85181_01/mt_disclaimer.html" target="disclaimer">&nbsp;&nbsp;機械翻訳について&nbsp;&nbsp;</a></span>
 
 
-<h2 id="_configuring_rest_client_with_helidon_mp"><span class="merged" id="all.tmxYt" title="原文 : Configuring Rest Client with Helidon MP">Helidon MPでのRestクライアントの構成</span></h2>
+<h2 id="maven-coordinates"><span class="merged" id="all.317oeS.26" title="原文 : Maven Coordinates">Maven連携</span></h2>
 <div class="section">
-<p><span class="merged" id="all.21VX03" title="原文 : MicroProfile Rest Client adds the capability to invoke remote microservices using a JAX-RS like interface to declare the operations.">MicroProfile Rest Clientには、JAX-RSに似たインタフェースを使用してリモート・マイクロサービスを呼び出し、操作を宣言する機能が追加されています。</span></p>
-
-<p><span class="merged" id="all.25IntN" title="原文 : To use the rest client in your project, declare the following dependency:">プロジェクトで残りのクライアントを使用するには、次の依存関係を宣言します:</span></p>
+<p><span class="merged" id="all.1gpkOd" title="原文 : To enable MicroProfile Rest Client either add a dependency on the helidon-microprofile bundle or add the following dependency to your project&rsquo;s pom.xml (see Managing Dependencies).">MicroProfile Rest Clientを有効にするには、<router-link to="/mp/introduction/02_microprofile">helidon-microprofile bundle</router-link>に依存関係を追加するか、プロジェクトの<code>pom.xml</code>に次の依存関係を追加します(<router-link to="/about/04_managing-dependencies">「依存関係の管理」</router-link>を参照)。</span></p>
 
 <markup
 lang="xml"
@@ -15,6 +13,12 @@ lang="xml"
     &lt;groupId&gt;io.helidon.microprofile.rest-client&lt;/groupId&gt;
     &lt;artifactId&gt;helidon-microprofile-rest-client&lt;/artifactId&gt;
 &lt;/dependency&gt;</markup>
+
+</div>
+
+<h2 id="_configuring_rest_client_with_helidon_mp"><span class="merged" id="all.tmxYt" title="原文 : Configuring Rest Client with Helidon MP">Helidon MPでのRestクライアントの構成</span></h2>
+<div class="section">
+<p><span class="merged" id="all.21VX03" title="原文 : MicroProfile Rest Client adds the capability to invoke remote microservices using a JAX-RS like interface to declare the operations.">MicroProfile Rest Clientには、JAX-RSに似たインタフェースを使用してリモート・マイクロサービスを呼び出し、操作を宣言する機能が追加されています。</span></p>
 
 </div>
 
@@ -78,7 +82,7 @@ client.sampleMethod();</markup>
 
 <h2 id="_quickstart_example"><span class="merged" id="all.WhHrS" title="原文 : Quickstart example">クイックスタートの例</span></h2>
 <div class="section">
-<p><span class="merged" id="all.3mGYoz.spl1" title="原文 : To be able to run and test this example, please head to the Helidon examples/quickstarts and start the helidon-quickstart-mp.">この例を実行してテストするには、Helidonの例/クイックスタートに進んで、helidon-quickstart-mpを起動してください。</span> <span class="merged" id="all.3mGYoz.spl2" title="原文 : Then create project with the dependency on the Helidon rest client implementation and create the following rest client interface:">次に、Helidon restクライアント実装に依存するプロジェクトを作成し、次のRestクライアント・インタフェースを作成します:</span> </p>
+<p><span class="merged" id="all.3mGYoz.spl1" title="原文 : To be able to run and test this example, please head to the Helidon examples/quickstarts and start the helidon-quickstart-mp.">この例を実行してテストするには、Helidonの例/クイックスタートに進んで、helidon-quickstart-mpを起動してください。</span> <span class="merged" id="all.3mGYoz.spl2" title="原文 : Then create project with the dependency on the Helidon rest client implementation and create the following rest client interface:">次に、Helidon restクライアント実装に依存関係のあるプロジェクトを作成し、次のRestクライアント・インタフェースを作成します:</span> </p>
 
 <p><span class="merged" id="all.XciJc" title="原文 : Rest client interface">Restクライアント・インタフェース</span></p>
 

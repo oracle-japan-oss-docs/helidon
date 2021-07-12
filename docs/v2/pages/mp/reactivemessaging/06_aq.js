@@ -2,21 +2,23 @@
 <span title="免責事項: ここに記載されているドキュメントは、お客様の利便性のために翻訳ソフトウエアにより機械的に翻訳(機械翻訳)したものです。オリジナルの英語版もあわせてご確認ください。" style="width:150px;padding-left:5px;padding-right:5px;border:#ff0000 solid 1px;border-color: gray;font-size: small;color:gray;margin: 0 auto 0 auto;text-align:center;"><a href="https://docs.oracle.com/cd/E85181_01/mt_disclaimer.html" target="disclaimer">&nbsp;&nbsp;機械翻訳について&nbsp;&nbsp;</a></span>
 
 
-<h2 id="_reactive_oracle_advanced_queueing_connector"><span class="merged" id="all.2GFOv0" title="原文 : Reactive Oracle Advanced Queueing Connector">リアクティブOracle Advanced Queueingコネクタ</span></h2>
+<h2 id="maven-coordinates"><span class="merged" id="all.317oeS.23" title="原文 : Maven Coordinates">Maven連携</span></h2>
 <div class="section">
-<p><span class="merged" id="all.1FQOGc.spl1" title="原文 : Connecting streams to Oracle AQ with Reactive Messaging couldn&rsquo;t be easier.">リアクティブ・メッセージングを使用したOracle AQへのストリームの接続はより簡単にはできないでしょう。</span> <span class="merged" id="all.1FQOGc.spl2" title="原文 : This connector extends Helidon&rsquo;s JMS connector with Oracle AQ&rsquo;s specific API.">このコネクタは、HelidonのJMSコネクタをOracle AQ固有のAPIで拡張します。</span> </p>
+<p><span class="merged" id="all.2z6RGq" title="原文 : To enable AQ Connector add the following dependency to your project&rsquo;s pom.xml (see Managing Dependencies).">AQコネクタを有効にするには、プロジェクトの<code>pom.xml</code>に次の依存関係を追加します(<router-link to="/about/04_managing-dependencies">「依存関係の管理」</router-link>を参照)。</span></p>
 
 <markup
 lang="xml"
-title="必要な依存関係:"
+
 >&lt;dependency&gt;
-    &lt;groupId&gt;io.helidon.microprofile.messaging&lt;/groupId&gt;
-    &lt;artifactId&gt;helidon-microprofile-messaging&lt;/artifactId&gt;
-&lt;/dependency&gt;
-&lt;dependency&gt;
     &lt;groupId&gt;io.helidon.messaging.aq&lt;/groupId&gt;
     &lt;artifactId&gt;helidon-messaging-aq&lt;/artifactId&gt;
 &lt;/dependency&gt;</markup>
+
+</div>
+
+<h2 id="_reactive_oracle_advanced_queueing_connector"><span class="merged" id="all.2GFOv0" title="原文 : Reactive Oracle Advanced Queueing Connector">リアクティブOracle Advanced Queueingコネクタ</span></h2>
+<div class="section">
+<p><span class="merged" id="all.1FQOGc.spl1" title="原文 : Connecting streams to Oracle AQ with Reactive Messaging couldn&rsquo;t be easier.">リアクティブ・メッセージングを使用したOracle AQへのストリームの接続はより簡単にはできないでしょう。</span> <span class="merged" id="all.1FQOGc.spl2" title="原文 : This connector extends Helidon&rsquo;s JMS connector with Oracle AQ&rsquo;s specific API.">このコネクタは、HelidonのJMSコネクタをOracle AQ固有のAPIで拡張します。</span> </p>
 
 
 <h3 id="_config"><span class="merged" id="all.3rjwSI.2"  title="原文:: Config">構成</span></h3>
@@ -68,6 +70,22 @@ title="必要な依存関係:"
 <tr>
 <td class=""><span class="merged" id="all.28rkos.1"  title="原文: message-selector"><code>message-selector</code></span></td>
 <td class=""><span class="merged" id="all.3G8XH7.1.spl1" title="原文 : JMS API message selector expression based on a subset of the SQL92.">SQL92のサブセットに基づくJMS APIメッセージ・セレクタ式。</span> <span class="merged" id="all.3G8XH7.1.spl2" title="原文 : Expression can only access headers and properties, not the payload.">式はヘッダーおよびプロパティにのみアクセスでき、ペイロードにはアクセスできません。</span> </td>
+</tr>
+<tr>
+<td class=""><span class="merged" id="all.41Kf4l.1"  title="原文: client-id"><code>client-id</code></span></td>
+<td class=""><span class="merged" id="all.19oJdx.1" title="原文 : Client identifier for JMS connection.">JMS接続のクライアント識別子。</span></td>
+</tr>
+<tr>
+<td class=""><span class="merged" id="all.3HodGX.1"  title="原文: durable"><code>durable</code></span></td>
+<td class=""><span class="merged" id="all.22wasS.1.spl1" title="原文 : True for creating durable consumer (only for topic).">永続コンシューマを作成する場合はtrue (トピックの場合のみ)。</span> <span class="merged" id="all.22wasS.1.spl2"  title="原文:: Default value: false">デフォルト値: <code>false</code></span> </td>
+</tr>
+<tr>
+<td class=""><span class="merged" id="all.4VYCo3.1"  title="原文: subscriber-name"><code>subscriber-name</code></span></td>
+<td class=""><span class="merged" id="all.41Y8RL.1" title="原文 : Subscriber name for durable consumer used to identify subscription.">サブスクリプションの識別に使用される永続コンシューマのサブスクライバ名。</span></td>
+</tr>
+<tr>
+<td class=""><span class="merged" id="all.3fQfsR.1"  title="原文: non-local"><code>non-local</code></span></td>
+<td class=""><span class="merged" id="all.3iA2Wc.1.spl1" title="原文 : If true then any messages published to the topic using this session&rsquo;s connection, or any other connection with the same client identifier, will not be added to the durable subscription.">trueの場合、このセッションの接続または同じクライアント識別子を持つ他の接続を使用してトピックにパブリッシュされたメッセージは、永続サブスクリプションに追加されません。</span> <span class="merged" id="all.3iA2Wc.1.spl2"  title="原文:: Default value: false">デフォルト値: <code>false</code></span> </td>
 </tr>
 <tr>
 <td class=""><span class="merged" id="all.12Z8gJ.1"  title="原文: named-factory"><code>named-factory</code></span></td>

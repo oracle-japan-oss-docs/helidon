@@ -120,7 +120,7 @@
 
 </li>
 <li>
-<p><span class="merged" id="all.3y7JDO" title="原文 : Be aggressive when checking local dependencies.">ローカルの依存性をチェックする場合は、積極的にしてください。</span></p>
+<p><span class="merged" id="all.3y7JDO" title="原文 : Be aggressive when checking local dependencies.">ローカルの依存関係をチェックする場合は、積極的にしてください。</span></p>
 
 </li>
 <li>
@@ -150,7 +150,7 @@ kubectl get event --field-selector involvedObject.name=${POD_NAME} <span class="
 </div>
 </div>
 
-<h2 id="_example"><span class="merged" id="all.2xA7W7.3"  title="原文:: Example">Example</span></h2>
+<h2 id="_example"><span class="merged" id="all.2xA7W7.4"  title="原文:: Example">例</span></h2>
 <div class="section">
 <p><span class="merged" id="all.MHIww.spl1" title="原文 : This example shows the usage of the Helidon health API in an application that implements health endpoints for the liveness and readiness probes.">この例では、リブネスおよびレディネス・プローブのヘルス・エンドポイントを実装するアプリケーションでのHelidonヘルスAPIの使用方法を示します。</span> <span class="merged" id="all.MHIww.spl2" title="原文 : Note that the application code dissociates the health endpoints from the default routes, so that the health endpoints are not exposed by the service.">アプリケーション・コードは、ヘルス・エンドポイントがサービスによって公開されないように、ヘルス・エンドポイントとデフォルト・ルートの関連付けを解除します。</span> <span class="merged" id="all.MHIww.spl3" title="原文 : An example YAML specification is also provided for the Kubernetes service and deployment.">KubernetesサービスおよびデプロイメントのYAML仕様の例も示します。</span> </p>
 

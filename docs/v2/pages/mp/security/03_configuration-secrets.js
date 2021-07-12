@@ -19,11 +19,11 @@
 <div class="section">
 <p><span class="merged" id="all.46jxy2.spl1" title="原文 : In Helidon MP, the config encryption filter is enabled by default.">Helidon MPでは、構成暗号化フィルタは<strong>「デフォルトで有効」</strong>です。</span> <span class="merged" id="all.46jxy2.spl2" title="原文 : However, if you don&rsquo;t configure it, the filter only supports a template for aliasing that checks that no clear text passwords are present (template ${CLEAR=…​}.">ただし、これを構成しない場合、フィルタでは、クリア・テキスト・パスワードが存在しないことをチェックする別名のテンプレートのみがサポートされます(テンプレート${CLEAR=…​}。</span> </p>
 
-<p><span class="merged" id="all.4ZNcqu" title="原文 : In Helidon SE, you may add support for this filter with dependency (loaded through a java service mechanism):">Helidon SEでは、依存性のあるこのフィルタのサポートを追加できます(javaサービス・メカニズムを介してロードされます):</span></p>
+<p><span class="merged" id="all.4ZNcqu" title="原文 : In Helidon SE, you may add support for this filter with dependency (loaded through a java service mechanism):">Helidon SEでは、依存関係のあるこのフィルタのサポートを追加できます(javaサービス・メカニズムを介してロードされます):</span></p>
 
 <markup
 lang="xml"
-title="Mavenの依存性"
+title="Mavenの依存関係"
 >&lt;dependency&gt;
     &lt;groupId&gt;io.helidon.config&lt;/groupId&gt;
     &lt;artifactId&gt;helidon-config-encryption&lt;/artifactId&gt;
@@ -44,8 +44,8 @@ title="Mavenの依存性"
 <thead>
 <tr>
 <th><span class="merged" id="all.20zggf"  title="原文:: Template">テンプレート</span></th>
-<th><span class="merged" id="all.4JM9z7.4"  title="原文:: Description">説明</span></th>
-<th><span class="merged" id="all.2xA7W7.2"  title="原文:: Example">Example</span></th>
+<th><span class="merged" id="all.4JM9z7.6"  title="原文:: Description">説明</span></th>
+<th><span class="merged" id="all.2xA7W7.3"  title="原文:: Example">例</span></th>
 </tr>
 </thead>
 <tbody>
@@ -163,7 +163,7 @@ title="キーストアの公開証明書を使用してシークレット<code>s
 <th><span class="merged" id="all.USkNI"  title="原文:: What">作業</span></th>
 <th><span class="merged" id="all.1Ov129.2"  title="原文:: Configuration Key">構成キー</span></th>
 <th><span class="merged" id="all.4BsGyW"  title="原文:: Environment Variable">環境変数</span></th>
-<th><span class="merged" id="all.4JM9z7.5"  title="原文:: Description">説明</span></th>
+<th><span class="merged" id="all.4JM9z7.7"  title="原文:: Description">説明</span></th>
 </tr>
 </thead>
 <tbody>
@@ -208,7 +208,7 @@ title="キーストアの公開証明書を使用してシークレット<code>s
 <th><span class="merged" id="all.USkNI.1"  title="原文:: What">作業</span></th>
 <th><span class="merged" id="all.1Ov129.3"  title="原文:: Configuration Key">構成キー</span></th>
 <th><span class="merged" id="all.4BsGyW.1"  title="原文:: Environment Variable">環境変数</span></th>
-<th><span class="merged" id="all.4JM9z7.6"  title="原文:: Description">説明</span></th>
+<th><span class="merged" id="all.4JM9z7.8"  title="原文:: Description">説明</span></th>
 </tr>
 </thead>
 <tbody>

@@ -29,7 +29,7 @@
 <td class=""><span class="merged" id="all.wqDOs.5" title="原文 : About 30 minutes">約30分</span></td>
 </tr>
 <tr>
-<td class=""><span class="merged" id="all.27GIMH.14" title="原文 : Helidon Prerequisites"><router-link to="/about/03_prerequisites">Helidonの前提条件</router-link></span></td>
+<td class=""><span class="merged" id="all.27GIMH.15" title="原文 : Helidon Prerequisites"><router-link to="/about/03_prerequisites">Helidonの前提条件</router-link></span></td>
 </tr>
 </tbody>
 </table>
@@ -51,7 +51,7 @@ title="Maven原型を実行します:"
 >mvn -U archetype:generate -DinteractiveMode=false \
     -DarchetypeGroupId=io.helidon.archetypes \
     -DarchetypeArtifactId=helidon-quickstart-se \
-    -DarchetypeVersion=2.2.1-SNAPSHOT \
+    -DarchetypeVersion=2.3.1 \
     -DgroupId=io.helidon.examples \
     -DartifactId=helidon-quickstart-se \
     -Dpackage=io.helidon.examples.quickstart.se</markup>

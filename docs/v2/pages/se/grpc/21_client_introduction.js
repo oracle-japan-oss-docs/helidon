@@ -27,21 +27,18 @@
 </v-flex>
 </v-layout>
 
-<h2 id="_maven_coordinates"><span class="merged" id="all.317oeS.11" title="原文 : Maven Coordinates">Maven連携</span></h2>
+<h2 id="maven-coordinates"><span class="merged" id="all.317oeS.44" title="原文 : Maven Coordinates">Maven連携</span></h2>
 <div class="section">
-<p><span class="merged" id="all.3Y1dJo.4.spl1" title="原文 : The Managing Dependencies page describes how you should declare dependency management for Helidon applications."><router-link to="/about/04_managing-dependencies">「依存関係の管理」</router-link>ページでは、Helidonアプリケーションの依存性管理を宣言する方法について説明します。</span> <span class="merged" id="all.3Y1dJo.4.spl2" title="原文 : Then declare the following dependency in your project:">次に、プロジェクトで次の依存性を宣言します:</span> </p>
+<p><span class="merged" id="all.2MJTWh" title="原文 : To enable gRPC Client add the following dependency to your project&rsquo;s pom.xml (see Managing Dependencies).">gRPCクライアントを有効にするには、プロジェクトの<code>pom.xml</code>に次の依存関係を追加します(<router-link to="/about/04_managing-dependencies">「依存関係の管理」</router-link>を参照)。</span></p>
 
 <markup
 lang="xml"
 
 >&lt;dependency&gt;
     &lt;groupId&gt;io.helidon.grpc&lt;/groupId&gt;
-    &lt;artifactId&gt;helidon-grpc-client&lt;/artifactId&gt; <span class="conum" data-value="1" />
+    &lt;artifactId&gt;helidon-grpc-client&lt;/artifactId&gt;
 &lt;/dependency&gt;</markup>
 
-<ul class="colist">
-<li data-value="1"><span class="merged" id="all.31etcG" title="原文 : Declare dependency on Helidon gRPC Client.">Helidon gRPCクライアントへの依存性を宣言します。</span></li>
-</ul>
 </div>
 
 <h2 id="_quick_start"><span class="merged" id="all.2FbcJI.2"  title="原文:: Quick Start">クイック・スタート</span></h2>

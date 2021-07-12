@@ -51,7 +51,7 @@ title="Maven原型を実行します:"
 >mvn -U archetype:generate -DinteractiveMode=false \
     -DarchetypeGroupId=io.helidon.archetypes \
     -DarchetypeArtifactId=helidon-quickstart-mp \
-    -DarchetypeVersion=2.2.1-SNAPSHOT \
+    -DarchetypeVersion=2.3.1 \
     -DgroupId=io.helidon.examples \
     -DartifactId=helidon-quickstart-mp \
     -Dpackage=io.helidon.examples.quickstart.mp</markup>
@@ -93,7 +93,7 @@ title="プロジェクトは、<code>helidon-quickstart-mp</code>ディレクト
 <div class="section">
 <p><span class="merged" id="all.1BLfQQ.spl1" title="原文 : Helidon has an internal configuration, so you are not required to provide any configuration data for your application, though in practice you most likely would.">Helidonには内部構成があるため、ほとんどの場合、アプリケーションの構成データを指定する必要はありません。</span> <span class="merged" id="all.1BLfQQ.spl2" title="原文 : By default, that configuration can be overridden from three sources: system properties, environment variables, and the contents of META-INF/microprofile-config.properties.">デフォルトでは、この構成は3つのソースからオーバーライドできます: システム・プロパティ、環境変数および<code>META-INF/microprofile-config.properties</code>の内容。</span> <span class="merged" id="all.1BLfQQ.spl3" title="原文 : For example, if you specify a custom server port in META-INF/microprofile-config.properties then your server will listen on that port.">たとえば、<code>META-INF/microprofile-config.properties</code>でカスタム・サーバー・ポートを指定すると、サーバーはそのポートでリスニングします。</span> </p>
 
-<p><span class="merged" id="all.pN3vX.spl1" title="原文 : A main class is also required to start up the server and run the application.">サーバーを起動してアプリケーションを実行するには、メイン・クラスも必要です。</span> <span class="merged" id="all.pN3vX.spl2" title="原文 : If you don&rsquo;t use Helidon&rsquo;s built-in main class you can define your own:">Helidonの組込みメイン・クラスを使用しない場合は、独自のクラスを定義できます:</span> </p>
+<p><span class="merged" id="all.2LOrBA.spl1" title="原文 : A main class is also required to start up the server and run the application.">サーバーを起動してアプリケーションを実行するには、メイン・クラスも必要です。</span> <span class="merged" id="all.2LOrBA.spl2" title="原文 : By default the Quickstart sample project uses the built-in Helidon main class.">デフォルトでは、Quickstartサンプル・プロジェクトは組込みのHelidonメイン・クラスを使用します。</span> <span class="merged" id="all.2LOrBA.spl3" title="原文 : In this guide you want to use your own main class so you have more control over the server initialization.">このガイドでは、サーバーの初期化をより詳細に制御できるように、独自のメイン・クラスを使用します。</span> <span class="merged" id="all.2LOrBA.spl4" title="原文 : First define your own Main:">最初に、独自の<code>Main</code>を定義します:</span> </p>
 
 <markup
 lang="java"
@@ -124,6 +124,17 @@ public final class Main {
 <li data-value="1"><span class="merged" id="all.CoXHI" title="原文 : Notice that this class has an empty no-args constructor to make sure this class cannot be instantiated.">このクラスには、このクラスをインスタンス化できないようにする空の引数なしコンストラクタがあることに注意してください。</span></li>
 <li data-value="2"><span class="merged" id="all.3Y5ssM" title="原文 : The MicroProfile server is started with the default configuration.">MicroProfileサーバーは、デフォルト構成で起動されます。</span></li>
 </ul>
+<p><span class="merged" id="all.4Jk7Uc" title="原文 : Next change the project&rsquo;s pom.xml to use your main class:">次に、メイン・クラスを使用するようにプロジェクトの<code>pom.xml</code>を変更します:</span></p>
+
+<markup
+lang="xml"
+title="pom.xml"
+>    &lt;properties&gt;
+        &lt;mainClass&gt;io.helidon.examples.quickstart.mp.Main&lt;/mainClass&gt;
+    &lt;/properties&gt;</markup>
+
+<p><span class="merged" id="all.2U9x90" title="原文 : This property will be used to set the Main-Class attribute in the application jar&rsquo;s MANIFEST.">このプロパティは、アプリケーションjarのMANIFESTで<code>Main-Class</code>属性を設定するために使用されます。</span></p>
+
 <p><span class="merged" id="all.38HyLZ.spl1" title="原文 : In your application code, Helidon uses the default configuration when you create a Server object without a custom Config object.">アプリケーション・コードでは、カスタム<code>Config</code>オブジェクトなしで<code>Server</code>オブジェクトを作成する場合、Helidonはデフォルトの構成を使用します。</span> <span class="merged" id="all.38HyLZ.spl2" title="原文 : See the following code from the project you created.">作成したプロジェクトから次のコードを参照してください。</span> </p>
 
 <markup

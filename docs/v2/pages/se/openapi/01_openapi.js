@@ -13,6 +13,20 @@
 </v-flex>
 </v-layout>
 
+<h2 id="maven-coordinates"><span class="merged" id="all.317oeS.50" title="原文 : Maven Coordinates">Maven連携</span></h2>
+<div class="section">
+<p><span class="merged" id="all.13KSFD" title="原文 : To enable OpenAPI add the following dependency to your project&rsquo;s pom.xml (see Managing Dependencies).">OpenAPIを有効にするには、プロジェクトの<code>pom.xml</code>に次の依存関係を追加します(<router-link to="/about/04_managing-dependencies">「依存関係の管理」</router-link>を参照)。</span></p>
+
+<markup
+lang="xml"
+
+>&lt;dependency&gt;
+    &lt;groupId&gt;io.helidon.openapi&lt;/groupId&gt;
+    &lt;artifactId&gt;helidon-openapi&lt;/artifactId&gt;
+&lt;/dependency&gt;</markup>
+
+</div>
+
 <h2 id="_openapi_support_in_helidon_se"><span class="merged" id="all.2ovQx5" title="原文 : OpenAPI support in Helidon SE">Helidon SEでのOpenAPIサポート</span></h2>
 <div class="section">
 <p><span class="merged" id="all.3MjN8P.spl1" title="原文 : You can very simply add support for OpenAPI to your Helidon SE application.">Helidon SEアプリケーションにOpenAPIのサポートを追加するだけですみます。</span> <span class="merged" id="all.3MjN8P.spl2" title="原文 : This document shows what changes you need to make to your application and how to access the OpenAPI document for your application at runtime.">このドキュメントでは、アプリケーションに加える必要がある変更と、実行時にアプリケーションのOpenAPIドキュメントにアクセスする方法について説明します。</span> </p>
@@ -23,7 +37,7 @@
 <div class="section">
 <p><span class="merged" id="all.4NFZWf.spl1" title="原文 : OpenAPI support in Helidon SE largely follows the MicroProfile OpenAPI spec.">Helidon SEでのOpenAPIのサポートは、主に<a href="https://github.com/eclipse/microprofile-open-api/blob/master/spec/src/main/asciidoc/microprofile-openapi-spec.adoc" id="" target="_blank" >「MicroProfile OpenAPI仕様」</a>に従います。</span> <span class="merged" id="all.4NFZWf.spl2" title="原文 : But Helidon SE does not process annotations, which is one way to convey OpenAPI information about the endpoints in your app.">ただし、Helidon SEでは注釈は処理されません。これは、アプリケーション内のエンドポイントに関するOpenAPI情報を伝達する方法の1つです。</span> <span class="merged" id="all.4NFZWf.spl3" title="原文 : You can still use OpenAPI with your Helidon SE app by providing OpenAPI information about the endpoints without using annotations.">注釈を使用せずにエンドポイントに関するOpenAPI情報を提供することで、Helidon SEアプリケーションでOpenAPIを引き続き使用できます。</span> </p>
 
-<p><span class="merged" id="all.1WF0FY" title="原文 : Helidon SE includes a complete OpenAPI example based on the SE quick-start sample app.">Helidon SEには、SEクイックスタート・サンプル・アプリケーションに基づく<a href="https://github.com/oracle/helidon/tree/2.2.1/examples//openapi" id="" target="_blank" >「完全なOpenAPIの例」</a>が含まれています。</span></p>
+<p><span class="merged" id="all.1ff5Xx" title="原文 : Helidon SE includes a complete OpenAPI example based on the SE quick-start sample app.">Helidon SEには、SEクイックスタート・サンプル・アプリケーションに基づく<a href="https://github.com/oracle/helidon/tree/2.3.1/examples/openapi" id="" target="_blank" >「完全なOpenAPIの例」</a>が含まれています。</span></p>
 
 <p><span class="merged" id="all.1S293b" title="原文 : To use OpenAPI from your Helidon SE app:">Helidon SEアプリからOpenAPIを使用するには:</span></p>
 
@@ -48,18 +62,7 @@
 
 <h3 id="_edit_your_pom_xml"><span class="merged" id="all.3R9XOo.1" title="原文 : Edit your pom.xml"><code>pom.xml</code>の編集</span></h3>
 <div class="section">
-<p><span class="merged" id="all.12LjeD" title="原文 : Add a dependency for Helidon SE OpenAPI runtime support:">Helidon SE OpenAPIランタイム・サポートの依存性を追加します:</span></p>
-
-<markup
-lang="xml"
-
->&lt;dependency&gt;
-    &lt;groupId&gt;io.helidon.openapi&lt;/groupId&gt;
-    &lt;artifactId&gt;helidon-openapi&lt;/artifactId&gt;
-    &lt;version&gt;2.2.1-SNAPSHOT&lt;/version&gt;
-&lt;/dependency&gt;</markup>
-
-<p><span class="merged" id="all.2HJgHi" title="原文 : This is a compile-time dependency, because your code must register OpenAPISupport (a class in that artifact) like this:">これは、コードで次のように<code>OpenAPISupport</code> (そのアーティファクト内のクラス)を登録する必要があるため、コンパイル時に依存します:</span></p>
+<p><span class="merged" id="all.1m0K8r.spl1" title="原文 : Add a dependency for Helidon SE OpenAPI runtime support."><router-link @click.native="this.scrollFix('#maven-coordinates')" to="#maven-coordinates">Helidon SE OpenAPI</router-link>ランタイム・サポートの依存関係を追加します。</span> <span class="merged" id="all.1m0K8r.spl2" title="原文 : This is a compile-time dependency, because your code must register OpenAPISupport (a class in that artifact) like this:">これは、コードで次のように<code>OpenAPISupport</code> (そのアーティファクト内のクラス)を登録する必要があるため、コンパイル時に依存します:</span> </p>
 
 </div>
 
@@ -98,7 +101,7 @@ return Routing.builder()
 <div class="section">
 <p><span class="merged" id="all.4H8xnN.1.spl1" title="原文 : Write a Java class that implements the OpenAPI org.eclipse.microprofile.openapi.OASModelReader interface.">OpenAPI <a href="https://github.com/eclipse/microprofile-open-api/blob/master/api/src/main/java/org/eclipse/microprofile/openapi/OASModelReader.java" id="" target="_blank" ><code>org.eclipse.microprofile.openapi.OASModelReader</code></a>インタフェースを実装するJavaクラスを記述します。</span> <span class="merged" id="all.4H8xnN.1.spl2" title="原文 : Your model reader code programmatically adds elements to the internal model that OpenAPI builds.">モデル・リーダー・コードによって、OpenAPIがビルドする内部モデルに要素がプログラムによって追加されます。</span> </p>
 
-<p><span class="merged" id="all.3G2RKN.spl1" title="原文 : Change your application&rsquo;s configuration to set openapi.model.reader as the fully-qualified class name of your class.">アプリケーションの構成を変更して、<code>openapi.model.reader</code>をクラスの完全修飾クラス名として設定します。</span> <span class="merged" id="all.3G2RKN.spl2" title="原文 : Also see Add OpenAPI dependency below.">次の<router-link @click.native="this.scrollFix('#_add_openapi_dependency')" to="#_add_openapi_dependency">「OpenAPI依存性の追加」</router-link>も参照してください。</span> </p>
+<p><span class="merged" id="all.3G2RKN.spl1" title="原文 : Change your application&rsquo;s configuration to set openapi.model.reader as the fully-qualified class name of your class.">アプリケーションの構成を変更して、<code>openapi.model.reader</code>をクラスの完全修飾クラス名として設定します。</span> <span class="merged" id="all.3G2RKN.spl2" title="原文 : Also see Add OpenAPI dependency below.">次の<router-link @click.native="this.scrollFix('#_add_openapi_dependency')" to="#_add_openapi_dependency">「OpenAPI依存関係の追加」</router-link>も参照してください。</span> </p>
 
 </div>
 
@@ -106,11 +109,11 @@ return Routing.builder()
 <div class="section">
 <p><span class="merged" id="all.1CKsbi.1.spl1" title="原文 : Write a Java class that implements the OpenAPI org.eclipse.microprofile.openapi.OASFilter interface.">OpenAPI <a href="https://github.com/eclipse/microprofile-open-api/blob/master/api/src/main/java/org/eclipse/microprofile/openapi/OASFilter.java" id="" target="_blank" ><code>org.eclipse.microprofile.openapi.OASFilter</code></a>インタフェースを実装するJavaクラスを記述します。</span> <span class="merged" id="all.1CKsbi.1.spl2" title="原文 : As OpenAPI composes its internal model, it invokes your filter with each model element before adding the element to the model.">OpenAPIは内部モデルを構成するため、モデルに要素を追加する<em>前</em>に、各モデル要素を使用してフィルタを起動します。</span> <span class="merged" id="all.1CKsbi.1.spl3" title="原文 : Your filter can accept the element as-is, modify it, or suppress it.">フィルタでは、要素をそのまま受け入れるか、変更するか、抑制できます。</span> </p>
 
-<p><span class="merged" id="all.4Y7wtn.spl1" title="原文 : Change your application&rsquo;s configuration to set openapi.filter as the full-qualified class name of your class.">アプリケーションの構成を変更して、<code>openapi.filter</code>をクラスの完全修飾クラス名として設定します。</span> <span class="merged" id="all.4Y7wtn.spl2" title="原文 : Also see Add OpenAPI dependency below.">次の<router-link @click.native="this.scrollFix('#_add_openapi_dependency')" to="#_add_openapi_dependency">「OpenAPI依存性の追加」</router-link>も参照してください。</span> </p>
+<p><span class="merged" id="all.4Y7wtn.spl1" title="原文 : Change your application&rsquo;s configuration to set openapi.filter as the full-qualified class name of your class.">アプリケーションの構成を変更して、<code>openapi.filter</code>をクラスの完全修飾クラス名として設定します。</span> <span class="merged" id="all.4Y7wtn.spl2" title="原文 : Also see Add OpenAPI dependency below.">次の<router-link @click.native="this.scrollFix('#_add_openapi_dependency')" to="#_add_openapi_dependency">「OpenAPI依存関係の追加」</router-link>も参照してください。</span> </p>
 
 </div>
 
-<h4 id="_add_openapi_dependency"><span class="merged" id="all.3JuKT4" title="原文 : Add OpenAPI dependency">OpenAPI依存性の追加</span></h4>
+<h4 id="_add_openapi_dependency"><span class="merged" id="all.3JuKT4" title="原文 : Add OpenAPI dependency">OpenAPI依存関係の追加</span></h4>
 <div class="section">
 <p><span class="merged" id="all.2HGjus" title="原文 : If you implement either a model reader or a filter, add this dependency to your pom.xml:">モデル・リーダーまたはフィルタを実装する場合は、次の依存関係を<code>pom.xml</code>に追加します:</span></p>
 

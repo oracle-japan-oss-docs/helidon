@@ -15,9 +15,9 @@
 </v-flex>
 </v-layout>
 
-<h2 id="_prerequisites"><span class="merged" id="all.2LZvWc.11"  title="原文:: Prerequisites">前提条件</span></h2>
+<h2 id="maven-coordinates"><span class="merged" id="all.317oeS.60" title="原文 : Maven Coordinates">Maven連携</span></h2>
 <div class="section">
-<p><span class="merged" id="all.3Bl821.1" title="原文 : To use Zipkin as a tracer, add the following dependency to your project:">Zipkinをトレーサとして使用するには、プロジェクトに次の依存関係を追加します:</span></p>
+<p><span class="merged" id="all.43wMmm.1" title="原文 : To enable Zipkin Tracing add the following dependency to your project&rsquo;s pom.xml (see Managing Dependencies).">Zipkinトレースを有効にするには、プロジェクトの<code>pom.xml</code>に次の依存関係を追加します(<router-link to="/about/04_managing-dependencies">「依存関係の管理」</router-link>を参照)。</span></p>
 
 <markup
 lang="xml"
@@ -47,7 +47,7 @@ lang="xml"
 <th><span class="merged" id="all.3H5QDp.2"  title="原文:: Key">キー</span></th>
 <th><span class="merged" id="all.3T02MF.2"  title="原文:: Default value">デフォルト値</span></th>
 <th><span class="merged" id="all.12txOr.2" title="原文 : Builder method">ビルダー・メソッド</span></th>
-<th><span class="merged" id="all.4JM9z7.11"  title="原文:: Description">説明</span></th>
+<th><span class="merged" id="all.4JM9z7.15"  title="原文:: Description">説明</span></th>
 </tr>
 </thead>
 <tbody>
@@ -83,13 +83,13 @@ lang="xml"
 </tr>
 <tr>
 <td class=""><span class="merged" id="all.3RqKLp.1" title="原文 : api-version">api-version</span></td>
-<td class=""><span class="merged" id="all.UT3bJ.2"  title="原文: 2">2</span></td>
+<td class=""><span class="merged" id="all.UT3bJ.4"  title="原文: 2">2</span></td>
 <td class=""><span class="merged" id="all.3UzSqZ.1"  title="原文:: version">version</span></td>
 <td class=""><span class="merged" id="all.lw6AU.1" title="原文 : Zipkin specific method, set the protocol version to communicate with trace collector">Zipkin固有のメソッド。トレース・コレクタと通信するためのプロトコル・バージョンを設定</span></td>
 </tr>
 <tr>
 <td class=""><span class="merged" id="all.1TwJHw.6"  title="原文:: enabled">enabled</span></td>
-<td class=""><span class="merged" id="all.4eNR3V.2"  title="原文:: true">true</span></td>
+<td class=""><span class="merged" id="all.4eNR3V.4"  title="原文:: true">true</span></td>
 <td class=""><span class="merged" id="all.1TwJHw.7"  title="原文:: enabled">enabled</span></td>
 <td class=""><span class="merged" id="all.36lP7.4" title="原文 : If set to false, tracing would be disabled">falseに設定すると、トレースは無効になります</span></td>
 </tr>

@@ -2,9 +2,9 @@
 function createConfig() {
     return {
         home: "about/01_overview",
-        release: "2.2.1-SNAPSHOT",
+        release: "2.3.1",
         releases: [
-            "2.2.1-SNAPSHOT"
+            "2.3.1"
         ],
         pathColors: {
             "*": "blue-grey"
@@ -76,6 +76,19 @@ function createRoutes(){
                 hasNav: true
             },
             component: loadPage('about-04_managing-dependencies', '/about/04_managing-dependencies', {})
+        },
+        {
+            path: '/about/04_windows',
+            meta: {
+                h1: 'Windows上のHelidon',
+                title: 'Windows上のHelidon',
+                h1Prefix: null,
+                description: 'Helidon on Windows',
+                keywords: 'windows',
+                customLayout: null,
+                hasNav: true
+            },
+            component: loadPage('about-04_windows', '/about/04_windows', {})
         },
         {
             path: '/about/05_cli',
@@ -650,7 +663,20 @@ function createRoutes(){
             component: loadPage('se-metrics-01_metrics', '/se/metrics/01_metrics', {})
         },
         {
-            path: '/se/metrics/02_prometheus',
+            path: '/se/metrics/02_micrometer',
+            meta: {
+                h1: 'マイクロメーター・メトリクス',
+                title: 'マイクロメーター・メトリクス',
+                h1Prefix: 'SE',
+                description: 'Helidon Micrometer integration',
+                keywords: 'micrometer, helidon, metrics, integration',
+                customLayout: null,
+                hasNav: true
+            },
+            component: loadPage('se-metrics-02_micrometer', '/se/metrics/02_micrometer', {})
+        },
+        {
+            path: '/se/metrics/03_prometheus',
             meta: {
                 h1: 'Prometheusメトリクス',
                 title: 'Prometheusメトリクス',
@@ -660,7 +686,20 @@ function createRoutes(){
                 customLayout: null,
                 hasNav: true
             },
-            component: loadPage('se-metrics-02_prometheus', '/se/metrics/02_prometheus', {})
+            component: loadPage('se-metrics-03_prometheus', '/se/metrics/03_prometheus', {})
+        },
+        {
+            path: '/se/metrics/04_prometheus_exemplar_support',
+            meta: {
+                h1: 'Exemplarsのメトリクス・サポート',
+                title: 'Exemplarsのメトリクス・サポート',
+                h1Prefix: 'SE',
+                description: 'Helidon metrics',
+                keywords: 'helidon, metrics, exemplar, prometheus, OpenMetrics',
+                customLayout: null,
+                hasNav: true
+            },
+            component: loadPage('se-metrics-04_prometheus_exemplar_support', '/se/metrics/04_prometheus_exemplar_support', {})
         },
         {
             path: '/se/openapi/01_openapi',
@@ -674,6 +713,45 @@ function createRoutes(){
                 hasNav: true
             },
             component: loadPage('se-openapi-01_openapi', '/se/openapi/01_openapi', {})
+        },
+        {
+            path: '/se/oci/01_oci',
+            meta: {
+                h1: 'Oracle Cloud Infrastructure統合',
+                title: 'Oracle Cloud Infrastructure統合',
+                h1Prefix: 'SE',
+                description: 'Helidon OCI Integration',
+                keywords: 'oci',
+                customLayout: null,
+                hasNav: true
+            },
+            component: loadPage('se-oci-01_oci', '/se/oci/01_oci', {})
+        },
+        {
+            path: '/se/oci/02_object-storage',
+            meta: {
+                h1: 'OCIオブジェクト・ストレージ',
+                title: 'OCIオブジェクト・ストレージ',
+                h1Prefix: 'SE',
+                description: 'Helidon OCI Object Storage integration',
+                keywords: 'oci, objectstorage',
+                customLayout: null,
+                hasNav: true
+            },
+            component: loadPage('se-oci-02_object-storage', '/se/oci/02_object-storage', {})
+        },
+        {
+            path: '/se/oci/03_vault',
+            meta: {
+                h1: 'OCI Vault',
+                title: 'OCI Vault',
+                h1Prefix: 'SE',
+                description: 'Helidon OCI Vault integration',
+                keywords: 'oci, vault',
+                customLayout: null,
+                hasNav: true
+            },
+            component: loadPage('se-oci-03_vault', '/se/oci/03_vault', {})
         },
         {
             path: '/se/reactivestreams/01_overview',
@@ -1014,13 +1092,26 @@ function createRoutes(){
             component: loadPage('se-security-05_extensibility', '/se/security/05_extensibility', {})
         },
         {
+            path: '/se/scheduling/01_introduction',
+            meta: {
+                h1: '概要',
+                title: '概要',
+                h1Prefix: 'SE',
+                description: 'Scheduling in Helidon SE',
+                keywords: 'helidon, se, scheduling',
+                customLayout: null,
+                hasNav: true
+            },
+            component: loadPage('se-scheduling-01_introduction', '/se/scheduling/01_introduction', {})
+        },
+        {
             path: '/se/tracing/01_tracing',
             meta: {
                 h1: 'トレース',
                 title: 'トレース',
                 h1Prefix: 'SE',
                 description: 'Helidon Tracing Support',
-                keywords: null,
+                keywords: 'helidon, tracing',
                 customLayout: null,
                 hasNav: true
             },
@@ -1051,6 +1142,32 @@ function createRoutes(){
                 hasNav: true
             },
             component: loadPage('se-tracing-03_jaeger', '/se/tracing/03_jaeger', {})
+        },
+        {
+            path: '/se/tracing/04_jaeger_metrics',
+            meta: {
+                h1: 'Jaegerのメトリクス・サポート',
+                title: 'Jaegerのメトリクス・サポート',
+                h1Prefix: 'SE',
+                description: 'Helidon support for Jaeger metrics',
+                keywords: 'helidon, metrics, tracing, jaeger',
+                customLayout: null,
+                hasNav: true
+            },
+            component: loadPage('se-tracing-04_jaeger_metrics', '/se/tracing/04_jaeger_metrics', {})
+        },
+        {
+            path: '/se/vault/01_vault',
+            meta: {
+                h1: 'Vault',
+                title: 'Vault',
+                h1Prefix: 'SE',
+                description: 'Helidon Vault integration',
+                keywords: 'vault',
+                customLayout: null,
+                hasNav: true
+            },
+            component: loadPage('se-vault-01_vault', '/se/vault/01_vault', {})
         },
         {
             path: '/se/webclient/01_introduction',
@@ -1350,6 +1467,32 @@ function createRoutes(){
                 hasNav: true
             },
             component: loadPage('mp-guides-37_jlink_image', '/mp/guides/37_jlink_image', {})
+        },
+        {
+            path: '/mp/guides/38_se_services',
+            meta: {
+                h1: 'Helidon SEサービスの再利用',
+                title: 'Helidon SEサービスの再利用',
+                h1Prefix: 'MP',
+                description: 'Helidon Reactive Routing',
+                keywords: 'helidon, guide, routing',
+                customLayout: null,
+                hasNav: true
+            },
+            component: loadPage('mp-guides-38_se_services', '/mp/guides/38_se_services', {})
+        },
+        {
+            path: '/mp/beanvalidation/01_overview',
+            meta: {
+                h1: 'Beanバリデーションの概要',
+                title: 'Beanバリデーションの概要',
+                h1Prefix: 'MP',
+                description: 'Bean Validation Introduction',
+                keywords: 'helidon, webserver, bean validation, validation',
+                customLayout: null,
+                hasNav: true
+            },
+            component: loadPage('mp-beanvalidation-01_overview', '/mp/beanvalidation/01_overview', {})
         },
         {
             path: '/mp/config/01_introduction',
@@ -1664,6 +1807,32 @@ function createRoutes(){
             component: loadPage('mp-metrics-01_introduction', '/mp/metrics/01_introduction', {})
         },
         {
+            path: '/mp/metrics/02_micrometer',
+            meta: {
+                h1: 'マイクロメーター・メトリクス',
+                title: 'マイクロメーター・メトリクス',
+                h1Prefix: 'MP',
+                description: 'Helidon Micrometer integration',
+                keywords: 'micrometer, helidon, metrics, integration, microprofile',
+                customLayout: null,
+                hasNav: true
+            },
+            component: loadPage('mp-metrics-02_micrometer', '/mp/metrics/02_micrometer', {})
+        },
+        {
+            path: '/mp/metrics/04_prometheus_exemplar_support',
+            meta: {
+                h1: 'Exemplarsのメトリクス・サポート',
+                title: 'Exemplarsのメトリクス・サポート',
+                h1Prefix: 'MP',
+                description: 'Helidon metrics',
+                keywords: 'helidon, metrics, exemplar, prometheus, OpenMetrics',
+                customLayout: null,
+                hasNav: true
+            },
+            component: loadPage('mp-metrics-04_prometheus_exemplar_support', '/mp/metrics/04_prometheus_exemplar_support', {})
+        },
+        {
             path: '/mp/openapi/01_openapi',
             meta: {
                 h1: 'OpenAPI',
@@ -1675,6 +1844,45 @@ function createRoutes(){
                 hasNav: true
             },
             component: loadPage('mp-openapi-01_openapi', '/mp/openapi/01_openapi', {})
+        },
+        {
+            path: '/mp/oci/01_oci',
+            meta: {
+                h1: 'Oracle Cloud Infrastructure統合',
+                title: 'Oracle Cloud Infrastructure統合',
+                h1Prefix: 'MP',
+                description: 'Helidon OCI Integration',
+                keywords: 'oci',
+                customLayout: null,
+                hasNav: true
+            },
+            component: loadPage('mp-oci-01_oci', '/mp/oci/01_oci', {})
+        },
+        {
+            path: '/mp/oci/02_object-storage',
+            meta: {
+                h1: 'OCIオブジェクト・ストレージ',
+                title: 'OCIオブジェクト・ストレージ',
+                h1Prefix: 'MP',
+                description: 'Helidon OCI Object Storage integration',
+                keywords: 'oci, objectstorage',
+                customLayout: null,
+                hasNav: true
+            },
+            component: loadPage('mp-oci-02_object-storage', '/mp/oci/02_object-storage', {})
+        },
+        {
+            path: '/mp/oci/03_vault',
+            meta: {
+                h1: 'OCI Vault',
+                title: 'OCI Vault',
+                h1Prefix: 'MP',
+                description: 'Helidon OCI Vault integration',
+                keywords: 'oci, vault',
+                customLayout: null,
+                hasNav: true
+            },
+            component: loadPage('mp-oci-03_vault', '/mp/oci/03_vault', {})
         },
         {
             path: '/mp/reactivestreams/01_overview',
@@ -1846,6 +2054,19 @@ function createRoutes(){
             component: loadPage('mp-security-03_configuration-secrets', '/mp/security/03_configuration-secrets', {})
         },
         {
+            path: '/mp/scheduling/01_introduction',
+            meta: {
+                h1: '概要',
+                title: '概要',
+                h1Prefix: 'MP',
+                description: 'Scheduling in Helidon MP',
+                keywords: 'helidon, mp, scheduling',
+                customLayout: null,
+                hasNav: true
+            },
+            component: loadPage('mp-scheduling-01_introduction', '/mp/scheduling/01_introduction', {})
+        },
+        {
             path: '/mp/tracing/01_tracing',
             meta: {
                 h1: 'トレース',
@@ -1883,6 +2104,32 @@ function createRoutes(){
                 hasNav: true
             },
             component: loadPage('mp-tracing-03_jaeger', '/mp/tracing/03_jaeger', {})
+        },
+        {
+            path: '/mp/tracing/04_jaeger_metrics',
+            meta: {
+                h1: 'Jaegerのメトリクス・サポート',
+                title: 'Jaegerのメトリクス・サポート',
+                h1Prefix: 'MP',
+                description: 'Helidon support for Jaeger metrics',
+                keywords: 'helidon, metrics, tracing, jaeger',
+                customLayout: null,
+                hasNav: true
+            },
+            component: loadPage('mp-tracing-04_jaeger_metrics', '/mp/tracing/04_jaeger_metrics', {})
+        },
+        {
+            path: '/mp/vault/01_vault',
+            meta: {
+                h1: 'Vault',
+                title: 'Vault',
+                h1Prefix: 'MP',
+                description: 'Helidon Vault integration',
+                keywords: 'vault',
+                customLayout: null,
+                hasNav: true
+            },
+            component: loadPage('mp-vault-01_vault', '/mp/vault/01_vault', {})
         },
         {
             path: '/mp/websocket/01_overview',
@@ -2000,6 +2247,7 @@ function createNav(){
                                 { href: '/about/02_introduction', title: 'Helidonについて' },
                                 { href: '/about/03_prerequisites', title: '開始' },
                                 { href: '/about/04_managing-dependencies', title: '依存関係の管理' },
+                                { href: '/about/04_windows', title: 'Windows上のHelidon' },
                                 { href: '/about/05_cli', title: 'Helidon CLI' },
                                 { href: '/about/05_kubernetes', title: 'デスクトップ上のKubernetes' },
                                 { href: '/about/10_upgrade', title: '1.4からのアップグレード' }
@@ -2113,7 +2361,9 @@ function createNav(){
                             group: '/se/metrics',
                             items: [
                                 { href: '/se/metrics/01_metrics', title: 'メトリクス' },
-                                { href: '/se/metrics/02_prometheus', title: 'Prometheusメトリクス' }
+                                { href: '/se/metrics/02_micrometer', title: 'マイクロメーター・メトリクス' },
+                                { href: '/se/metrics/03_prometheus', title: 'Prometheusメトリクス' },
+                                { href: '/se/metrics/04_prometheus_exemplar_support', title: 'Exemplarsのメトリクス・サポート' }
                             ]
                         },
                         {
@@ -2122,6 +2372,16 @@ function createNav(){
                             group: '/se/openapi',
                             items: [
                                 { href: '/se/openapi/01_openapi', title: 'SEのOpenAPI' }
+                            ]
+                        },
+                        {
+                            title: 'OCI',
+                            action: 'filter_drama',
+                            group: '/se/oci',
+                            items: [
+                                { href: '/se/oci/01_oci', title: 'Oracle Cloud Infrastructure統合' },
+                                { href: '/se/oci/02_object-storage', title: 'OCIオブジェクト・ストレージ' },
+                                { href: '/se/oci/03_vault', title: 'OCI Vault' }
                             ]
                         },
                         {
@@ -2179,13 +2439,30 @@ function createNav(){
                             ]
                         },
                         {
+                            title: 'スケジューリング',
+                            action: 'access_alarm',
+                            group: '/se/scheduling',
+                            items: [
+                                { href: '/se/scheduling/01_introduction', title: '概要' }
+                            ]
+                        },
+                        {
                             title: 'トレース',
                             action: 'timeline',
                             group: '/se/tracing',
                             items: [
                                 { href: '/se/tracing/01_tracing', title: 'トレース' },
                                 { href: '/se/tracing/02_zipkin', title: 'Zipkinトレース' },
-                                { href: '/se/tracing/03_jaeger', title: 'Jaegerトレース' }
+                                { href: '/se/tracing/03_jaeger', title: 'Jaegerトレース' },
+                                { href: '/se/tracing/04_jaeger_metrics', title: 'Jaegerのメトリクス・サポート' }
+                            ]
+                        },
+                        {
+                            title: 'Vault',
+                            action: 'lock',
+                            group: '/se/vault',
+                            items: [
+                                { href: '/se/vault/01_vault', title: 'Vault' }
                             ]
                         },
                         {
@@ -2256,7 +2533,16 @@ function createNav(){
                                 { href: '/mp/guides/25_maven_build', title: 'Mavenガイド' },
                                 { href: '/mp/guides/26_gradle_build', title: 'Gradleガイド' },
                                 { href: '/mp/guides/36_graalnative', title: 'GraalVMネイティブ・イメージ' },
-                                { href: '/mp/guides/37_jlink_image', title: '`jlink`を使用したカスタム・ランタイム・イメージ' }
+                                { href: '/mp/guides/37_jlink_image', title: '`jlink`を使用したカスタム・ランタイム・イメージ' },
+                                { href: '/mp/guides/38_se_services', title: 'Helidon SEサービスの再利用' }
+                            ]
+                        },
+                        {
+                            title: 'Beanバリデーション',
+                            action: 'receipt',
+                            group: '/mp/beanvalidation',
+                            items: [
+                                { href: '/mp/beanvalidation/01_overview', title: 'Beanバリデーションの概要' }
                             ]
                         },
                         {
@@ -2357,7 +2643,9 @@ function createNav(){
                             action: 'av_timer',
                             group: '/mp/metrics',
                             items: [
-                                { href: '/mp/metrics/01_introduction', title: 'メトリクス' }
+                                { href: '/mp/metrics/01_introduction', title: 'メトリクス' },
+                                { href: '/mp/metrics/02_micrometer', title: 'マイクロメーター・メトリクス' },
+                                { href: '/mp/metrics/04_prometheus_exemplar_support', title: 'Exemplarsのメトリクス・サポート' }
                             ]
                         },
                         {
@@ -2366,6 +2654,16 @@ function createNav(){
                             group: '/mp/openapi',
                             items: [
                                 { href: '/mp/openapi/01_openapi', title: 'OpenAPI' }
+                            ]
+                        },
+                        {
+                            title: 'OCI',
+                            action: 'filter_drama',
+                            group: '/mp/oci',
+                            items: [
+                                { href: '/mp/oci/01_oci', title: 'Oracle Cloud Infrastructure統合' },
+                                { href: '/mp/oci/02_object-storage', title: 'OCIオブジェクト・ストレージ' },
+                                { href: '/mp/oci/03_vault', title: 'OCI Vault' }
                             ]
                         },
                         {
@@ -2410,13 +2708,30 @@ function createNav(){
                             ]
                         },
                         {
+                            title: 'スケジューリング',
+                            action: 'access_alarm',
+                            group: '/mp/scheduling',
+                            items: [
+                                { href: '/mp/scheduling/01_introduction', title: '概要' }
+                            ]
+                        },
+                        {
                             title: 'トレース',
                             action: 'timeline',
                             group: '/mp/tracing',
                             items: [
                                 { href: '/mp/tracing/01_tracing', title: 'トレース' },
                                 { href: '/mp/tracing/02_zipkin', title: 'Zipkinトレース' },
-                                { href: '/mp/tracing/03_jaeger', title: 'Jaegerトレース' }
+                                { href: '/mp/tracing/03_jaeger', title: 'Jaegerトレース' },
+                                { href: '/mp/tracing/04_jaeger_metrics', title: 'Jaegerのメトリクス・サポート' }
+                            ]
+                        },
+                        {
+                            title: 'Vault',
+                            action: 'lock',
+                            group: '/mp/vault',
+                            items: [
+                                { href: '/mp/vault/01_vault', title: 'Vault' }
                             ]
                         },
                         {

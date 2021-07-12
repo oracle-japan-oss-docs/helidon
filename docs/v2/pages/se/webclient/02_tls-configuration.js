@@ -101,19 +101,19 @@ WebClientTls.builder()
 <th><span class="merged" id="all.28YvFB" title="原文 : Configuration key">構成キー</span></th>
 <th><span class="merged" id="all.3T02MF.4"  title="原文:: Default value">デフォルト値</span></th>
 <th><span class="merged" id="all.2fU2gv.1"  title="原文:: Java type">Javaタイプ</span></th>
-<th><span class="merged" id="all.4JM9z7.14"  title="原文:: Description">説明</span></th>
+<th><span class="merged" id="all.4JM9z7.18"  title="原文:: Description">説明</span></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td class=""><span class="merged" id="all.2aD3Pj" title="原文 : disable-hostname-verification"><strong><code>disable-hostname-verification</code></strong></span></td>
-<td class=""><span class="merged" id="all.njUKu"  title="原文:: false">false</span></td>
+<td class=""><span class="merged" id="all.njUKu.12"  title="原文:: false">false</span></td>
 <td class=""><span class="merged" id="all.2XHIO8"  title="原文:: boolean">boolean</span></td>
 <td class=""><span class="merged" id="all.KuXgp" title="原文 : Whether hostname verification should be performed">ホスト名検証を実行するかどうか</span></td>
 </tr>
 <tr>
 <td class=""><span class="merged" id="all.CcZFk" title="原文 : trust-all"><strong><code>trust-all</code></strong></span></td>
-<td class=""><span class="merged" id="all.njUKu.1"  title="原文:: false">false</span></td>
+<td class=""><span class="merged" id="all.njUKu.13"  title="原文:: false">false</span></td>
 <td class=""><span class="merged" id="all.2XHIO8.1"  title="原文:: boolean">boolean</span></td>
 <td class=""><span class="merged" id="all.1YPIM7" title="原文 : Whether all of the server certificates should be trusted">すべてのサーバー証明書を信頼するかどうか</span></td>
 </tr>
@@ -142,7 +142,7 @@ WebClientTls.builder()
 <th><span class="merged" id="all.28YvFB.1" title="原文 : Configuration key">構成キー</span></th>
 <th><span class="merged" id="all.3T02MF.5"  title="原文:: Default value">デフォルト値</span></th>
 <th><span class="merged" id="all.2fU2gv.2"  title="原文:: Java type">Javaタイプ</span></th>
-<th><span class="merged" id="all.4JM9z7.15"  title="原文:: Description">説明</span></th>
+<th><span class="merged" id="all.4JM9z7.19"  title="原文:: Description">説明</span></th>
 </tr>
 </thead>
 <tbody>

@@ -48,7 +48,7 @@
 
 <h5 id="_annotation_routingname"><span class="merged" id="all.3Pn5Xy.1" title="原文 : Annotation @RoutingName">注釈<code>@RoutingName</code></span></h5>
 <div class="section">
-<p><span class="merged" id="all.1wpofR" title="原文 : You can annotated a service with this annotation to assign it to a specific named routing, that is (most likely) going to be bound to a specific port.">この注釈を使用してサービスに注釈を付け、特定の名前付きルーティング(おそらく特定のポートにバインドされる)に割り当てることができます。</span></p>
+<p><span class="merged" id="all.2zy2k1" title="原文 : You can annotate a service bean with this annotation to assign it to a specific named routing, that is (most likely) going to be bound to a specific port.">サービスBeanにこの注釈を付けて、特定の名前付きルーティング(おそらく特定のポートにバインドされる)に割り当てることができます。</span></p>
 
 <p><span class="merged" id="all.1TxjbJ.1" title="原文 : The annotation has two attributes: - value that defines the routing name - required to mark that the routing name MUST be configured in Helidon server">注釈には2つの属性があります: - <code>value</code>はルーティング名を定義します - <code>required</code>はルーティング名をHelidonサーバーで構成する必要があることを示します</span></p>
 
@@ -68,9 +68,9 @@ public class AdminService implements Service {
 
 <h5 id="_configuration_override_of_routing_name"><span class="merged" id="all.1jqoi9.1" title="原文 : Configuration override of routing name">ルーティング名の構成オーバーライド</span></h5>
 <div class="section">
-<p><span class="merged" id="all.2F6ygt" title="原文 : For each service class you can define the routing name and its required flag by specifying a configuration option class-name.routing-name.name and class-name.routing-name.required.">サービス・クラスごとに、構成オプション<code>class-name.routing-name.name</code>および<code>class-name.routing-name.required</code>を指定して、ルーティング名とその必須フラグを定義できます。</span></p>
+<p><span class="merged" id="all.evfxA.spl1" title="原文 : For each service bean you can define the routing name and its required flag by specifying a configuration option bean-class-name.routing-name.name and bean-class-name.routing-name.required.">サービスBeanごとに、構成オプション<code>bean-class-name.routing-name.name</code>および<code>bean-class-name.routing-name.required</code>を指定して、ルーティング名とその必須フラグを定義できます。</span> <span class="merged" id="all.evfxA.spl2" title="原文 : For service beans produced with producer method replace bean-class-name with class-name.producer-method-name.">プロデューサ・メソッドを使用して生成されたサービスBeanの場合は、<code>bean-class-name</code>を<code>class-name.producer-method-name</code>に置き換えます。</span> </p>
 
-<p><span class="merged" id="all.15azCo" title="原文 : Example (YAML) configuration for a class io.helidon.examples.AdminService that changes the routing name to management and its required flag to false:">ルーティング名を<code>management</code>に、その必須フラグを<code>false</code>に変更するクラス<code>io.helidon.examples.AdminService</code>の(YAML)構成の例:</span></p>
+<p><span class="merged" id="all.2LQ61V" title="原文 : Example (YAML) configuration for a service bean io.helidon.examples.AdminService that changes the routing name to management and its required flag to false:">ルーティング名を<code>management</code>に変更し、その必須フラグを<code>false</code>に変更するサービスBean <code>io.helidon.examples.AdminService</code>の構成例(YAML):</span></p>
 
 <markup
 lang="yaml"

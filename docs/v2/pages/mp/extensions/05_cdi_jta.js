@@ -13,9 +13,9 @@
 </v-flex>
 </v-layout>
 
-<h2 id="_prerequsites"><span class="merged" id="all.4bi3vm" title="原文 : Prerequsites">前提条件</span></h2>
+<h2 id="maven-coordinates"><span class="merged" id="all.317oeS.7" title="原文 : Maven Coordinates">Maven連携</span></h2>
 <div class="section">
-<p><span class="merged" id="all.34KtMl" title="原文 : Declare the following dependency fragment in your project&rsquo;s pom.xml:">プロジェクトの<code>pom.xml</code>で次の依存性フラグメントを宣言します:</span></p>
+<p><span class="merged" id="all.3Xm1f4" title="原文 : To enable JTA Support add the following dependency to your project&rsquo;s pom.xml (see Managing Dependencies).">JTAサポートを有効にするには、プロジェクトの<code>pom.xml</code>に次の依存関係を追加します(<router-link to="/about/04_managing-dependencies">「依存関係の管理」</router-link>を参照)。</span></p>
 
 <markup
 lang="xml"
@@ -25,7 +25,6 @@ lang="xml"
   &lt;artifactId&gt;helidon-integrations-cdi-jta-weld&lt;/artifactId&gt;
   &lt;scope&gt;runtime&lt;/scope&gt;
 &lt;/dependency&gt;
-
 &lt;dependency&gt;
   &lt;groupId&gt;javax.transaction&lt;/groupId&gt;
   &lt;artifactId&gt;javax.transaction-api&lt;/artifactId&gt;
@@ -60,7 +59,7 @@ public void doSomethingTransactionally() {
 
 </li>
 <li>
-<p><span class="merged" id="all.1DVU1"  title="原文:: Transaction"><a href="https://static.javadoc.io/javax.transaction/javax.transaction-api/1.2/javax/transaction/Transaction.html" id="" target="_blank" ><code>Transaction</code></a></span></p>
+<p><span class="merged" id="all.1DVU1"  title="原文:: Transaction"><a href="https://static.javadoc.io/javax.transaction/javax.transaction-api/1.2/javax/transaction/Transaction.html" id="" target="_blank" ><code>トランザクション</code></a></span></p>
 
 </li>
 <li>

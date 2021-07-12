@@ -13,6 +13,22 @@
 </v-flex>
 </v-layout>
 
+<h2 id="maven-coordinates"><span class="merged" id="all.317oeS.33" title="原文 : Maven Coordinates">Maven連携</span></h2>
+<div class="section">
+<p><span class="merged" id="all.nB3Z8" title="原文 : To enable Config add the following dependency to your project&rsquo;s pom.xml (see Managing Dependencies).">構成を有効にするには、プロジェクトの<code>pom.xml</code>に次の依存関係を追加します(<router-link to="/about/04_managing-dependencies">「依存関係の管理」</router-link>を参照)。</span></p>
+
+<markup
+lang="xml"
+
+>&lt;dependencies&gt;
+    &lt;dependency&gt;
+        &lt;groupId&gt;io.helidon.config&lt;/groupId&gt;
+        &lt;artifactId&gt;helidon-config&lt;/artifactId&gt;
+    &lt;/dependency&gt;
+&lt;/dependencies&gt;</markup>
+
+</div>
+
 <h2 id="_getting_started"><span class="merged" id="all.J6ASm.4"  title="原文:: Getting Started">開始</span></h2>
 <div class="section">
 
@@ -111,7 +127,7 @@ lang="java"
 
 <ol style="margin-left: 15px;">
 <li>
-<span class="merged" id="all.4UYQfQ" title="原文 : add config-related dependencies to your pom.xml"><router-link @click.native="this.scrollFix('#maven-coords')" to="#maven-coords"><code>pom.xml</code>への構成関連の依存関係の追加</router-link></span>
+<span class="merged" id="all.1E78SC" title="原文 : add config-related dependencies to your pom.xml"><router-link @click.native="this.scrollFix('#add-maven-coords')" to="#add-maven-coords"><code>pom.xml</code>への構成関連の依存関係の追加</router-link></span>
 
 </li>
 <li>
@@ -128,18 +144,9 @@ lang="java"
 </li>
 </ol>
 
-<h4 id="maven-coords"><span class="merged" id="all.1sYH9N" title="原文 : Add Maven Dependency on Config">構成へのMaven依存性の追加</span></h4>
+<h4 id="add-maven-coords"><span class="merged" id="all.1sYH9N" title="原文 : Add Maven Dependency on Config">構成へのMaven依存関係の追加</span></h4>
 <div class="section">
-<markup
-lang="xml"
-title="<code>pom.xml</code>での構成の依存性"
->&lt;dependencies&gt;
-    &lt;dependency&gt;
-        &lt;groupId&gt;io.helidon.config&lt;/groupId&gt;
-        &lt;artifactId&gt;helidon-config&lt;/artifactId&gt;
-        &lt;version&gt;version-of-config-you-are-using&lt;/version&gt;
-    &lt;/dependency&gt;
-&lt;/dependencies&gt;</markup>
+<p><span class="merged" id="all.2sDkSs" title="原文 : Add config-related dependencies to your `pom.xml."><router-link @click.native="this.scrollFix('#maven-coordinates')" to="#maven-coordinates">「config関連の依存関係」</router-link>をpom.xmlに追加します。</span></p>
 
 </div>
 
@@ -149,7 +156,7 @@ title="<code>pom.xml</code>での構成の依存性"
 
 <markup
 lang="java"
-title="<code>module-info.java</code>での構成の依存性"
+title="<code>module-info.java</code>での構成の依存関係"
 >module myModule {
     requires io.helidon.config;
 }</markup>
@@ -394,7 +401,7 @@ second-service.host=${host}/secondservice</markup>
 <p><span class="merged" id="all.4MpmOC" title="原文 : creating and invoking methods on a Config.Builder object to construct a Config instance"><code>Config</code>インスタンスを構築するための<code>Config.Builder</code>オブジェクトでのメソッドの作成および起動</span></p>
 <p><span class="merged" id="all.2kzduN.spl1" title="原文 : Using a builder, the application can control everything about how the config system creates the resulting Config instance: config sources, parsers, polling strategy, filters, overrides, mappers, whether or not environment variables and Java system properties serve as config sources.">ビルダーを使用すると、アプリケーションは構成システムが結果の<code>Config</code>インスタンスを作成する方法に関するすべてを制御できます: 構成ソース、パーサー、ポーリング戦略、フィルタ、オーバーライド、マッパー、環境変数およびJavaシステム・プロパティが構成ソースとして機能するかどうか。</span> <span class="merged" id="all.2kzduN.spl2" title="原文 : The JavaDoc explains how to use the Config.Builder.">JavaDocでは、<a href="./apidocs/io.helidon.config/io/helidon/config/Config.Builder.html" id="" target="_blank" ><code>Config.Builder</code></a>の使用方法について説明します。</span> </p>
 
-<p><span class="merged" id="all.Xjurf"  title="原文:: or">または</span></p>
+<p><span class="merged" id="all.Xjurf.1"  title="原文:: or">または</span></p>
 
 </li>
 <li>

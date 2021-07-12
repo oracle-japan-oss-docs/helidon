@@ -2,6 +2,20 @@
 <span title="免責事項: ここに記載されているドキュメントは、お客様の利便性のために翻訳ソフトウエアにより機械的に翻訳(機械翻訳)したものです。オリジナルの英語版もあわせてご確認ください。" style="width:150px;padding-left:5px;padding-right:5px;border:#ff0000 solid 1px;border-color: gray;font-size: small;color:gray;margin: 0 auto 0 auto;text-align:center;"><a href="https://docs.oracle.com/cd/E85181_01/mt_disclaimer.html" target="disclaimer">&nbsp;&nbsp;機械翻訳について&nbsp;&nbsp;</a></span>
 
 
+<h2 id="maven-coordinates"><span class="merged" id="all.317oeS.51" title="原文 : Maven Coordinates">Maven連携</span></h2>
+<div class="section">
+<p><span class="merged" id="all.1FKB4D" title="原文 : To enable Reactive Messaging add the following dependency to your project&rsquo;s pom.xml (see Managing Dependencies).">リアクティブ・メッセージングを有効にするには、プロジェクトの<code>pom.xml</code>に次の依存関係を追加します(<router-link to="/about/04_managing-dependencies">「依存関係の管理」</router-link>を参照)。</span></p>
+
+<markup
+lang="xml"
+
+>&lt;dependency&gt;
+    &lt;groupId&gt;io.helidon.messaging&lt;/groupId&gt;
+    &lt;artifactId&gt;helidon-messaging&lt;/artifactId&gt;
+&lt;/dependency&gt;</markup>
+
+</div>
+
 <h2 id="_reactive_messaging"><span class="merged" id="all.46TtuU.1" title="原文 : Reactive Messaging">リアクティブ・メッセージング</span></h2>
 <div class="section">
 <p><span class="merged" id="all.uuiVe.spl1" title="原文 : Asynchronous messaging is a commonly used form of communication in the world of microservices.">非同期メッセージングは、マイクロサービスの世界でよく使用される通信形式です。</span> <span class="merged" id="all.uuiVe.spl2" title="原文 : While its possible to start building your reactive streams directly by combining operators and connecting them to reactive APIs, with Helidon SE Reactive Messaging, you can now use prepared tools for repetitive use case scenarios .">Helidon SEリアクティブ・メッセージングを使用すると、オペレータを組み合せてリアクティブAPIに接続することで、リアクティブ・ストリームのビルドを直接開始できますが、反復的なユースケース・シナリオのための準備済ツールを使用できるようになりました。</span> </p>
@@ -86,20 +100,6 @@ Messaging.builder()
 
 </li>
 </ul>
-</div>
-
-<h3 id="_dependency"><span class="merged" id="all.1l1QyT.4"  title="原文:: Dependency">依存性</span></h3>
-<div class="section">
-<p><span class="merged" id="all.4JnU1V.12" title="原文 : Declare the following dependency in your project:">プロジェクトで次の依存性を宣言します:</span></p>
-
-<markup
-lang="xml"
-
->&lt;dependency&gt;
-    &lt;groupId&gt;io.helidon.messaging&lt;/groupId&gt;
-    &lt;artifactId&gt;helidon-messaging&lt;/artifactId&gt;
-&lt;/dependency&gt;</markup>
-
 </div>
 </div>
 </doc-view>

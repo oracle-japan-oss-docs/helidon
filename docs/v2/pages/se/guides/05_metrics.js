@@ -3,7 +3,7 @@
  <v-layout row wrap> <v-flex xs12 sm10 lg10> <v-card class="section-def" v-bind:color="$store.state.currentColor"> <v-card-text class="pa-3"> <v-card class="section-def__card"> <v-card-text>
 <dl>
 <dt slot=title><span class="merged" id="all.3LjiKk" title="原文 : Helidon SE Metrics Guide">Helidon SEメトリクス・ガイド</span></dt>
-<dd slot="desc"><p><span class="merged" id="all.1NBhHV" title="原文 : This guide describes how to create a sample Helidon SE project that can be used to run some basic examples using both built-in and custom metrics.">このガイドでは、組込みメトリクスとカスタム・メトリクスの両方を使用していくつかの基本的な例を実行するために使用できるサンプルHelidon SEプロジェクトの作成方法について説明します。</span></p>
+<dd slot="desc"><p><span class="merged" id="all.12WBZm" title="原文 : This guide describes how to create a sample Helidon SE project that can be used to run some basic examples using both built-in and custom metrics with Helidon SE.">このガイドでは、Helidon SEで組込みメトリクスとカスタム・メトリクスの両方を使用していくつかの基本的な例を実行するために使用できるサンプルHelidon SEプロジェクトの作成方法について説明します。</span></p>
 </dd>
 </dl>
 </v-card-text>
@@ -29,7 +29,7 @@
 <td class=""><span class="merged" id="all.wqDOs.6" title="原文 : About 30 minutes">約30分</span></td>
 </tr>
 <tr>
-<td class=""><span class="merged" id="all.27GIMH.16" title="原文 : Helidon Prerequisites"><router-link to="/about/03_prerequisites">Helidonの前提条件</router-link></span></td>
+<td class=""><span class="merged" id="all.27GIMH.17" title="原文 : Helidon Prerequisites"><router-link to="/about/03_prerequisites">Helidonの前提条件</router-link></span></td>
 </tr>
 <tr>
 <td class=""><span class="merged" id="all.1E7KLE.1"  title="原文:: Helm"><a href="https://github.com/helm/helm" id="" target="_blank" >Helm</a></span></td>
@@ -48,7 +48,7 @@ title="Maven原型の実行"
 >mvn -U archetype:generate -DinteractiveMode=false \
     -DarchetypeGroupId=io.helidon.archetypes \
     -DarchetypeArtifactId=helidon-quickstart-se \
-    -DarchetypeVersion=2.2.1-SNAPSHOT \
+    -DarchetypeVersion=2.3.1 \
     -DgroupId=io.helidon.examples \
     -DartifactId=helidon-quickstart-se \
     -Dpackage=io.helidon.examples.quickstart.se</markup>
@@ -57,7 +57,7 @@ title="Maven原型の実行"
 
 <h3 id="_using_the_built_in_metrics"><span class="merged" id="all.43ESSC.1" title="原文 : Using the built-in metrics">組込みメトリクスの使用</span></h3>
 <div class="section">
-<p><span class="merged" id="all.3Kl5Gc.spl1" title="原文 : Helidon provides three scopes of metrics: base, vendor, and application.">Helidonには、3つのメトリクス・スコープが用意されています: ベース、ベンダーおよびアプリケーション。</span> <span class="merged" id="all.3Kl5Gc.spl2" title="原文 : Here are the metric endpoints:">メトリック・エンドポイントは次のとおりです:</span> </p>
+<p><span class="merged" id="all.3Kl5Gc.1.spl1" title="原文 : Helidon provides three scopes of metrics: base, vendor, and application.">Helidonには、3つのメトリクス・スコープが用意されています: ベース、ベンダーおよびアプリケーション。</span> <span class="merged" id="all.3Kl5Gc.1.spl2" title="原文 : Here are the metric endpoints:">メトリック・エンドポイントは次のとおりです:</span> </p>
 
 <ol style="margin-left: 15px;">
 <li>
@@ -80,7 +80,7 @@ title="Maven原型の実行"
 
 <markup
 lang="xml"
-title="メトリクスの依存性がプロジェクトのpom.xmlファイルにすでに存在することを確認します:"
+title="メトリクスの依存関係がプロジェクトのpom.xmlファイルにすでに存在することを確認します:"
 >&lt;dependency&gt;
     &lt;groupId&gt;io.helidon.metrics&lt;/groupId&gt;
     &lt;artifactId&gt;helidon-metrics&lt;/artifactId&gt;
@@ -157,14 +157,6 @@ title="JSONレスポンス:"
     "thread.max.count": 44
   },
   "vendor": {
-    "grpc.requests.count": 0,
-    "grpc.requests.meter": {
-      "count": 0,
-      "meanRate": 0.0,
-      "oneMinRate": 0.0,
-      "fiveMinRate": 0.0,
-      "fifteenMinRate": 0.0
-    },
     "requests.count": 6,
     "requests.meter": {
       "count": 6,
@@ -199,6 +191,69 @@ title="JSONレスポンス:"
 <div class="admonition note">
 <p class="admonition-inline"><span class="merged" id="all.3osaGm.1.spl1" title="原文 : You cannot get the individual fields of a metric.">メトリックの個々のフィールドは取得できません。</span> <span class="merged" id="all.3osaGm.1.spl2" title="原文 : For example, you cannot target http://localhost:8080/metrics/vendor/requests.meter.count.">たとえば、<a href="http://localhost:8080/metrics/vendor/requests.meter.count" id="" target="_blank" >http://localhost:8080/metrics/vendor/requests.meter.count</a>はターゲットにできません。</span> </p>
 </div>
+
+<h4 id="_key_performance_indicator_kpi_metrics"><span class="merged" id="all.tqY2Q.1" title="原文 : Key Performance Indicator (KPI) Metrics">キー・パフォーマンス・インジケータ(KPI)メトリクス</span></h4>
+<div class="section">
+<p><span class="merged" id="all.3sOZXl.1" title="原文 : Any time you include the Helidon metrics module in your application, Helidon tracks two basic performance indicator metrics:">アプリケーションにHelidonメトリクス・モジュールを含めるたびに、Helidonでは、次の2つの基本的なパフォーマンス・メトリクスが追跡されます:</span></p>
+
+<ul class="ulist">
+<li>
+<p><span class="merged" id="all.3AcZDp.1" title="原文 : a Counter of all requests received (requests.count), and">受信したすべてのリクエストの<code>Counter</code> (<code>requests.count</code>)</span></p>
+
+</li>
+<li>
+<p><span class="merged" id="all.153KWy.1" title="原文 : a Meter of all requests received (requests.meter).">受信したすべてのリクエストの<code>Meter</code> (<code>requests.meter</code>)。</span></p>
+
+</li>
+</ul>
+<p><span class="merged" id="all.4b1RzM" title="原文 : Helidon SE also includes additional, extended KPI metrics which are disabled by default:">Helidon SEには、デフォルトでは無効になっている追加の拡張KPIメトリクスも含まれています:</span></p>
+
+<ul class="ulist">
+<li>
+<p><span class="merged" id="all.JrarW.1" title="原文 : current number of requests in-flight - a ConcurrentGauge (requests.inFlight) of requests currently being processed">現在進行中のリクエスト数 - 現在処理中のリクエストの<code>ConcurrentGauge</code> (<code>requests.inFlight</code>)</span></p>
+
+</li>
+<li>
+<p><span class="merged" id="all.2cyom6.1" title="原文 : long-running requests - a Meter (requests.longRunning) measuring the rate at which Helidon processes requests which take at least a given amount of time to complete; configurable, defaults to 10000 milliseconds (10 seconds)">長時間実行リクエスト - Helidonが完了までに少なくとも指定された時間を要するリクエストを処理する速度を測定する<code>Meter</code> (<code>requests.longRunning</code>)です。構成可能で、デフォルトは10000ミリ秒(10秒)です</span></p>
+
+</li>
+<li>
+<p><span class="merged" id="all.2iOF4J.1" title="原文 : load - a Meter (requests.load) measuring the rate at which requests are worked on (as opposed to received)">load - リクエストの処理速度を測定する<code>Meter</code> (<code>requests.load</code>) (受信したものとは対照的)</span></p>
+
+</li>
+<li>
+<p><span class="merged" id="all.1QFwn1.1" title="原文 : deferred - a Meter (requests.deferred) measuring the rate at which a request&rsquo;s processing is delayed after Helidon receives the request">延期 - Helidonがリクエストを受信した後にリクエスト処理が遅延する割合を測定する<code>Meter</code> (<code>requests.deferred</code>)</span></p>
+
+</li>
+</ul>
+<p><span class="merged" id="all.oRutk.1" title="原文 : You can enable and control these metrics using configuration:">構成を使用して、次のメトリクスを有効化および制御できます:</span></p>
+
+<markup
+lang="properties"
+title="拡張KPIメトリクスを制御する構成プロパティ・ファイル"
+>metrics.key-performance-indicators.extended = true
+metrics.key-performance-indicators.long-running.threshold-ms = 2000</markup>
+
+<p><span class="merged" id="all.23XZ5h" title="原文 : Your Helidon SE application can also control the behavior of the KPI metrics programmatically.">Helidon SEアプリケーションでは、KPIメトリクスの動作をプログラムで制御することもできます。</span></p>
+
+<ol style="margin-left: 15px;">
+<li>
+<span class="merged" id="all.34DFjr" title="原文 : Prepare a KeyPerformanceIndicatorSettings object, using its builder, and then pass the builder when invoking the MetricsSupport.Builder#keyPerformanceIndicatorMetricsSettings() method.">ビルダーを使用して<code>KeyPerformanceIndicatorSettings</code>オブジェクトを準備し、<code>MetricsSupport.Builder#keyPerformanceIndicatorMetricsSettings()</code>メソッドの起動時にビルダーを渡します。</span>
+
+</li>
+<li>
+<span class="merged" id="all.1OuHRV" title="原文 : Prepare a Config object and pass it to the MetricsSupport.Builder#keyPerformanceIndicatorMetricsConfig() method."><code>Config</code>オブジェクトを準備し、<code>MetricsSupport.Builder#keyPerformanceIndicatorMetricsConfig()</code>メソッドに渡します。</span>
+<markup
+lang="properties"
+title="KPIメトリクス構成フラグメントの例"
+>extended = true
+long-running.threshold-ms = 2000</markup>
+
+</li>
+</ol>
+<p><span class="merged" id="all.dBROd" title="原文 : Your Helidon SE application can also enable or disable the extended KPI metrics and control the long-running request threshold using methods on the MetricsSupport.Builder class.">Helidon SEアプリケーションでは、<a href="./apidocs/io.helidon.metrics/io/helidon/metrics/MetricsSupport.Builder.html" id="" target="_blank" >MetricsSupport.Builder</a>クラスのメソッドを使用して、拡張KPIメトリクスを有効または無効にしたり、長時間実行リクエストのしきい値を制御することもできます。</span></p>
+
+</div>
 </div>
 
 <h3 id="_metrics_metadata"><span class="merged" id="all.1eMrtK.1" title="原文 : Metrics metadata">メトリクス・メタデータ</span></h3>
@@ -215,7 +270,7 @@ title="JSONレスポンス:"
 
 </li>
 <li>
-<span class="merged" id="all.1KJjfe.1" title="原文 : type: The type of metric: Counter, Timer, Meter, Histogram, or Gauge.">type: メトリックのタイプ: <code>Counter</code>, <code>Timer</code>, <code>Meter</code>, <code>Histogram</code>、または<code>Gauge</code>。</span>
+<span class="merged" id="all.2JdHdF.1" title="原文 : type: The type of metric: Counter, Timer, Meter, Histogram, SimpleTimer, or Gauge.">type: メトリックのタイプ: <code>Counter</code>, <code>Timer</code>, <code>Meter</code>, <code>Histogram</code>, <code>SimpleTimer</code>、または<code>Gauge</code>。</span>
 
 </li>
 </ol>
@@ -797,6 +852,9 @@ title="JSONレスポンス:"
 
 <h3 id="_integration_with_kubernetes_and_prometheus"><span class="merged" id="all.3Am6oP.1" title="原文 : Integration with Kubernetes and Prometheus">KubernetesおよびPrometheusとの統合</span></h3>
 <div class="section">
+
+<h4 id="_kubernetes_integration"><span class="merged" id="all.1Im2hg.1" title="原文 : Kubernetes integration">Kubernetes統合</span></h4>
+<div class="section">
 <p><span class="merged" id="all.F74DL" title="原文 : The following example shows how to integrate the Helidon SE application with Kubernetes.">次の例は、Helidon SEアプリケーションをKubernetesと統合する方法を示しています。</span></p>
 
 <markup
@@ -865,15 +923,16 @@ lang="bash"
 helidon-metrics   NodePort   10.99.159.2   &lt;none&gt;        8080:31143/TCP   8s <span class="conum" data-value="1" /></markup>
 
 <ul class="colist">
-<li data-value="1"><span class="merged" id="all.1nRLIq" title="原文 : A service of type NodePort that serves the default routes on port 31143">ポート<code>31143</code>上のデフォルト・ルートを提供する<code>NodePort</code>タイプのサービス</span></li>
+<li data-value="1"><span class="merged" id="all.3Q1f91.4" title="原文 : A service of type NodePort that serves the default routes on port 31143.">ポート<code>31143</code>上のデフォルト・ルートを提供する<code>NodePort</code>タイプのサービス。</span></li>
 </ul>
 <markup
 lang="bash"
-title="ポート<code>31143</code>を使用してメトリクス・エンドポイントを検証します。実際のポートは異なる可能性があります:"
+title="ポート<code>30116</code>を使用してメトリクス・エンドポイントを検証します。実際のポートは異なる可能性があります:"
 >curl http://localhost:31143/metrics</markup>
 
 <div class="admonition note">
 <p class="admonition-inline"><span class="merged" id="all.4tlHG.1" title="原文 : Leave the application running in Kubernetes since it will be used for Prometheus integration.">Prometheus統合に使用されるため、アプリケーションはKubernetesで実行したままにします。</span></p>
+</div>
 </div>
 
 <h4 id="_prometheus_integration"><span class="merged" id="all.3WUGFL.1" title="原文 : Prometheus integration">Prometheus統合</span></h4>

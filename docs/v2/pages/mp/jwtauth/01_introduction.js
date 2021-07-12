@@ -2,6 +2,20 @@
 <span title="免責事項: ここに記載されているドキュメントは、お客様の利便性のために翻訳ソフトウエアにより機械的に翻訳(機械翻訳)したものです。オリジナルの英語版もあわせてご確認ください。" style="width:150px;padding-left:5px;padding-right:5px;border:#ff0000 solid 1px;border-color: gray;font-size: small;color:gray;margin: 0 auto 0 auto;text-align:center;"><a href="https://docs.oracle.com/cd/E85181_01/mt_disclaimer.html" target="disclaimer">&nbsp;&nbsp;機械翻訳について&nbsp;&nbsp;</a></span>
 
 
+<h2 id="maven-coordinates"><span class="merged" id="all.317oeS.14" title="原文 : Maven Coordinates">Maven連携</span></h2>
+<div class="section">
+<p><span class="merged" id="all.46Qtho" title="原文 : To enable JWT Authentication either add a dependency on the helidon-microprofile bundle or add the following dependency to your project&rsquo;s pom.xml (see Managing Dependencies).">JWT認証を有効にするには、<router-link to="/mp/introduction/02_microprofile">helidon-microprofile bundle</router-link>に依存関係を追加するか、プロジェクトの<code>pom.xml</code>に次の依存関係を追加します(<router-link to="/about/04_managing-dependencies">「依存関係の管理」</router-link>を参照)。</span></p>
+
+<markup
+lang="xml"
+
+>        &lt;dependency&gt;
+            &lt;groupId&gt;io.helidon.microprofile.jwt&lt;/groupId&gt;
+            &lt;artifactId&gt;helidon-microprofile-jwt-auth&lt;/artifactId&gt;
+        &lt;/dependency&gt;</markup>
+
+</div>
+
 <h2 id="_overview"><span class="merged" id="all.YrpRV.3"  title="原文:: Overview">概要</span></h2>
 <div class="section">
 <p><span class="merged" id="all.2EysiZ.spl1" title="原文 : JSON Web Token (JWT) defines a compact and self-contained way for securely transmitting information between parties as a JSON object.">JSON Web Token (JWT)は、パーティ間でJSONオブジェクトとして情報を安全に送信するためのコンパクトで自己完結型の方法を定義します。</span> <span class="merged" id="all.2EysiZ.spl2" title="原文 : With JWT Auth you can integrate security features such as single sign on into your Helidon MP applications.">JWT認証を使用すると、シングル・サインオンなどのセキュリティ機能をHelidon MPアプリケーションに統合できます。</span> </p>

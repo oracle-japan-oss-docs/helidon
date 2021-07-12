@@ -13,6 +13,30 @@
 </v-flex>
 </v-layout>
 
+<h2 id="maven-coordinates"><span class="merged" id="all.317oeS.45" title="原文 : Maven Coordinates">Maven連携</span></h2>
+<div class="section">
+<p><span class="merged" id="all.F0XKM" title="原文 : To enable Health Checks add the following dependency to your project&rsquo;s pom.xml (see Managing Dependencies).">ヘルス・チェックを有効にするには、プロジェクトの<code>pom.xml</code>に次の依存関係を追加します(<router-link to="/about/04_managing-dependencies">「依存関係の管理」</router-link>を参照)。</span></p>
+
+<markup
+lang="xml"
+
+>&lt;dependency&gt;
+    &lt;groupId&gt;io.helidon.health&lt;/groupId&gt;
+    &lt;artifactId&gt;helidon-health&lt;/artifactId&gt;
+&lt;/dependency&gt;</markup>
+
+<p><span class="merged" id="all.3dbFv0" title="原文 : Optional dependency to use built-in health checks:">組込みヘルス・チェックを使用するためのオプションの依存関係:</span></p>
+
+<markup
+lang="xml"
+
+>&lt;dependency&gt;
+    &lt;groupId&gt;io.helidon.health&lt;/groupId&gt;
+    &lt;artifactId&gt;helidon-health-checks&lt;/artifactId&gt;
+&lt;/dependency&gt;</markup>
+
+</div>
+
 <h2 id="_about_health_checks"><span class="merged" id="all.3D1Wd" title="原文 : About health checks">ヘルス・チェックについて</span></h2>
 <div class="section">
 <p><span class="merged" id="all.1cSHH8" title="原文 : It&rsquo;s a good practice to monitor your microservice&rsquo;s health, to ensure that it is available and performs correctly.">マイクロサービスが使用可能であり、正しく実行されることを確認するために、マイクロサービスのヘルスを監視することをお薦めします。</span></p>
@@ -39,28 +63,6 @@
 
 </li>
 </ul>
-
-<h3 id="_prerequisites"><span class="merged" id="all.2LZvWc.8"  title="原文:: Prerequisites">前提条件</span></h3>
-<div class="section">
-<p><span class="merged" id="all.4JnU1V.9" title="原文 : Declare the following dependency in your project:">プロジェクトで次の依存性を宣言します:</span></p>
-
-<markup
-lang="xml"
-
->&lt;dependency&gt;
-    &lt;groupId&gt;io.helidon.health&lt;/groupId&gt;
-    &lt;artifactId&gt;helidon-health&lt;/artifactId&gt;
-&lt;/dependency&gt;</markup>
-
-<markup
-lang="xml"
-title="組込みヘルス・チェックを使用するためのオプションの依存性:"
->&lt;dependency&gt;
-    &lt;groupId&gt;io.helidon.health&lt;/groupId&gt;
-    &lt;artifactId&gt;helidon-health-checks&lt;/artifactId&gt;
-&lt;/dependency&gt;</markup>
-
-</div>
 </div>
 
 <h2 id="_api_overview"><span class="merged" id="all.3hQuIJ"  title="原文:: API overview">APIの概要</span></h2>
@@ -195,9 +197,9 @@ title="JSONレスポンス:"
 }</markup>
 
 
-<h3 id="_built_in_health_checks"><span class="merged" id="all.1hewvo" title="原文 : Built-in health-checks">Built-in health-checks</span></h3>
+<h3 id="_built_in_health_checks"><span class="merged" id="all.1hewvo" title="原文 : Built-in health-checks">組込みヘルスチェック</span></h3>
 <div class="section">
-<p><span class="merged" id="all.2JmAJf" title="原文 : You can use Helidon-provided health checks to report various common health check statuses:">Helidon-providedヘルス・チェックを使用して、様々な一般的なヘルス・チェック・ステータスをレポートできます:</span></p>
+<p><span class="merged" id="all.2JmAJf" title="原文 : You can use Helidon-provided health checks to report various common health check statuses:">Helidon提供のヘルス・チェックを使用して、様々な一般的なヘルス・チェック・ステータスをレポートできます:</span></p>
 
 
 <div class="table__overflow elevation-1  ">
@@ -257,7 +259,7 @@ Routing.builder()
         .build();</markup>
 
 <ul class="colist">
-<li data-value="1"><span class="merged" id="all.24kjYB" title="原文 : Add built-in health checks using defaults (requires the helidon-health-checks dependency).">デフォルトを使用して組込みヘルス・チェックを追加します(<code>helidon-health-checks</code>依存性が必要)。</span></li>
+<li data-value="1"><span class="merged" id="all.24kjYB" title="原文 : Add built-in health checks using defaults (requires the helidon-health-checks dependency).">デフォルトを使用して組込みヘルス・チェックを追加します(<code>helidon-health-checks</code>依存関係が必要)。</span></li>
 <li data-value="2"><span class="merged" id="all.1VF6jO.1" title="原文 : Register the created health support with web server routing (adds the /health endpoint).">作成したヘルス・サポートをwebサーバー・ルーティングに登録します(<code>/health</code>エンドポイントを追加します)。</span></li>
 </ul>
 <p><span class="merged" id="all.2k2BR6" title="原文 : You can control the thresholds for built-in health checks in either of two ways:">組込みヘルス・チェックのしきい値は、次のいずれかの方法で制御できます:</span></p>
@@ -272,14 +274,14 @@ Routing.builder()
 
 </li>
 </ul>
-<p><span class="merged" id="all.1S7Wv2" title="原文 : Further, you can suppress one or more of the built-in health checks by setting the configuration item helidon.health.exclude to a comma-separated list of the health check names (from the table) you want to exclude.">さらに、構成アイテム<code>helidon.health.exclude</code>を、(<router-link @click.native="this.scrollFix('#built-in-health-checks-table')" to="#built-in-health-checks-table">table</router-link>の)除外するヘルス・チェック名のカンマ区切りリストに設定することで、組込みヘルス・チェックを抑制できます。</span></p>
+<p><span class="merged" id="all.1S7Wv2" title="原文 : Further, you can suppress one or more of the built-in health checks by setting the configuration item helidon.health.exclude to a comma-separated list of the health check names (from the table) you want to exclude.">さらに、構成アイテム<code>helidon.health.exclude</code>を、(<router-link @click.native="this.scrollFix('#built-in-health-checks-table')" to="#built-in-health-checks-table">table</router-link>から)除外するヘルス・チェック名のカンマ区切りリストに設定することで、組込みヘルス・チェックを抑制できます。</span></p>
 
 </div>
 </div>
 
 <h2 id="_health_report"><span class="merged" id="all.PfRlW" title="原文 : Health report">ヘルス・レポート</span></h2>
 <div class="section">
-<p><span class="merged" id="all.SC0Jq" title="原文 : Accessing the Helidon-provided /health endpoint reports the health of your application:">Helidon-provided <code>/health</code>エンドポイントにアクセスすると、アプリケーションのヘルスがレポートされます:</span></p>
+<p><span class="merged" id="all.SC0Jq" title="原文 : Accessing the Helidon-provided /health endpoint reports the health of your application:">Helidon提供の<code>/health</code>エンドポイントにアクセスすると、アプリケーションのヘルスがレポートされます:</span></p>
 
 <markup
 lang="json"

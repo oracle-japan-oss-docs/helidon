@@ -2,21 +2,23 @@
 <span title="免責事項: ここに記載されているドキュメントは、お客様の利便性のために翻訳ソフトウエアにより機械的に翻訳(機械翻訳)したものです。オリジナルの英語版もあわせてご確認ください。" style="width:150px;padding-left:5px;padding-right:5px;border:#ff0000 solid 1px;border-color: gray;font-size: small;color:gray;margin: 0 auto 0 auto;text-align:center;"><a href="https://docs.oracle.com/cd/E85181_01/mt_disclaimer.html" target="disclaimer">&nbsp;&nbsp;機械翻訳について&nbsp;&nbsp;</a></span>
 
 
-<h2 id="_reactive_jms_connector"><span class="merged" id="all.2u6yav.1" title="原文 : Reactive JMS Connector">リアクティブJMSコネクタ</span></h2>
+<h2 id="maven-coordinates"><span class="merged" id="all.317oeS.53" title="原文 : Maven Coordinates">Maven連携</span></h2>
 <div class="section">
-<p><span class="merged" id="all.S3gdo.1" title="原文 : Connecting streams to JMS with Reactive Messaging couldn&rsquo;t be easier.">リアクティブ・メッセージングを使用したJMSへのストリームの接続はより簡単にはできないでしょう。</span></p>
+<p><span class="merged" id="all.i5Lq0.1" title="原文 : To enable JMS Connector add the following dependency to your project&rsquo;s pom.xml (see Managing Dependencies).">JMSコネクタを有効にするには、プロジェクトの<code>pom.xml</code>に次の依存関係を追加します(<router-link to="/about/04_managing-dependencies">「依存関係の管理」</router-link>を参照)。</span></p>
 
 <markup
 lang="xml"
-title="必要な依存関係:"
+
 >&lt;dependency&gt;
-    &lt;groupId&gt;io.helidon.messaging&lt;/groupId&gt;
-    &lt;artifactId&gt;helidon-messaging&lt;/artifactId&gt;
-&lt;/dependency&gt;
-&lt;dependency&gt;
     &lt;groupId&gt;io.helidon.messaging.jms&lt;/groupId&gt;
     &lt;artifactId&gt;helidon-messaging-jms&lt;/artifactId&gt;
 &lt;/dependency&gt;</markup>
+
+</div>
+
+<h2 id="_reactive_jms_connector"><span class="merged" id="all.2u6yav.1" title="原文 : Reactive JMS Connector">リアクティブJMSコネクタ</span></h2>
+<div class="section">
+<p><span class="merged" id="all.S3gdo.1" title="原文 : Connecting streams to JMS with Reactive Messaging couldn&rsquo;t be easier.">リアクティブ・メッセージングを使用したJMSへのストリームの接続はより簡単にはできないでしょう。</span></p>
 
 
 <h3 id="_explicit_config_with_config_builder"><span class="merged" id="all.1KclVb.1" title="原文 : Explicit config with config builder">構成ビルダーによる明示的な構成</span></h3>

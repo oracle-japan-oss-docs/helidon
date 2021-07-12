@@ -13,7 +13,7 @@
 </v-flex>
 </v-layout>
 
-<h2 id="_introduction"><span class="merged" id="all.4LJMHk.3"  title="原文:: Introduction">導入</span></h2>
+<h2 id="_introduction"><span class="merged" id="all.4LJMHk.4"  title="原文:: Introduction">導入</span></h2>
 <div class="section">
 <p><span class="merged" id="all.naPu5.spl1" title="原文 : While most of Helidon&rsquo;s examples use Maven, you can also use Helidon with a Gradle project.">Helidonのほとんどの例ではMavenを使用していますが、GradleプロジェクトでHelidonを使用することもできます。</span> <span class="merged" id="all.naPu5.spl2" title="原文 : We recommend Gradle 6+.">Gradle 6以上をお薦めします。</span> </p>
 
@@ -21,13 +21,13 @@
 
 <h2 id="_gradle_example"><span class="merged" id="all.1qe2nK" title="原文 : Gradle Example">Gradleの例</span></h2>
 <div class="section">
-<p><span class="merged" id="all.1ldVI0" title="原文 : The Helidon Quickstart Example contains a build.gradle file that you can use as an example for building your Helidon application using Gradle.">Helidon <a href="https://github.com/oracle/helidon/tree/2.2.1/examples//quickstarts/helidon-quickstart-mp" id="" target="_blank" >「クイックスタートの例」</a>には、Gradleを使用してHelidonアプリケーションを構築するための例として使用できる<code>build.gradle</code>ファイルが含まれています。</span></p>
+<p><span class="merged" id="all.1jI73h" title="原文 : The Helidon Quickstart Example contains a build.gradle file that you can use as an example for building your Helidon application using Gradle.">Helidon <a href="https://github.com/oracle/helidon/tree/2.3.1/examples/quickstarts/helidon-quickstart-mp" id="" target="_blank" >「クイックスタートの例」</a>には、Gradleを使用してHelidonアプリケーションを構築するための例として使用できる<code>build.gradle</code>ファイルが含まれています。</span></p>
 
 </div>
 
 <h2 id="_dependency_management"><span class="merged" id="all.Udjxg.1"  title="原文:: Dependency Management"> 依存性管理</span></h2>
 <div class="section">
-<p><span class="merged" id="all.2Eq3uT.spl1" title="原文 : Gradle supports using a Maven POM to perform dependency management.">Gradleでは、Maven POMを使用した依存性管理の実行をサポートしています。</span> <span class="merged" id="all.2Eq3uT.spl2" title="原文 : You can use the Helidon Dependencies POM for this purpose.">この目的には、Helidon依存関係POMを使用できます。</span> <span class="merged" id="all.2Eq3uT.spl3" title="原文 : Once you import the Helidon dependency management POM you can specify dependencies without providing a version.">Helidon依存性管理POMをインポートすると、バージョンを指定せずに依存性を指定できます。</span> </p>
+<p><span class="merged" id="all.2Eq3uT.spl1" title="原文 : Gradle supports using a Maven POM to perform dependency management.">Gradleでは、Maven POMを使用した依存関係管理の実行をサポートしています。</span> <span class="merged" id="all.2Eq3uT.spl2" title="原文 : You can use the Helidon Dependencies POM for this purpose.">この目的には、Helidon依存関係POMを使用できます。</span> <span class="merged" id="all.2Eq3uT.spl3" title="原文 : Once you import the Helidon dependency management POM you can specify dependencies without providing a version.">Helidon依存関係管理POMをインポートすると、バージョンを指定せずに依存関係を指定できます。</span> </p>
 
 <markup
 lang="xml"

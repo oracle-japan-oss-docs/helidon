@@ -27,9 +27,9 @@
 </v-flex>
 </v-layout>
 
-<h2 id="_prerequisites"><span class="merged" id="all.2LZvWc.9"  title="原文:: Prerequisites">前提条件</span></h2>
+<h2 id="maven-coordinates"><span class="merged" id="all.317oeS.46" title="原文 : Maven Coordinates">Maven連携</span></h2>
 <div class="section">
-<p><span class="merged" id="all.4JnU1V.10" title="原文 : Declare the following dependency in your project:">プロジェクトで次の依存性を宣言します:</span></p>
+<p><span class="merged" id="all.1kTC7E" title="原文 : To enable Metrics add the following dependency to your project&rsquo;s pom.xml (see Managing Dependencies).">メトリクスを有効にするには、プロジェクトの<code>pom.xml</code>に次の依存関係を追加します(<router-link to="/about/04_managing-dependencies">「依存関係の管理」</router-link>を参照)。</span></p>
 
 <markup
 lang="xml"
